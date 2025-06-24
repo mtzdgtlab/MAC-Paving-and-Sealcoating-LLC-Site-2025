@@ -1,59 +1,265 @@
 ---
-import Favicon from "../components/Favicon.astro";
-import Preloader from "../components/Preloader.astro";
-import CSSbase from "../components/CSSbase.astro";
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
-import Scripts from "../components/Scripts.astro";
-import SocialMeta from "../components/SocialMeta.astro";
+import Favicon from "../../../components/Favicon.astro";
+import Preloader from "../../../components/Preloader.astro";
+import CSSbase from "../../../components/CSSbase.astro";
+import Navbar from "../../../components/Navbar.astro";
+import Footer from "../../../components/Footer.astro";
+import Scripts from "../../../components/Scripts.astro";
+import MainServices from "../../../components/MainServices.astro";
+import SocialMeta from "../../../components/SocialMeta.astro";
+import MapSection from "../../../components/MapSection.astro";
 ---
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
-  <title>Driveway Aprons in Northern NJ | Smooth & Durable Transitions</title>
+  <title>Concrete Curbs in NJ | New Installations & Repairs</title>
   <!-- Preconexión para recursos externos (mejora rendimiento) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <meta name="description" content="Seamless driveway apron installation to connect your driveway and street smoothly and attractively. Get a free estimate today." />
-  <link rel="canonical" href="https://macpavingandsealcoating.com/services/concrete/aprons" />
-  <meta name="keywords" content="driveway aprons NJ, concrete apron installation North Jersey, smooth driveway transitions, Union City driveway apron, Hawthorne concrete entrance, durable concrete aprons, residential apron experts NJ" />
+  <meta name="description" content="{{meta_description}}" />
+  <link rel="canonical" href="https://macpavingandsealcoating.com/services/concrete/curbs">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="concrete curbs NJ, curb installation Montville, Wallington curb repair, driveway edge concrete NJ, landscape curb protection, NJ concrete curb contractor, residential curb solutions" />
   <script type="application/ld+json">
-  {
-
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Driveway Aprons in Union City, Hawthorne & Jersey City",
-  "url": "https://macpavingandsealcoating.com/services/concrete/aprons",
-  "description": "Add a seamless finish to your driveway with custom concrete aprons in Union City, Hawthorne, and Jersey City. Enhance appearance and drainage with professional apron installation. Get a free quote today."
-
-  }
-  </script>
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Concrete Curbs in NJ | New Installations & Repairs",
+      "url": "https://macpavingandsealcoating.com/services/concrete/curbs",
+      "logo": "https://macpavingandsealcoating.com/logo.png",
+      "description": "Durable curbs that protect landscaping, define driveway edges, and improve property layout. Get a free estimate today.",
+      "telephone": "+1-201-755-7836",
+      "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-201-755-7836",
+      "contactType": "Customer Service"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Clifton, NJ" },
+        { "@type": "Place", "name": "Wayne, NJ" },
+        { "@type": "Place", "name": "Fair Lawn, NJ" },
+        { "@type": "Place", "name": "Paramus, NJ" },
+        { "@type": "Place", "name": "Hackensack, NJ" },
+        { "@type": "Place", "name": "Teaneck, NJ" },
+        { "@type": "Place", "name": "Montclair, NJ" },
+        { "@type": "Place", "name": "Bloomfield, NJ" },
+        { "@type": "Place", "name": "West Orange, NJ" },
+        { "@type": "Place", "name": "Livingston, NJ" },
+        { "@type": "Place", "name": "Parsippany, NJ" },
+        { "@type": "Place", "name": "Totowa, NJ" },
+        { "@type": "Place", "name": "Little Falls, NJ" },
+        { "@type": "Place", "name": "Elmwood Park, NJ" },
+        { "@type": "Place", "name": "Garfield, NJ" },
+        { "@type": "Place", "name": "Lodi, NJ" },
+        { "@type": "Place", "name": "Saddle Brook, NJ" },
+        { "@type": "Place", "name": "Nutley, NJ" },
+        { "@type": "Place", "name": "South Orange, NJ" },
+        { "@type": "Place", "name": "Orange, NJ" },
+        { "@type": "Place", "name": "East Orange, NJ" },
+        { "@type": "Place", "name": "Denville, NJ" },
+        { "@type": "Place", "name": "Montville, NJ" },
+        { "@type": "Place", "name": "Boonton, NJ" },
+        { "@type": "Place", "name": "Mountain Lakes, NJ" },
+        { "@type": "Place", "name": "Florham Park, NJ" },
+        { "@type": "Place", "name": "West Paterson, NJ" },
+        { "@type": "Place", "name": "Woodland Park, NJ" },
+        { "@type": "Place", "name": "North Haledon, NJ" },
+        { "@type": "Place", "name": "Haledon, NJ" },
+        { "@type": "Place", "name": "Prospect Park, NJ" },
+        { "@type": "Place", "name": "Ridgewood, NJ" },
+        { "@type": "Place", "name": "Clark, NJ" },
+        { "@type": "Place", "name": "Pompton Lakes, NJ" },
+        { "@type": "Place", "name": "Bloomingdale, NJ" },
+        { "@type": "Place", "name": "Englewood, NJ" },
+        { "@type": "Place", "name": "Fort Lee, NJ" },
+        { "@type": "Place", "name": "Bergenfield, NJ" },
+        { "@type": "Place", "name": "New Milford, NJ" },
+        { "@type": "Place", "name": "Saddle River, NJ" },
+        { "@type": "Place", "name": "Glen Ridge, NJ" },
+        { "@type": "Place", "name": "Oradell, NJ" },
+        { "@type": "Place", "name": "Cedar Grove, NJ" },
+        { "@type": "Place", "name": "Belleville, NJ" },
+        { "@type": "Place", "name": "Morristown, NJ" },
+        { "@type": "Place", "name": "East Hanover, NJ" },
+        { "@type": "Place", "name": "Wallington, NJ" },
+        { "@type": "Place", "name": "North Caldwell, NJ" },
+        { "@type": "Place", "name": "Hawthorne, NJ" },
+        { "@type": "Place", "name": "Caldwell, NJ" },
+        { "@type": "Place", "name": "Kearny, NJ" },
+        { "@type": "Place", "name": "Lyndhurst, NJ" },
+        { "@type": "Place", "name": "Rutherford, NJ" },
+        { "@type": "Place", "name": "Secaucus, NJ" },
+        { "@type": "Place", "name": "Union City, NJ" },
+        { "@type": "Place", "name": "Westwood, NJ" },
+        { "@type": "Place", "name": "Jersey City, NJ" },
+        { "@type": "Place", "name": "Newark, NJ" }
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asphalt Paving Services" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Sealcoating Service" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Patio Pavers" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crack Filling Repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paving Maintenance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Drainage Solutions" } }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CallAction",
+          "target": "tel:+12017557836",
+          "name": "Call MAC Paving and Sealcoating LLC"
+        },
+            {
+          "@type": "ReserveAction",
+          "name": "Book a Free Estimate",
+          "target": [
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://calendly.com/macpavingandsealcoating/30min",
+              "inLanguage": "en",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            },
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://macpavingandsealcoating.com/contact",
+              "inLanguage": "en",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+</script>
+      <Favicon />
+      <SocialMeta />
+      <CSSbase />
 </head>
 <body>
-  <Navbar />
-  <Breadcrumb items={[{text: "Driveway Aprons in North Jersey", href: "/ Services / Concrete / Aprons"}]} />
-  <main>
-    <Section title="Seamless Transitions That Protect and Enhance Your Driveway">
-      <p>Driveway aprons connect your private drive to the public street. At MAC Paving, we install and repair aprons across North Jersey to ensure smooth, strong, and code-compliant transitions.</p>
-      <img src="assets/imgs/service/concrete/aprons_1.webp" alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Main Image - MAC Paving and Sealcoating" />
-    </Section>
-    <Section title="Built for Strength, Slope, and Everyday Use">
-      <p>Aprons take heavy wear from vehicles and weather. We use reinforced concrete or asphalt, built for proper slope and resilience. Our aprons align perfectly with street edges and township specs.</p>
-      <img src="assets/imgs/service/concrete/aprons_2.webp" alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Side View - MAC Paving and Sealcoating" />
-    </Section>
-    <Section title="Our Apron Installation Process">
-      <p>We remove the old section, prep the base, and pour new asphalt or concrete. Edges are shaped and finished for strength and appearance. Every apron is installed with lasting performance in mind.</p>
-      <img src="assets/imgs/service/concrete/aprons_3.webp" alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Close-Up - MAC Paving and Sealcoating" />
-    </Section>
-    <Section title="Know When It’s Time to Replace or Upgrade">
-      <p>If your apron is crumbling or misaligned, it’s time to act. A new apron improves access, drainage, and property value. Contact MAC Paving today for a free evaluation.</p>
-      <img src="assets/imgs/service/concrete/aprons_4.webp" alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Work in Progress - MAC Paving and Sealcoating" />
-    </Section>
-  </main>
-  <Footer />
-  <Scripts />
-</body>
+        <Preloader />
+        <Navbar />
+    <!-- Header area end -->
+    <main>
+        <!-- Breadcrumb area start -->
+        <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
+          <div
+            class="breadcrumb__thumb"
+            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+          <div class="small-container">
+            <div class="row justify-content-center">
+              <div class="col-xxl-12">
+                <div class="breadcrumb__wrapper p-relative">
+                  <h1 class="breadcrumb__title">
+                    Concrete Curbs in North Jersey
+                  </h1>
+                  <div class="breadcrumb__menu">
+                    <nav>
+                      <ul>
+                        <li>
+                          <span><a href="/">Home</a></span>
+                        </li>
+                        <li>
+                          <span>/ Services / Concrete / Curbs</span>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Breadcrumb area end -->
+        <section class="service-details-page section-space">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-xxl-8 col-xl-8 col-lg-8">
+                <div class="service-details-page-content">
+                  <h3 class="service-details-title mt-25 mb-25">
+                    Concrete Curbs That Frame and Protect Your Property
+                  </h3>
+                  <p class="mb-25">
+                    Concrete curbs define edges, control runoff, and protect pavement. MAC Paving installs and repairs residential curbs across North Jersey with alignment, strength, and care.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/concrete/curbs-1.webp"
+                        alt="Concrete Curbs in NJ | New Installations & Repairs - Main Image - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                    <div class="col-lg-6">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/concrete/curbs-2.webp"
+                        alt="Concrete Curbs in NJ | New Installations & Repairs - Side View - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h3 class="service-details-title mt-45 mb-25">
+                        Why Homeowners Need Strong, Functional Curbs
+                      </h3>
+                      <p class="mb-25">
+                        Cracked or sunken curbs lead to erosion and damage. We use reinforced concrete and precise forms to create clean, effective curbs that resist weather and keep your landscape in place.
+                      </p>
+                    </div>
+                    <div class="col-lg-6">
+                      <h3 class="service-details-title mt-45 mb-25">
+                        Our Curb Installation and Repair Process
+                      </h3>
+                      <p class="mb-25">
+                        We excavate a trench, pour a solid base, and shape each curb for optimal function. Repairs blend with your existing layout. Every job is finished with proper joints and drainage management.
+                      </p>
+                    </div>
+                  </div>
+                <figure class="w-img">
+                    <img
+                      src="/assets/imgs/service/concrete/curbs-3.webp"
+                      alt="Concrete Curbs in NJ | New Installations & Repairs - Close-Up - MAC Paving and Sealcoating" />
+                  </figure>
+                  <h3 class="service-details-title mt-45 mb-25">
+                    When to Replace or Repair Your Curbs
+                  </h3>
+                  <p class="mb-25">
+                    If your curbs are crumbling or missing, it’s time to upgrade. New curbs boost function and appearance while preventing bigger issues. Contact MAC for a free curb consultation today.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-7">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/concrete/curbs-4.webp"
+                        alt="Concrete Curbs in NJ | New Installations & Repairs - Work in Progress - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                    <div class="col-lg-5">
+                      <ul class="service-details-page-list pt-20 pb-10">
+                        Montville, East Hanover, Parsippany, Denville, Boonton, Morristown, Florham Park, Caldwell
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <MainServices />
+            </div>
+        </div>
+    </section>
+    <MapSection />
+</main>
+        <Footer />
+        <Scripts />  
+    </body>
 </html>

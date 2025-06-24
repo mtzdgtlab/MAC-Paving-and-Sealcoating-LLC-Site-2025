@@ -1,11 +1,13 @@
 ---
-import Favicon from "../../components/Favicon.astro";
-import Preloader from "../../components/Preloader.astro";
-import CSSbase from "../../components/CSSbase.astro";
-import Navbar from "../../components/Navbar.astro";
-import Footer from "../../components/Footer.astro";
-import Scripts from "../../components/Scripts.astro";
-import SocialMeta from "../../components/SocialMeta.astro";
+import Favicon from "../../../components/Favicon.astro";
+import Preloader from "../../../components/Preloader.astro";
+import CSSbase from "../../../components/CSSbase.astro";
+import Navbar from "../../../components/Navbar.astro";
+import Footer from "../../../components/Footer.astro";
+import Scripts from "../../../components/Scripts.astro";
+import MainServices from "../../../components/MainServices.astro";
+import SocialMeta from "../../../components/SocialMeta.astro";
+import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 ---
 <html lang="en">
 <head>
@@ -13,58 +15,252 @@ import SocialMeta from "../../components/SocialMeta.astro";
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
   <title>Asphalt Resurfacing Services in NJ | Restore Your Driveway Today</title>
-  <meta name="description" content="Restore old asphalt with expert resurfacing that improves safety, looks, and durability. Great for residential driveways. Get a free estimate today." />
-  <link rel="canonical" href="https://macpavingandsealcoating.com/services/asphalt-paving/resurfacing" />
+  <!-- Preconexión para recursos externos (mejora rendimiento) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <meta name="description" content="{{meta_description}}" />
+  <link rel="canonical" href="https://macpavingandsealcoating.com/services/asphalt-paving/resurfacing">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="asphalt resurfacing NJ, driveway resurfacing North Jersey, restore old asphalt NJ, smooth asphalt Ridgewood, Bloomfield driveway paving, Teaneck asphalt expert, residential driveway resurfacing NJ" />
-  <SocialMeta title="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today" description="Restore old asphalt with expert resurfacing that improves safety, looks, and durability. Great for residential driveways. Get a free estimate today." />
-  <Favicon />
-  <CSSbase />
-</head>
-<body>
-  <Preloader />
-  <Navbar />
-  <main>
-    <div class="container">
-      <nav aria-label="Breadcrumb" class="breadcrumb">
-        <ol>
-          <li><a href="/">Home</a></li>
-          <li><a href="/services">Services</a></li>
-          <li><a href="/ Services / Asphalt Paving / Resurfacing">Asphalt Resurfacing Services in North Jersey</a></li>
-        </ol>
-      </nav>
-      <h1>Asphalt Resurfacing Services in NJ | Restore Your Driveway Today</h1>
-      <section>
-        <h2>Give Your Driveway a Fresh Start Without Full Replacement</h2>
-        <p>Asphalt resurfacing is a cost-effective way to restore your driveway's appearance and performance without tearing everything out. At MAC Paving and Sealcoating, we help North Jersey homeowners extend the life of their driveways with expert resurfacing that covers cracks, evens out surfaces, and adds a clean, new layer of protection—fast.</p>
-        <img src="assets/imgs/service/asphalt_paving/resurfacing_1.webp" alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Main Image - MAC Paving and Sealcoating" />
-      </section>
-      <section>
-        <h2>Smooth, Strong, and Smart for NJ Weather</h2>
-        <p>Our resurfacing method gives you the look and feel of a new driveway—without the price tag of full replacement. It's ideal for driveways with surface wear but strong foundations. We use top-grade asphalt blends built to withstand the freeze-thaw cycles of New Jersey, helping homeowners avoid costly repairs down the road.</p>
-        <img src="assets/imgs/service/asphalt_paving/resurfacing_2.webp" alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Side View - MAC Paving and Sealcoating" />
-      </section>
-      <section>
-        <h2>What to Expect From Our Resurfacing Process</h2>
-        <p>We begin by cleaning and prepping the existing surface, removing debris and loose material. Then, we apply a binding tack coat followed by a fresh layer of hot asphalt, carefully leveled and compacted. The result? A sleek, even surface that enhances your property and extends driveway life—typically completed in just one day.</p>
-        <img src="assets/imgs/service/asphalt_paving/resurfacing_3.webp" alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Close-Up - MAC Paving and Sealcoating" />
-      </section>
-      <section>
-        <h2>When It's the Right Call—And Why It Saves You Money</h2>
-        <p>Resurfacing is ideal when your driveway has visible wear but no deep structural damage. It's quicker, cleaner, and far more affordable than full replacement. You get improved curb appeal, smoother driveability, and added years of use. Contact MAC today for a free evaluation and find out if resurfacing is right for you.</p>
-        <img src="assets/imgs/service/asphalt_paving/resurfacing_4.webp" alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Work in Progress - MAC Paving and Sealcoating" />
-      </section>
-    </div>
-  </main>
-  <Footer />
-  <Scripts />
-</body>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Asphalt Resurfacing Services in NJ | Restore Your Driveway Today",
+      "url": "https://macpavingandsealcoating.com/services/asphalt-paving/resurfacing",
+      "logo": "https://macpavingandsealcoating.com/logo.png",
+      "description": "Restore old asphalt with expert resurfacing that improves safety, looks, and durability. Great for residential driveways. Get a free estimate today.",
+      "telephone": "+1-201-755-7836",
+      "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-201-755-7836",
+      "contactType": "Customer Service"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Clifton, NJ" },
+        { "@type": "Place", "name": "Wayne, NJ" },
+        { "@type": "Place", "name": "Fair Lawn, NJ" },
+        { "@type": "Place", "name": "Paramus, NJ" },
+        { "@type": "Place", "name": "Hackensack, NJ" },
+        { "@type": "Place", "name": "Teaneck, NJ" },
+        { "@type": "Place", "name": "Montclair, NJ" },
+        { "@type": "Place", "name": "Bloomfield, NJ" },
+        { "@type": "Place", "name": "West Orange, NJ" },
+        { "@type": "Place", "name": "Livingston, NJ" },
+        { "@type": "Place", "name": "Parsippany, NJ" },
+        { "@type": "Place", "name": "Totowa, NJ" },
+        { "@type": "Place", "name": "Little Falls, NJ" },
+        { "@type": "Place", "name": "Elmwood Park, NJ" },
+        { "@type": "Place", "name": "Garfield, NJ" },
+        { "@type": "Place", "name": "Lodi, NJ" },
+        { "@type": "Place", "name": "Saddle Brook, NJ" },
+        { "@type": "Place", "name": "Nutley, NJ" },
+        { "@type": "Place", "name": "South Orange, NJ" },
+        { "@type": "Place", "name": "Orange, NJ" },
+        { "@type": "Place", "name": "East Orange, NJ" },
+        { "@type": "Place", "name": "Denville, NJ" },
+        { "@type": "Place", "name": "Montville, NJ" },
+        { "@type": "Place", "name": "Boonton, NJ" },
+        { "@type": "Place", "name": "Mountain Lakes, NJ" },
+        { "@type": "Place", "name": "Florham Park, NJ" },
+        { "@type": "Place", "name": "West Paterson, NJ" },
+        { "@type": "Place", "name": "Woodland Park, NJ" },
+        { "@type": "Place", "name": "North Haledon, NJ" },
+        { "@type": "Place", "name": "Haledon, NJ" },
+        { "@type": "Place", "name": "Prospect Park, NJ" },
+        { "@type": "Place", "name": "Ridgewood, NJ" },
+        { "@type": "Place", "name": "Clark, NJ" },
+        { "@type": "Place", "name": "Pompton Lakes, NJ" },
+        { "@type": "Place", "name": "Bloomingdale, NJ" },
+        { "@type": "Place", "name": "Englewood, NJ" },
+        { "@type": "Place", "name": "Fort Lee, NJ" },
+        { "@type": "Place", "name": "Bergenfield, NJ" },
+        { "@type": "Place", "name": "New Milford, NJ" },
+        { "@type": "Place", "name": "Saddle River, NJ" },
+        { "@type": "Place", "name": "Glen Ridge, NJ" },
+        { "@type": "Place", "name": "Oradell, NJ" },
+        { "@type": "Place", "name": "Cedar Grove, NJ" },
+        { "@type": "Place", "name": "Belleville, NJ" },
+        { "@type": "Place", "name": "Morristown, NJ" },
+        { "@type": "Place", "name": "East Hanover, NJ" },
+        { "@type": "Place", "name": "Wallington, NJ" },
+        { "@type": "Place", "name": "North Caldwell, NJ" },
+        { "@type": "Place", "name": "Hawthorne, NJ" },
+        { "@type": "Place", "name": "Caldwell, NJ" },
+        { "@type": "Place", "name": "Kearny, NJ" },
+        { "@type": "Place", "name": "Lyndhurst, NJ" },
+        { "@type": "Place", "name": "Rutherford, NJ" },
+        { "@type": "Place", "name": "Secaucus, NJ" },
+        { "@type": "Place", "name": "Union City, NJ" },
+        { "@type": "Place", "name": "Westwood, NJ" },
+        { "@type": "Place", "name": "Jersey City, NJ" },
+        { "@type": "Place", "name": "Newark, NJ" }
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asphalt Paving Services" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Sealcoating Service" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Patio Pavers" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crack Filling Repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paving Maintenance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Drainage Solutions" } }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CallAction",
+          "target": "tel:+12017557836",
+          "name": "Call MAC Paving and Sealcoating LLC"
+        },
+            {
+          "@type": "ReserveAction",
+          "name": "Book a Free Estimate",
+          "target": [
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://calendly.com/macpavingandsealcoating/30min",
+              "inLanguage": "en",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            },
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://macpavingandsealcoating.com/contact",
+              "inLanguage": "en",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  
+      <Favicon />
+      <SocialMeta />
+      <CSSbase />
+  </head>
+  <body>
+      <Preloader />
+      <Navbar />
+    <!-- Header area end -->
+    <main>
+        <!-- Breadcrumb area start -->
+        <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
+          <div
+            class="breadcrumb__thumb"
+            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+          <div class="small-container">
+            <div class="row justify-content-center">
+              <div class="col-xxl-12">
+                <div class="breadcrumb__wrapper p-relative">
+                  <h1 class="breadcrumb__title">
+                    Asphalt Resurfacing Services in North Jersey
+                  </h1>
+                  <div class="breadcrumb__menu">
+                    <nav>
+                      <ul>
+                        <li>
+                          <span><a href="/">Home</a></span>
+                        </li>
+                        <li>
+                          <span>/ Services / Asphalt Paving / Resurfacing</span>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Breadcrumb area end -->
+        <section class="service-details-page section-space">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-xxl-8 col-xl-8 col-lg-8">
+                <div class="service-details-page-content">
+                  <h3 class="service-details-title mt-25 mb-25">
+                    Give Your Driveway a Fresh Start Without Full Replacement
+                  </h3>
+                  <p class="mb-25">
+                    Asphalt resurfacing is a cost-effective way to restore your driveway’s appearance and performance without tearing everything out. At MAC Paving and Sealcoating, we help North Jersey homeowners extend the life of their driveways with expert resurfacing that covers cracks, evens out surfaces, and adds a clean, new layer of protection—fast.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/asphalt-paving/resurfacing-1.webp"
+                        alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Main Image - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                    <div class="col-lg-6">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/asphalt-paving/resurfacing-2.webp"
+                        alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Side View - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h3 class="service-details-title mt-45 mb-25">
+                        Smooth, Strong, and Smart for NJ Weather
+                      </h3>
+                      <p class="mb-25">
+                        Our resurfacing method gives you the look and feel of a new driveway—without the price tag of full replacement. It’s ideal for driveways with surface wear but strong foundations. We use top-grade asphalt blends built to withstand the freeze-thaw cycles of New Jersey, helping homeowners avoid costly repairs down the road.
+                      </p>
+                    </div>
+                    <div class="col-lg-6">
+                      <h3 class="service-details-title mt-45 mb-25">
+                        What to Expect From Our Resurfacing Process
+                      </h3>
+                      <p class="mb-25">
+                        We begin by cleaning and prepping the existing surface, removing debris and loose material. Then, we apply a binding tack coat followed by a fresh layer of hot asphalt, carefully leveled and compacted. The result? A sleek, even surface that enhances your property and extends driveway life—typically completed in just one day.
+                      </p>
+                    </div>
+                  </div>
+                <figure class="w-img">
+                    <img
+                      src="/assets/imgs/service/asphalt-paving/resurfacing-3.webp"
+                      alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Close-Up - MAC Paving and Sealcoating" />
+                  </figure>
+                  <h3 class="service-details-title mt-45 mb-25">
+                    When It’s the Right Call—And Why It Saves You Money
+                  </h3>
+                  <p class="mb-25">
+                    Resurfacing is ideal when your driveway has visible wear but no deep structural damage. It’s quicker, cleaner, and far more affordable than full replacement. You get improved curb appeal, smoother driveability, and added years of use. Contact MAC today for a free evaluation and find out if resurfacing is right for you.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-7">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/asphalt-paving/resurfacing-4.webp"
+                        alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Work in Progress - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                    <div class="col-lg-5">
+                      <ul class="service-details-page-list pt-20 pb-10">
+                        West Orange, Newark, Jersey City, Bloomfield, Elmwood Park, Englewood, Hoboken, Kearny
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <MainServices />
+            </div>
+        </div>
+    </section>
+    <TestimonialsSlider />
+</main>
+        <Footer />
+        <Scripts />  
+    </body>
 </html>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Driveway Asphalt Resurfacing in Ridgewood, Bloomfield & Teaneck",
-  "url": "https://macpavingandsealcoating.com/services/asphalt-paving/resurfacing",
-  "description": "Resurface your worn-out driveway with high-quality asphalt. Serving Ridgewood, Bloomfield, Teaneck, and surrounding areas with smooth, long-lasting resurfacing solutions. Free estimates available."
-}
-</script>

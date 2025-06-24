@@ -1,59 +1,266 @@
 ---
-import Favicon from "../components/Favicon.astro";
-import Preloader from "../components/Preloader.astro";
-import CSSbase from "../components/CSSbase.astro";
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
-import Scripts from "../components/Scripts.astro";
-import SocialMeta from "../components/SocialMeta.astro";
+import Favicon from "../../../components/Favicon.astro";
+import Preloader from "../../../components/Preloader.astro";
+import CSSbase from "../../../components/CSSbase.astro";
+import Navbar from "../../../components/Navbar.astro";
+import Footer from "../../../components/Footer.astro";
+import Scripts from "../../../components/Scripts.astro";
+import MainServices from "../../../components/MainServices.astro";
+import SocialMeta from "../../../components/SocialMeta.astro";
+import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 ---
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
-  <title>Belgium Block Installation in NJ | Durable Cobblestone Borders</title>
+  <title>Belgium Block Installation in NJ | Decorative Stone Borders</title>
   <!-- Preconexión para recursos externos (mejora rendimiento) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <meta name="description" content="Enhance your property with classic Belgium blocks. Perfect for borders, driveways, and walkways. Professional installation and long-lasting results." />
-  <link rel="canonical" href="https://macpavingandsealcoating.com/services/pavers/belgium-blocks" />
-  <meta name="keywords" content="Belgium blocks NJ, cobblestone borders North Jersey, driveway border pavers NJ, Belgium block installation, decorative pavers NJ" />
+  <meta name="description" content="{{meta_description}}" />
+  <link rel="canonical" href="https://macpavingandsealcoating.com/services/pavers/belgium-blocks">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="belgium block installation NJ, decorative stone edging NJ, Westwood landscape border, Wayne Belgium blocks, stylish driveway edging NJ, classic stone accents NJ, premium paver edging" />
   <script type="application/ld+json">
-  {
-
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Belgium Block Installation in Clifton, Montclair & North Jersey",
-  "url": "https://macpavingandsealcoating.com/services/pavers/belgium-blocks",
-  "description": "Classic Belgium block installation for borders, driveways, and walkways in North Jersey. Skilled craftsmanship and lasting beauty."
-
-  }
-  </script>
-</head>
-<body>
-  <Navbar />
-  <Breadcrumb items={[{text: "Belgium Block Services in North Jersey", href: "/ Services / Pavers / Belgium Blocks"}]} />
-  <main>
-    <Section title="Classic Cobblestone Borders for Lasting Appeal">
-      <p>Belgium blocks add timeless elegance and functionality. Our expert team installs sturdy cobblestone borders that stand the test of time.</p>
-      <img src="assets/imgs/service/pavers/belgium_blocks_1.webp" alt="Belgium Block Installation in NJ | Durable Cobblestone Borders - Main Image - MAC Paving and Sealcoating" />
-    </Section>
-    <Section title="Durable, Slip-Resistant, and Stylish">
-      <p>Our Belgium blocks are known for durability and slip resistance. Choose from various colors and finishes to complement your design.</p>
-      <img src="assets/imgs/service/pavers/belgium_blocks_2.webp" alt="Belgium Block Installation in NJ | Durable Cobblestone Borders - Side View - MAC Paving and Sealcoating" />
-    </Section>
-    <Section title="Our Installation Process">
-      <p>From precise layout to stone cutting and setting, we ensure each block is perfectly aligned for a seamless, beautiful border.</p>
-      <img src="assets/imgs/service/pavers/belgium_blocks_3.webp" alt="Belgium Block Installation in NJ | Durable Cobblestone Borders - Close-Up - MAC Paving and Sealcoating" />
-    </Section>
-    <Section title="Upgrade Your Landscape Today">
-      <p>Add character and curb appeal with professional Belgium block installation. Contact us for a free consultation.</p>
-      <img src="assets/imgs/service/pavers/belgium_blocks_4.webp" alt="Belgium Block Installation in NJ | Durable Cobblestone Borders - Work in Progress - MAC Paving and Sealcoating" />
-    </Section>
-  </main>
-  <Footer />
-  <Scripts />
-</body>
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Belgium Block Installation in NJ | Decorative Stone Borders",
+      "url": "https://macpavingandsealcoating.com/services/pavers/belgium-blocks",
+      "logo": "https://macpavingandsealcoating.com/logo.png",
+      "description": "Add a classic touch to your landscape with premium Belgium block installations for edging and accents. Get a free estimate today.",
+      "telephone": "+1-201-755-7836",
+      "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-201-755-7836",
+      "contactType": "Customer Service"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Clifton, NJ" },
+        { "@type": "Place", "name": "Wayne, NJ" },
+        { "@type": "Place", "name": "Fair Lawn, NJ" },
+        { "@type": "Place", "name": "Paramus, NJ" },
+        { "@type": "Place", "name": "Hackensack, NJ" },
+        { "@type": "Place", "name": "Teaneck, NJ" },
+        { "@type": "Place", "name": "Montclair, NJ" },
+        { "@type": "Place", "name": "Bloomfield, NJ" },
+        { "@type": "Place", "name": "West Orange, NJ" },
+        { "@type": "Place", "name": "Livingston, NJ" },
+        { "@type": "Place", "name": "Parsippany, NJ" },
+        { "@type": "Place", "name": "Totowa, NJ" },
+        { "@type": "Place", "name": "Little Falls, NJ" },
+        { "@type": "Place", "name": "Elmwood Park, NJ" },
+        { "@type": "Place", "name": "Garfield, NJ" },
+        { "@type": "Place", "name": "Lodi, NJ" },
+        { "@type": "Place", "name": "Saddle Brook, NJ" },
+        { "@type": "Place", "name": "Nutley, NJ" },
+        { "@type": "Place", "name": "South Orange, NJ" },
+        { "@type": "Place", "name": "Orange, NJ" },
+        { "@type": "Place", "name": "East Orange, NJ" },
+        { "@type": "Place", "name": "Denville, NJ" },
+        { "@type": "Place", "name": "Montville, NJ" },
+        { "@type": "Place", "name": "Boonton, NJ" },
+        { "@type": "Place", "name": "Mountain Lakes, NJ" },
+        { "@type": "Place", "name": "Florham Park, NJ" },
+        { "@type": "Place", "name": "West Paterson, NJ" },
+        { "@type": "Place", "name": "Woodland Park, NJ" },
+        { "@type": "Place", "name": "North Haledon, NJ" },
+        { "@type": "Place", "name": "Haledon, NJ" },
+        { "@type": "Place", "name": "Prospect Park, NJ" },
+        { "@type": "Place", "name": "Ridgewood, NJ" },
+        { "@type": "Place", "name": "Clark, NJ" },
+        { "@type": "Place", "name": "Pompton Lakes, NJ" },
+        { "@type": "Place", "name": "Bloomingdale, NJ" },
+        { "@type": "Place", "name": "Englewood, NJ" },
+        { "@type": "Place", "name": "Fort Lee, NJ" },
+        { "@type": "Place", "name": "Bergenfield, NJ" },
+        { "@type": "Place", "name": "New Milford, NJ" },
+        { "@type": "Place", "name": "Saddle River, NJ" },
+        { "@type": "Place", "name": "Glen Ridge, NJ" },
+        { "@type": "Place", "name": "Oradell, NJ" },
+        { "@type": "Place", "name": "Cedar Grove, NJ" },
+        { "@type": "Place", "name": "Belleville, NJ" },
+        { "@type": "Place", "name": "Morristown, NJ" },
+        { "@type": "Place", "name": "East Hanover, NJ" },
+        { "@type": "Place", "name": "Wallington, NJ" },
+        { "@type": "Place", "name": "North Caldwell, NJ" },
+        { "@type": "Place", "name": "Hawthorne, NJ" },
+        { "@type": "Place", "name": "Caldwell, NJ" },
+        { "@type": "Place", "name": "Kearny, NJ" },
+        { "@type": "Place", "name": "Lyndhurst, NJ" },
+        { "@type": "Place", "name": "Rutherford, NJ" },
+        { "@type": "Place", "name": "Secaucus, NJ" },
+        { "@type": "Place", "name": "Union City, NJ" },
+        { "@type": "Place", "name": "Westwood, NJ" },
+        { "@type": "Place", "name": "Jersey City, NJ" },
+        { "@type": "Place", "name": "Newark, NJ" }
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asphalt Paving Services" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Sealcoating Service" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Patio Pavers" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crack Filling Repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paving Maintenance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Drainage Solutions" } }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CallAction",
+          "target": "tel:+12017557836",
+          "name": "Call MAC Paving and Sealcoating LLC"
+        },
+            {
+          "@type": "ReserveAction",
+          "name": "Book a Free Estimate",
+          "target": [
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://calendly.com/macpavingandsealcoating/30min",
+              "inLanguage": "en",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            },
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://macpavingandsealcoating.com/contact",
+              "inLanguage": "en",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  
+      <Favicon />
+      <SocialMeta />
+      <CSSbase />
+  </head>
+  <body>
+      <Preloader />
+      <Navbar />
+    <!-- Header area end -->
+    <main>
+        <!-- Breadcrumb area start -->
+        <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
+          <div
+            class="breadcrumb__thumb"
+            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+          <div class="small-container">
+            <div class="row justify-content-center">
+              <div class="col-xxl-12">
+                <div class="breadcrumb__wrapper p-relative">
+                  <h1 class="breadcrumb__title">
+                    Belgium Block Installation in North Jersey
+                  </h1>
+                  <div class="breadcrumb__menu">
+                    <nav>
+                      <ul>
+                        <li>
+                          <span><a href="/">Home</a></span>
+                        </li>
+                        <li>
+                          <span>/ Services / Masonry / Belgium blocks</span>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Breadcrumb area end -->
+        <section class="service-details-page section-space">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-xxl-8 col-xl-8 col-lg-8">
+                <div class="service-details-page-content">
+                  <h3 class="service-details-title mt-25 mb-25">
+                    Elegant Stone Borders That Define Your Driveway
+                  </h3>
+                  <p class="mb-25">
+                    Belgium blocks are a timeless way to frame and elevate your outdoor space. These natural granite stones create clean, durable edges that prevent asphalt from crumbling while adding a sophisticated finish to driveways, walkways, and planting beds.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/masonry/belgium-blocks-1.webp"
+                        alt="Belgium Block Installation in NJ | Decorative Stone Borders - Main Image - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                    <div class="col-lg-6">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/masonry/belgium-blocks-2.webp"
+                        alt="Belgium Block Installation in NJ | Decorative Stone Borders - Side View - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h3 class="service-details-title mt-45 mb-25">
+                        Built to Withstand the Elements—and Turn Heads
+                      </h3>
+                      <p class="mb-25">
+                        Belgium blocks are not only decorative, they’re exceptionally strong. Unlike concrete borders, they resist cracking, frost, and salt damage. Our expert installers align and secure each block for maximum stability and structure preservation year-round.
+                      </p>
+                    </div>
+                    <div class="col-lg-6">
+                      <h3 class="service-details-title mt-45 mb-25">
+                        Installed With Precision and Craftsmanship
+                      </h3>
+                      <p class="mb-25">
+                        We begin every Belgium block project by outlining the area, excavating a trench, and setting a concrete base. Each stone is hand-set in a straight, curved, or decorative layout, then reinforced with mortar and backfill for a polished look and lasting performance.
+                      </p>
+                    </div>
+                  </div>
+                <figure class="w-img">
+                    <img
+                      src="/assets/imgs/service/masonry/belgium-blocks-3.webp"
+                      alt="Belgium Block Installation in NJ | Decorative Stone Borders - Close-Up - MAC Paving and Sealcoating" />
+                  </figure>
+                  <h3 class="service-details-title mt-45 mb-25">
+                    A Smart Upgrade With Lasting Value
+                  </h3>
+                  <p class="mb-25">
+                    If your driveway edges are starting to break down or you want to define flower beds or patios, Belgium blocks are an ideal solution. They provide structure, elegance, and value. Contact MAC today to schedule a free consultation.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-7">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/masonry/belgium-blocks-4.webp"
+                        alt="Belgium Block Installation in NJ | Decorative Stone Borders - Work in Progress - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                    <div class="col-lg-5">
+                      <ul class="service-details-page-list pt-20 pb-10">
+                        Rutherford, Fort Lee, Englewood, Bergenfield, New Milford, Paramus, Saddle Brook, Ridgewood
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <MainServices />
+            </div>
+        </div>
+    </section>
+    <TestimonialsSlider />
+</main>
+        <Footer />
+        <Scripts />  
+    </body>
 </html>

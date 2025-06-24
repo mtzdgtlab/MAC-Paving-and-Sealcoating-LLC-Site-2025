@@ -1,59 +1,265 @@
 ---
-import Favicon from "../components/Favicon.astro";
-import Preloader from "../components/Preloader.astro";
-import CSSbase from "../components/CSSbase.astro";
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
-import Scripts from "../components/Scripts.astro";
-import SocialMeta from "../components/SocialMeta.astro";
+import Favicon from "../../../components/Favicon.astro";
+import Preloader from "../../../components/Preloader.astro";
+import CSSbase from "../../../components/CSSbase.astro";
+import Navbar from "../../../components/Navbar.astro";
+import Footer from "../../../components/Footer.astro";
+import Scripts from "../../../components/Scripts.astro";
+import MainServices from "../../../components/MainServices.astro";
+import SocialMeta from "../../../components/SocialMeta.astro";
+import MapSection from "../../../components/MapSection.astro";
 ---
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
-  <title>Topsoil Delivery & Lawn Grading in NJ | Ready for Planting</title>
+  <title>Sod Installation in NJ | Fresh Green Lawns in Days</title>
   <!-- Preconexión para recursos externos (mejora rendimiento) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <meta name="description" content="Enrich your garden or yard with nutrient-rich topsoil, delivered and spread on site. Get a free estimate today." />
-  <link rel="canonical" href="https://macpavingandsealcoating.com/services/landscaping/top-soil" />
-  <meta name="keywords" content="topsoil delivery NJ, nutrient-rich top soil Essex, lawn grading Passaic, garden soil Wallington, landscaping soil NJ, planting-ready topsoil, Essex yard soil" />
+  <meta name="description" content="{{meta_description}}" />
+  <link rel="canonical" href="https://macpavingandsealcoating.com/services/landscaping/sod-installation">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="sod installation NJ, instant green lawn NJ, Oradell sod experts, Clifton lawn services, West Paterson sod install, fresh turf NJ, curb appeal lawn NJ" />
   <script type="application/ld+json">
-  {
-
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Topsoil Delivery in Essex & Passaic | Ready for Planting",
-  "url": "https://macpavingandsealcoating.com/services/landscaping/top-soil",
-  "description": "Order rich, screened topsoil for your garden or lawn in Wallington, Essex, and Passaic. Delivered and ready for planting. Perfect for sod, flower beds, and more."
-
-  }
-  </script>
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Sod Installation in NJ | Fresh Green Lawns in Days",
+      "url": "https://macpavingandsealcoating.com/services/landscaping/sod-installation",
+      "logo": "https://macpavingandsealcoating.com/logo.png",
+      "description": "Fast, professional sod installation for healthy, green lawns with instant curb appeal. Get a free estimate today.",
+      "telephone": "+1-201-755-7836",
+      "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-201-755-7836",
+      "contactType": "Customer Service"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Clifton, NJ" },
+        { "@type": "Place", "name": "Wayne, NJ" },
+        { "@type": "Place", "name": "Fair Lawn, NJ" },
+        { "@type": "Place", "name": "Paramus, NJ" },
+        { "@type": "Place", "name": "Hackensack, NJ" },
+        { "@type": "Place", "name": "Teaneck, NJ" },
+        { "@type": "Place", "name": "Montclair, NJ" },
+        { "@type": "Place", "name": "Bloomfield, NJ" },
+        { "@type": "Place", "name": "West Orange, NJ" },
+        { "@type": "Place", "name": "Livingston, NJ" },
+        { "@type": "Place", "name": "Parsippany, NJ" },
+        { "@type": "Place", "name": "Totowa, NJ" },
+        { "@type": "Place", "name": "Little Falls, NJ" },
+        { "@type": "Place", "name": "Elmwood Park, NJ" },
+        { "@type": "Place", "name": "Garfield, NJ" },
+        { "@type": "Place", "name": "Lodi, NJ" },
+        { "@type": "Place", "name": "Saddle Brook, NJ" },
+        { "@type": "Place", "name": "Nutley, NJ" },
+        { "@type": "Place", "name": "South Orange, NJ" },
+        { "@type": "Place", "name": "Orange, NJ" },
+        { "@type": "Place", "name": "East Orange, NJ" },
+        { "@type": "Place", "name": "Denville, NJ" },
+        { "@type": "Place", "name": "Montville, NJ" },
+        { "@type": "Place", "name": "Boonton, NJ" },
+        { "@type": "Place", "name": "Mountain Lakes, NJ" },
+        { "@type": "Place", "name": "Florham Park, NJ" },
+        { "@type": "Place", "name": "West Paterson, NJ" },
+        { "@type": "Place", "name": "Woodland Park, NJ" },
+        { "@type": "Place", "name": "North Haledon, NJ" },
+        { "@type": "Place", "name": "Haledon, NJ" },
+        { "@type": "Place", "name": "Prospect Park, NJ" },
+        { "@type": "Place", "name": "Ridgewood, NJ" },
+        { "@type": "Place", "name": "Clark, NJ" },
+        { "@type": "Place", "name": "Pompton Lakes, NJ" },
+        { "@type": "Place", "name": "Bloomingdale, NJ" },
+        { "@type": "Place", "name": "Englewood, NJ" },
+        { "@type": "Place", "name": "Fort Lee, NJ" },
+        { "@type": "Place", "name": "Bergenfield, NJ" },
+        { "@type": "Place", "name": "New Milford, NJ" },
+        { "@type": "Place", "name": "Saddle River, NJ" },
+        { "@type": "Place", "name": "Glen Ridge, NJ" },
+        { "@type": "Place", "name": "Oradell, NJ" },
+        { "@type": "Place", "name": "Cedar Grove, NJ" },
+        { "@type": "Place", "name": "Belleville, NJ" },
+        { "@type": "Place", "name": "Morristown, NJ" },
+        { "@type": "Place", "name": "East Hanover, NJ" },
+        { "@type": "Place", "name": "Wallington, NJ" },
+        { "@type": "Place", "name": "North Caldwell, NJ" },
+        { "@type": "Place", "name": "Hawthorne, NJ" },
+        { "@type": "Place", "name": "Caldwell, NJ" },
+        { "@type": "Place", "name": "Kearny, NJ" },
+        { "@type": "Place", "name": "Lyndhurst, NJ" },
+        { "@type": "Place", "name": "Rutherford, NJ" },
+        { "@type": "Place", "name": "Secaucus, NJ" },
+        { "@type": "Place", "name": "Union City, NJ" },
+        { "@type": "Place", "name": "Westwood, NJ" },
+        { "@type": "Place", "name": "Jersey City, NJ" },
+        { "@type": "Place", "name": "Newark, NJ" }
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asphalt Paving Services" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Sealcoating Service" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Patio Pavers" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crack Filling Repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paving Maintenance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Driveway Paving" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Drainage Solutions" } }
+      ],
+      "potentialAction": [
+        {
+          "@type": "CallAction",
+          "target": "tel:+12017557836",
+          "name": "Call MAC Paving and Sealcoating LLC"
+        },
+            {
+          "@type": "ReserveAction",
+          "name": "Book a Free Estimate",
+          "target": [
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://calendly.com/macpavingandsealcoating/30min",
+              "inLanguage": "en",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            },
+            {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://macpavingandsealcoating.com/contact",
+              "inLanguage": "en",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+</script>
+      <Favicon />
+      <SocialMeta />
+      <CSSbase />
 </head>
 <body>
-  <Navbar />
-  <Breadcrumb items={[{text: "Topsoil Delivery and Lawn Grading in North Jersey", href: "/ Services / Landscaping / Top Soil"}]} />
-  <main>
-    <Section title="Level, Nutrient-Rich Ground for a Healthier Lawn">
-      <p>Topsoil and grading provide the right base for sod, seed, or planting. MAC Paving delivers nutrient-rich soil and expert lawn leveling for North Jersey homeowners.</p>
-      <img src="assets/imgs/service/landscaping/top_soil_1.webp" alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Main Image - MAC Paving and Sealcoating" />
-    </Section>
-    <Section title="A Strong Start for Every Outdoor Project">
-      <p>Proper soil and grading prevent water issues, erosion, and growth failure. Our topsoil is screened and shaped for ideal drainage and planting success.</p>
-      <img src="assets/imgs/service/landscaping/top_soil_2.webp" alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Side View - MAC Paving and Sealcoating" />
-    </Section>
-    <Section title="Our Grading and Topsoil Installation Process">
-      <p>We clear the site, regrade slopes, and spread topsoil evenly for a smooth planting surface. It’s ready for sod, seed, or garden use immediately.</p>
-      <img src="assets/imgs/service/landscaping/top_soil_3.webp" alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Close-Up - MAC Paving and Sealcoating" />
-    </Section>
-    <Section title="When to Order Topsoil—and What It Can Improve">
-      <p>If your lawn is bumpy, bare, or won’t grow, topsoil might be the fix. Great for pre-sod, replanting, or restoring lawn health. Get a free quote today.</p>
-      <img src="assets/imgs/service/landscaping/top_soil_4.webp" alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Work in Progress - MAC Paving and Sealcoating" />
-    </Section>
-  </main>
-  <Footer />
-  <Scripts />
-</body>
+        <Preloader />
+        <Navbar />
+    <!-- Header area end -->
+    <main>
+        <!-- Breadcrumb area start -->
+        <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
+          <div
+            class="breadcrumb__thumb"
+            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+          <div class="small-container">
+            <div class="row justify-content-center">
+              <div class="col-xxl-12">
+                <div class="breadcrumb__wrapper p-relative">
+                  <h1 class="breadcrumb__title">
+                    Sod Installation in North Jersey
+                  </h1>
+                  <div class="breadcrumb__menu">
+                    <nav>
+                      <ul>
+                        <li>
+                          <span><a href="/">Home</a></span>
+                        </li>
+                        <li>
+                          <span>/ Services / Landscaping / Sod Installation</span>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Breadcrumb area end -->
+        <section class="service-details-page section-space">
+          <div class="small-container">
+            <div class="row">
+              <div class="col-xxl-8 col-xl-8 col-lg-8">
+                <div class="service-details-page-content">
+                  <h3 class="service-details-title mt-25 mb-25">
+                    Get a Lush, Green Lawn Without the Wait
+                  </h3>
+                  <p class="mb-25">
+                    Sod installation is the fastest way to enjoy a full, healthy lawn—without waiting weeks for seed to grow. MAC Paving provides instant, vibrant sod for New Jersey homes.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/landscaping/sod-installation-1.webp"
+                        alt="Sod Installation in NJ | Fresh Green Lawns in Days - Main Image - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                    <div class="col-lg-6">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/landscaping/sod-installation-2.webp"
+                        alt="Sod Installation in NJ | Fresh Green Lawns in Days - Side View - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <h3 class="service-details-title mt-45 mb-25">
+                        Why Sod Is the Smart Choice for Your Home
+                      </h3>
+                      <p class="mb-25">
+                        Sod offers dense, weed-resistant coverage from day one. It's perfect for quick curb appeal, outdoor play, and full-yard transformations. We use local sod built for NJ conditions.
+                      </p>
+                    </div>
+                    <div class="col-lg-6">
+                      <h3 class="service-details-title mt-45 mb-25">
+                        Our Step-by-Step Sod Installation Process
+                      </h3>
+                      <p class="mb-25">
+                        We remove old grass and debris, grade the soil, then install fresh sod with tight seams. We finish with watering and care tips to ensure fast rooting and long-term success.
+                      </p>
+                    </div>
+                  </div>
+                <figure class="w-img">
+                    <img
+                      src="/assets/imgs/service/landscaping/sod-installation-3.webp"
+                      alt="Sod Installation in NJ | Fresh Green Lawns in Days - Close-Up - MAC Paving and Sealcoating" />
+                  </figure>
+                  <h3 class="service-details-title mt-45 mb-25">
+                    When to Install Sod—and How It Pays Off
+                  </h3>
+                  <p class="mb-25">
+                    Patchy lawn? New build? Need curb appeal fast? Sod is ideal. It saves time, prevents erosion, and delivers instant green. Call MAC for a quote and fast installation.
+                  </p>
+                  <div class="row">
+                    <div class="col-lg-7">
+                      <figure class="w-img">
+                        <img
+                        src="/assets/imgs/service/landscaping/sod-installation-4.webp"
+                        alt="Sod Installation in NJ | Fresh Green Lawns in Days - Work in Progress - MAC Paving and Sealcoating" />
+                      </figure>
+                    </div>
+                    <div class="col-lg-5">
+                      <ul class="service-details-page-list pt-20 pb-10">
+                        Livingston, Roseland, Florham Park, Caldwell, Cedar Grove, Montclair, West Orange, Verona
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <MainServices />
+            </div>
+        </div>
+    </section>
+    <MapSection />
+</main>
+        <Footer />
+        <Scripts />  
+    </body>
 </html>
