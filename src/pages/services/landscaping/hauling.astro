@@ -1,0 +1,59 @@
+---
+import Favicon from "../components/Favicon.astro";
+import Preloader from "../components/Preloader.astro";
+import CSSbase from "../components/CSSbase.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Scripts from "../components/Scripts.astro";
+import SocialMeta from "../components/SocialMeta.astro";
+---
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Hauling Services in NJ | Asphalt, Debris & Junk Removal</title>
+  <!-- Preconexión para recursos externos (mejora rendimiento) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <meta name="description" content="Debris and material hauling for landscaping or home cleanup projects. Fast, reliable service. Get a free estimate today." />
+  <link rel="canonical" href="https://macpavingandsealcoating.com/services/landscaping/hauling" />
+  <meta name="keywords" content="hauling services NJ, debris removal Newark, asphalt hauling Lyndhurst, junk hauling Secaucus, home cleanup hauling NJ, reliable hauling services, material transport NJ, residential hauling company" />
+  <script type="application/ld+json">
+  {
+
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Hauling Services in Newark, Secaucus & Lyndhurst",
+  "url": "https://macpavingandsealcoating.com/services/landscaping/hauling",
+  "description": "Fast and affordable hauling services in Newark, Secaucus, and Lyndhurst. We remove asphalt, debris, yard waste, and more from your property or job site. Book your service today."
+
+  }
+  </script>
+</head>
+<body>
+  <Navbar />
+  <Breadcrumb items={[{text: "Hauling and Debris Removal in North Jersey", href: "/ Services / Landscaping / Hauling"}]} />
+  <main>
+    <Section title="Cleanouts Made Easy for Your Home Projects">
+      <p>MAC Paving provides hauling for asphalt, debris, and yard waste. After paving, landscaping, or home improvement projects, we clear the space fast.</p>
+      <img src="assets/imgs/service/landscaping/hauling_1.webp" alt="Hauling Services in NJ | Asphalt, Debris & Junk Removal - Main Image - MAC Paving and Sealcoating" />
+    </Section>
+    <Section title="Clear the Space Without Lifting a Finger">
+      <p>Debris piles create hazards and clutter. We handle heavy lifting and proper disposal—leaving your property clean and safe.</p>
+      <img src="assets/imgs/service/landscaping/hauling_2.webp" alt="Hauling Services in NJ | Asphalt, Debris & Junk Removal - Side View - MAC Paving and Sealcoating" />
+    </Section>
+    <Section title="How Our Residential Hauling Works">
+      <p>We assess your materials, dispatch a truck, and load everything carefully. Recyclables are sorted and all debris is disposed of responsibly.</p>
+      <img src="assets/imgs/service/landscaping/hauling_3.webp" alt="Hauling Services in NJ | Asphalt, Debris & Junk Removal - Close-Up - MAC Paving and Sealcoating" />
+    </Section>
+    <Section title="When to Schedule Hauling—and What It Covers">
+      <p>Just finished paving or cleanup? Hauling is the final step. Also great for prep before installs. Call MAC for removal done right—no mess left behind.</p>
+      <img src="assets/imgs/service/landscaping/hauling_4.webp" alt="Hauling Services in NJ | Asphalt, Debris & Junk Removal - Work in Progress - MAC Paving and Sealcoating" />
+    </Section>
+  </main>
+  <Footer />
+  <Scripts />
+</body>
+</html>

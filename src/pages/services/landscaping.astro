@@ -1,0 +1,695 @@
+---
+import Favicon from "../../components/Favicon.astro";
+import Preloader from "../../components/Preloader.astro";
+import CSSbase from "../../components/CSSbase.astro";
+import Navbar from "../../components/Navbar.astro";
+import Footer from "../../components/Footer.astro";
+import Scripts from "../../components/Scripts.astro";
+import SocialMeta from "../../components/SocialMeta.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Landscaping Services in NJ | MAC Paving and Sealcoating</title>
+  <!-- Preconexión para recursos externos (mejora rendimiento) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <meta name="description"
+    content="MAC Paving and Sealcoating offers professional landscaping services in New Jersey, including sod installation, top soil, seed grass, drainage, power wash, and hauling. Transform your outdoor space with our expert solutions." />
+  <link rel="canonical" href="https://macpavingandsealcoating.com/services/landscaping/">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords"
+    content="landscaping services NJ, sod installation NJ, top soil NJ, seed grass NJ, drainage systems NJ, power wash NJ, hauling services NJ, lawn care NJ, outdoor services NJ, residential landscaping NJ, commercial landscaping NJ, garden maintenance NJ, MAC Paving and Sealcoating NJ," />
+
+  <!-- Schema.org markup for LocalBusiness -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MAC Paving and Sealcoating LLC",
+        "url": "https://macpavingandsealcoating.com/services/landscaping/",
+        "logo": "https://macpavingandsealcoating.com/mac-paving-logo.png",
+        "description": "Expert landscaping services in New Jersey including sod installation, top soil, seed grass, drainage, power wash, and hauling to enhance your outdoor spaces.",
+        "telephone": "+1-201-755-7836",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-201-755-7836",
+    "contactType": "Customer Service"
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "Clifton, NJ" },
+    { "@type": "Place", "name": "Wayne, NJ" },
+    { "@type": "Place", "name": "Fair Lawn, NJ" },
+    { "@type": "Place", "name": "Paramus, NJ" },
+    { "@type": "Place", "name": "Hackensack, NJ" },
+    { "@type": "Place", "name": "Teaneck, NJ" },
+    { "@type": "Place", "name": "Montclair, NJ" },
+    { "@type": "Place", "name": "Bloomfield, NJ" },
+    { "@type": "Place", "name": "West Orange, NJ" },
+    { "@type": "Place", "name": "Livingston, NJ" },
+    { "@type": "Place", "name": "Parsippany, NJ" },
+    { "@type": "Place", "name": "Totowa, NJ" },
+    { "@type": "Place", "name": "Little Falls, NJ" },
+    { "@type": "Place", "name": "Elmwood Park, NJ" },
+    { "@type": "Place", "name": "Garfield, NJ" },
+    { "@type": "Place", "name": "Lodi, NJ" },
+    { "@type": "Place", "name": "Saddle Brook, NJ" },
+    { "@type": "Place", "name": "Nutley, NJ" },
+    { "@type": "Place", "name": "South Orange, NJ" },
+    { "@type": "Place", "name": "Orange, NJ" },
+    { "@type": "Place", "name": "East Orange, NJ" },
+    { "@type": "Place", "name": "Denville, NJ" },
+    { "@type": "Place", "name": "Montville, NJ" },
+    { "@type": "Place", "name": "Boonton, NJ" },
+    { "@type": "Place", "name": "Mountain Lakes, NJ" },
+    { "@type": "Place", "name": "Florham Park, NJ" },
+    { "@type": "Place", "name": "West Paterson, NJ" },
+    { "@type": "Place", "name": "Woodland Park, NJ" },
+    { "@type": "Place", "name": "North Haledon, NJ" },
+    { "@type": "Place", "name": "Haledon, NJ" },
+    { "@type": "Place", "name": "Prospect Park, NJ" },
+    { "@type": "Place", "name": "Ridgewood, NJ" },
+    { "@type": "Place", "name": "Clark, NJ" },
+    { "@type": "Place", "name": "Pompton Lakes, NJ" },
+    { "@type": "Place", "name": "Bloomingdale, NJ" },
+    { "@type": "Place", "name": "Englewood, NJ" },
+    { "@type": "Place", "name": "Fort Lee, NJ" },
+    { "@type": "Place", "name": "Bergenfield, NJ" },
+    { "@type": "Place", "name": "New Milford, NJ" },
+    { "@type": "Place", "name": "Saddle River, NJ" },
+    { "@type": "Place", "name": "Glen Ridge, NJ" },
+    { "@type": "Place", "name": "Oradell, NJ" },
+    { "@type": "Place", "name": "Cedar Grove, NJ" },
+    { "@type": "Place", "name": "Belleville, NJ" },
+    { "@type": "Place", "name": "Morristown, NJ" },
+    { "@type": "Place", "name": "East Hanover, NJ" },
+    { "@type": "Place", "name": "Wallington, NJ" },
+    { "@type": "Place", "name": "North Caldwell, NJ" },
+    { "@type": "Place", "name": "Hawthorne, NJ" },
+    { "@type": "Place", "name": "Caldwell, NJ" },
+    { "@type": "Place", "name": "Kearny, NJ" },
+    { "@type": "Place", "name": "Lyndhurst, NJ" },
+    { "@type": "Place", "name": "Rutherford, NJ" },
+    { "@type": "Place", "name": "Secaucus, NJ" },
+    { "@type": "Place", "name": "Union City, NJ" },
+    { "@type": "Place", "name": "Westwood, NJ" },
+    { "@type": "Place", "name": "Jersey City, NJ" },
+    { "@type": "Place", "name": "Newark, NJ" }
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asphalt Paving Services" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving Installation" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Driveway Paving" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Sealcoating Service" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Patio Pavers" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crack Filling Repair" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paving Maintenance" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Driveway Paving" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Drainage Solutions" } }
+  ],
+  "potentialAction": [
+    {
+      "@type": "CallAction",
+      "target": "tel:+12017557836",
+      "name": "Call MAC Paving and Sealcoating LLC"
+    },
+    {
+      "@type": "ReserveAction",
+      "name": "Book a Free Estimate",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://macpavingandsealcoating.com/contact",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
+</script>
+
+        <Favicon />
+        <SocialMeta />
+        <CSSbase />
+        </head>
+        <body>
+          <Preloader />
+          <Navbar />
+          <!-- Header area end -->
+
+
+  <main>
+    <!-- Breadcrumb area start -->
+    <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
+      <div class="breadcrumb__thumb" data-background="/assets/imgs/bg/landscaping.webp"></div>
+      <div class="small-container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-12">
+            <div class="breadcrumb__wrapper p-relative">
+              <h1 class="breadcrumb__title">Landscaping Services</h1>
+              <div class="breadcrumb__menu">
+                <nav>
+                  <ul>
+                    <li>
+                      <span><a href="/">Home</a></span>
+                    </li>
+                    <li><span>Services / Landscaping </span></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Breadcrumb area end -->
+
+    <!-- Service Slider area start -->
+    <section class="service-page-section section-space">
+      <div class="small-containe">
+        <div class="row g-4">
+          <div class="col-xxl-8 col-xl-8 col-lg-8">
+            <div class="row g-4">
+              <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
+                <!-- block -->
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img src="/assets/imgs/service/landscaping/sod-installation-1.webp"
+                      alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey." />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fas fa-tree"></i>
+                    </div>
+                    <h4>
+                      <a href="/services/landscaping/sod-installation">Sod Installation</a>
+                    </h4>
+                    <p>
+                      High-quality sod installation services to create lush,
+                      green lawns quickly and efficiently, enhancing the
+                      beauty of your outdoor spaces.
+                    </p>
+                    <a href="/services/landscaping/sod-installation" class="service-btn">Service Details <i
+                        class="icon-arrow-right-double"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
+                <!-- block -->
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img src="/assets/imgs/service/landscaping/top-soil-1.webp"
+                      alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ." />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fa-solid fa-mountain"></i>
+                    </div>
+                    <h4>
+                      <a href="/services/landscaping/top-soil">Top Soil</a>
+                    </h4>
+                    <p>
+                      High-quality topsoil delivery and spreading services to
+                      enrich your garden and landscaping projects.
+                    </p>
+                    <a href="/services/landscaping/top-soil" class="service-btn">Service Details <i
+                        class="icon-arrow-right-double"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
+                <!-- block -->
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img src="/assets/imgs/service/landscaping/drainage-1.webp"
+                      alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ." />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fa-solid fa-water"></i>
+                    </div>
+                    <h4>
+                      <a href="/services/landscaping/drainage">Drainage</a>
+                    </h4>
+                    <p>
+                      Professional drainage solutions to manage water runoff
+                      and prevent water damage, maintaining the health and
+                      stability of your property.
+                    </p>
+                    <a href="/services/landscaping/drainage" class="service-btn">Service Details <i
+                        class="icon-arrow-right-double"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
+                <!-- block -->
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img src="/assets/imgs/service/landscaping/power-wash-1.webp"
+                      alt="Power Washing Service by MAC Paving and Sealcoating – Commercial and Residential Pavement Cleaning NJ." />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fa-solid fa-shower"></i>
+                    </div>
+                    <h4>
+                      <a href="/services/landscaping/power-wash">Power Wash</a>
+                    </h4>
+                    <p>
+                      High-quality power washing services to clean and restore
+                      the appearance of your exterior surfaces, removing dirt,
+                      grime, and stains.
+                    </p>
+                    <a href="/services/landscaping/power-wash" class="service-btn">Service Details <i
+                        class="icon-arrow-right-double"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
+                <!-- block -->
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img src="/assets/imgs/service/landscaping/hauling-1.webp"
+                      alt="Hauling Services by MAC Paving and Sealcoating – Reliable Hauling and Asphalt Paving Contractors NJ." />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <h4>
+                      <a href="/services/landscaping/hauling">Hauling</a>
+                    </h4>
+                    <p>
+                      Efficient hauling services to remove debris and unwanted
+                      materials from your property, ensuring a clean and tidy
+                      environment.
+                    </p>
+                    <a href="/services/landscaping/hauling" class="service-btn">Service Details <i
+                        class="icon-arrow-right-double"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-4 col-xl-4 col-lg-4">
+            <div class="contact-page-form-area">
+              <div class="title-box mb-40 wow fadeInLeft" data-wow-delay=".5s">
+                <span class="section-sub-title">LET'S TALK</span>
+                <h3 class="section-title mt-10" aria-label="Let's Get in Touch">
+                  Get Your Free Estimate
+                </h3>
+              </div>
+              <div class="contact-page-form">
+                <form action="https://formspree.io/f/mvgpzjbv" method="POST" id="contactForm">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <label for="name">Your Name*</label>
+                      <input type="text" name="name" id="name" placeholder="Your Name*" required />
+                    </div>
+                    <div class="col-lg-12">
+                      <label for="email">Your Email*</label>
+                      <input type="email" name="email" id="email" placeholder="Your Email*" required />
+                    </div>
+                    <div class="col-lg-12">
+                      <label for="phone">Your Phone*</label>
+                      <input type="tel" name="phone" id="phone" placeholder="Your Phone*" pattern="[0-9]{10}"
+                        required />
+                    </div>
+                    <div class="col-lg-12">
+                      <label for="service">Required Service*</label>
+                      <input type="text" name="service" id="service" placeholder="Required Service*" required />
+                    </div>
+                    <div class="col-lg-12">
+                      <label for="address">Your Address*</label>
+                      <input type="text" name="address" id="address" placeholder="Your Address*" required />
+                    </div>
+                    <div class="col-lg-12">
+                      <button type="submit" class="primary-btn-1 btn-hover">
+                        Send Now | <i class="fas fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="formMessage" class="mt-3" style="display: none"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Service Slider area end -->
+
+    <!-- Choose area start -->
+    <section class="choose-section bg-color-1 section-space-top section-space-bottom p-relative">
+      <div class="bg-image" data-background="assets/imgs/bg/choose-bg.webp"></div>
+      <div class="shape-image" data-background="assets/imgs/shapes/shape-15.webp"></div>
+      <div class="small-container">
+        <div class="row g-4 justify-content-center text-center">
+          <div class="col-12">
+            <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
+              <span class="section-sub-titledos mb-50">WHY CHOOSE US</span>
+              <h3 class="section-title mt-10">What Makes Us Different</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <!-- block -->
+            <div class="choose-area-icon-box mb-15 wow fadeInRight" data-wow-delay=".5s">
+              <div class="icon-box p-relative">
+                <i class="fa fa-road"></i>
+              </div>
+              <div class="content">
+                <h5>Premium Asphalt Sealcoating</h5>
+                <p>
+                  We deliver the best asphalt sealcoating services to protect
+                  and enhance the longevity of your pavement.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <!-- block -->
+            <div class="choose-area-icon-box mb-15 wow fadeInRight" data-wow-delay=".7s">
+              <div class="icon-box p-relative">
+                <i class="fa fa-cogs"></i>
+              </div>
+              <div class="content">
+                <h5><a href="#">Custom Driveway Solutions</a></h5>
+                <p>
+                  We specialize in designing and installing custom driveways
+                  tailored to your specific needs and preferences.
+                </p>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+            <!-- block -->
+            <div class="choose-area-icon-box mb-15 wow fadeInRight" data-wow-delay=".9s">
+              <div class="icon-box p-relative">
+                <i class="fa fa-wrench"></i>
+              </div>
+              <div class="content">
+                <h5><a href="#">Comprehensive Paving Solutions</a></h5>
+                <p>
+                  We offer a full range of paving services for commercial and
+                  residential clients, from concrete work to asphalt paving.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <!-- block -->
+            <div class="choose-area-icon-box mb-15 wow fadeInRight" data-wow-delay="1.1s">
+              <div class="icon-box p-relative">
+                <i class="fa fa-tools"></i>
+              </div>
+              <div class="content">
+                <h5><a href="#">Maintenance Services</a></h5>
+                <p>
+                  Keep your property in top shape with our maintenance
+                  services, including sealcoating, crack filling, and more.
+                </p>
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Choose area end -->
+
+    <!-- Project slider area start -->
+    <section class="project-slider-section section-space fix">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-xxl-6">
+            <div class="title-box mb-25 wow fadeInLeft" data-wow-delay=".5s">
+              <span class="section-sub-title">RECENT WORKS</span>
+              <h3 class="section-title mt-25 mb-50">Landscaping Projects</h3>
+            </div>
+          </div>
+          <div class="col-xxl-6">
+            <!-- If we need navigation buttons -->
+            <div class="project_1_navigation__wrapprer position-relative z-1 text-end mt-30">
+              <div class="common-slider-navigation">
+                <button class="project-1-button-prev" aria-label="Previous project">
+                  <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="project-1-button-next" aria-label="Next project">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="swipe project-active-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/sod-installation-1.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/sod-installation-1.webp"
+                      alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/sod-installation-2.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/sod-installation-2.webp"
+                      alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/sod-installation-3.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/sod-installation-3.webp"
+                      alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/sod-installation-4.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/sod-installation-4.webp"
+                      alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/top-soil-1.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/top-soil-1.webp"
+                      alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/top-soil-2.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/top-soil-2.webp"
+                      alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/top-soil-3.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/top-soil-3.webp"
+                      alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/top-soil-4.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/top-soil-4.webp"
+                      alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/drainage-1.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/drainage-1.webp"
+                      alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/drainage-2.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/drainage-2.webp"
+                      alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/drainage-3.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/drainage-3.webp"
+                      alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a class="popup-image" href="/assets/imgs/service/landscaping/drainage-4.webp">
+                 <div class="project-slider-area p-relative">
+                  <figure class="image m-imge shine-img">
+                    <img src="/assets/imgs/service/landscaping/drainage-4.webp"
+                      alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ." />
+                  </figure>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project area end -->
+
+    <!-- Icon box counter area start -->
+    <section class="icon-box-counter-section section-space">
+      <div class="small-container">
+        <div class="row g-4">
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-6">
+            <div class="icon-box-counter-area">
+              <div class="icon-box">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="content">
+                <h3><span class="counter">1.2</span>K+</h3>
+                <span class="text-1">Satisfied Clients</span>
+              </div>
+            </div>
+          </div>
+          <!-- block -->
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-6">
+            <div class="icon-box-counter-area">
+              <div class="icon-box">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="content">
+                <h3><span class="counter">1.55</span>K+</h3>
+                <span class="text-1">Successful Projects</span>
+              </div>
+            </div>
+          </div>
+          <!-- block -->
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-6">
+            <div class="icon-box-counter-area">
+              <div class="icon-box">
+                <i class="fas fa-gift"></i>
+              </div>
+              <div class="content">
+                <h3><span class="counter">30</span>K+</h3>
+                <span class="text-1">Working Hours</span>
+              </div>
+            </div>
+          </div>
+          <!-- block -->
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-6">
+            <div class="icon-box-counter-area">
+              <div class="icon-box">
+                <i class="fas fa-user-friends"></i>
+              </div>
+              <div class="content">
+                <h3><span class="counter">3.15</span>K+</h3>
+                <span class="text-1">Tons of Asphalt Used</span>
+              </div>
+            </div>
+          </div>
+          <!-- block -->
+        </div>
+      </div>
+    </section>
+    <!-- Icon box counter area end -->
+  </main>
+
+  <Footer />
+  <Scripts />
+  <!-- Inicializaciones -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Contact Form
+      const contactForm = document.getElementById("contactForm");
+      const formMessage = document.getElementById("formMessage");
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          try {
+            const response = await fetch(contactForm.action, {
+              method: "POST",
+              body: new FormData(contactForm),
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            if (response.ok) {
+              formMessage.textContent =
+                "Thank you for your message! We'll get back to you soon.";
+              formMessage.style.color = "#FFFFFF";
+              formMessage.style.fontWeight = "bold";
+              formMessage.style.fontSize = "1.2em";
+              contactForm.reset();
+            } else {
+              throw new Error("Form submission failed");
+            }
+          } catch (error) {
+            formMessage.textContent =
+              "Sorry, there was an error submitting your message. Please try again.";
+            formMessage.style.color = "yellow";
+          }
+          formMessage.style.display = "block";
+        });
+      }
+    });
+  </script>
+
+  
+</body>
+
+</html>

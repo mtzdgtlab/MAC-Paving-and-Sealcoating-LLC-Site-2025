@@ -1,0 +1,926 @@
+---
+// Frontmatter de Astro
+import Favicon from "../components/Favicon.astro";
+import Preloader from "../components/Preloader.astro";
+import CSSbase from "../components/CSSbase.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Scripts from "../components/Scripts.astro";
+import SocialMeta from "../components/SocialMeta.astro";
+import About from "../components/About.astro";
+import TestimonialsSlider from "../components/TestimonialsSlider.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>MAC Paving | Asphalt, Concrete and Sealcoating Services NJ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <meta name="description" content="MAC Paving and Sealcoating provides expert asphalt paving, sealcoating, concrete, and paver services across New Jersey. Residential and commercial solutions with guaranteed quality." />
+    <link rel="canonical" href="https://macpavingandsealcoating.com/" />
+    <meta name="description" content="Top-rated asphalt paving, sealcoating, concrete, paver, and landscaping services in Paterson and throughout New Jersey. MAC Paving & Sealcoating specializes in driveways, parking lots, sidewalks, curbs, aprons, paver installations, drainage, and more. We deliver expert installation, repair, and maintenance to enhance and protect your property. Get a fast, free estimate today." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="asphalt paving New Jersey, driveway paving Paterson NJ, paving contractors NJ, asphalt repair and resurfacing NJ, blacktop paving services, sealcoating experts NJ, pothole repair Paterson, commercial paving NJ, residential paving NJ, pavement maintenance NJ, custom driveway installation, decorative driveways NJ, local asphalt contractor Paterson, MAC Paving and Sealcoating, professional asphalt services, Bergen County asphalt paving, Essex County driveway paving, Clifton NJ asphalt contractor, NJ blacktop company, driveway extension NJ, reliable paving company NJ" />
+
+    <!-- Schema.org markup for LocalBusiness -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MAC Paving and Sealcoating LLC",
+        "url": "https://macpavingandsealcoating.com",
+        "logo": "https://macpavingandsealcoating.com/logo.png",
+        "description": "Asphalt paving, driveway installation, sealcoating, and paver services in North Jersey. Book reliable, affordable driveway services in Clifton, Ridgewood, Wayne, and more.",
+        "telephone": "+1-201-755-7836",
+        "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-201-755-7836",
+        "contactType": "Customer Service"
+        },
+        "areaServed": [
+          { "@type": "Place", "name": "Clifton, NJ" },
+          { "@type": "Place", "name": "Wayne, NJ" },
+          { "@type": "Place", "name": "Fair Lawn, NJ" },
+          { "@type": "Place", "name": "Paramus, NJ" },
+          { "@type": "Place", "name": "Hackensack, NJ" },
+          { "@type": "Place", "name": "Teaneck, NJ" },
+          { "@type": "Place", "name": "Montclair, NJ" },
+          { "@type": "Place", "name": "Bloomfield, NJ" },
+          { "@type": "Place", "name": "West Orange, NJ" },
+          { "@type": "Place", "name": "Livingston, NJ" },
+          { "@type": "Place", "name": "Parsippany, NJ" },
+          { "@type": "Place", "name": "Totowa, NJ" },
+          { "@type": "Place", "name": "Little Falls, NJ" },
+          { "@type": "Place", "name": "Elmwood Park, NJ" },
+          { "@type": "Place", "name": "Garfield, NJ" },
+          { "@type": "Place", "name": "Lodi, NJ" },
+          { "@type": "Place", "name": "Saddle Brook, NJ" },
+          { "@type": "Place", "name": "Nutley, NJ" },
+          { "@type": "Place", "name": "South Orange, NJ" },
+          { "@type": "Place", "name": "Orange, NJ" },
+          { "@type": "Place", "name": "East Orange, NJ" },
+          { "@type": "Place", "name": "Denville, NJ" },
+          { "@type": "Place", "name": "Montville, NJ" },
+          { "@type": "Place", "name": "Boonton, NJ" },
+          { "@type": "Place", "name": "Mountain Lakes, NJ" },
+          { "@type": "Place", "name": "Florham Park, NJ" },
+          { "@type": "Place", "name": "West Paterson, NJ" },
+          { "@type": "Place", "name": "Woodland Park, NJ" },
+          { "@type": "Place", "name": "North Haledon, NJ" },
+          { "@type": "Place", "name": "Haledon, NJ" },
+          { "@type": "Place", "name": "Prospect Park, NJ" },
+          { "@type": "Place", "name": "Ridgewood, NJ" },
+          { "@type": "Place", "name": "Clark, NJ" },
+          { "@type": "Place", "name": "Pompton Lakes, NJ" },
+          { "@type": "Place", "name": "Bloomingdale, NJ" },
+          { "@type": "Place", "name": "Englewood, NJ" },
+          { "@type": "Place", "name": "Fort Lee, NJ" },
+          { "@type": "Place", "name": "Bergenfield, NJ" },
+          { "@type": "Place", "name": "New Milford, NJ" },
+          { "@type": "Place", "name": "Saddle River, NJ" },
+          { "@type": "Place", "name": "Glen Ridge, NJ" },
+          { "@type": "Place", "name": "Oradell, NJ" },
+          { "@type": "Place", "name": "Cedar Grove, NJ" },
+          { "@type": "Place", "name": "Belleville, NJ" },
+          { "@type": "Place", "name": "Morristown, NJ" },
+          { "@type": "Place", "name": "East Hanover, NJ" },
+          { "@type": "Place", "name": "Wallington, NJ" },
+          { "@type": "Place", "name": "North Caldwell, NJ" },
+          { "@type": "Place", "name": "Hawthorne, NJ" },
+          { "@type": "Place", "name": "Caldwell, NJ" },
+          { "@type": "Place", "name": "Kearny, NJ" },
+          { "@type": "Place", "name": "Lyndhurst, NJ" },
+          { "@type": "Place", "name": "Rutherford, NJ" },
+          { "@type": "Place", "name": "Secaucus, NJ" },
+          { "@type": "Place", "name": "Union City, NJ" },
+          { "@type": "Place", "name": "Westwood, NJ" },
+          { "@type": "Place", "name": "Jersey City, NJ" },
+          { "@type": "Place", "name": "Newark, NJ" }
+        ],
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asphalt Paving Services" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving Installation" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Driveway Paving" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Sealcoating Service" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Patio Pavers" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crack Filling Repair" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paving Maintenance" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Driveway Paving" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Drainage Solutions" } }
+        ],
+        "potentialAction": [
+          {
+            "@type": "CallAction",
+            "target": "tel:+12017557836",
+            "name": "Call MAC Paving and Sealcoating LLC"
+          },
+              {
+            "@type": "ReserveAction",
+            "name": "Book a Free Estimate",
+            "target": [
+              {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://calendly.com/macpavingandsealcoating/30min",
+                "inLanguage": "en",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "inLanguage": "en",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+      </script>
+
+              <Favicon />
+              <SocialMeta />
+              <CSSbase />
+              </head>
+              <body>
+                <Preloader />
+                <Navbar />
+                <!-- Header area end -->
+
+    <main>
+      <!-- Banner area start -->
+      <section
+        aria-label="Banner section"
+        class="banner-section p-relative fix">
+        <div class="banner-main">
+          <!-- VIDEO PARA ESCRITORIO -->
+          <video
+            class="banner-video desktop-only"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            width="1920"
+            height="1080"
+            onended="this.currentTime = 0; this.play();">
+            <source
+              src="/assets/imgs/vids/1920-banner-xs.mp4"
+              type="video/mp4" />
+            <source src="/assets/imgs/vids/1920-banner-xs.webm" 
+            type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- VIDEO PARA MÓVIL -->
+          <video
+            class="banner-video mobile-only"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            width="1080"
+            height="1080"
+            onended="this.currentTime = 0; this.play();">
+            <source src="/assets/imgs/vids/1080-banner-xs.mp4" 
+            type="video/mp4" />
+            <source src="/assets/imgs/vids/1080-banner-xs.webm" 
+            type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="swiper banner-active">
+            <div class="swiper-wrapper">
+              <!-- block -->
+              <div class="swiper-slide">
+                <div
+                  class="banner-area p-relative z-3"
+                  data-aos="fade-in"
+                  data-aos-delay="0">
+                  <div class="large-container">
+                    <span class="p-relative banner-sub-title"
+                      >TRUSTED EXPERTS</span
+                    >
+                    <h1 class="banner-title">Asphalt Contractor NJ</h1>
+                    <p class="banner-text">
+                      We specialize in delivering high-quality asphalt solutions
+                      for both residential and commercial projects, ensuring
+                      best quality.
+                    </p>
+                    <div class="banner-btn-area">
+                      <a
+                        class="primary-btn-1 btn-hover"
+                        href="tel:+12017557836">
+                        CALL US NOW &nbsp; | <i class="fas fa-arrow-right"></i>
+                      </a>
+                      <a
+                        href="https://bit.ly/4ju0v1x"
+                        class="play-btn popup-video">
+                        <div class="icon-1">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <div
+                  class="banner-area p-relative z-3"
+                  data-aos="fade-up"
+                  data-aos-delay="300">
+                  <div class="large-container">
+                    <span class="p-relative banner-sub-title"
+                      >PREMIUM QUALITY</span
+                    >
+                    <h1 class="banner-title">Best Paving Solutions</h1>
+                    <p class="banner-text">
+                      Enhance your property's curb appeal with durable, stylish
+                      driveways customized to match your project home.
+                    </p>
+                    <div class="banner-btn-area">
+                      <a
+                        class="primary-btn-1 btn-hover"
+                        href="/services">
+                        EXPLORE MORE &nbsp; | <i class="fas fa-arrow-right"></i>
+                      </a>
+                      <a
+                        href="https://bit.ly/4ju0v1x"
+                        class="play-btn popup-video">
+                        <div class="icon-1">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <div
+                  class="banner-area p-relative z-3"
+                  data-aos="fade-up"
+                  data-aos-delay="600">
+                  <div class="large-container">
+                    <span class="p-relative banner-sub-title"
+                      >EXCEPTIONAL QUALITY</span
+                    >
+                    <h1 class="banner-title">Sealcoating Services</h1>
+                    <p class="banner-text">
+                      Keep your asphalt looking fresh and protected with our
+                      effective sealcoating services for all paved surfaces.
+                    </p>
+                    <div class="banner-btn-area">
+                      <a
+                        class="primary-btn-1 btn-hover"
+                        href="tel:+12017557836">
+                        CALL US NOW &nbsp; | <i class="fas fa-arrow-right"></i>
+                      </a>
+                      <a
+                        href="https://bit.ly/4ju0v1x"
+                        class="play-btn popup-video">
+                        <div class="icon-1">
+                          <i class="fas fa-play"></i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="banner-dot-inner">
+          <div class="banner-dot"></div>
+        </div>
+      </section>
+      <!-- Banner area end -->
+
+      <About />
+
+      <!-- Service Slider area start -->
+      <section
+        aria-label="Services section"
+        class="service-slider-section section-space bg-color-1">
+        <div
+          class="shape-10"
+          data-background="/assets/imgs/shapes/shape-10.webp"></div>
+        <div
+          class="shape-9"
+          data-background="/assets/imgs/shapes/shape-9.webp"></div>
+        <div class="small-container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap">
+              <div class="title-box mb-50" data-aos="fade-left" data-aos-delay="500">
+                <span class="section-sub-titledos">Paving and Asphalt Contractor Near You</span>
+                <h3 class="section-title mt-35">
+                  <a href="/services" style="color: inherit; text-decoration: none;">Our Services</a>
+                </h3>
+              </div>
+              <div class="service_1_navigation__wrapprer position-relative z-1 mt-30">
+                <div class="common-slider-navigation">
+                  <button class="service-1-button-prev" aria-label="Previous service">
+                    <i class="fas fa-arrow-left"></i>
+                  </button>
+                  <button class="service-1-button-next" aria-label="Next service">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper service-active-1">
+            <div class="swiper-wrapper">
+              <!-- Asphalt Paving -->
+              <div class="swiper-slide">
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img
+                      src="/assets/imgs/service/asphalt-paving.webp"
+                      alt="Asphalt Paving"
+                      loading="lazy"
+                      width="370"
+                      height="247" />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fas fa-road"></i>
+                    </div>
+                    <h4>
+                      <a href="/services/asphalt-paving">Asphalt Paving</a>
+                    </h4>
+                    <p>
+                      From residential driveways to commercial parking lots, our
+                      expert asphalt paving services ensure a smooth, durable,
+                      and professional finish that enhances both function and
+                      curb appeal.
+                    </p>
+                    <a href="/services/asphalt-paving" class="service-btn"
+                      >Read More <i class="fas fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Sealer -->
+              <div class="swiper-slide">
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img
+                      src="/assets/imgs/service/sealer.webp"
+                      alt="Sealcoating"
+                      loading="lazy"
+                      width="370"
+                      height="247" />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fas fa-fill-drip"></i>
+                    </div>
+                    <h4><a href="/sealer">Sealer</a></h4>
+                    <p>
+                      Our premium sealcoating, crack filling, and line striping
+                      services extend the life of your pavement. These
+                      treatments shield your surfaces from weather, wear, and
+                      heavy traffic while maintaining a sleek, protected finish.
+                    </p>
+                    <a href="/sealer" class="service-btn"
+                      >Read More <i class="fas fa-angles-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pavers -->
+              <div class="swiper-slide">
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img
+                      src="/assets/imgs/service/pavers.webp"
+                      alt="Pavers"
+                      loading="lazy"
+                      width="370"
+                      height="247" />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fas fa-th-large"></i>
+                    </div>
+                    <h4><a href="/pavers">Pavers</a></h4>
+                    <p>
+                      We create elegant, long-lasting paver installations
+                      customized for driveways, patios, and walkways. Each
+                      project is crafted with precision and premium materials to
+                      elevate your outdoor aesthetics.
+                    </p>
+                    <a href="/pavers" class="service-btn"
+                      >Read More <i class="fas fa-angles-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Concrete -->
+              <div class="swiper-slide">
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img
+                      src="/assets/imgs/service/concrete.webp"
+                      alt="Concrete"
+                      loading="lazy"
+                      width="370"
+                      height="247" />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h4><a href="/concrete">Concrete</a></h4>
+                    <p>
+                      Expertly poured and finished concrete work, including
+                      sidewalks, curbs, aprons, and walkways—designed for
+                      strength, safety, and timeless appeal.
+                    </p>
+                    <a href="/concrete" class="service-btn"
+                      >Read More <i class="fas fa-angles-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Landscaping -->
+              <div class="swiper-slide">
+                <div class="service-slider-area">
+                  <figure class="service-image">
+                    <img
+                      src="/assets/imgs/service/landscaping.webp"
+                      alt="Landscaping"
+                      loading="lazy"
+                      width="370"
+                      height="247" />
+                  </figure>
+                  <div class="content">
+                    <div class="icon-box">
+                      <i class="fas fa-tree"></i>
+                    </div>
+                    <h4><a href="/landscaping">Landscaping</a></h4>
+                    <p>
+                      We provide comprehensive landscaping solutions that
+                      transform your outdoor environment. Our services include
+                      lush sod installation, nutrient-rich topsoil application,
+                      efficient drainage systems, and thorough power washing.
+                    </p>
+                    <a href="/landscaping" class="service-btn"
+                      >Read More <i class="fas fa-angles-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service Slider area end -->
+
+      <!-- Cta-1 area start -->
+      <section
+        class="cta-1-section bg-color-1 p-relative"
+        data-aos="fade-down"
+        data-aos-delay="500">
+        <div class="small-container">
+          <div class="row g-0 box-shadow-1 fix">
+            <div class="col-xxl-6 col-lg-6 bg-white">
+              <figure class="image w-img">
+                <img
+                  src="assets/imgs/resources/cta-1.webp"
+                  alt="Asphalt Paving Services NJ"
+                  width="576"
+                  height="194" />
+              </figure>
+            </div>
+            <div class="col-xxl-6 col-lg-6">
+              <div class="content p-relative">
+                <div
+                  class="shape-1"
+                  data-background="assets/imgs/shapes/shape-12.webp"></div>
+                <div class="icon-box">
+                  <i class="fas fa-phone-volume"></i>
+                </div>
+                <h2 class="mb-5">Need Any Paving Solution?</h2>
+                <h3><a href="tel:+12017557836">(201) 755-7836</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cta-1 area end -->
+
+      <!-- Project slider area start -->
+      <section
+        aria-label="Projects section"
+        class="project-slider-section section-space fix">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap">
+              <div class="title-box mb-50" data-aos="fade-left" data-aos-delay="700">
+                <span class="section-sub-title">RECENT WORKS</span>
+                <h3 class="section-title mt-15">Our Recent Projects</h3>
+              </div>
+              <div class="project_1_navigation__wrapprer position-relative z-1 mt-30">
+                <div class="common-slider-navigation">
+                  <button class="project-1-button-prev" aria-label="Previous project">
+                    <i class="fas fa-arrow-left"></i>
+                  </button>
+                  <button class="project-1-button-next" aria-label="Next project">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper project-active-1">
+          <div class="swiper-wrapper">
+            <!-- block -->
+            <div class="swiper-slide">
+              <div class="project-slider-area p-relative">
+                <figure class="image m-imge shine-img">
+                  <img
+                    src="/assets/imgs/project/project-1.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="570"
+                    height="439" />
+                </figure>
+              </div>
+            </div>
+            <!-- block -->
+            <div class="swiper-slide">
+              <div class="project-slider-area p-relative">
+                <figure class="image m-imge shine-img">
+                  <img
+                    src="/assets/imgs/project/project-2.webp"
+                    alt="Asphalt Paving Installation by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="570"
+                    height="439" />
+                </figure>
+              </div>
+            </div>
+            <!-- block -->
+            <div class="swiper-slide">
+              <div class="project-slider-area p-relative">
+                <figure class="image m-imge shine-img">
+                  <img
+                    src="/assets/imgs/project/project-3.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="570"
+                    height="439" />
+                </figure>
+                <div class="content-area"></div>
+              </div>
+            </div>
+            <!-- block -->
+            <div class="swiper-slide">
+              <div class="project-slider-area p-relative">
+                <figure class="image m-imge shine-img">
+                  <img
+                    src="/assets/imgs/project/project-4.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="570"
+                    height="439" />
+                </figure>
+              </div>
+            </div>
+            <!-- block -->
+            <div class="swiper-slide">
+              <div class="project-slider-area p-relative">
+                <figure class="image m-imge shine-img">
+                  <img
+                    src="/assets/imgs/project/project-5.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="570"
+                    height="439" />
+                </figure>
+              </div>
+            </div>
+            <!-- block -->
+            <div class="swiper-slide">
+              <div class="project-slider-area p-relative">
+                <figure class="image m-imge shine-img">
+                  <img
+                    src="/assets/imgs/project/project-6.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="570"
+                    height="439" />
+                </figure>
+              </div>
+            </div>
+            <!-- block -->
+            <div class="swiper-slide">
+              <div class="project-slider-area p-relative">
+                <figure class="image m-imge shine-img">
+                  <img
+                    src="/assets/imgs/project/project-7.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="570"
+                    height="439" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project area end -->
+
+      <!-- Choose area start -->
+      <section
+        aria-label="Testimonials section"
+        class="choose-section bg-color-1 section-space-top p-relative">
+        <div class="small-container">
+          <div class="row g-4">
+            <div
+              class="col-xxl-6 col-xl-6 col-lg-6 p-relative section-space-medium-bottom">
+              <div
+                class="title-box mb-50"
+                data-aos="fade-left"
+                data-aos-delay="200">
+                <span class="section-sub-titledos">WHY CHOOSE US</span>
+                <h3 class="section-title mt-35">What Makes Us Different</h3>
+              </div>
+
+              <hr />
+
+              <!-- Quality -->
+              <div
+                class="choose-area-icon-box mb-15"
+                data-aos="fade-right"
+                data-aos-delay="300">
+                <div class="icon-box p-relative">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="content">
+                  <h5>Top-Quality Materials</h5>
+                  <p>
+                    We select materials engineered for longevity and
+                    performance, ensuring your surfaces remain durable and
+                    attractive for years to come.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <hr />
+              <!-- Customer Service -->
+              <div
+                class="choose-area-icon-box mb-15"
+                data-aos="fade-right"
+                data-aos-delay="400">
+                <div class="icon-box p-relative">
+                  <i class="fas fa-handshake"></i>
+                </div>
+                <div class="content">
+                  <h5>Unmatched Customer Service</h5>
+                  <p>
+                    We keep you informed at every stage from estimate to
+                    completion, ensuring your complete satisfaction with our
+                    work.
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <hr />
+              <!-- Full Service -->
+              <div
+                class="choose-area-icon-box mb-15"
+                data-aos="fade-right"
+                data-aos-delay="300">
+                <div class="icon-box p-relative">
+                  <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="content">
+                  <h5>Comprehensive Services</h5>
+                  <p>
+                    Whether you need paving, sealing, landscaping or concrete
+                    work, we are your one-stop shop for transforming outdoor
+                    spaces.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-xxl-6 col-xl-6 col-lg-6"
+              data-aos="fade-left"
+              data-aos-delay="200">
+              <figure class="image m-img">
+                <img
+                  src="/assets/imgs/resources/choose-1.webp"
+                  alt="Why Choose MAC"
+                  loading="lazy"
+                  width="464"
+                  height="533" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Choose area end -->
+
+      <section class="contact-page-section section-space">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12">
+              
+              <div class="contact-page-form-area">
+                <div class="title-box mb-40 wow fadeInLeft" data-wow-delay=".5s">
+                  <span class="section-sub-title">LET'S TALK</span>
+                  <h3 class="section-title mt-10">Let's Get in Touch</h3>
+                </div>
+                <div class="contact-page-form">
+                  <form action="https://formspree.io/f/mvgpzjbv" method="POST" id="contactForm">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <label for="name">Your Name*</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name*" required />
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="email">Your Email*</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email*" required />
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="phone">Your Phone*</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Your Phone*" pattern="[0-9]{10}"
+                          required />
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="service">Required Service*</label>
+                        <input type="text" name="service" id="service" placeholder="Required Service*" required />
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="address">Your Address*</label>
+                        <input type="text" name="address" id="address" placeholder="Your Address*" required />
+                      </div>
+                      <div class="col-lg-6">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" placeholder="Write Message"></textarea>
+                      </div>
+                      <div class="col-lg-12">
+                        <button type="submit" class="primary-btn-1 btn-hover">
+                          Send Now | <i class="fas fa-arrow-right"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="formMessage" class="mt-3" style="display: none"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <TestimonialsSlider />
+      
+      <!-- Brand area start -->
+      <div class="brand-section section-space-top section-space-bottom">
+        <div class="small-brand">
+          <div class="swiper brand-active">
+            <div class="swiper-wrapper">
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-5.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-4.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-3.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-2.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-1.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-5.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-4.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-3.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-2.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-1.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187" />
+                </span>
+              </div>
+              <!-- block -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Brand area end -->
+    </main>
+    
+    <Footer />
+      <Scripts />    
+  </body>
+</html>

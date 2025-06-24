@@ -1,0 +1,59 @@
+---
+import Favicon from "../components/Favicon.astro";
+import Preloader from "../components/Preloader.astro";
+import CSSbase from "../components/CSSbase.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Scripts from "../components/Scripts.astro";
+import SocialMeta from "../components/SocialMeta.astro";
+---
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Power Washing in NJ | Clean Driveways, Pavers & Sidewalks</title>
+  <!-- Preconexión para recursos externos (mejora rendimiento) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <meta name="description" content="Restore exterior surfaces with deep-clean power washing that removes dirt, stains, and buildup. Get a free estimate today." />
+  <link rel="canonical" href="https://macpavingandsealcoating.com/services/landscaping/power-wash" />
+  <meta name="keywords" content="power washing NJ, driveway cleaning Clark, patio pressure washing Fort Lee, sidewalk wash West Orange, exterior cleaning NJ, dirt and stain removal, fast power wash service NJ" />
+  <script type="application/ld+json">
+  {
+
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Power Washing Services in Fort Lee, West Orange & Clark",
+  "url": "https://macpavingandsealcoating.com/services/landscaping/power-wash",
+  "description": "Restore the beauty of your surfaces with professional power washing in Fort Lee, West Orange, and Clark. We clean patios, driveways, and sidewalks with fast and effective results."
+
+  }
+  </script>
+</head>
+<body>
+  <Navbar />
+  <Breadcrumb items={[{text: "Power Washing Services in North Jersey", href: "/ Services / Landscaping / Power Wash"}]} />
+  <main>
+    <Section title="Bring Back the Clean Look of Your Outdoor Surfaces">
+      <p>MAC Paving offers residential power washing for driveways, pavers, patios, and sidewalks—removing dirt, stains, and buildup for a fresh, clean finish.</p>
+      <img src="assets/imgs/service/landscaping/power_wash_1.webp" alt="Power Washing in NJ | Clean Driveways, Pavers & Sidewalks - Main Image - MAC Paving and Sealcoating" />
+    </Section>
+    <Section title="Safe, Effective Cleaning for Your Home’s Hardscapes">
+      <p>We remove grime, mold, and oil without damaging surfaces. It’s ideal for maintaining your investment or prepping for sealing and repairs.</p>
+      <img src="assets/imgs/service/landscaping/power_wash_2.webp" alt="Power Washing in NJ | Clean Driveways, Pavers & Sidewalks - Side View - MAC Paving and Sealcoating" />
+    </Section>
+    <Section title="Our Power Washing Process for Residential Properties">
+      <p>We assess surface needs, pre-treat tough stains, and wash with commercial-grade gear. The result is a dramatic visual improvement in just hours.</p>
+      <img src="assets/imgs/service/landscaping/power_wash_3.webp" alt="Power Washing in NJ | Clean Driveways, Pavers & Sidewalks - Close-Up - MAC Paving and Sealcoating" />
+    </Section>
+    <Section title="When Power Washing Makes Sense—and Why It Works">
+      <p>Dirty, dull, or slippery driveway or patio? Power washing restores curb appeal fast. It’s affordable, safe, and highly effective. Request your quote today.</p>
+      <img src="assets/imgs/service/landscaping/power_wash_4.webp" alt="Power Washing in NJ | Clean Driveways, Pavers & Sidewalks - Work in Progress - MAC Paving and Sealcoating" />
+    </Section>
+  </main>
+  <Footer />
+  <Scripts />
+</body>
+</html>

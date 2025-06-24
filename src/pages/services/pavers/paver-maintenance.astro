@@ -1,0 +1,59 @@
+---
+import Favicon from "../components/Favicon.astro";
+import Preloader from "../components/Preloader.astro";
+import CSSbase from "../components/CSSbase.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Scripts from "../components/Scripts.astro";
+import SocialMeta from "../components/SocialMeta.astro";
+---
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Paver Maintenance in NJ | Preserve Your Patio & Walkway</title>
+  <!-- Preconexión para recursos externos (mejora rendimiento) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <meta name="description" content="Keep your pavers looking their best with professional maintenance services, including cleaning, sealing, and sand replenishment. Schedule today." />
+  <link rel="canonical" href="https://macpavingandsealcoating.com/services/pavers/maintenance" />
+  <meta name="keywords" content="paver maintenance NJ, patio paver cleaning NJ, walkway paver sealing, paver sand replenishment NJ, paver upkeep North Jersey" />
+  <script type="application/ld+json">
+  {
+
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Paver Maintenance in Hackensack, Teaneck & North Jersey",
+  "url": "https://macpavingandsealcoating.com/services/pavers/maintenance",
+  "description": "Professional paver maintenance services including cleaning, sealing, and sand replacement to extend the life and beauty of your outdoor surfaces."
+
+  }
+  </script>
+</head>
+<body>
+  <Navbar />
+  <Breadcrumb items={[{text: "Paver Maintenance Services in North Jersey", href: "/ Services / Pavers / Maintenance"}]} />
+  <main>
+    <Section title="Extend the Life of Your Pavers">
+      <p>Regular maintenance prevents staining, weed growth, and joint erosion. Our team offers tailored plans to keep your pavers safe and stunning.</p>
+      <img src="assets/imgs/service/pavers/maintenance_1.webp" alt="Paver Maintenance in NJ | Preserve Your Patio & Walkway - Main Image - MAC Paving and Sealcoating" />
+    </Section>
+    <Section title="Cleaning, Sealing, and Sand Replenishment">
+      <p>We remove dirt and mold, apply high-grade sealants, and refill joints with polymeric sand to stabilize and protect your paving stones.</p>
+      <img src="assets/imgs/service/pavers/maintenance_2.webp" alt="Paver Maintenance in NJ | Preserve Your Patio & Walkway - Before and After" />
+    </Section>
+    <Section title="Our Proven Maintenance Process">
+      <p>From power washing to joint treatment, we ensure every step enhances durability and appearance. Your surface will look renewed and perform longer.</p>
+      <img src="assets/imgs/service/pavers/maintenance_3.webp" alt="Paver Maintenance in NJ | Preserve Your Patio & Walkway - Process Image" />
+    </Section>
+    <Section title="Schedule Your Paver Maintenance Today">
+      <p>Protect your investment. Contact us now for a free assessment and maintenance plan customized to your property's needs.</p>
+      <img src="assets/imgs/service/pavers/maintenance_4.webp" alt="Paver Maintenance in NJ | Preserve Your Patio & Walkway - Work in Progress" />
+    </Section>
+  </main>
+  <Footer />
+  <Scripts />
+</body>
+</html>

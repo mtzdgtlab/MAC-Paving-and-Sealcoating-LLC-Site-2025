@@ -1,0 +1,360 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/imgs/logo.png';
+
+---
+
+
+      <!-- Offcanvas area start -->
+    <div class="fix">
+      <div class="offcanvas__info">
+        <div class="offcanvas__wrapper">
+          <div class="offcanvas__content">
+            <div
+              class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
+              <div class="offcanvas__logo">
+                <a href="/">
+                  <span class="sr-only">Go to MAC Paving and Sealcoating homepage</span>
+                  <img
+                    src={logo.src}
+                    alt="MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width={logo.width}
+                    height={logo.height} />
+                </a>
+              </div>
+              <div class="offcanvas__close">
+                <button aria-label="Close menu">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <div class="offcanvas__search mb-25" hidden>
+              <p class="text-white">
+                <strong>Transform Your Surfaces!</strong><br />
+                <br />
+                <em>Quality Is Our Priority</em>
+              </p>
+            </div>
+            <div class="mobile-menu fix mb-40"></div>
+            <div class="offcanvas__contact mt-30 mb-20">
+              <h4>Contact Info</h4>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fas fa-phone"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="tel:+12017557836">(201) 755-7836</a>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <div class="offcanvas__contact-icon mr-15">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="offcanvas__contact-text">
+                    <a href="mailto:mg@macpavingandsealcoating.com"
+                      ><span>mg@macpavingandsealcoating.com</span></a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="offcanvas__social mt-65">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61563583505866"
+                    target="_blank"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/macpavingandsealcoating/"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+    <div class="offcanvas__overlay-white"></div>
+    <!-- Offcanvas area start -->
+
+    <!-- Header area start -->
+    <header>
+      <div class="container-fluid bg-color-1">
+        <div class="header-top">
+          <div class="header-top-contact-info">
+            <span class="email p-relative">
+              <a href="mailto:mg@macpavingandsealcoating.com"
+                >mg@macpavingandsealcoating.com</a
+              >
+            </span>
+          </div>
+          <div class="header-top-socials">
+            <span>
+              <a
+                href="https://www.facebook.com/profile.php?id=61563583505866"
+                target="_blank"
+                aria-label="MAC Paving Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </span>
+            <span>
+              <a
+                href="https://www.instagram.com/macpavingandsealcoating/"
+                target="_blank"
+                aria-label="MAC Paving Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div id="header-sticky" class="header-area">
+        <div class="large-container">
+          <div class="mega-menu-wrapper">
+            <div class="header-main">
+              <div class="header-left">
+                <div class="header-logo">
+                  <a href="/">
+                    <span class="sr-only">Go to MAC Paving and Sealcoating homepage</span>
+                    <img
+                      src={logo.src}
+                      alt="MAC Paving and Sealcoating"
+                      loading="lazy"
+                      width={logo.width}
+                      height={logo.height} />
+                  </a>
+                </div>
+              </div>
+
+              <div class="header-right d-flex justify-content-end">
+                <div class="mean__menu-wrapper d-none d-lg-block">
+                  <div class="main-menu">
+                    <nav
+                      id="mobile-menu"
+                      aria-label="Main Navigation"
+                      role="navigation">
+                      <ul role="menubar">
+                        <li role="none">
+                          <a
+                            role="menuitem"
+                            href="/"
+                            aria-current="page"
+                            >Home</a
+                          >
+                        </li>
+                        <li class="has-dropdown" role="none">
+                          <a
+                            role="menuitem"
+                            href="/services/asphalt-paving"
+                            >Asphalt Paving</a
+                          >
+                          <ul class="submenu" role="menu">
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/asphalt-paving/installation"
+                                >Installation</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/asphalt-paving/resurfacing"
+                                >Resurfacing</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/asphalt-paving/replacement"
+                                >Replacement</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/asphalt-paving/extension"
+                                >Extension</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="has-dropdown" role="none">
+                          <a role="menuitem" href="/services/sealer"
+                            >Sealer</a
+                          >
+                          <ul class="submenu" role="menu">
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/sealer/sealcoating"
+                                >Sealcoating</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/sealer/crack-filling"
+                                >Crack Filling</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/sealer/line-striping"
+                                >Line Striping</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="has-dropdown" role="none">
+                          <a role="menuitem" href="/services/pavers"
+                            >Pavers</a
+                          >
+                          <ul class="submenu" role="menu">
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/pavers/installation"
+                                >Paver Installation</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/pavers/maintenance"
+                                >Paver Maintenance</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/pavers/belgium-blocks"
+                                >Belgium Blocks</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="has-dropdown" role="none">
+                          <a role="menuitem" href="/services/concrete"
+                            >Concrete</a
+                          >
+                          <ul class="submenu" role="menu">
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/concrete/walkways"
+                                >Walkways</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/concrete/sidewalks"
+                                >Sidewalks</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/concrete/curbs"
+                                >Curbs</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/concrete/aprons"
+                                >Aprons</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="has-dropdown" role="none">
+                          <a role="menuitem" href="/services/landscaping"
+                            >Landscaping</a
+                          >
+                          <ul class="submenu" role="menu">
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/landscaping/sod-installation"
+                                >Sod Installation</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/landscaping/top-soil"
+                                >Top Soil</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/landscaping/drainage"
+                                >Drainage</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/landscaping/power-wash"
+                                >Power Wash</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                role="menuitem"
+                                href="/services/landscaping/hauling"
+                                >Hauling</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li role="none">
+                          <a role="menuitem" href="/contact">Contact</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+                <!-- Calendly link widget begin -->
+                <div class="header-action d-none d-xl-inline-flex gap-5">
+                  <div class="header-link">
+                    <a
+                      class="primary-btn-1 btn-hover"
+                      href="#"
+                      onclick="Calendly.initPopupWidget({url: 'https://calendly.com/macpavingandsealcoating/30min?hide_event_type_details=1'}); return false;"
+                      role="button"
+                      aria-label="Schedule an appointment with MAC Paving">
+                      Get a Free Quote! <i class="fas fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Calendly link widget end -->
+                <div class="header__hamburger d-xl-none my-auto">
+                  <div class="sidebar__toggle">
+                    <button class="bar-icon" aria-label="Toggle mobile menu">
+                      <i class="fas fa-bars"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header area end -->

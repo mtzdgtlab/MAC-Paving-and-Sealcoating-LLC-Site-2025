@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>Service Area Map | MAC Paving and Sealcoating NJ</title>
+  <!-- Preconexión para recursos externos (mejora rendimiento) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <meta name="description" content="View the service area map for MAC Paving and Sealcoating LLC. We proudly serve homeowners across Passaic, Bergen, Essex, Morris, and surrounding counties in New Jersey.">
+  <link rel="canonical" href="https://macpavingandsealcoating.com/service-area-map.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords"
+    content="concrete services NJ, walkway construction NJ, sidewalk construction NJ, concrete curbs NJ, aprons NJ, residential concrete NJ, commercial concrete NJ, concrete driveway NJ, concrete installation NJ, concrete repair NJ, concrete contractors NJ, concrete paving NJ, MAC Paving and Sealcoating NJ, sidewalks NJ, curbs nj, aprons nj" />
+
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+        <style>
+          html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-family: sans-serif;
+          }
+        
+          .info-panel {
+            padding: 10px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+          }
+        
+          h1 {
+            margin: 0 0 10px 0;
+            font-size: 1.3em;
+          }
+        
+          #map {
+            height: 100vh;
+    width: 100vw;
+          }
+        
+          /* Ocultar por defecto */
+          .info-panel.hidden {
+            display: none;
+          }
+        </style>
+</head>
+
+<body>
+
+  <div class="info-panel">
+    <h1>MAC Paving and Sealcoating LLC – Residential Driveway Service Areas</h1>
+    <p>We proudly serve homeowners in <strong>Passaic, Bergen, Essex, Morris, Middlesex, Union, Somerset, Hudson, and Sussex</strong> counties across Northern New Jersey.</p>
+  </div>
+  <script>
+    // Detecta si está dentro de un iframe
+    if (window.self !== window.top) {
+      document.querySelector('.info-panel')?.classList.add('hidden');
+      document.querySelector('#map').style.height = '100%';
+    }
+  </script>
+    <!-- Contenedor del mapa -->
+    <div id="map"></div>
+
+    <!-- Incluir JavaScript de Leaflet desde un CDN -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <script>
+        // --- INICIO DE DATOS GEOJSON PARA LOS CONDADOS DE NUEVA JERSEY ---
+        // Estos datos definen las fronteras de cada condado.
+        const njCountiesData = {
+            "type": "FeatureCollection",
+            "features": [
+                { "type": "Feature", "properties": { "name": "Sussex" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -74.939, 41.205 ], [ -74.92, 41.22 ], [ -74.89, 41.24 ], [ -74.85, 41.27 ], [ -74.82, 41.3 ], [ -74.79, 41.33 ], [ -74.76, 41.355 ], [ -74.73, 41.36 ], [ -74.7, 41.36 ], [ -74.67, 41.35 ], [ -74.64, 41.33 ], [ -74.61, 41.3 ], [ -74.58, 41.26 ], [ -74.55, 41.22 ], [ -74.52, 41.18 ], [ -74.49, 41.14 ], [ -74.46, 41.1 ], [ -74.47, 41.07 ], [ -74.48, 41.04 ], [ -74.5, 41.01 ], [ -74.53, 40.98 ], [ -74.57, 40.95 ], [ -74.61, 40.94 ], [ -74.63, 40.959 ], [ -74.653, 40.975 ], [ -74.673, 40.99 ], [ -74.692, 41.002 ], [ -74.71, 41.01 ], [ -74.729, 41.013 ], [ -74.747, 41.01 ], [ -74.7573, 40.999 ], [ -74.8, 40.99 ], [ -74.85, 40.98 ], [ -74.9, 40.96 ], [ -74.95, 40.93 ], [ -75, 40.9 ], [ -75.05, 40.86 ], [ -75.1, 40.82 ], [ -75.11, 40.85 ], [ -75.115, 40.88 ], [ -75.11, 40.91 ], [ -75.1, 40.94 ], [ -75.08, 40.97 ], [ -75.05, 41 ], [ -75.02, 41.03 ], [ -74.99, 41.06 ], [ -74.96, 41.09 ], [ -74.93, 41.12 ], [ -74.9, 41.15 ], [ -74.9, 41.18 ], [ -74.939, 41.205 ] ] ] } },
+                { "type": "Feature", "properties": { "name": "Passaic" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -74.46, 41.1 ], [ -74.43, 41.15 ], [ -74.4, 41.2 ], [ -74.37, 41.21 ], [ -74.34, 41.21 ], [ -74.31, 41.2 ], [ -74.28, 41.18 ], [ -74.25, 41.15 ], [ -74.2233, 40.9992 ], [ -74.251, 40.886 ], [ -74.264, 40.8903 ], [ -74.282, 40.8893 ], [ -74.3072, 40.8803 ], [ -74.3312, 40.8643 ], [ -74.35, 40.86 ], [ -74.37, 40.85 ], [ -74.39, 40.845 ], [ -74.41, 40.84 ], [ -74.43, 40.84 ], [ -74.45, 40.84 ], [ -74.47, 40.845 ], [ -74.49, 40.85 ], [ -74.51, 40.86 ], [ -74.53, 40.87 ], [ -74.55, 40.885 ], [ -74.57, 40.9 ], [ -74.588, 40.92 ], [ -74.6, 40.95 ], [ -74.46, 41.1 ] ] ] } },
+                { "type": "Feature", "properties": { "name": "Bergen" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -74.2233, 40.9992 ], [ -74.21, 41.04 ], [ -74.18, 41.08 ], [ -74.15, 41.12 ], [ -74.12, 41.14 ], [ -74.09, 41.14 ], [ -74.06, 41.13 ], [ -74.03, 41.11 ], [ -74, 41.08 ], [ -73.97, 41.04 ], [ -73.94, 41 ], [ -73.92, 40.96 ], [ -73.92, 40.92 ], [ -73.94, 40.88 ], [ -73.96, 40.84 ], [ -73.99, 40.8 ], [ -74.02, 40.78 ], [ -74.05, 40.76 ], [ -74.08, 40.732 ], [ -74.1052, 40.7492 ], [ -74.148, 40.7933 ], [ -74.168, 40.803 ], [ -74.171, 40.812 ], [ -74.18, 40.85 ], [ -74.19, 40.89 ], [ -74.2, 40.93 ], [ -74.21, 40.97 ], [ -74.2233, 40.9992 ] ] ] } },
+                { "type": "Feature", "properties": { "name": "Morris" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -74.7573, 40.999 ], [ -74.7, 40.99 ], [ -74.65, 40.97 ], [ -74.61, 40.94 ], [ -74.57, 40.9 ], [ -74.53, 40.87 ], [ -74.49, 40.85 ], [ -74.45, 40.84 ], [ -74.41, 40.84 ], [ -74.37, 40.85 ], [ -74.3312, 40.8643 ], [ -74.32, 40.85 ], [ -74.31, 40.84 ], [ -74.315, 40.82 ], [ -74.32, 40.8 ], [ -74.325, 40.78 ], [ -74.328, 40.76 ], [ -74.329, 40.74 ], [ -74.328, 40.72 ], [ -74.325, 40.7 ], [ -74.32, 40.685 ], [ -74.34, 40.68 ], [ -74.38, 40.67 ], [ -74.42, 40.67 ], [ -74.46, 40.67 ], [ -74.5, 40.67 ], [ -74.55, 40.675 ], [ -74.6, 40.68 ], [ -74.65, 40.69 ], [ -74.7, 40.7 ], [ -74.75, 40.72 ], [ -74.8, 40.75 ], [ -74.85, 40.79 ], [ -74.88, 40.83 ], [ -74.9, 40.87 ], [ -74.88, 40.91 ], [ -74.85, 40.95 ], [ -74.8, 40.98 ], [ -74.7573, 40.999 ] ] ] } },
+                { "type": "Feature", "properties": { "name": "Essex" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -74.3312, 40.8643 ], [ -74.28, 40.88 ], [ -74.25, 40.9 ], [ -74.2233, 40.9992 ], [ -74.21, 40.97 ], [ -74.2, 40.93 ], [ -74.19, 40.89 ], [ -74.18, 40.85 ], [ -74.171, 40.812 ], [ -74.168, 40.803 ], [ -74.148, 40.7933 ], [ -74.1052, 40.7492 ], [ -74.128, 40.725 ], [ -74.15, 40.7 ], [ -74.165, 40.68 ], [ -74.18, 40.665 ], [ -74.2, 40.655 ], [ -74.22, 40.65 ], [ -74.24, 40.648 ], [ -74.26, 40.65 ], [ -74.28, 40.655 ], [ -74.298, 40.66 ], [ -74.31, 40.67 ], [ -74.32, 40.685 ], [ -74.325, 40.7 ], [ -74.328, 40.72 ], [ -74.329, 40.74 ], [ -74.328, 40.76 ], [ -74.325, 40.78 ], [ -74.32, 40.8 ], [ -74.315, 40.82 ], [ -74.31, 40.84 ], [ -74.32, 40.85 ], [ -74.3312, 40.8643 ] ] ] } },
+                { "type": "Feature", "properties": { "name": "Somerset" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -74.7, 40.65 ], [ -74.65, 40.66 ], [ -74.6, 40.67 ], [ -74.55, 40.675 ], [ -74.5, 40.67 ], [ -74.48, 40.63 ], [ -74.47, 40.59 ], [ -74.47, 40.55 ], [ -74.48, 40.51 ], [ -74.5, 40.47 ], [ -74.53, 40.44 ], [ -74.57, 40.42 ], [ -74.6, 40.43 ], [ -74.63, 40.45 ], [ -74.66, 40.47 ], [ -74.68, 40.5 ], [ -74.7, 40.53 ], [ -74.71, 40.56 ], [ -74.71, 40.59 ], [ -74.7, 40.62 ], [ -74.7, 40.65 ] ] ] } },
+                { "type": "Feature", "properties": { "name": "Union" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -74.42, 40.7 ], [ -74.38, 40.67 ], [ -74.34, 40.68 ], [ -74.32, 40.685 ], [ -74.31, 40.67 ], [ -74.298, 40.66 ], [ -74.28, 40.655 ], [ -74.26, 40.65 ], [ -74.24, 40.648 ], [ -74.26, 40.63 ], [ -74.24, 40.62 ], [ -74.23, 40.6 ], [ -74.26, 40.57 ], [ -74.3, 40.56 ], [ -74.35, 40.58 ], [ -74.4, 40.62 ], [ -74.42, 40.66 ], [ -74.42, 40.7 ] ] ] } },
+                { "type": "Feature", "properties": { "name": "Middlesex" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -74.6, 40.508 ], [ -74.55, 40.53 ], [ -74.5, 40.55 ], [ -74.47, 40.55 ], [ -74.48, 40.51 ], [ -74.47, 40.55 ], [ -74.47, 40.59 ], [ -74.48, 40.63 ], [ -74.5, 40.67 ], [ -74.42, 40.67 ], [ -74.4, 40.62 ], [ -74.35, 40.58 ], [ -74.3, 40.56 ], [ -74.26, 40.57 ], [ -74.28, 40.53 ], [ -74.32, 40.49 ], [ -74.36, 40.45 ], [ -74.4, 40.41 ], [ -74.45, 40.38 ], [ -74.5, 40.36 ], [ -74.55, 40.36 ], [ -74.6, 40.37 ], [ -74.57, 40.42 ], [ -74.53, 40.44 ], [ -74.5, 40.47 ], [ -74.6, 40.508 ] ] ] } },
+                { "type": "Feature", "properties": { "name": "Hudson" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -74.1, 40.7 ], [ -74.05, 40.72 ], [ -74.02, 40.75 ], [ -74, 40.78 ], [ -74.02, 40.7 ], [ -74.04, 40.65 ], [ -74.08, 40.6 ], [ -74.12, 40.6 ], [ -74.15, 40.65 ], [ -74.1, 40.7 ] ] ] } }
+            ]
+        };
+        // --- FIN DE DATOS GEOJSON ---
+
+        // Lista de condados a resaltar
+        const highlightedCounties = ["Passaic", "Bergen", "Essex", "Morris", "Middlesex", "Hudson",  "Union", "Somerset", "Sussex"];
+
+        // Inicializar el mapa y centrarlo en Nueva Jersey
+        const map = L.map('map', {
+          zoomControl: true,
+          scrollWheelZoom: false,
+          doubleClickZoom: false,
+          touchZoom: false,
+          dragging: true
+        }).setView([40.4, -74.5], 8);
+
+        // Añadir una capa de teselas (mapa base) de OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Función para definir el estilo de cada condado
+        function style(feature) {
+            // Comprobar si el nombre del condado está en la lista de resaltados
+            if (highlightedCounties.includes(feature.properties.name)) {
+                return {
+                    fillColor: '#007bff', // Azul para condados resaltados
+                    weight: 2,
+                    opacity: 1,
+                    color: 'white',
+                    dashArray: '3',
+                    fillOpacity: 0.7
+                };
+            } else {
+                return {
+                    fillColor: '#6c757d', // Gris para otros condados
+                    weight: 1,
+                    opacity: 1,
+                    color: 'white',
+                    fillOpacity: 0.5
+                };
+            }
+        }
+
+        // Función para añadir interacciones a cada capa de condado
+        function onEachFeature(feature, layer) {
+            // Añadir un popup que muestra el nombre del condado al hacer clic
+            layer.bindPopup("Condado de " + feature.properties.name);
+
+            // Resaltar al pasar el ratón
+            layer.on({
+                mouseover: function(e) {
+                    const layer = e.target;
+                    layer.setStyle({
+                        weight: 4,
+                        color: '#ffc107',
+                        dashArray: '',
+                        fillOpacity: 0.9
+                    });
+                    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+                        layer.bringToFront();
+                    }
+                },
+                mouseout: function(e) {
+                    // Restablecer el estilo al quitar el ratón
+                    geojsonLayer.resetStyle(e.target);
+                }
+            });
+        }
+        
+        // Crear la capa GeoJSON con los datos, estilos e interacciones
+        const geojsonLayer = L.geoJson(njCountiesData, {
+            style: style,
+            onEachFeature: onEachFeature
+        }).addTo(map);
+        setTimeout(() => {
+          map.invalidateSize();
+        }, 300);
+        // Crear un grupo solo con los condados resaltados
+const highlightedGroup = L.geoJson(njCountiesData, {
+  filter: feature => highlightedCounties.includes(feature.properties.name)
+});
+
+// Ajustar el mapa para que enfoque esos condados
+map.fitBounds(highlightedGroup.getBounds(), {
+  padding: [20, 20],  // espacio alrededor
+  maxZoom: 10         // evita que se acerque demasiado
+});
+    </script>
+</body>
+</html>
