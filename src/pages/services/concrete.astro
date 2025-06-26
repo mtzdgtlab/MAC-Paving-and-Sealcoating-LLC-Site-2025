@@ -7,6 +7,12 @@ import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
 import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
+
+// Importar imágenes para optimización (desde public)
+import walkwaysImg from "../../../public/assets/imgs/service/concrete/walkways-6.webp";
+import sidewalksImg from "../../../public/assets/imgs/service/concrete/sidewalks-4.webp";
+import curbsImg from "../../../public/assets/imgs/service/concrete/curbs.webp";
+import apronsImg from "../../../public/assets/imgs/service/concrete/aprons-4.webp";
 ---
 
 <html lang="en">
@@ -27,7 +33,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/concrete/"
+      href="https://macpavingandsealcoating.com/services/concrete"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -39,8 +45,8 @@ import SocialMeta from "../../components/SocialMeta.astro";
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "MAC Paving and Sealcoating LLC",
-        "url": "https://macpavingandsealcoating.com/services/concrete/",
+        "name": "Concrete Services by MAC Paving and Sealcoating LLC",
+        "url": "https://macpavingandsealcoating.com/services/concrete",
         "logo": "https://macpavingandsealcoating.com/mac-paving-logo.png",
         "description": "From sidewalks to curbs, MAC Paving provides high-quality concrete installation and repair services for homes across New Jersey. Get your quote today.",
         "telephone": "+1-201-755-7836",
@@ -244,9 +250,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/concrete/walkways-6.webp"
+                      <Image
+                        src={walkwaysImg}
                         alt="Walkways Installation by MAC Paving and Sealcoating – Concrete Walkway and Asphalt Paving Contractors in Central Jersey."
+                        loading="lazy"
+                        width={400}
+                        height={300}
                       />
                     </figure>
                     <div class="content">
@@ -254,13 +263,13 @@ import SocialMeta from "../../components/SocialMeta.astro";
                         <i class="fa-solid fa-person-walking"></i>
                       </div>
                       <h4>
-                        <a href="/services/concrete/walkways/">Walkways</a>
+                        <a href="/services/concrete/walkways">Walkways</a>
                       </h4>
                       <p>
                         Expert walkway installation services to create safe,
                         attractive, and durable paths in your outdoor spaces.
                       </p>
-                      <a href="/services/concrete/walkways/" class="service-btn"
+                      <a href="/services/concrete/walkways" class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
                       >
@@ -272,9 +281,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/concrete/sidewalks-4.webp"
+                      <Image
+                        src={sidewalksImg}
                         alt="Sidewalks Installation Service by MAC Paving and Sealcoating – Residential and Commercial Sidewalk Paving NJ."
+                        loading="lazy"
+                        width={400}
+                        height={300}
                       />
                     </figure>
                     <div class="content">
@@ -282,16 +294,14 @@ import SocialMeta from "../../components/SocialMeta.astro";
                         <i class="fa-solid fa-shoe-prints"></i>
                       </div>
                       <h4>
-                        <a href="/services/concrete/sidewalks/">Sidewalks</a>
+                        <a href="/services/concrete/sidewalks">Sidewalks</a>
                       </h4>
                       <p>
                         High-quality sidewalk installation services to ensure
                         safe and durable pedestrian pathways, enhancing the
                         accessibility and appearance of your property.
                       </p>
-                      <a
-                        href="/services/concrete/sidewalks/"
-                        class="service-btn"
+                      <a href="/services/concrete/sidewalks" class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
                       >
@@ -303,22 +313,25 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/concrete/curbs.webp"
+                      <Image
+                        src={curbsImg}
                         alt="Curbs Installation Service by MAC Paving and Sealcoating – Concrete Curbs and Expert Paving Contractors in NJ."
+                        loading="lazy"
+                        width={400}
+                        height={300}
                       />
                     </figure>
                     <div class="content">
                       <div class="icon-box">
                         <i class="fas fa-border-all"></i>
                       </div>
-                      <h4><a href="/services/concrete/curbs/">Curbs</a></h4>
+                      <h4><a href="/services/concrete/curbs">Curbs</a></h4>
                       <p>
                         Professional curb installation services to create a
                         defined edge for roads and parking lots, improving the
                         overall appearance and functionality.
                       </p>
-                      <a href="/services/concrete/curbs/" class="service-btn"
+                      <a href="/services/concrete/curbs" class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
                       >
@@ -330,9 +343,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/concrete/aprons-4.webp"
+                      <Image
+                        src={apronsImg}
                         alt="Aprons Installation Service by MAC Paving and Sealcoating – Driveway Apron Installation and Asphalt Companies NJ."
+                        loading="lazy"
+                        width={400}
+                        height={300}
                       />
                     </figure>
                     <div class="content">
@@ -340,14 +356,14 @@ import SocialMeta from "../../components/SocialMeta.astro";
                         <i class="fa-solid fa-square-full"></i>
                       </div>
                       <h4>
-                        <a href="/services/concrete/aprons/">Aprons</a>
+                        <a href="/services/concrete/aprons">Aprons</a>
                       </h4>
                       <p>
                         Durable apron installation services to provide a smooth
                         transition between your driveway and the road, ensuring
                         easy access and a neat appearance.
                       </p>
-                      <a href="/services/concrete/aprons/" class="service-btn"
+                      <a href="/services/concrete/aprons" class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
                       >

@@ -1,23 +1,27 @@
 ---
-import { Image } from 'astro:assets'
-import about1 from '../assets/imgs/about/about-1.webp'
-import about2 from '../assets/imgs/about/about-2.webp'
+import { Image } from "astro:assets";
+import about1 from "../assets/imgs/about/about-1.webp";
+import about2 from "../assets/imgs/about/about-2.webp";
 ---
 
 <!-- About us area start -->
 <section
   aria-label="About us section"
-  class="about-us-section section-space p-relative">
+  class="about-us-section section-space p-relative"
+>
   <div class="shape-area">
-    <div
-      class="shape-1"
-      data-background="/assets/imgs/bg/bg-shape-1.webp"></div>
+    <div class="shape-1" data-background="/assets/imgs/bg/bg-shape-1.webp">
+    </div>
     <div
       class="shape-2 quote-animation"
-      data-background="/assets/imgs/shapes/shape-7.webp"></div>
+      data-background="/assets/imgs/shapes/shape-7.webp"
+    >
+    </div>
     <div
       class="shape-3 quote-animation"
-      data-background="/assets/imgs/shapes/shape-8.webp"></div>
+      data-background="/assets/imgs/shapes/shape-8.webp"
+    >
+    </div>
   </div>
   <div class="small-container">
     <div class="row g-4">
@@ -25,31 +29,36 @@ import about2 from '../assets/imgs/about/about-2.webp'
         <div
           class="about-us-image-area p-relative"
           data-aos="fade-right"
-          data-aos-delay="100">
+          data-aos-delay="100"
+        >
           <div
             class="border-shape"
-            data-background="/assets/imgs/shapes/shape-6.webp"></div>
+            data-background="/assets/imgs/shapes/shape-6.webp"
+          >
+          </div>
           <figure class="image-1">
-            <img
-              src="/assets/imgs/about/about-1.webp"
+            <Image
+              src={about1}
               alt="Asphalt Paving by MAC Paving and Sealcoating"
               loading="lazy"
               width="452"
-              height="588" />
+              height="588"
+            />
           </figure>
           <div class="image-2-area">
             <div class="image-2 p-relative">
-              <img
-                src="/assets/imgs/about/about-2.webp"
+              <Image
+                src={about2}
                 alt="Asphalt Paving by MAC Paving and Sealcoating"
                 loading="lazy"
                 width="239"
-                height="256" />
+                height="256"
+              />
               <div class="play-btn">
                 <div class="video_player_btn">
                   <a href="https://bit.ly/4ju0v1x" class="popup-video"
-                    ><i class="fas fa-play"></i
-                  ></a>
+                    ><i class="fas fa-play"></i></a
+                  >
                 </div>
               </div>
             </div>
@@ -70,11 +79,10 @@ import about2 from '../assets/imgs/about/about-2.webp'
           <div
             class="title-box mb-35"
             data-aos="fade-left"
-            data-aos-delay="100">
+            data-aos-delay="100"
+          >
             <span class="section-sub-title">About Us</span>
-            <h3 class="section-title mt-35">
-              Your Trusted Paving Experts
-            </h3>
+            <h3 class="section-title mt-35">Your Trusted Paving Experts</h3>
           </div>
           <p class="mb-50" data-aos="fade-left" data-aos-delay="200">
             With over 15 years in the industry, MAC Paving and Sealcoating
@@ -84,7 +92,8 @@ import about2 from '../assets/imgs/about/about-2.webp'
           <div
             class="icon-box mb-20 mt-10"
             data-aos="fade-left"
-            data-aos-delay="300">
+            data-aos-delay="300"
+          >
             <div class="col-lg-6 service-list-large">
               <ul class="service-details-page-list">
                 <li class="mb-0">Superior Materials</li>
@@ -108,7 +117,8 @@ import about2 from '../assets/imgs/about/about-2.webp'
                 href="#"
                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/macpavingandsealcoating/30min?hide_event_type_details=1'}); return false;"
                 role="button"
-                aria-label="Schedule an appointment with MAC Paving">
+                aria-label="Schedule an appointment with MAC Paving"
+              >
                 Get Your Free Quote Now! <i class="fas fa-arrow-right"></i>
               </a>
             </div>

@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://macpavingandsealcoating.com',
+  trailingSlash: 'never', // Previene URLs duplicadas con trailing slash
   integrations: [
     sitemap({
       changefreq: 'weekly',
@@ -13,65 +14,21 @@ export default defineConfig({
       entryLimit: 45000,
       filter: (page) => {
         // Excluir archivos que no deben estar en el sitemap
-        return !page.includes('/admin/') && 
-               !page.includes('/private/') &&
-               !page.includes('.py') &&
-               !page.includes('.csv') &&
-               !page.includes('.xlsx') &&
-               !page.includes('/assets/') &&
-               !page.includes('.DS_Store') &&
-               !page.includes('K{') && // Excluir URLs mal formadas
-               !page.includes('.webp') &&
-               !page.includes('.png') &&
-               !page.includes('.jpg') &&
-               !page.includes('.jpeg') &&
-               !page.includes('.svg') &&
-               !page.includes('/node_modules/') &&
-               !page.includes('/.vscode/') &&
-               !page.includes('/.git/');
+        const excludePatterns = [
+          '/admin/', '/private/', '.py', '.csv', '.xlsx', '/assets/',
+          '.DS_Store', 'K{', '.webp', '.png', '.jpg', '.jpeg', '.svg',
+          '/node_modules/', '/.vscode/', '/.git/', '/public/'
+        ];
+
+        // Excluir URLs que terminan en / (duplicados)
+        if (page.endsWith('/') && page !== 'https://macpavingandsealcoating.com/') {
+          return false;
+        }
+
+        return !excludePatterns.some(pattern => page.includes(pattern));
       },
-      customPages: [
-        // Páginas principales
-        'https://macpavingandsealcoating.com/',
-        'https://macpavingandsealcoating.com/services',
-        'https://macpavingandsealcoating.com/contact',
-        
-        // Páginas de categoría de servicios
-        'https://macpavingandsealcoating.com/services/asphalt-paving',
-        'https://macpavingandsealcoating.com/services/concrete',
-        'https://macpavingandsealcoating.com/services/pavers',
-        'https://macpavingandsealcoating.com/services/sealer',
-        'https://macpavingandsealcoating.com/services/landscaping',
-        
-        // Servicios de Asphalt Paving
-        'https://macpavingandsealcoating.com/services/asphalt-paving/installation',
-        'https://macpavingandsealcoating.com/services/asphalt-paving/resurfacing',
-        'https://macpavingandsealcoating.com/services/asphalt-paving/replacement',
-        'https://macpavingandsealcoating.com/services/asphalt-paving/extension',
-        
-        // Servicios de Concrete
-        'https://macpavingandsealcoating.com/services/concrete/walkways',
-        'https://macpavingandsealcoating.com/services/concrete/sidewalks',
-        'https://macpavingandsealcoating.com/services/concrete/curbs',
-        'https://macpavingandsealcoating.com/services/concrete/aprons',
-        
-        // Servicios de Pavers
-        'https://macpavingandsealcoating.com/services/pavers/installation',
-        'https://macpavingandsealcoating.com/services/pavers/maintenance',
-        'https://macpavingandsealcoating.com/services/pavers/belgium-blocks',
-        
-        // Servicios de Sealer
-        'https://macpavingandsealcoating.com/services/sealer/sealcoating',
-        'https://macpavingandsealcoating.com/services/sealer/crack-filling',
-        'https://macpavingandsealcoating.com/services/sealer/line-striping',
-        
-        // Servicios de Landscaping
-        'https://macpavingandsealcoating.com/services/landscaping/sod-installation',
-        'https://macpavingandsealcoating.com/services/landscaping/drainage',
-        'https://macpavingandsealcoating.com/services/landscaping/hauling',
-        'https://macpavingandsealcoating.com/services/landscaping/power-wash',
-        'https://macpavingandsealcoating.com/services/landscaping/top-soil',
-      ]
+      // Removemos customPages para evitar duplicados
+      // Astro detectará automáticamente todas las páginas .astro
     })
   ],
   server: {

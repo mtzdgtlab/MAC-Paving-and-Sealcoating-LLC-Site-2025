@@ -12,10 +12,10 @@ import LargeForm from "../components/LargeForm.astro";
 const SEOTitle = "Our Paving Services";
 const SEODescription =
   "Comprehensive paving services including asphalt, concrete, sealcoating, and pavers across New Jersey.";
-const SEOcanonical = "https://macpavingandsealcoating.com/services/";
+const SEOcanonical = "https://macpavingandsealcoating.com/services";
 const SEOkeywords =
   "paving services NJ, asphalt paving, concrete services, sealcoating, pavers, New Jersey";
-const SchemaURL = "https://macpavingandsealcoating.com/services/";
+const SchemaURL = "https://macpavingandsealcoating.com/services";
 const SchemaDescription =
   "Explore MAC Paving and Sealcoating's comprehensive paving services including asphalt, concrete, sealcoating, and pavers across New Jersey. Contact us for a free estimate.";
 ---
@@ -184,15 +184,26 @@ const SchemaDescription =
           {
             "@type": "ReserveAction",
             "name": "Book a Free Estimate",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://macpavingandsealcoating.com/contact",
-              "inLanguage": "en",
-              "actionPlatform": [
-                "http://schema.org/DesktopWebPlatform",
-                "http://schema.org/MobileWebPlatform"
-              ]
-            }
+            "target": [
+              {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://calendly.com/macpavingandsealcoating/30min",
+                "inLanguage": "en",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "inLanguage": "en",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              }
+            ]
           }
         ]
       }
