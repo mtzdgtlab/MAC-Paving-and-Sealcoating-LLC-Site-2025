@@ -86,8 +86,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: var(--tertiary-font);
   color: var(--theme-color-1);
   margin-top: 0px;
@@ -96,10 +95,11 @@ h3 {
   font-weight: 800;
 }
 
+h3,
 h4,
 h5,
 h6 {
-  font-family: var(--tertiary-font);
+  font-family: var(--primary-font);
   color: var(--theme-color-1);
   margin-top: 0px;
   line-height: 1.3;
@@ -107,13 +107,16 @@ h6 {
   font-weight: 600;
 }
 
-h1,
-h2{
-  font-size: clamp(20px, 6vw, 45px);
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 55px;
 }
 
 h3 {
-  font-size: clamp(15px, 4vw, 30px);
+  font-size: 36px;
 }
 
 h4 {
@@ -899,7 +902,7 @@ figure {
 .section-sub-title {
   position: relative;
   color: var(--theme-color);
-  font-family: var(--third-font);
+  font-family: var(--tertiary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -932,7 +935,7 @@ figure {
 .section-sub-title {
   position: relative;
   color: var(--theme-color);
-  font-family: var(--third-font);
+  font-family: var(--tertiary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -967,7 +970,7 @@ figure {
 .section-sub-titledos {
   position: relative;
   color: var(--theme-color-4);
-  font-family: var(--third-font);
+  font-family: var(--tertiary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1000,7 +1003,7 @@ figure {
 .section-sub-titledos {
   position: relative;
   color: var(--theme-color-4);
-  font-family: var(--third-font);
+  font-family: var(--tertiary-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1579,7 +1582,7 @@ figure {
   margin-inline-end: 0;
 }
 .main-menu ul li a {
-  font-family: var(--third-font);
+  font-family: var(--tertiary-font);
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
@@ -2226,7 +2229,7 @@ figure {
 
 .header-link-1 .content span {
   color: var(--theme-color-1);
-  font-family: var(--first-font);
+  font-family: var(--primary-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -2340,7 +2343,7 @@ figure {
 
 .primary-btn-3 {
   color: var(--theme-color);
-  font-family: var(--second-font);
+  font-family: var(--secondary-font);
   font-size: 14px;
   font-weight: 600;
   background-color: #fff;
@@ -2746,6 +2749,7 @@ ul.footer-contact-info-widget .icon {
   border: none;
 }
 
+h1.banner-title,
 h1.banner-title {
   color: #fff;
   font-size: 60px;
@@ -3346,7 +3350,7 @@ p.banner-text {
 }
 
 .about-us-image-area .icon-box p {
-  font-family: var(--third-font);
+  font-family: var(--tertiary-font);
   color: #d0e5f5;
   position: relative;
 }
@@ -3483,6 +3487,10 @@ p.banner-text {
   }
 }
 
+/*----------------------------------------*/
+/*  SERVICE SLIDER CSS START
+/*----------------------------------------*/
+
 .service-slider-section h3.section-title {
   color: #fff;
 }
@@ -3540,7 +3548,7 @@ p.banner-text {
 }
 
 .service-slider-area .icon-box:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -3719,7 +3727,7 @@ p.banner-text {
 
 .cta-1-section .content h3 {
   position: relative;
-  font-family: var(--third-font);
+  font-family: var(--tertiary-font);
   font-weight: 800;
   font-size: 55px;
   text-align: center;
@@ -3790,7 +3798,7 @@ p.banner-text {
     }
 
     .cta-1-section h2 {
-      font-family: var(--second-font);
+      font-family: var(--secondary-font);
       margin-top: 10px;
       font-size: 25px;
       text-align: center;
@@ -3798,7 +3806,7 @@ p.banner-text {
   }
 
   .cta-1-section h3 {
-    font-family: var(--third-font);
+    font-family: var(--tertiary-font);
     font-weight: 800;
     margin-top: 20px;
     font-size: 40px;
@@ -4006,7 +4014,7 @@ p.banner-text {
 }
 
 .team-area-box .content .author-info span {
-  font-family: var(--second-font);
+  font-family: var(--secondary-font);
   color: #787878;
 }
 
@@ -4646,7 +4654,7 @@ p.banner-text {
 
 .service-tab-btn-area ul .nav-link {
   position: relative;
-  font-family: var(--first-font);
+  font-family: var(--primary-font);
   color: var(--theme-color-1);
   font-size: 20px;
   font-style: normal;
@@ -4837,7 +4845,7 @@ p.banner-text {
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
   border-radius: 50%;
   font-size: 16px;
-  font-family: var(--first-font);
+  font-family: var(--primary-font);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5165,7 +5173,7 @@ p.banner-text {
 
 .icon-box-counter-area .text-1 {
   color: #000000;
-  font-family: var(--second-font);
+  font-family: var(--secondary-font);
 }
 @media (max-width: 767px) {
   .icon-box-counter-area {
@@ -5549,7 +5557,7 @@ p.banner-text {
   font-weight: 600;
   line-height: 26px;
   text-transform: uppercase;
-  font-family: var(--first-font);
+  font-family: var(--primary-font);
   background: #f8f8f8;
   padding: 12px 0;
   position: relative;
@@ -6538,7 +6546,7 @@ ul.postbox__comment_ratings {
 
 .postbox__comment-form label {
   font-weight: 500;
-  font-family: var(--first-font);
+  font-family: var(--primary-font);
   margin-bottom: 15px;
 }
 
@@ -7493,4 +7501,14 @@ Animate wobble-vertical
   color: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   text-decoration: none;
+}
+
+h1.banner-title,
+h2.banner-title {
+  color: #fff;
+  font-size: clamp(20px, 6vw, 55px);
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.3;
+  padding: 20px 0;
 }

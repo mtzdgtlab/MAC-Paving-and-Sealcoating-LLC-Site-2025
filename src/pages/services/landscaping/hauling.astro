@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import Favicon from "../../../components/Favicon.astro";
 import Preloader from "../../../components/Preloader.astro";
 import CSSbase from "../../../components/CSSbase.astro";
@@ -9,279 +9,360 @@ import Scripts from "../../../components/Scripts.astro";
 import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
-import WhyChooseUs from '../../../components/WhyChooseUs.astro';
+import WhyChooseUs from "../../../components/WhyChooseUs.astro";
 ---
+
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="format-detection" content="telephone=no">
-  <title>Hauling Services in NJ | Asphalt, Debris & Junk Removal</title>
-  <!-- Preconexión para recursos externos (mejora rendimiento) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-  <meta name="description" content="Debris and material hauling for landscaping or home cleanup projects. Fast, reliable service. Get a free estimate today." />
-  <link rel="canonical" href="https://macpavingandsealcoating.com/services/landscaping/hauling">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="keywords" content="hauling services NJ, debris removal Newark, asphalt hauling Lyndhurst, junk hauling Secaucus, home cleanup hauling NJ, reliable hauling services, material transport NJ, residential hauling company" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Hauling Services in NJ | Asphalt, Debris & Junk Removal",
-      "url": "https://macpavingandsealcoating.com/services/landscaping/hauling",
-      "logo": "https://macpavingandsealcoating.com/logo.png",
-      "description": "Debris and material hauling for landscaping or home cleanup projects. Fast, reliable service. Get a free estimate today.",
-      "telephone": "+1-201-755-7836",
-      "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-201-755-7836",
-      "contactType": "Customer Service"
-      },
-      "areaServed": [
-        { "@type": "Place", "name": "Clifton, NJ" },
-        { "@type": "Place", "name": "Wayne, NJ" },
-        { "@type": "Place", "name": "Fair Lawn, NJ" },
-        { "@type": "Place", "name": "Paramus, NJ" },
-        { "@type": "Place", "name": "Hackensack, NJ" },
-        { "@type": "Place", "name": "Teaneck, NJ" },
-        { "@type": "Place", "name": "Montclair, NJ" },
-        { "@type": "Place", "name": "Bloomfield, NJ" },
-        { "@type": "Place", "name": "West Orange, NJ" },
-        { "@type": "Place", "name": "Livingston, NJ" },
-        { "@type": "Place", "name": "Parsippany, NJ" },
-        { "@type": "Place", "name": "Totowa, NJ" },
-        { "@type": "Place", "name": "Little Falls, NJ" },
-        { "@type": "Place", "name": "Elmwood Park, NJ" },
-        { "@type": "Place", "name": "Garfield, NJ" },
-        { "@type": "Place", "name": "Lodi, NJ" },
-        { "@type": "Place", "name": "Saddle Brook, NJ" },
-        { "@type": "Place", "name": "Nutley, NJ" },
-        { "@type": "Place", "name": "South Orange, NJ" },
-        { "@type": "Place", "name": "Orange, NJ" },
-        { "@type": "Place", "name": "East Orange, NJ" },
-        { "@type": "Place", "name": "Denville, NJ" },
-        { "@type": "Place", "name": "Montville, NJ" },
-        { "@type": "Place", "name": "Boonton, NJ" },
-        { "@type": "Place", "name": "Mountain Lakes, NJ" },
-        { "@type": "Place", "name": "Florham Park, NJ" },
-        { "@type": "Place", "name": "West Paterson, NJ" },
-        { "@type": "Place", "name": "Woodland Park, NJ" },
-        { "@type": "Place", "name": "North Haledon, NJ" },
-        { "@type": "Place", "name": "Haledon, NJ" },
-        { "@type": "Place", "name": "Prospect Park, NJ" },
-        { "@type": "Place", "name": "Ridgewood, NJ" },
-        { "@type": "Place", "name": "Clark, NJ" },
-        { "@type": "Place", "name": "Pompton Lakes, NJ" },
-        { "@type": "Place", "name": "Bloomingdale, NJ" },
-        { "@type": "Place", "name": "Englewood, NJ" },
-        { "@type": "Place", "name": "Fort Lee, NJ" },
-        { "@type": "Place", "name": "Bergenfield, NJ" },
-        { "@type": "Place", "name": "New Milford, NJ" },
-        { "@type": "Place", "name": "Saddle River, NJ" },
-        { "@type": "Place", "name": "Glen Ridge, NJ" },
-        { "@type": "Place", "name": "Oradell, NJ" },
-        { "@type": "Place", "name": "Cedar Grove, NJ" },
-        { "@type": "Place", "name": "Belleville, NJ" },
-        { "@type": "Place", "name": "Morristown, NJ" },
-        { "@type": "Place", "name": "East Hanover, NJ" },
-        { "@type": "Place", "name": "Wallington, NJ" },
-        { "@type": "Place", "name": "North Caldwell, NJ" },
-        { "@type": "Place", "name": "Hawthorne, NJ" },
-        { "@type": "Place", "name": "Caldwell, NJ" },
-        { "@type": "Place", "name": "Kearny, NJ" },
-        { "@type": "Place", "name": "Lyndhurst, NJ" },
-        { "@type": "Place", "name": "Rutherford, NJ" },
-        { "@type": "Place", "name": "Secaucus, NJ" },
-        { "@type": "Place", "name": "Union City, NJ" },
-        { "@type": "Place", "name": "Westwood, NJ" },
-        { "@type": "Place", "name": "Jersey City, NJ" },
-        { "@type": "Place", "name": "Newark, NJ" }
-      ],
-      "makesOffer": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Asphalt Paving Services" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving Installation" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Paving" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Driveway Paving" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Sealcoating Service" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Patio Pavers" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crack Filling Repair" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paving Maintenance" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Driveway Paving" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway Drainage Solutions" } }
-      ],
-      "potentialAction": [
-        {
-          "@type": "CallAction",
-          "target": "tel:+12017557836",
-          "name": "Call MAC Paving and Sealcoating LLC"
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Hauling Services in NJ | Asphalt, Debris & Junk Removal</title>
+    <!-- Preconexión para recursos externos (mejora rendimiento) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <meta
+      name="description"
+      content="Debris and material hauling for landscaping or home cleanup projects. Fast, reliable service. Get a free estimate today."
+    />
+    <link
+      rel="canonical"
+      href="https://macpavingandsealcoating.com/services/landscaping/hauling/"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="hauling services NJ, debris removal Newark, asphalt hauling Lyndhurst, junk hauling Secaucus, home cleanup hauling NJ, reliable hauling services, material transport NJ, residential hauling company"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Hauling Services in NJ | Asphalt, Debris & Junk Removal",
+        "url": "https://macpavingandsealcoating.com/services/landscaping/hauling/",
+        "logo": "https://macpavingandsealcoating.com/logo.png",
+        "description": "Debris and material hauling for landscaping or home cleanup projects. Fast, reliable service. Get a free estimate today.",
+        "telephone": "+1-201-755-7836",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-201-755-7836",
+          "contactType": "Customer Service"
         },
-            {
-          "@type": "ReserveAction",
-          "name": "Book a Free Estimate",
-          "target": [
-            {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://calendly.com/macpavingandsealcoating/30min",
-              "inLanguage": "en",
-              "actionPlatform": [
-                "http://schema.org/DesktopWebPlatform",
-                "http://schema.org/MobileWebPlatform"
-              ]
-            },
-            {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://macpavingandsealcoating.com/contact",
-              "inLanguage": "en",
-              "actionPlatform": [
-                "http://schema.org/DesktopWebPlatform",
-                "http://schema.org/MobileWebPlatform"
-              ]
+        "areaServed": [
+          { "@type": "Place", "name": "Clifton, NJ" },
+          { "@type": "Place", "name": "Wayne, NJ" },
+          { "@type": "Place", "name": "Fair Lawn, NJ" },
+          { "@type": "Place", "name": "Paramus, NJ" },
+          { "@type": "Place", "name": "Hackensack, NJ" },
+          { "@type": "Place", "name": "Teaneck, NJ" },
+          { "@type": "Place", "name": "Montclair, NJ" },
+          { "@type": "Place", "name": "Bloomfield, NJ" },
+          { "@type": "Place", "name": "West Orange, NJ" },
+          { "@type": "Place", "name": "Livingston, NJ" },
+          { "@type": "Place", "name": "Parsippany, NJ" },
+          { "@type": "Place", "name": "Totowa, NJ" },
+          { "@type": "Place", "name": "Little Falls, NJ" },
+          { "@type": "Place", "name": "Elmwood Park, NJ" },
+          { "@type": "Place", "name": "Garfield, NJ" },
+          { "@type": "Place", "name": "Lodi, NJ" },
+          { "@type": "Place", "name": "Saddle Brook, NJ" },
+          { "@type": "Place", "name": "Nutley, NJ" },
+          { "@type": "Place", "name": "South Orange, NJ" },
+          { "@type": "Place", "name": "Orange, NJ" },
+          { "@type": "Place", "name": "East Orange, NJ" },
+          { "@type": "Place", "name": "Denville, NJ" },
+          { "@type": "Place", "name": "Montville, NJ" },
+          { "@type": "Place", "name": "Boonton, NJ" },
+          { "@type": "Place", "name": "Mountain Lakes, NJ" },
+          { "@type": "Place", "name": "Florham Park, NJ" },
+          { "@type": "Place", "name": "West Paterson, NJ" },
+          { "@type": "Place", "name": "Woodland Park, NJ" },
+          { "@type": "Place", "name": "North Haledon, NJ" },
+          { "@type": "Place", "name": "Haledon, NJ" },
+          { "@type": "Place", "name": "Prospect Park, NJ" },
+          { "@type": "Place", "name": "Ridgewood, NJ" },
+          { "@type": "Place", "name": "Clark, NJ" },
+          { "@type": "Place", "name": "Pompton Lakes, NJ" },
+          { "@type": "Place", "name": "Bloomingdale, NJ" },
+          { "@type": "Place", "name": "Englewood, NJ" },
+          { "@type": "Place", "name": "Fort Lee, NJ" },
+          { "@type": "Place", "name": "Bergenfield, NJ" },
+          { "@type": "Place", "name": "New Milford, NJ" },
+          { "@type": "Place", "name": "Saddle River, NJ" },
+          { "@type": "Place", "name": "Glen Ridge, NJ" },
+          { "@type": "Place", "name": "Oradell, NJ" },
+          { "@type": "Place", "name": "Cedar Grove, NJ" },
+          { "@type": "Place", "name": "Belleville, NJ" },
+          { "@type": "Place", "name": "Morristown, NJ" },
+          { "@type": "Place", "name": "East Hanover, NJ" },
+          { "@type": "Place", "name": "Wallington, NJ" },
+          { "@type": "Place", "name": "North Caldwell, NJ" },
+          { "@type": "Place", "name": "Hawthorne, NJ" },
+          { "@type": "Place", "name": "Caldwell, NJ" },
+          { "@type": "Place", "name": "Kearny, NJ" },
+          { "@type": "Place", "name": "Lyndhurst, NJ" },
+          { "@type": "Place", "name": "Rutherford, NJ" },
+          { "@type": "Place", "name": "Secaucus, NJ" },
+          { "@type": "Place", "name": "Union City, NJ" },
+          { "@type": "Place", "name": "Westwood, NJ" },
+          { "@type": "Place", "name": "Jersey City, NJ" },
+          { "@type": "Place", "name": "Newark, NJ" }
+        ],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Asphalt Paving Services"
             }
-          ]
-        }
-      ]
-    }
-</script>
-      <Favicon />
-      <SocialMeta />
-      <CSSbase />
-</head>
-<body>
-        <Preloader />
-        <Navbar />
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Driveway Paving Installation"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Driveway Paving" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Home Driveway Paving"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Driveway Sealcoating Service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Patio Pavers" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Crack Filling Repair"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Paving Maintenance" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Concrete Driveway Paving"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Driveway Drainage Solutions"
+            }
+          }
+        ],
+        "potentialAction": [
+          {
+            "@type": "CallAction",
+            "target": "tel:+12017557836",
+            "name": "Call MAC Paving and Sealcoating LLC"
+          },
+          {
+            "@type": "ReserveAction",
+            "name": "Book a Free Estimate",
+            "target": [
+              {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://calendly.com/macpavingandsealcoating/30min",
+                "inLanguage": "en",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "inLanguage": "en",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <Favicon />
+    <SocialMeta />
+    <CSSbase />
+  </head>
+  <body>
+    <Preloader />
+    <Navbar />
     <!-- Header area end -->
     <main>
-        <!-- Breadcrumb area start -->
-        <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-          <div
-            class="breadcrumb__thumb"
-            data-background="/assets/imgs/service/landscaping.webp"></div>
-          <div class="small-container">
-            <div class="row justify-content-center">
-              <div class="col-xxl-12">
-                <div class="breadcrumb__wrapper p-relative">
-                  <h1 class="breadcrumb__title">
-                    Hauling and Debris Removal in North Jersey
-                  </h1>
-                  <div class="breadcrumb__menu fs-2">
-                    <nav>
-                      <ul>
-                        <li>
-                          <span><a href="/">Home</a></span>
-                        </li>
-                        <li>
-                          <span>/ Services / Landscaping / Hauling</span>
-                        </li>
-                      </ul>
-                    </nav>
-                  </div>
+      <!-- Breadcrumb area start -->
+      <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
+        <div
+          class="breadcrumb__thumb"
+          data-background="/assets/imgs/service/landscaping.webp"
+        >
+        </div>
+        <div class="small-container">
+          <div class="row justify-content-center">
+            <div class="col-xxl-12">
+              <div class="breadcrumb__wrapper p-relative">
+                <h1 class="breadcrumb__title">
+                  Hauling and Debris Removal in North Jersey
+                </h1>
+                <div class="breadcrumb__menu fs-2">
+                  <nav>
+                    <ul>
+                      <li>
+                        <span><a href="/">Home</a></span>
+                      </li>
+                      <li>
+                        <span>/ Services / Landscaping / Hauling</span>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Breadcrumb area end -->
-        <section class="service-details-page section-space">
-          <div class="small-container">
-            <div class="row">
-              <div class="col-xxl-8 col-xl-8 col-lg-8">
-                <div class="service-details-page-content">
-                  <h2 class="service-details-title mt-25 mb-25">
-                    Cleanouts Made Easy for Your Home Projects
-                  </h2>
-                  <p class="mb-25">
-                    Every great paving or landscaping project ends with a mess—unless you’ve got a team that hauls it away. MAC Paving and Sealcoating offers reliable hauling services for asphalt debris, construction waste, yard clippings, and more. Whether after a major driveway replacement or a weekend landscaping job, we clear the site quickly and responsibly, so you’re left with a clean, usable space. Our team handles loading, transport, and proper disposal, giving you one less thing to worry about after the work is done.
-                  </p>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <figure class="w-img">
-                        <Image
+      </div>
+      <!-- Breadcrumb area end -->
+      <section class="service-details-page section-space">
+        <div class="small-container">
+          <div class="row">
+            <div class="col-xxl-8 col-xl-8 col-lg-8">
+              <div class="service-details-page-content">
+                <h2 class="service-details-title mt-25 mb-25">
+                  Cleanouts Made Easy for Your Home Projects
+                </h2>
+                <p class="mb-25">
+                  Every great paving or landscaping project ends with a
+                  mess—unless you’ve got a team that hauls it away. MAC Paving
+                  and Sealcoating offers reliable hauling services for asphalt
+                  debris, construction waste, yard clippings, and more. Whether
+                  after a major driveway replacement or a weekend landscaping
+                  job, we clear the site quickly and responsibly, so you’re left
+                  with a clean, usable space. Our team handles loading,
+                  transport, and proper disposal, giving you one less thing to
+                  worry about after the work is done.
+                </p>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <figure class="w-img">
+                      <Image
                         src="/assets/imgs/service/landscaping/hauling-1.webp"
                         alt="Hauling Services in NJ | Asphalt, Debris & Junk Removal - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
-                        loading="lazy" />
-                      </figure>
-                    </div>
-                    <div class="col-lg-6">
-                      <figure class="w-img">
-                        <Image
+                        loading="lazy"
+                      />
+                    </figure>
+                  </div>
+                  <div class="col-lg-6">
+                    <figure class="w-img">
+                      <Image
                         src="/assets/imgs/service/landscaping/hauling-2.webp"
                         alt="Hauling Services in NJ | Asphalt, Debris & Junk Removal - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
-                        loading="lazy" />
-                      </figure>
-                    </div>
+                        loading="lazy"
+                      />
+                    </figure>
                   </div>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <h3 class="service-details-title mt-45 mb-25">
-                        Clear the Space Without Lifting a Finger
-                      </h3>
-                      <p class="mb-25">
-                        Debris piles create hazards and clutter. We handle heavy lifting and proper disposal—leaving your property clean and safe.
-                      </p>
-                    </div>
-                    <div class="col-lg-6">
-                      <h3 class="service-details-title mt-45 mb-25">
-                        How Our Residential Hauling Works
-                      </h3>
-                      <p class="mb-25">
-                        We assess your materials, dispatch a truck, and load everything carefully. Recyclables are sorted and all debris is disposed of responsibly.
-                      </p>
-                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h3 class="service-details-title mt-45 mb-25">
+                      Clear the Space Without Lifting a Finger
+                    </h3>
+                    <p class="mb-25">
+                      Debris piles create hazards and clutter. We handle heavy
+                      lifting and proper disposal—leaving your property clean
+                      and safe.
+                    </p>
                   </div>
+                  <div class="col-lg-6">
+                    <h3 class="service-details-title mt-45 mb-25">
+                      How Our Residential Hauling Works
+                    </h3>
+                    <p class="mb-25">
+                      We assess your materials, dispatch a truck, and load
+                      everything carefully. Recyclables are sorted and all
+                      debris is disposed of responsibly.
+                    </p>
+                  </div>
+                </div>
                 <figure class="w-img">
-                    <Image
-                      src="/assets/imgs/service/landscaping/hauling-3.webp"
-                      alt="Hauling Services in NJ | Asphalt, Debris & Junk Removal - Close-Up - MAC Paving and Sealcoating"
-                      width={1200}
-                      height={600}
-                      loading="lazy" />
-                  </figure>
-                  <h3 class="service-details-title mt-45 mb-25">
-                    When to Schedule Hauling—and What It Covers
-                  </h3>
-                  <p class="mb-25">
-                    Just finished paving or cleanup? Hauling is the final step. Also great for prep before installs. Call MAC for removal done right—no mess left behind.
-                  </p>
-                  <div class="row">
-                    <div class="col-lg-7">
-                      <figure class="w-img">
-                        <Image
+                  <Image
+                    src="/assets/imgs/service/landscaping/hauling-3.webp"
+                    alt="Hauling Services in NJ | Asphalt, Debris & Junk Removal - Close-Up - MAC Paving and Sealcoating"
+                    width={1200}
+                    height={600}
+                    loading="lazy"
+                  />
+                </figure>
+                <h3 class="service-details-title mt-45 mb-25">
+                  When to Schedule Hauling—and What It Covers
+                </h3>
+                <p class="mb-25">
+                  Just finished paving or cleanup? Hauling is the final step.
+                  Also great for prep before installs. Call MAC for removal done
+                  right—no mess left behind.
+                </p>
+                <div class="row">
+                  <div class="col-lg-7">
+                    <figure class="w-img">
+                      <Image
                         src="/assets/imgs/service/landscaping/hauling-4.webp"
                         alt="Hauling Services in NJ | Asphalt, Debris & Junk Removal - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
-                        loading="lazy" />
-                      </figure>
-                    </div>
-                    <div class="col-lg-5">
-                      <ul class="service-details-page-list pt-20 pb-10">
-                                                <li>Jersey City</li>
-                        <li>Kearny</li>
-                        <li>Newark</li>
-                        <li>Secaucus</li>
-                        <li>Hoboken</li>
-                        <li>Union City</li>
-                        <li>East Orange</li>
-                        <li>Garfield</li>
-                      </ul>
-                    </div>
+                        loading="lazy"
+                      />
+                    </figure>
+                  </div>
+                  <div class="col-lg-5">
+                    <ul class="service-details-page-list pt-20 pb-10">
+                      <li>Jersey City</li>
+                      <li>Kearny</li>
+                      <li>Newark</li>
+                      <li>Secaucus</li>
+                      <li>Hoboken</li>
+                      <li>Union City</li>
+                      <li>East Orange</li>
+                      <li>Garfield</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-    <MainServices />
             </div>
+            <MainServices />
+          </div>
         </div>
-    </section>
-    <WhyChooseUs />
-    <MapSection />
-</main>
-        <Footer />
-        <Scripts />  
-    </body>
+      </section>
+      <WhyChooseUs />
+      <MapSection />
+    </main>
+    <Footer />
+    <Scripts />
+  </body>
 </html>

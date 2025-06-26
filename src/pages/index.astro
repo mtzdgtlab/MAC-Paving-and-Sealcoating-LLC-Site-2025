@@ -9,7 +9,6 @@ import Scripts from "../components/Scripts.astro";
 import SocialMeta from "../components/SocialMeta.astro";
 import About from "../components/About.astro";
 import TestimonialsSlider from "../components/TestimonialsSlider.astro";
-import Brands from "../components/Brands.astro";
 ---
 
 <html lang="en">
@@ -310,7 +309,7 @@ import Brands from "../components/Brands.astro";
                     <span class="p-relative banner-sub-title"
                       >PREMIUM QUALITY</span
                     >
-                    <h1 class="banner-title">Best Paving Solutions</h1>
+                    <h2 class="banner-title">Best Paving Solutions</h2>
                     <p class="banner-text">
                       Enhance your property's curb appeal with durable, stylish
                       driveways customized to match your project home.
@@ -342,7 +341,7 @@ import Brands from "../components/Brands.astro";
                     <span class="p-relative banner-sub-title"
                       >EXCEPTIONAL QUALITY</span
                     >
-                    <h1 class="banner-title">Sealcoating Services</h1>
+                    <h2 class="banner-title">Sealcoating Services</h2>
                     <p class="banner-text">
                       Keep your asphalt looking fresh and protected with our
                       effective sealcoating services for all paved surfaces.
@@ -391,8 +390,10 @@ import Brands from "../components/Brands.astro";
         <div class="shape-9" data-background="/assets/imgs/shapes/shape-9.webp">
         </div>
         <div class="small-container">
-          <div class="row">
-            <div class="col-xxl-6">
+          <div class="row align-items-center justify-content-between">
+            <div
+              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
+            >
               <div
                 class="title-box mb-50"
                 data-aos="fade-left"
@@ -401,13 +402,16 @@ import Brands from "../components/Brands.astro";
                 <span class="section-sub-titledos"
                   >Paving and Asphalt Contractor Near You</span
                 >
-                <h3 class="section-title mt-35">Our Services</h3>
+                <h3 class="section-title mt-35">
+                  <a
+                    href="/services"
+                    style="color: inherit; text-decoration: none;"
+                    >Our Services</a
+                  >
+                </h3>
               </div>
-            </div>
-            <div class="col-xxl-6">
-              <!-- If we need navigation buttons -->
               <div
-                class="service_1_navigation__wrapprer position-relative z-1 text-end mt-30"
+                class="service_1_navigation__wrapprer position-relative z-1 mt-30"
               >
                 <div class="common-slider-navigation">
                   <button
@@ -444,9 +448,9 @@ import Brands from "../components/Brands.astro";
                     <div class="icon-box">
                       <i class="fas fa-road"></i>
                     </div>
-                    <h3>
+                    <h4>
                       <a href="/services/asphalt-paving">Asphalt Paving</a>
-                    </h3>
+                    </h4>
                     <p>
                       From residential driveways to commercial parking lots, our
                       expert asphalt paving services ensure a smooth, durable,
@@ -475,14 +479,14 @@ import Brands from "../components/Brands.astro";
                     <div class="icon-box">
                       <i class="fas fa-fill-drip"></i>
                     </div>
-                    <h3><a href="/services/sealer">Sealer</a></h3>
+                    <h4><a href="/sealer">Sealer</a></h4>
                     <p>
                       Our premium sealcoating, crack filling, and line striping
                       services extend the life of your pavement. These
                       treatments shield your surfaces from weather, wear, and
                       heavy traffic while maintaining a sleek, protected finish.
                     </p>
-                    <a href="/services/sealer" class="service-btn"
+                    <a href="/sealer" class="service-btn"
                       >Read More <i class="fas fa-angles-right"></i></a
                     >
                   </div>
@@ -505,14 +509,14 @@ import Brands from "../components/Brands.astro";
                     <div class="icon-box">
                       <i class="fas fa-th-large"></i>
                     </div>
-                    <h3><a href="/services/pavers">Pavers</a></h3>
+                    <h4><a href="/pavers">Pavers</a></h4>
                     <p>
                       We create elegant, long-lasting paver installations
                       customized for driveways, patios, and walkways. Each
                       project is crafted with precision and premium materials to
                       elevate your outdoor aesthetics.
                     </p>
-                    <a href="/services/pavers" class="service-btn"
+                    <a href="/pavers" class="service-btn"
                       >Read More <i class="fas fa-angles-right"></i></a
                     >
                   </div>
@@ -535,13 +539,13 @@ import Brands from "../components/Brands.astro";
                     <div class="icon-box">
                       <i class="fas fa-hard-hat"></i>
                     </div>
-                    <h3><a href="/services/concrete">Concrete</a></h3>
+                    <h4><a href="/concrete">Concrete</a></h4>
                     <p>
                       Expertly poured and finished concrete work, including
                       sidewalks, curbs, aprons, and walkways—designed for
                       strength, safety, and timeless appeal.
                     </p>
-                    <a href="/services/concrete" class="service-btn"
+                    <a href="/concrete" class="service-btn"
                       >Read More <i class="fas fa-angles-right"></i></a
                     >
                   </div>
@@ -564,14 +568,14 @@ import Brands from "../components/Brands.astro";
                     <div class="icon-box">
                       <i class="fas fa-tree"></i>
                     </div>
-                    <h3><a href="/services/landscaping">Landscaping</a></h3>
+                    <h4><a href="/landscaping">Landscaping</a></h4>
                     <p>
                       We provide comprehensive landscaping solutions that
                       transform your outdoor environment. Our services include
                       lush sod installation, nutrient-rich topsoil application,
                       efficient drainage systems, and thorough power washing.
                     </p>
-                    <a href="/services/" class="service-btn"
+                    <a href="/landscaping" class="service-btn"
                       >Read More <i class="fas fa-angles-right"></i></a
                     >
                   </div>
@@ -960,7 +964,139 @@ import Brands from "../components/Brands.astro";
       </section>
 
       <TestimonialsSlider />
-      <Brands />
+
+      <!-- Brand area start -->
+      <div class="brand-section section-space-top section-space-bottom">
+        <div class="small-brand">
+          <div class="swiper brand-active">
+            <div class="swiper-wrapper">
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-5.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-4.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-3.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-2.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-1.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-5.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-4.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-3.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-2.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+              <div class="swiper-slide">
+                <span>
+                  <img
+                    src="/assets/imgs/resources/brand-1.webp"
+                    alt="Asphalt Paving by MAC Paving and Sealcoating"
+                    loading="lazy"
+                    width="360"
+                    height="187"
+                  />
+                </span>
+              </div>
+              <!-- block -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Brand area end -->
     </main>
 
     <Footer />
