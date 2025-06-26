@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Favicon from "../../../components/Favicon.astro";
 import Preloader from "../../../components/Preloader.astro";
 import CSSbase from "../../../components/CSSbase.astro";
@@ -8,6 +9,7 @@ import Scripts from "../../../components/Scripts.astro";
 import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
+import Brands from "../../../components/Brands.astro";
 ---
 <html lang="en">
 <head>
@@ -156,7 +158,7 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
         <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
           <div
             class="breadcrumb__thumb"
-            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+            data-background="/assets/imgs/service/landscaping.webp"></div>
           <div class="small-container">
             <div class="row justify-content-center">
               <div class="col-xxl-12">
@@ -164,7 +166,7 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                   <h1 class="breadcrumb__title">
                     Topsoil Delivery and Lawn Grading in North Jersey
                   </h1>
-                  <div class="breadcrumb__menu fs-1">
+                  <div class="breadcrumb__menu fs-2">
                     <nav>
                       <ul>
                         <li>
@@ -191,21 +193,27 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                     Level, Nutrient-Rich Ground for a Healthier Lawn
                   </h2>
                   <p class="mb-25">
-                    Topsoil and grading provide the right base for sod, seed, or planting. MAC Paving delivers nutrient-rich soil and expert lawn leveling for North Jersey homeowners.
+                    A healthy lawn, garden, or landscape starts with proper soil and level ground. MAC Paving and Sealcoating delivers clean, nutrient-rich topsoil and expert grading services that prepare your yard for planting, sod, or hardscape installations. We assess the slope, correct uneven areas, and lay a reliable foundation that promotes drainage and root health. Whether you’re revitalizing your backyard, correcting drainage issues, or preparing for new landscaping, our team ensures the ground beneath your project is built for long-term success.
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/landscaping/top-soil-1.webp"
-                        alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Main Image - MAC Paving and Sealcoating" />
+                        alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Main Image - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/landscaping/top-soil-2.webp"
-                        alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Side View - MAC Paving and Sealcoating" />
+                        alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Side View - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                   </div>
@@ -228,9 +236,12 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                     </div>
                   </div>
                 <figure class="w-img">
-                    <img
+                    <Image
                       src="/assets/imgs/service/landscaping/top-soil-3.webp"
-                      alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Close-Up - MAC Paving and Sealcoating" />
+                      alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Close-Up - MAC Paving and Sealcoating"
+                      width={1200}
+                      height={600}
+                      loading="lazy" />
                   </figure>
                   <h3 class="service-details-title mt-45 mb-25">
                     When to Order Topsoil—and What It Can Improve
@@ -241,14 +252,24 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                   <div class="row">
                     <div class="col-lg-7">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/landscaping/top-soil-4.webp"
-                        alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Work in Progress - MAC Paving and Sealcoating" />
+                        alt="Topsoil Delivery & Lawn Grading in NJ | Ready for Planting - Work in Progress - MAC Paving and Sealcoating"
+                        width={800}
+                        height={500}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-5">
                       <ul class="service-details-page-list pt-20 pb-10">
-                        Pompton Lakes, Wanaque, Ringwood, Wayne, Bloomingdale, Boonton, Mountain Lakes, Denville
+                                                <li>Pompton Lakes</li>
+                        <li>Wanaque</li>
+                        <li>Ringwood</li>
+                        <li>Wayne</li>
+                        <li>Bloomingdale</li>
+                        <li>Boonton</li>
+                        <li>Mountain Lakes</li>
+                        <li>Denville</li>
                       </ul>
                     </div>
                   </div>
@@ -259,6 +280,7 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
         </div>
     </section>
     <TestimonialsSlider />
+    <Brands />
 </main>
         <Footer />
         <Scripts />  

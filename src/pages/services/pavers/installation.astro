@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Favicon from "../../../components/Favicon.astro";
 import Preloader from "../../../components/Preloader.astro";
 import CSSbase from "../../../components/CSSbase.astro";
@@ -8,6 +9,7 @@ import Scripts from "../../../components/Scripts.astro";
 import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
+import Brands from "../../../components/Brands.astro";
 ---
 <html lang="en">
 <head>
@@ -156,7 +158,7 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
         <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
           <div
             class="breadcrumb__thumb"
-            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+            data-background="/assets/imgs/service/pavers.webp"></div>
           <div class="small-container">
             <div class="row justify-content-center">
               <div class="col-xxl-12">
@@ -164,7 +166,7 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                   <h1 class="breadcrumb__title">
                     Paver Installation in North Jersey
                   </h1>
-                  <div class="breadcrumb__menu fs-1">
+                  <div class="breadcrumb__menu fs-2">
                     <nav>
                       <ul>
                         <li>
@@ -191,21 +193,27 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                     Beautiful, Lasting Pavers for Driveways, Walkways & Patios
                   </h2>
                   <p class="mb-25">
-                    Pavers offer a timeless and elegant solution for homeowners who want more than just plain concrete or asphalt. At MAC Paving and Sealcoating, we specialize in residential paver installations that bring beauty, function, and long-term value to properties across Montclair, Wayne, Lodi, and nearby towns.
+                    Pavers add lasting beauty, value, and functionality to your property. MAC Paving and Sealcoating specializes in custom paver installations for driveways, patios, walkways, and more. We help you select patterns, colors, and layouts that fit your space—and install them with precision across Montclair, Wayne, Lodi, and nearby towns.
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/masonry/pavers-installation-1.webp"
-                        alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Main Image - MAC Paving and Sealcoating" />
+                        alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Main Image - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/masonry/pavers-installation-2.webp"
-                        alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Side View - MAC Paving and Sealcoating" />
+                        alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Side View - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                   </div>
@@ -228,9 +236,12 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                     </div>
                   </div>
                 <figure class="w-img">
-                    <img
+                    <Image
                       src="/assets/imgs/service/masonry/pavers-installation-3.webp"
-                      alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Close-Up - MAC Paving and Sealcoating" />
+                      alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Close-Up - MAC Paving and Sealcoating"
+                      width={1200}
+                      height={600}
+                      loading="lazy" />
                   </figure>
                   <h3 class="service-details-title mt-45 mb-25">
                     Perfect for Homeowners Seeking Style and Low Maintenance
@@ -241,14 +252,24 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                   <div class="row">
                     <div class="col-lg-7">
                       <figure class="w-img">
-                        <img
-                        src="/assets/imgs/service/masonry/pavers-installation-4.webp"
-                        alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Work in Progress - MAC Paving and Sealcoating" />
+                        <Image
+                        src="/assets/imgs/service/pavers/pavers-installation-4.webp"
+                        alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Work in Progress - MAC Paving and Sealcoating"
+                        width={800}
+                        height={500}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-5">
                       <ul class="service-details-page-list pt-20 pb-10">
-                        Montclair, Verona, Glen Ridge, Cedar Grove, West Caldwell, Belleville, West Orange, Roseland
+                                                <li>Montclair</li>
+                        <li>Verona</li>
+                        <li>Glen Ridge</li>
+                        <li>Cedar Grove</li>
+                        <li>West Caldwell</li>
+                        <li>Belleville</li>
+                        <li>West Orange</li>
+                        <li>Roseland</li>
                       </ul>
                     </div>
                   </div>
@@ -259,6 +280,7 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
         </div>
     </section>
     <TestimonialsSlider />
+    <Brands />
 </main>
         <Footer />
         <Scripts />  

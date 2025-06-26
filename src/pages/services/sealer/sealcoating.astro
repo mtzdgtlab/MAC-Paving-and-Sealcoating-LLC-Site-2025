@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Favicon from "../../../components/Favicon.astro";
 import Preloader from "../../../components/Preloader.astro";
 import CSSbase from "../../../components/CSSbase.astro";
@@ -8,6 +9,7 @@ import Scripts from "../../../components/Scripts.astro";
 import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
+import WhyChooseUs from '../../../components/WhyChooseUs.astro';
 ---
 <html lang="en">
 <head>
@@ -155,7 +157,7 @@ import MapSection from "../../../components/MapSection.astro";
         <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
           <div
             class="breadcrumb__thumb"
-            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+            data-background="/assets/imgs/service/sealer.webp"></div>
           <div class="small-container">
             <div class="row justify-content-center">
               <div class="col-xxl-12">
@@ -163,7 +165,7 @@ import MapSection from "../../../components/MapSection.astro";
                   <h1 class="breadcrumb__title">
                     Asphalt Sealcoating in North Jersey
                   </h1>
-                  <div class="breadcrumb__menu fs-1">
+                  <div class="breadcrumb__menu fs-2">
                     <nav>
                       <ul>
                         <li>
@@ -190,21 +192,27 @@ import MapSection from "../../../components/MapSection.astro";
                     Protect Your Driveway With Professional Sealcoating
                   </h2>
                   <p class="mb-25">
-                    Sealcoating is one of the smartest ways to protect your asphalt from cracks, fading, and water damage. At MAC Paving and Sealcoating, we provide expert sealcoating services that shield your driveway from New Jersey’s tough weather conditions. It’s fast, affordable, and extends the life of your investment.
+                    Sealcoating is essential protection for your asphalt—acting like sunscreen against UV rays, water damage, oil stains, and surface erosion. At MAC Paving and Sealcoating, we apply commercial-grade sealcoating that preserves your driveway’s color, smoothness, and structural integrity. It’s a cost-effective service that saves you from costly repairs and extends your asphalt’s life significantly.
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/sealer/sealcoating-1.webp"
-                        alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Main Image - MAC Paving and Sealcoating" />
+                        alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Main Image - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/sealer/sealcoating-2.webp"
-                        alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Side View - MAC Paving and Sealcoating" />
+                        alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Side View - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                   </div>
@@ -227,9 +235,12 @@ import MapSection from "../../../components/MapSection.astro";
                     </div>
                   </div>
                 <figure class="w-img">
-                    <img
+                    <Image
                       src="/assets/imgs/service/sealer/sealcoating-3.webp"
-                      alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Close-Up - MAC Paving and Sealcoating" />
+                      alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Close-Up - MAC Paving and Sealcoating"
+                      width={1200}
+                      height={600}
+                      loading="lazy" />
                   </figure>
                   <h3 class="service-details-title mt-45 mb-25">
                     When to Sealcoat—and Why It Pays Off
@@ -240,14 +251,24 @@ import MapSection from "../../../components/MapSection.astro";
                   <div class="row">
                     <div class="col-lg-7">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/sealer/sealcoating-4.webp"
-                        alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Work in Progress - MAC Paving and Sealcoating" />
+                        alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Work in Progress - MAC Paving and Sealcoating"
+                        width={800}
+                        height={500}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-5">
                       <ul class="service-details-page-list pt-20 pb-10">
-                        Oradell, Haledon, Ridgewood, Glen Ridge, Roseland, Rutherford, North Haledon, Montville
+                                                <li>Oradell</li>
+                        <li>Haledon</li>
+                        <li>Ridgewood</li>
+                        <li>Glen Ridge</li>
+                        <li>Roseland</li>
+                        <li>Rutherford</li>
+                        <li>North Haledon</li>
+                        <li>Montville</li>
                       </ul>
                     </div>
                   </div>
@@ -257,6 +278,7 @@ import MapSection from "../../../components/MapSection.astro";
             </div>
         </div>
     </section>
+    <WhyChooseUs />
     <MapSection />
 </main>
         <Footer />

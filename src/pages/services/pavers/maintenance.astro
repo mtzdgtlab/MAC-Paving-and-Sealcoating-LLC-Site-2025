@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Favicon from "../../../components/Favicon.astro";
 import Preloader from "../../../components/Preloader.astro";
 import CSSbase from "../../../components/CSSbase.astro";
@@ -8,6 +9,7 @@ import Scripts from "../../../components/Scripts.astro";
 import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
+import WhyChooseUs from '../../../components/WhyChooseUs.astro';
 ---
 <html lang="en">
 <head>
@@ -155,15 +157,15 @@ import MapSection from "../../../components/MapSection.astro";
         <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
           <div
             class="breadcrumb__thumb"
-            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+            data-background="/assets/imgs/service/pavers.webp"></div>
           <div class="small-container">
             <div class="row justify-content-center">
               <div class="col-xxl-12">
                 <div class="breadcrumb__wrapper p-relative">
-                  <h2 class="breadcrumb__title">
+                  <h1 class="breadcrumb__title">
                     Paver Maintenance and Cleaning in North Jersey
-                  </h2>
-                  <div class="breadcrumb__menu fs-1">
+                  </h1>
+                  <div class="breadcrumb__menu fs-2">
                     <nav>
                       <ul>
                         <li>
@@ -190,21 +192,27 @@ import MapSection from "../../../components/MapSection.astro";
                     Keep Your Pavers Looking Like New
                   </h2>
                   <p class="mb-25">
-                    Even the most durable pavers lose their charm over time if not properly maintained. Dirt, weeds, stains, and shifting joints can make your driveway, patio, or walkway look worn and neglected. At MAC Paving and Sealcoating, we provide complete residential paver maintenance and cleaning services throughout Bergen County.
+                    Pavers need proper care to stay clean, level, and visually appealing. MAC Paving and Sealcoating offers full-service maintenance across Bergen County—removing stains, weeds, and buildup, fixing loose joints, and releveling sunken areas to restore beauty and safety.
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/masonry/pavers-maintenance-1.webp"
-                        alt="Paver Maintenance & Cleaning Services in NJ | Bergen County Area - Main Image - MAC Paving and Sealcoating" />
+                        alt="Paver Maintenance & Cleaning Services in NJ | Bergen County Area - Main Image - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/masonry/pavers-maintenance-2.webp"
-                        alt="Paver Maintenance & Cleaning Services in NJ | Bergen County Area - Side View - MAC Paving and Sealcoating" />
+                        alt="Paver Maintenance & Cleaning Services in NJ | Bergen County Area - Side View - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                   </div>
@@ -227,9 +235,12 @@ import MapSection from "../../../components/MapSection.astro";
                     </div>
                   </div>
                 <figure class="w-img">
-                    <img
+                    <Image
                       src="/assets/imgs/service/masonry/pavers-maintenance-3.webp"
-                      alt="Paver Maintenance & Cleaning Services in NJ | Bergen County Area - Close-Up - MAC Paving and Sealcoating" />
+                      alt="Paver Maintenance & Cleaning Services in NJ | Bergen County Area - Close-Up - MAC Paving and Sealcoating"
+                      width={1200}
+                      height={600}
+                      loading="lazy" />
                   </figure>
                   <h3 class="service-details-title mt-45 mb-25">
                     When to Schedule Maintenance—and Why It Matters
@@ -240,14 +251,24 @@ import MapSection from "../../../components/MapSection.astro";
                   <div class="row">
                     <div class="col-lg-7">
                       <figure class="w-img">
-                        <img
-                        src="/assets/imgs/service/masonry/pavers-maintenance-4.webp"
-                        alt="Paver Maintenance & Cleaning Services in NJ | Bergen County Area - Work in Progress - MAC Paving and Sealcoating" />
+                        <Image
+                        src="/assets/imgs/service/pavers/pavers-maintenance-4.webp"
+                        alt="Paver Maintenance & Cleaning Services in NJ | Bergen County Area - Work in Progress - MAC Paving and Sealcoating"
+                        width={800}
+                        height={500}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-5">
                       <ul class="service-details-page-list pt-20 pb-10">
-                        Wayne, Clifton, Woodland Park, Totowa, Bloomingdale, Pompton Lakes, Caldwell, North Caldwell
+                                                <li>Wayne</li>
+                        <li>Clifton</li>
+                        <li>Woodland Park</li>
+                        <li>Totowa</li>
+                        <li>Bloomingdale</li>
+                        <li>Pompton Lakes</li>
+                        <li>Caldwell</li>
+                        <li>North Caldwell</li>
                       </ul>
                     </div>
                   </div>
@@ -257,6 +278,7 @@ import MapSection from "../../../components/MapSection.astro";
             </div>
         </div>
     </section>
+    <WhyChooseUs />
     <MapSection />
 </main>
         <Footer />

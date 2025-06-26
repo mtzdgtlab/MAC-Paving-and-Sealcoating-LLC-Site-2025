@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Favicon from "../../../components/Favicon.astro";
 import Preloader from "../../../components/Preloader.astro";
 import CSSbase from "../../../components/CSSbase.astro";
@@ -8,6 +9,7 @@ import Scripts from "../../../components/Scripts.astro";
 import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
+import WhyChooseUs from '../../../components/WhyChooseUs.astro';
 ---
 <html lang="en">
 <head>
@@ -155,7 +157,7 @@ import MapSection from "../../../components/MapSection.astro";
         <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
           <div
             class="breadcrumb__thumb"
-            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+            data-background="/assets/imgs/service/landscaping.webp"></div>
           <div class="small-container">
             <div class="row justify-content-center">
               <div class="col-xxl-12">
@@ -163,7 +165,7 @@ import MapSection from "../../../components/MapSection.astro";
                   <h1 class="breadcrumb__title">
                     Sod Installation in North Jersey
                   </h1>
-                  <div class="breadcrumb__menu fs-1">
+                  <div class="breadcrumb__menu fs-2">
                     <nav>
                       <ul>
                         <li>
@@ -190,21 +192,27 @@ import MapSection from "../../../components/MapSection.astro";
                     Get a Lush, Green Lawn Without the Wait
                   </h2>
                   <p class="mb-25">
-                    Sod installation is the fastest way to enjoy a full, healthy lawn—without waiting weeks for seed to grow. MAC Paving provides instant, vibrant sod for New Jersey homes.
+                    When you want instant results, sod installation is the go-to solution for a lush, green lawn. At MAC Paving and Sealcoating, we provide full-service sod installation—from ground prep and grading to laying fresh, nutrient-rich turf that’s ready to use within days. Ideal for newly built homes, outdoor renovations, or replacing patchy grass, our sod solutions help North Jersey homeowners transform dirt lots into vibrant, healthy landscapes. We use top-quality materials and proven techniques to ensure root establishment, proper drainage, and a consistently smooth surface.
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/landscaping/sod-installation-1.webp"
-                        alt="Sod Installation in NJ | Fresh Green Lawns in Days - Main Image - MAC Paving and Sealcoating" />
+                        alt="Sod Installation in NJ | Fresh Green Lawns in Days - Main Image - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/landscaping/sod-installation-2.webp"
-                        alt="Sod Installation in NJ | Fresh Green Lawns in Days - Side View - MAC Paving and Sealcoating" />
+                        alt="Sod Installation in NJ | Fresh Green Lawns in Days - Side View - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                   </div>
@@ -227,9 +235,12 @@ import MapSection from "../../../components/MapSection.astro";
                     </div>
                   </div>
                 <figure class="w-img">
-                    <img
+                    <Image
                       src="/assets/imgs/service/landscaping/sod-installation-3.webp"
-                      alt="Sod Installation in NJ | Fresh Green Lawns in Days - Close-Up - MAC Paving and Sealcoating" />
+                      alt="Sod Installation in NJ | Fresh Green Lawns in Days - Close-Up - MAC Paving and Sealcoating"
+                      width={1200}
+                      height={600}
+                      loading="lazy" />
                   </figure>
                   <h3 class="service-details-title mt-45 mb-25">
                     When to Install Sod—and How It Pays Off
@@ -240,14 +251,24 @@ import MapSection from "../../../components/MapSection.astro";
                   <div class="row">
                     <div class="col-lg-7">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/landscaping/sod-installation-4.webp"
-                        alt="Sod Installation in NJ | Fresh Green Lawns in Days - Work in Progress - MAC Paving and Sealcoating" />
+                        alt="Sod Installation in NJ | Fresh Green Lawns in Days - Work in Progress - MAC Paving and Sealcoating"
+                        width={800}
+                        height={500}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-5">
                       <ul class="service-details-page-list pt-20 pb-10">
-                        Livingston, Roseland, Florham Park, Caldwell, Cedar Grove, Montclair, West Orange, Verona
+                                                <li>Livingston</li>
+                        <li>Roseland</li>
+                        <li>Florham Park</li>
+                        <li>Caldwell</li>
+                        <li>Cedar Grove</li>
+                        <li>Montclair</li>
+                        <li>West Orange</li>
+                        <li>Verona</li>
                       </ul>
                     </div>
                   </div>
@@ -257,6 +278,7 @@ import MapSection from "../../../components/MapSection.astro";
             </div>
         </div>
     </section>
+    <WhyChooseUs />
     <MapSection />
 </main>
         <Footer />

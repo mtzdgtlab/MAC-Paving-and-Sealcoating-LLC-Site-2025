@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Favicon from "../../../components/Favicon.astro";
 import Preloader from "../../../components/Preloader.astro";
 import CSSbase from "../../../components/CSSbase.astro";
@@ -8,6 +9,7 @@ import Scripts from "../../../components/Scripts.astro";
 import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
+import WhyChooseUs from '../../../components/WhyChooseUs.astro';
 ---
 <html lang="en">
 <head>
@@ -155,7 +157,7 @@ import MapSection from "../../../components/MapSection.astro";
         <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
           <div
             class="breadcrumb__thumb"
-            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+            data-background="/assets/imgs/service/asphalt.webp"></div>
           <div class="small-container">
             <div class="row justify-content-center">
               <div class="col-xxl-12">
@@ -163,7 +165,7 @@ import MapSection from "../../../components/MapSection.astro";
                   <h1 class="breadcrumb__title">
                     Driveway Replacement in North Jersey
                   </h1>
-                  <div class="breadcrumb__menu fs-1">
+                  <div class="breadcrumb__menu fs-2">
                     <nav>
                       <ul>
                         <li>
@@ -190,21 +192,27 @@ import MapSection from "../../../components/MapSection.astro";
                     Replace Your Old Driveway With One Built to Last
                   </h2>
                   <p class="mb-25">
-                    When repairs and patching no longer work, a full driveway replacement is the smart move. MAC Paving and Sealcoating specializes in removing worn-out asphalt and installing fresh, durable surfaces for homeowners across North Jersey. We handle the entire process—from demo to rebuild—so you can enjoy a flawless driveway that enhances both function and curb appeal.
+                    When your driveway is beyond repair, a full replacement ensures safety, aesthetics, and performance. At MAC Paving and Sealcoating, we handle complete driveway replacements—from demolition of damaged asphalt to the installation of a brand-new, expertly graded surface. Serving homeowners across North Jersey, we take care of everything with minimal disruption, delivering smooth, resilient driveways that elevate curb appeal and withstand years of use.
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/asphalt-paving/replacement-1.webp"
-                        alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Main Image - MAC Paving and Sealcoating" />
+                        alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Main Image - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/asphalt-paving/replacement-2.webp"
-                        alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Side View - MAC Paving and Sealcoating" />
+                        alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Side View - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                   </div>
@@ -227,9 +235,12 @@ import MapSection from "../../../components/MapSection.astro";
                     </div>
                   </div>
                 <figure class="w-img">
-                    <img
+                    <Image
                       src="/assets/imgs/service/asphalt-paving/replacement-3.webp"
-                      alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Close-Up - MAC Paving and Sealcoating" />
+                      alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Close-Up - MAC Paving and Sealcoating"
+                      width={1200}
+                      height={600}
+                      loading="lazy" />
                   </figure>
                   <h3 class="service-details-title mt-45 mb-25">
                     Know When It’s Time—And Get More for Your Money
@@ -240,14 +251,24 @@ import MapSection from "../../../components/MapSection.astro";
                   <div class="row">
                     <div class="col-lg-7">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/asphalt-paving/replacement-4.webp"
-                        alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Work in Progress - MAC Paving and Sealcoating" />
+                        alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Work in Progress - MAC Paving and Sealcoating"
+                        width={800}
+                        height={500}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-5">
                       <ul class="service-details-page-list pt-20 pb-10">
-                        Wayne, Bloomingdale, Cedar Grove, Livingston, Denville, Morristown, Verona, Nutley
+                                                <li>Wayne</li>
+                        <li>Bloomingdale</li>
+                        <li>Cedar Grove</li>
+                        <li>Livingston</li>
+                        <li>Denville</li>
+                        <li>Morristown</li>
+                        <li>Verona</li>
+                        <li>Nutley</li>
                       </ul>
                     </div>
                   </div>
@@ -257,6 +278,7 @@ import MapSection from "../../../components/MapSection.astro";
             </div>
         </div>
     </section>
+    <WhyChooseUs />
     <MapSection />
 </main>
         <Footer />

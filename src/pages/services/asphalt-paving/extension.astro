@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Favicon from "../../../components/Favicon.astro";
 import Preloader from "../../../components/Preloader.astro";
 import CSSbase from "../../../components/CSSbase.astro";
@@ -8,6 +9,7 @@ import Scripts from "../../../components/Scripts.astro";
 import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
+import Brands from "../../../components/Brands.astro";
 ---
 <html lang="en">
 <head>
@@ -156,7 +158,7 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
         <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
           <div
             class="breadcrumb__thumb"
-            data-background="/assets/imgs/service/asphalt-service.webp"></div>
+            data-background="/assets/imgs/service/asphalt.webp"></div>
           <div class="small-container">
             <div class="row justify-content-center">
               <div class="col-xxl-12">
@@ -164,7 +166,7 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                   <h1 class="breadcrumb__title">
                     Driveway Extensions in North Jersey
                   </h1>
-                  <div class="breadcrumb__menu fs-1">
+                  <div class="breadcrumb__menu fs-2">
                     <nav>
                       <ul>
                         <li>
@@ -191,21 +193,27 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                     Need More Parking Space? We’ll Extend Your Driveway
                   </h2>
                   <p class="mb-25">
-                    Expanding your driveway is a simple way to add space, boost curb appeal, and improve convenience. At MAC Paving and Sealcoating, we offer professional driveway extension services for North Jersey homeowners who need more room for vehicles, guests, or easier maneuvering. Our team ensures the new section blends seamlessly with your existing surface.
+                    Need more room for cars, guests, or easier access? A driveway extension is a simple yet impactful upgrade. MAC Paving and Sealcoating offers tailored driveway extensions that blend perfectly with your existing pavement. Whether you’re expanding for convenience or increasing your property’s value, our North Jersey team ensures a flawless match in materials, alignment, and finish.
                   </p>
                   <div class="row">
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/asphalt-paving/extension-1.webp"
-                        alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Main Image - MAC Paving and Sealcoating" />
+                        alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Main Image - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-6">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/asphalt-paving/extension-2.webp"
-                        alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Side View - MAC Paving and Sealcoating" />
+                        alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Side View - MAC Paving and Sealcoating"
+                        width={600}
+                        height={400}
+                        loading="lazy" />
                       </figure>
                     </div>
                   </div>
@@ -228,9 +236,12 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                     </div>
                   </div>
                 <figure class="w-img">
-                    <img
+                    <Image
                       src="/assets/imgs/service/asphalt-paving/extension-3.webp"
-                      alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Close-Up - MAC Paving and Sealcoating" />
+                      alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Close-Up - MAC Paving and Sealcoating"
+                      width={1200}
+                      height={600}
+                      loading="lazy" />
                   </figure>
                   <h3 class="service-details-title mt-45 mb-25">
                     Is a Driveway Extension Right for You? Let’s Talk
@@ -241,14 +252,24 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
                   <div class="row">
                     <div class="col-lg-7">
                       <figure class="w-img">
-                        <img
+                        <Image
                         src="/assets/imgs/service/asphalt-paving/extension-4.webp"
-                        alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Work in Progress - MAC Paving and Sealcoating" />
+                        alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Work in Progress - MAC Paving and Sealcoating"
+                        width={800}
+                        height={500}
+                        loading="lazy" />
                       </figure>
                     </div>
                     <div class="col-lg-5">
                       <ul class="service-details-page-list pt-20 pb-10">
-                        Totowa, Woodland Park, West Paterson, Fair Lawn, Bergenfield, Little Falls, Saddle Brook, Paramus
+                                                <li>Totowa</li>
+                        <li>Woodland Park</li>
+                        <li>West Paterson</li>
+                        <li>Fair Lawn</li>
+                        <li>Bergenfield</li>
+                        <li>Little Falls</li>
+                        <li>Saddle Brook</li>
+                        <li>Paramus</li>
                       </ul>
                     </div>
                   </div>
@@ -259,6 +280,7 @@ import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
         </div>
     </section>
     <TestimonialsSlider />
+    <Brands />
 </main>
         <Footer />
         <Scripts />  
