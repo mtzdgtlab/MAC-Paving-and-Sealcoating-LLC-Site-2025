@@ -7,6 +7,7 @@ import Footer from "../components/Footer.astro";
 import Scripts from "../components/Scripts.astro";
 import Largeform from "../components/LargeForm.astro";
 import SocialMeta from "../components/SocialMeta.astro";
+import LargeForm from "../components/LargeForm.astro";
 
 // Frontmatter de Astro - Variables SEO a definir
 const SEOTitle = "Our Paving Services";
@@ -149,10 +150,9 @@ const SEOkeywords = "paving services NJ, asphalt paving, concrete services, seal
   <body>
     <Preloader />
     <Navbar />
-    <!-- Header area end -
+
 
   <main>
-    <!-- Breadcrumb area start -->
     <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
       <div class="breadcrumb__thumb" data-background="/assets/imgs/bg/services-2.webp"></div>
       <div class="small-container">
@@ -434,7 +434,7 @@ const SEOkeywords = "paving services NJ, asphalt paving, concrete services, seal
       </div>
     </section>
     <!-- Choose area end -->
-
+    <LargeForm />
     <!-- Project slider area start -->
     <section class="project-slider-section section-space fix">
       <div class="small-container">
@@ -752,10 +752,10 @@ const SEOkeywords = "paving services NJ, asphalt paving, concrete services, seal
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       // Contact Form
-      const contactForm = document.getElementById("contactForm");
-      const formMessage = document.getElementById("formMessage");
+      const contactForm = document.getElementById("contactForm") as HTMLFormElement;
+      const formMessage = document.getElementById("formMessage") as HTMLElement;
 
-      if (contactForm) {
+      if (contactForm && formMessage) {
         contactForm.addEventListener("submit", async (e) => {
           e.preventDefault();
           try {
@@ -790,6 +790,13 @@ const SEOkeywords = "paving services NJ, asphalt paving, concrete services, seal
 
   <!-- ✅ Google Tag Manager & Analytics OPTIMIZADO -->
   <script>
+    declare global {
+      interface Window {
+        dataLayer: any[];
+        gtag: (...args: any[]) => void;
+      }
+    }
+
     window.addEventListener('load', () => {
       if ('requestIdleCallback' in window) {
         requestIdleCallback(loadTrackingScripts);
@@ -799,26 +806,31 @@ const SEOkeywords = "paving services NJ, asphalt paving, concrete services, seal
 
       function loadTrackingScripts() {
         // GTM
-        (function (w, d, s, l, i) {
+        (function (w: any, d: Document, s: string, l: string, i: string) {
           w[l] = w[l] || [];
           w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
+          const f = d.getElementsByTagName(s)[0];
+          const j = d.createElement(s) as HTMLScriptElement;
+          const dl = l != 'dataLayer' ? '&l=' + l : '';
           j.async = true;
           j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-          f.parentNode.insertBefore(j, f);
+          if (f.parentNode) {
+            f.parentNode.insertBefore(j, f);
+          }
         })(window, document, 'script', 'dataLayer', 'GTM-5G9N2B6G');
 
         // gtag
-        const gaScript = document.createElement('script');
+        const gaScript = document.createElement('script') as HTMLScriptElement;
         gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-T8PDJGNJ6B';
         gaScript.async = true;
         document.head.appendChild(gaScript);
 
         gaScript.onload = function () {
           window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
+          function gtag(...args: any[]) { 
+            window.dataLayer.push(arguments); 
+          }
+          window.gtag = gtag;
           gtag('js', new Date());
           gtag('config', 'G-T8PDJGNJ6B');
         };

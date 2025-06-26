@@ -1,15 +1,10 @@
-/*-----------------------------------------------------------------------------------
-
-**********************************************/
-
 ;(function ($) {
   'use strict'
-  var windowOn = $(window)
 
   /*======================================
 	Preloader activation
 	========================================*/
-  $(window).on('load', function (event) {
+  $(window).on('load', function () {
     $('#preloader').delay(500).fadeOut(500)
   })
 
@@ -273,7 +268,7 @@
       position: 50,
       separatorColor: '#fafafa',
       bulletColor: '#fafafa',
-      onMoveStart: function (e) {
+      onMoveStart: function (_e) {
         console.log(event.target)
       },
       onMoving: function () {
@@ -288,7 +283,7 @@
   /*======================================
 	Testimonial slider Js Gramen Home One
 	========================================*/
-  var team = new Swiper('.testimonial-active-1', {
+new Swiper('.testimonial-active-1', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -441,7 +436,7 @@
   /*======================================
 	Review slider Js
 	========================================*/
-  var review = new Swiper('.review-active', {
+new Swiper('.review-active', {
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
@@ -475,7 +470,7 @@
     },
   })
 
-  var review = new Swiper('.review-active', {
+new Swiper('.review-active', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -491,7 +486,7 @@
     },
   })
 
-  var review = new Swiper('.review-active-two', {
+new Swiper('.review-active-two', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
