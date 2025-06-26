@@ -53,9 +53,9 @@ i[class^="flaticon-"],
 /* variables */
 
 :root {
-  --primary-font: "Inter", sans-serif;
-  --secondary-font: "Roboto", sans-serif;
-  --tertiary-font: "Montserrat", sans-serif;
+  --first-font: "Inter", sans-serif;
+  --second-font: "Roboto", sans-serif;
+  --third-font: "Montserrat", sans-serif;
 
   --theme-color: #1c5ea0;
   --theme-color-1: #121c3a;
@@ -83,28 +83,33 @@ html {
     Typography css start 
 ---------------------------------*/
 body {
-  font-family: var(--tertiary-font);
+  font-family: var(--third-font);
   font-size: 16px;
   font-weight: normal;
   color: var(--theme-color-1);
   line-height: 26px;
 }
 
-h1,
-h2 {
-  font-family: var(--tertiary-font);
+h1 {
+  font-family: var(--first-font);
   color: var(--theme-color-1);
-  margin-top: 0px;
-  line-height: 1.3;
-  margin-bottom: 0;
-  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+
+h2 {
+  font-family: var(--first-font);
+  color: var(--theme-color-1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--primary-font);
+  font-family: var(--first-font);
   color: var(--theme-color-1);
   margin-top: 0px;
   line-height: 1.3;
@@ -113,11 +118,11 @@ h6 {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: clamp(30px, 4vw, 50px);
 }
 
 h2 {
-  font-size: 55px;
+  font-size: clamp(20px, 3vw, 45px);
 }
 
 h3 {
@@ -907,7 +912,7 @@ figure {
 .section-sub-title {
   position: relative;
   color: var(--theme-color);
-  font-family: var(--tertiary-font);
+  font-family: var(--third-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -940,7 +945,7 @@ figure {
 .section-sub-title {
   position: relative;
   color: var(--theme-color);
-  font-family: var(--tertiary-font);
+  font-family: var(--third-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -975,7 +980,7 @@ figure {
 .section-sub-titledos {
   position: relative;
   color: var(--theme-color-4);
-  font-family: var(--tertiary-font);
+  font-family: var(--third-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1008,7 +1013,7 @@ figure {
 .section-sub-titledos {
   position: relative;
   color: var(--theme-color-4);
-  font-family: var(--tertiary-font);
+  font-family: var(--third-font);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1587,7 +1592,7 @@ figure {
   margin-inline-end: 0;
 }
 .main-menu ul li a {
-  font-family: var(--tertiary-font);
+  font-family: var(--third-font);
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
@@ -2234,7 +2239,7 @@ figure {
 
 .header-link-1 .content span {
   color: var(--theme-color-1);
-  font-family: var(--primary-font);
+  font-family: var(--first-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -2348,7 +2353,7 @@ figure {
 
 .primary-btn-3 {
   color: var(--theme-color);
-  font-family: var(--secondary-font);
+  font-family: var(--second-font);
   font-size: 14px;
   font-weight: 600;
   background-color: #fff;
@@ -3354,7 +3359,7 @@ p.banner-text {
 }
 
 .about-us-image-area .icon-box p {
-  font-family: var(--tertiary-font);
+  font-family: var(--third-font);
   color: #d0e5f5;
   position: relative;
 }
@@ -3582,7 +3587,7 @@ p.banner-text {
   justify-content: start;
   align-items: center;
   gap: 6px;
-  font-family: var(--primary-font);
+  font-family: var(--first-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -3731,7 +3736,7 @@ p.banner-text {
 
 .cta-1-section .content h3 {
   position: relative;
-  font-family: var(--tertiary-font);
+  font-family: var(--third-font);
   font-weight: 800;
   font-size: 55px;
   text-align: center;
@@ -3802,7 +3807,7 @@ p.banner-text {
     }
 
     .cta-1-section h2 {
-      font-family: var(--secondary-font);
+      font-family: var(--second-font);
       margin-top: 10px;
       font-size: 25px;
       text-align: center;
@@ -3810,7 +3815,7 @@ p.banner-text {
   }
 
   .cta-1-section h3 {
-    font-family: var(--tertiary-font);
+    font-family: var(--third-font);
     font-weight: 800;
     margin-top: 20px;
     font-size: 40px;
@@ -4018,7 +4023,7 @@ p.banner-text {
 }
 
 .team-area-box .content .author-info span {
-  font-family: var(--secondary-font);
+  font-family: var(--second-font);
   color: #787878;
 }
 
@@ -4658,7 +4663,7 @@ p.banner-text {
 
 .service-tab-btn-area ul .nav-link {
   position: relative;
-  font-family: var(--primary-font);
+  font-family: var(--first-font);
   color: var(--theme-color-1);
   font-size: 20px;
   font-style: normal;
@@ -4849,7 +4854,7 @@ p.banner-text {
   box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
   border-radius: 50%;
   font-size: 16px;
-  font-family: var(--primary-font);
+  font-family: var(--first-font);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -5177,7 +5182,7 @@ p.banner-text {
 
 .icon-box-counter-area .text-1 {
   color: #000000;
-  font-family: var(--secondary-font);
+  font-family: var(--second-font);
 }
 @media (max-width: 767px) {
   .icon-box-counter-area {
@@ -5561,7 +5566,7 @@ p.banner-text {
   font-weight: 600;
   line-height: 26px;
   text-transform: uppercase;
-  font-family: var(--primary-font);
+  font-family: var(--first-font);
   background: #f8f8f8;
   padding: 12px 0;
   position: relative;
@@ -6550,7 +6555,7 @@ ul.postbox__comment_ratings {
 
 .postbox__comment-form label {
   font-weight: 500;
-  font-family: var(--primary-font);
+  font-family: var(--first-font);
   margin-bottom: 15px;
 }
 
