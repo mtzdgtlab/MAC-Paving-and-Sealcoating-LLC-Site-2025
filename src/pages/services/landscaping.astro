@@ -154,7 +154,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
           <div class="col-xxl-12">
             <div class="breadcrumb__wrapper p-relative">
               <h1 class="breadcrumb__title">Landscaping Services</h1>
-              <div class="breadcrumb__menu">
+              <div class="breadcrumb__menu fs-1">
                 <nav>
                   <ul>
                     <li>
@@ -649,14 +649,13 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
   <Footer />
   <Scripts />
-  <!-- Inicializaciones -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       // Contact Form
-      const contactForm = document.getElementById("contactForm");
-      const formMessage = document.getElementById("formMessage");
+      const contactForm = document.getElementById("contactForm") as HTMLFormElement;
+      const formMessage = document.getElementById("formMessage") as HTMLElement;
 
-      if (contactForm) {
+      if (contactForm && formMessage) {
         contactForm.addEventListener("submit", async (e) => {
           e.preventDefault();
           try {
@@ -689,7 +688,6 @@ import SocialMeta from "../../components/SocialMeta.astro";
     });
   </script>
 
-  
 </body>
 
 </html>

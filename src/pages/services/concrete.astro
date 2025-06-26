@@ -153,7 +153,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
               <div class="col-xxl-12">
                 <div class="breadcrumb__wrapper p-relative">
                   <h1 class="breadcrumb__title">Concrete Services</h1>
-                  <div class="breadcrumb__menu">
+                  <div class="breadcrumb__menu fs-1">
                     <nav>
                       <ul>
                         <li>
@@ -618,46 +618,46 @@ import SocialMeta from "../../components/SocialMeta.astro";
         <!-- Icon box counter area end -->
       </main>
       <Footer />
-      <Scripts />
-    <!-- Inicializaciones -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Contact Form
-        const contactForm = document.getElementById("contactForm");
-        const formMessage = document.getElementById("formMessage");
+  <Scripts />
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Contact Form
+      const contactForm = document.getElementById("contactForm") as HTMLFormElement;
+      const formMessage = document.getElementById("formMessage") as HTMLElement;
 
-        if (contactForm) {
-          contactForm.addEventListener("submit", async (e) => {
-            e.preventDefault();
-            try {
-              const response = await fetch(contactForm.action, {
-                method: "POST",
-                body: new FormData(contactForm),
-                headers: {
-                  Accept: "application/json",
-                },
-              });
+      if (contactForm && formMessage) {
+        contactForm.addEventListener("submit", async (e) => {
+          e.preventDefault();
+          try {
+            const response = await fetch(contactForm.action, {
+              method: "POST",
+              body: new FormData(contactForm),
+              headers: {
+                Accept: "application/json",
+              },
+            });
 
-              if (response.ok) {
-                formMessage.textContent =
-                  "Thank you for your message! We'll get back to you soon.";
-                formMessage.style.color = "#FFFFFF";
-                formMessage.style.fontWeight = "bold";
-                formMessage.style.fontSize = "1.2em";
-                contactForm.reset();
-              } else {
-                throw new Error("Form submission failed");
-              }
-            } catch (error) {
+            if (response.ok) {
               formMessage.textContent =
-                "Sorry, there was an error submitting your message. Please try again.";
-              formMessage.style.color = "yellow";
+                "Thank you for your message! We'll get back to you soon.";
+              formMessage.style.color = "#FFFFFF";
+              formMessage.style.fontWeight = "bold";
+              formMessage.style.fontSize = "1.2em";
+              contactForm.reset();
+            } else {
+              throw new Error("Form submission failed");
             }
-            formMessage.style.display = "block";
-          });
-        }
-      });
-    </script>
+          } catch (error) {
+            formMessage.textContent =
+              "Sorry, there was an error submitting your message. Please try again.";
+            formMessage.style.color = "yellow";
+          }
+          formMessage.style.display = "block";
+        });
+      }
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>

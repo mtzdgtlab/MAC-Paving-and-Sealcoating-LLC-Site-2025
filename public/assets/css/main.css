@@ -3506,28 +3506,39 @@ p.banner-text {
 
 .service-slider-area {
   background: #fff;
-  height: 100%;
+  height: 600px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
 }
 
 .service-slider-area figure {
   overflow: hidden;
+  margin-bottom: 50px;
+
 }
 
 .service-image {
   height: 350px;
+  margin-bottom: 50px;
   overflow: hidden;
+  margin-bottom: 50px;
+
 }
 
 .service-image img {
   width: 100%;
   height: 100%;
+  margin-bottom: 50px;
   object-fit: cover;
+  margin-bottom: 50px;
+
 }
 
 .service-slider-area:hover figure img {
   transform: scale(1.1);
+  margin-bottom: 50px;
 }
 
 .service-slider-area .content {
@@ -3537,11 +3548,16 @@ p.banner-text {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 50px;
+
+  
 }
 
 .service-slider-area .content h4:hover {
   color: var(--theme-color);
   transition: inherit;
+  margin-bottom: 50px;
+
 }
 
 .service-slider-area .icon-box {
@@ -3554,6 +3570,7 @@ p.banner-text {
   right: 30px;
   top: -45px;
   background: #fff;
+  margin-bottom: 50px;
 }
 
 .service-slider-area .icon-box:before {
@@ -3565,21 +3582,29 @@ p.banner-text {
   width: 0;
   background: var(--theme-color);
   transition: all 500ms ease;
+  margin-bottom: 50px;
+
 }
 
 .service-slider-area:hover .icon-box:before {
   width: 100%;
   left: 0;
+  margin-bottom: 50px;
+
 }
 
 .service-slider-area:hover .icon-box i {
   color: #fff;
   position: relative;
   transition: all 500ms ease;
+  margin-bottom: 50px;
+
 }
 
 .service-slider-area:hover .icon-box {
   border: 1px solid var(--theme-color);
+  margin-bottom: 50px;
+
 }
 
 .service-slider-area .service-btn {
@@ -3591,6 +3616,7 @@ p.banner-text {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
+  
 }
 
 .service-slider-area .service-btn:hover {
