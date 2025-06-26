@@ -1,0 +1,55 @@
+User-agent: *
+Allow: /
+
+# Bloquear archivos que no deben ser indexados
+Disallow: /assets/imgs/
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/fonts/
+Disallow: /assets/resources/
+Disallow: *.py
+Disallow: *.csv
+Disallow: *.xlsx
+Disallow: *.json
+Disallow: *.js.map
+Disallow: *.css.map
+
+# Bloquear URLs obsoletas con .html (importante para evitar 404s)
+Disallow: /*.html
+Disallow: /installation.html
+Disallow: /resurfacing.html
+Disallow: /replacement.html
+Disallow: /extension.html
+Disallow: /sealcoating.html
+Disallow: /crack-filling.html
+Disallow: /line-striping.html
+Disallow: /walkways.html
+Disallow: /sidewalks.html
+Disallow: /curbs.html
+Disallow: /aprons.html
+Disallow: /paver-installation.html
+Disallow: /paver-maintenance.html
+Disallow: /belgium-blocks.html
+Disallow: /sod-installation.html
+Disallow: /drainage.html
+Disallow: /hauling.html
+Disallow: /power-wash.html
+Disallow: /top-soil.html
+
+# Bloquear archivos del sistema
+Disallow: /.DS_Store
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /node_modules/
+
+# Bloquear admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.env
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://macpavingandsealcoating.com/sitemap-index.xml
+
+# Crawl delay para ser amigable con los bots
+Crawl-delay: 1

@@ -1,0 +1,75 @@
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.macpavingandsealcoating\.com [NC]
+RewriteRule ^(.*)$ https://macpavingandsealcoating.com/$1 [R=301,L]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect old service URLs with .html to new structure
+RedirectMatch 301 ^/installation\.html$ /services/asphalt-paving/installation
+RedirectMatch 301 ^/resurfacing\.html$ /services/asphalt-paving/resurfacing
+RedirectMatch 301 ^/replacement\.html$ /services/asphalt-paving/replacement
+RedirectMatch 301 ^/extension\.html$ /services/asphalt-paving/extension
+RedirectMatch 301 ^/sealcoating\.html$ /services/sealer/sealcoating
+RedirectMatch 301 ^/crack-filling\.html$ /services/sealer/crack-filling
+RedirectMatch 301 ^/line-striping\.html$ /services/sealer/line-striping
+RedirectMatch 301 ^/walkways\.html$ /services/concrete/walkways
+RedirectMatch 301 ^/sidewalks\.html$ /services/concrete/sidewalks
+RedirectMatch 301 ^/curbs\.html$ /services/concrete/curbs
+RedirectMatch 301 ^/aprons\.html$ /services/concrete/aprons
+RedirectMatch 301 ^/paver-installation\.html$ /services/pavers/installation
+RedirectMatch 301 ^/paver-maintenance\.html$ /services/pavers/maintenance
+RedirectMatch 301 ^/belgium-blocks\.html$ /services/pavers/belgium-blocks
+RedirectMatch 301 ^/sod-installation\.html$ /services/landscaping/sod-installation
+RedirectMatch 301 ^/drainage\.html$ /services/landscaping/drainage
+RedirectMatch 301 ^/hauling\.html$ /services/landscaping/hauling
+RedirectMatch 301 ^/power-wash\.html$ /services/landscaping/power-wash
+RedirectMatch 301 ^/top-soil\.html$ /services/landscaping/top-soil
+
+# Redirect old service URLs without .html
+RedirectMatch 301 ^/installation$ /services/asphalt-paving/installation
+RedirectMatch 301 ^/resurfacing$ /services/asphalt-paving/resurfacing
+RedirectMatch 301 ^/replacement$ /services/asphalt-paving/replacement
+RedirectMatch 301 ^/extension$ /services/asphalt-paving/extension
+RedirectMatch 301 ^/sealcoating$ /services/sealer/sealcoating
+RedirectMatch 301 ^/crack-filling$ /services/sealer/crack-filling
+RedirectMatch 301 ^/line-striping$ /services/sealer/line-striping
+RedirectMatch 301 ^/walkways$ /services/concrete/walkways
+RedirectMatch 301 ^/sidewalks$ /services/concrete/sidewalks
+RedirectMatch 301 ^/curbs$ /services/concrete/curbs
+RedirectMatch 301 ^/aprons$ /services/concrete/aprons
+RedirectMatch 301 ^/pavers-installation$ /services/pavers/installation
+RedirectMatch 301 ^/paver-maintenance$ /services/pavers/maintenance
+RedirectMatch 301 ^/belgium-blocks$ /services/pavers/belgium-blocks
+RedirectMatch 301 ^/sod-installation$ /services/landscaping/sod-installation
+RedirectMatch 301 ^/drainage$ /services/landscaping/drainage
+RedirectMatch 301 ^/hauling$ /services/landscaping/hauling
+RedirectMatch 301 ^/power-wash$ /services/landscaping/power-wash
+RedirectMatch 301 ^/top-soil$ /services/landscaping/top-soil
+
+# Category redirects
+RedirectMatch 301 ^/asphalt-paving$ /services/asphalt-paving
+RedirectMatch 301 ^/concrete$ /services/concrete
+RedirectMatch 301 ^/pavers$ /services/pavers
+RedirectMatch 301 ^/sealer$ /services/sealer
+RedirectMatch 301 ^/landscaping$ /services/landscaping
+
+# Other old URLs
+RedirectMatch 301 ^/services\.html$ /services
+RedirectMatch 301 ^/contact\.html$ /contact
+RedirectMatch 301 ^/index\.html$ /
+
+# Block access to development files
+<Files ~ "\.(py|csv|xlsx)$">
+    Order deny,allow
+    Deny from all
+</Files>
+
+# Block access to system files
+<Files ~ "^\.">
+    Order deny,allow
+    Deny from all
+</Files>

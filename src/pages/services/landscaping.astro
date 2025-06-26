@@ -154,7 +154,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
           <div class="col-xxl-12">
             <div class="breadcrumb__wrapper p-relative">
               <h1 class="breadcrumb__title">Landscaping Services</h1>
-              <div class="breadcrumb__menu fs-2">
+              <div class="breadcrumb__menu">
                 <nav>
                   <ul>
                     <li>
@@ -179,7 +179,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
             <div class="row g-4">
               <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                 <!-- block -->
-                 <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                <div class="service-slider-area">
                   <figure class="service-image">
                     <img src="/assets/imgs/service/landscaping/sod-installation-1.webp"
                       alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey." />
@@ -204,7 +204,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
               <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                 <!-- block -->
-                 <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                <div class="service-slider-area">
                   <figure class="service-image">
                     <img src="/assets/imgs/service/landscaping/top-soil-1.webp"
                       alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ." />
@@ -228,7 +228,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
               <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                 <!-- block -->
-                 <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                <div class="service-slider-area">
                   <figure class="service-image">
                     <img src="/assets/imgs/service/landscaping/drainage-1.webp"
                       alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ." />
@@ -253,7 +253,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
               <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                 <!-- block -->
-                 <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                <div class="service-slider-area">
                   <figure class="service-image">
                     <img src="/assets/imgs/service/landscaping/power-wash-1.webp"
                       alt="Power Washing Service by MAC Paving and Sealcoating – Commercial and Residential Pavement Cleaning NJ." />
@@ -278,7 +278,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
               <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                 <!-- block -->
-                 <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                <div class="service-slider-area">
                   <figure class="service-image">
                     <img src="/assets/imgs/service/landscaping/hauling-1.webp"
                       alt="Hauling Services by MAC Paving and Sealcoating – Reliable Hauling and Asphalt Paving Contractors NJ." />
@@ -352,8 +352,8 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
     <!-- Choose area start -->
     <section class="choose-section bg-color-1 section-space-top section-space-bottom p-relative">
-      <div class="bg-image" data-background="assets/imgs/bg/choose-bg.webp"></div>
-      <div class="shape-image" data-background="assets/imgs/shapes/shape-15.webp"></div>
+      <div class="bg-image" data-background="/assets/imgs/bg/choose-bg.webp"></div>
+      <div class="shape-image" data-background="/assets/imgs/shapes/shape-15.webp"></div>
       <div class="small-container">
         <div class="row g-4 justify-content-center text-center">
           <div class="col-12">
@@ -649,13 +649,14 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
   <Footer />
   <Scripts />
+  <!-- Inicializaciones -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       // Contact Form
-      const contactForm = document.getElementById("contactForm") as HTMLFormElement;
-      const formMessage = document.getElementById("formMessage") as HTMLElement;
+      const contactForm = document.getElementById("contactForm");
+      const formMessage = document.getElementById("formMessage");
 
-      if (contactForm && formMessage) {
+      if (contactForm) {
         contactForm.addEventListener("submit", async (e) => {
           e.preventDefault();
           try {
@@ -688,6 +689,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
     });
   </script>
 
+  
 </body>
 
 </html>

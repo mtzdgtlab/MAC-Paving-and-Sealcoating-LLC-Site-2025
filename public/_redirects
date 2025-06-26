@@ -1,0 +1,62 @@
+# Redirects for obsolete URLs to avoid 404 errors
+
+# Old service URLs with .html to new structure
+/installation.html /services/asphalt-paving/installation 301
+/resurfacing.html /services/asphalt-paving/resurfacing 301
+/replacement.html /services/asphalt-paving/replacement 301
+/extension.html /services/asphalt-paving/extension 301
+/sealcoating.html /services/sealer/sealcoating 301
+/crack-filling.html /services/sealer/crack-filling 301
+/line-striping.html /services/sealer/line-striping 301
+/walkways.html /services/concrete/walkways 301
+/sidewalks.html /services/concrete/sidewalks 301
+/curbs.html /services/concrete/curbs 301
+/aprons.html /services/concrete/aprons 301
+/paver-installation.html /services/pavers/installation 301
+/paver-maintenance.html /services/pavers/maintenance 301
+/belgium-blocks.html /services/pavers/belgium-blocks 301
+/sod-installation.html /services/landscaping/sod-installation 301
+/drainage.html /services/landscaping/drainage 301
+/hauling.html /services/landscaping/hauling 301
+/power-wash.html /services/landscaping/power-wash 301
+/top-soil.html /services/landscaping/top-soil 301
+
+# Old service URLs without .html to new structure
+/installation /services/asphalt-paving/installation 301
+/resurfacing /services/asphalt-paving/resurfacing 301
+/replacement /services/asphalt-paving/replacement 301
+/extension /services/asphalt-paving/extension 301
+/sealcoating /services/sealer/sealcoating 301
+/crack-filling /services/sealer/crack-filling 301
+/line-striping /services/sealer/line-striping 301
+/walkways /services/concrete/walkways 301
+/sidewalks /services/concrete/sidewalks 301
+/curbs /services/concrete/curbs 301
+/aprons /services/concrete/aprons 301
+/pavers-installation /services/pavers/installation 301
+/paver-maintenance /services/pavers/maintenance 301
+/belgium-blocks /services/pavers/belgium-blocks 301
+/sod-installation /services/landscaping/sod-installation 301
+/drainage /services/landscaping/drainage 301
+/hauling /services/landscaping/hauling 301
+/power-wash /services/landscaping/power-wash 301
+/top-soil /services/landscaping/top-soil 301
+
+# Category redirects
+/asphalt-paving /services/asphalt-paving 301
+/concrete /services/concrete 301
+/pavers /services/pavers 301
+/sealer /services/sealer 301
+/landscaping /services/landscaping 301
+
+# Other old URLs
+/services.html /services 301
+/contact.html /contact 301
+/index.html / 301
+
+# Redirect www to non-www
+https://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!
+
+# Redirect http to https
+http://macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!
+http://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!

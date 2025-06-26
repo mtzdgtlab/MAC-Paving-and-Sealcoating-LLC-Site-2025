@@ -1,31 +1,41 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
-import AsphaltPavingImg from '../assets/imgs/service/asphalt-paving.webp';
-import SealerImg from '../assets/imgs/service/sealer.webp';
-import PaversImg from '../assets/imgs/service/pavers.webp';
-import ConcreteImg from '../assets/imgs/service/concrete.webp';
-import LandscapingImg from '../assets/imgs/service/landscaping.webp';
+import AsphaltPavingImg from "../assets/imgs/service/asphalt-paving.webp";
+import SealerImg from "../assets/imgs/service/sealer.webp";
+import PaversImg from "../assets/imgs/service/pavers.webp";
+import ConcreteImg from "../assets/imgs/service/concrete.webp";
+import LandscapingImg from "../assets/imgs/service/landscaping.webp";
 ---
+
 <section
   aria-label="Services section"
-  class="service-slider-section section-space bg-color-1">
+  class="service-slider-section section-space bg-color-1"
+>
   <div
     class="shape-10"
-    style="background-image: url('/assets/imgs/shapes/shape-10.webp')"></div>
+    style="background-image: url('/assets/imgs/shapes/shape-10.webp')"
+  >
+  </div>
   <div
     class="shape-9"
-    style="background-image: url('/assets/imgs/shapes/shape-9.webp')"></div>
+    style="background-image: url('/assets/imgs/shapes/shape-9.webp')"
+  >
+  </div>
   <div class="small-container">
     <div class="row">
       <div class="col-xxl-6">
         <div class="title-box mb-50" data-aos="fade-left" data-aos-delay="500">
-          <span class="section-sub-titledos">Paving and Asphalt Contractor Near You</span>
+          <span class="section-sub-titledos"
+            >Paving and Asphalt Contractor Near You</span
+          >
           <h3 class="section-title mt-35">Our Services</h3>
         </div>
       </div>
       <div class="col-xxl-6">
-        <div class="service_1_navigation__wrapprer position-relative z-1 text-end mt-30">
+        <div
+          class="service_1_navigation__wrapprer position-relative z-1 text-end mt-30"
+        >
           <div class="common-slider-navigation">
             <button class="service-1-button-prev" aria-label="Previous service">
               <i class="fas fa-arrow-left"></i>
@@ -42,15 +52,22 @@ import LandscapingImg from '../assets/imgs/service/landscaping.webp';
       <div class="swiper-wrapper">
         <!-- Asphalt Paving -->
         <div class="swiper-slide">
-           <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+          <div class="service-slider-area">
             <figure class="service-image">
-              <Image src={AsphaltPavingImg} alt="Asphalt Paving" width={370} height={247} />
+              <Image
+                src={AsphaltPavingImg}
+                alt="Asphalt Paving"
+                width={370}
+                height={247}
+              />
             </figure>
             <div class="content">
               <div class="icon-box"><i class="fas fa-road"></i></div>
               <h4><a href="/services/asphalt-paving">Asphalt Paving</a></h4>
               <p>
-                From residential driveways to commercial parking lots, our expert asphalt paving services ensure a smooth, durable, and professional finish that enhances both function and curb appeal.
+                From residential driveways to commercial parking lots, our
+                expert asphalt paving services ensure a smooth, durable, and
+                professional finish that enhances both function and curb appeal.
               </p>
               <a href="/services/asphalt-paving" class="service-btn">
                 Read More <i class="fas fa-chevron-right"></i>
@@ -61,15 +78,23 @@ import LandscapingImg from '../assets/imgs/service/landscaping.webp';
 
         <!-- Sealer -->
         <div class="swiper-slide">
-           <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+          <div class="service-slider-area">
             <figure class="service-image">
-              <Image src={SealerImg} alt="Sealcoating" width={370} height={247} />
+              <Image
+                src={SealerImg}
+                alt="Sealcoating"
+                width={370}
+                height={247}
+              />
             </figure>
             <div class="content">
               <div class="icon-box"><i class="fas fa-fill-drip"></i></div>
               <h4><a href="/services/sealer">Sealer</a></h4>
               <p>
-                Our premium sealcoating, crack filling, and line striping services extend the life of your pavement. These treatments shield your surfaces from weather, wear, and heavy traffic while maintaining a sleek, protected finish.
+                Our premium sealcoating, crack filling, and line striping
+                services extend the life of your pavement. These treatments
+                shield your surfaces from weather, wear, and heavy traffic while
+                maintaining a sleek, protected finish.
               </p>
               <a href="/services/sealer" class="service-btn">
                 Read More <i class="fas fa-angles-right"></i>
@@ -80,7 +105,7 @@ import LandscapingImg from '../assets/imgs/service/landscaping.webp';
 
         <!-- Pavers -->
         <div class="swiper-slide">
-           <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+          <div class="service-slider-area">
             <figure class="service-image">
               <Image src={PaversImg} alt="Pavers" width={370} height={247} />
             </figure>
@@ -88,7 +113,10 @@ import LandscapingImg from '../assets/imgs/service/landscaping.webp';
               <div class="icon-box"><i class="fas fa-th-large"></i></div>
               <h4><a href="/services/pavers">Pavers</a></h4>
               <p>
-                We create elegant, long-lasting paver installations customized for driveways, patios, and walkways. Each project is crafted with precision and premium materials to elevate your outdoor aesthetics.
+                We create elegant, long-lasting paver installations customized
+                for driveways, patios, and walkways. Each project is crafted
+                with precision and premium materials to elevate your outdoor
+                aesthetics.
               </p>
               <a href="/services/pavers" class="service-btn">
                 Read More <i class="fas fa-angles-right"></i>
@@ -99,15 +127,22 @@ import LandscapingImg from '../assets/imgs/service/landscaping.webp';
 
         <!-- Concrete -->
         <div class="swiper-slide">
-           <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+          <div class="service-slider-area">
             <figure class="service-image">
-              <Image src={ConcreteImg} alt="Concrete" width={370} height={247} />
+              <Image
+                src={ConcreteImg}
+                alt="Concrete"
+                width={370}
+                height={247}
+              />
             </figure>
             <div class="content">
               <div class="icon-box"><i class="fas fa-hard-hat"></i></div>
               <h4><a href="/services/concrete">Concrete</a></h4>
               <p>
-                Expertly poured and finished concrete work, including sidewalks, curbs, aprons, and walkways—designed for strength, safety, and timeless appeal.
+                Expertly poured and finished concrete work, including sidewalks,
+                curbs, aprons, and walkways—designed for strength, safety, and
+                timeless appeal.
               </p>
               <a href="/services/concrete" class="service-btn">
                 Read More <i class="fas fa-angles-right"></i>
@@ -118,15 +153,23 @@ import LandscapingImg from '../assets/imgs/service/landscaping.webp';
 
         <!-- Landscaping -->
         <div class="swiper-slide">
-           <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+          <div class="service-slider-area">
             <figure class="service-image">
-              <Image src={LandscapingImg} alt="Landscaping" width={370} height={247} />
+              <Image
+                src={LandscapingImg}
+                alt="Landscaping"
+                width={370}
+                height={247}
+              />
             </figure>
             <div class="content">
               <div class="icon-box"><i class="fas fa-tree"></i></div>
               <h4><a href="/services/landscaping">Landscaping</a></h4>
               <p>
-                We provide comprehensive landscaping solutions that transform your outdoor environment. Our services include lush sod installation, nutrient-rich topsoil application, efficient drainage systems, and thorough power washing.
+                We provide comprehensive landscaping solutions that transform
+                your outdoor environment. Our services include lush sod
+                installation, nutrient-rich topsoil application, efficient
+                drainage systems, and thorough power washing.
               </p>
               <a href="/services/landscaping" class="service-btn">
                 Read More <i class="fas fa-angles-right"></i>

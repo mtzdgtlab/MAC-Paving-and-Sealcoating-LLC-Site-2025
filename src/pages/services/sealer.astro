@@ -163,7 +163,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
           <div class="col-xxl-12">
             <div class="breadcrumb__wrapper p-relative">
               <h1 class="breadcrumb__title">Sealer Services</h1>
-              <div class="breadcrumb__menu fs-2">
+              <div class="breadcrumb__menu">
                 <nav>
                   <ul>
                     <li>
@@ -188,9 +188,9 @@ import SocialMeta from "../../components/SocialMeta.astro";
             <div class="row g-4">
               <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                 <!-- block -->
-                 <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                <div class="service-slider-area">
                   <figure class="service-image">
-                    <img src="/assets/imgs/service/sealer/sealcoating-2.webp"
+                    <img src="/assets/imgs/service/sealer/sealcoating-1.webp"
                       alt="Sealcoating Service by MAC Paving and Sealcoating – Premier Asphalt Sealcoating Company NJ." />
                   </figure>
                   <div class="content">
@@ -214,9 +214,9 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
               <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                 <!-- block -->
-                 <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                <div class="service-slider-area">
                   <figure class="service-image">
-                    <img src="/assets/imgs/service/sealer/crack-filling-4.webp"
+                    <img src="/assets/imgs/service/sealer/crack-filling-1.webp"
                       alt="Crack Filling Service by MAC Paving and Sealcoating – Asphalt Repair and Pavement Maintenance in New Jersey." />
                   </figure>
                   <div class="content">
@@ -239,9 +239,9 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
               <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                 <!-- block -->
-                 <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                <div class="service-slider-area">
                   <figure class="service-image">
-                    <img src="/assets/imgs/service/sealer/line-striping-3.webp"
+                    <img src="/assets/imgs/service/sealer/line-striping-1.webp"
                       alt="Line Striping Service by MAC Paving and Sealcoating – Commercial Asphalt Paving Contractors NJ, specializing in Parking Lot Striping." />
                   </figure>
                   <div class="content">
@@ -313,8 +313,8 @@ import SocialMeta from "../../components/SocialMeta.astro";
 
     <!-- Choose area start -->
     <section class="choose-section bg-color-1 section-space-top section-space-bottom p-relative">
-      <div class="bg-image" data-background="assets/imgs/bg/choose-bg.webp"></div>
-      <div class="shape-image" data-background="assets/imgs/shapes/shape-15.webp"></div>
+      <div class="bg-image" data-background="/assets/imgs/bg/choose-bg.webp"></div>
+      <div class="shape-image" data-background="/assets/imgs/shapes/shape-15.webp"></div>
       <div class="small-container">
         <div class="row g-4 justify-content-center text-center">
           <div class="col-12">
@@ -612,17 +612,17 @@ import SocialMeta from "../../components/SocialMeta.astro";
     </section>
     <!-- Icon box counter area end -->
   </main>
-   
-  
-  <Footer />
-  <Scripts />
+   <Footer />
+   <Scripts />
+    
+  <!-- Inicializaciones -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       // Contact Form
-      const contactForm = document.getElementById("contactForm") as HTMLFormElement;
-      const formMessage = document.getElementById("formMessage") as HTMLElement;
+      const contactForm = document.getElementById("contactForm");
+      const formMessage = document.getElementById("formMessage");
 
-      if (contactForm && formMessage) {
+      if (contactForm) {
         contactForm.addEventListener("submit", async (e) => {
           e.preventDefault();
           try {
@@ -654,7 +654,6 @@ import SocialMeta from "../../components/SocialMeta.astro";
       }
     });
   </script>
-
 </body>
 
 </html>

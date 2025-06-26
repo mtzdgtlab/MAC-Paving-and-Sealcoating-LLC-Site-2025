@@ -153,7 +153,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
               <div class="col-xxl-12">
                 <div class="breadcrumb__wrapper p-relative">
                   <h1 class="breadcrumb__title">Concrete Services</h1>
-                  <div class="breadcrumb__menu fs-2">
+                  <div class="breadcrumb__menu">
                     <nav>
                       <ul>
                         <li>
@@ -178,9 +178,9 @@ import SocialMeta from "../../components/SocialMeta.astro";
                 <div class="row g-4">
                   <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                     <!-- block -->
-                     <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                    <div class="service-slider-area">
                       <figure class="service-image">
-                        <img src="/assets/imgs/service/concrete/walkways-2.webp"
+                        <img src="/assets/imgs/service/concrete/walkways-6.webp"
                           alt="Walkways Installation by MAC Paving and Sealcoating – Concrete Walkway and Asphalt Paving Contractors in Central Jersey." />
                       </figure>
                       <div class="content">
@@ -202,9 +202,9 @@ import SocialMeta from "../../components/SocialMeta.astro";
     
                   <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                     <!-- block -->
-                     <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                    <div class="service-slider-area">
                       <figure class="service-image">
-                        <img src="/assets/imgs/service/concrete/sidewalks-1.webp"
+                        <img src="/assets/imgs/service/concrete/sidewalks-4.webp"
                           alt="Sidewalks Installation Service by MAC Paving and Sealcoating – Residential and Commercial Sidewalk Paving NJ." />
                       </figure>
                       <div class="content">
@@ -227,7 +227,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
     
                   <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                     <!-- block -->
-                     <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                    <div class="service-slider-area">
                       <figure class="service-image">
                         <img src="/assets/imgs/service/concrete/curbs.webp"
                           alt="Curbs Installation Service by MAC Paving and Sealcoating – Concrete Curbs and Expert Paving Contractors in NJ." />
@@ -250,7 +250,7 @@ import SocialMeta from "../../components/SocialMeta.astro";
     
                   <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
                     <!-- block -->
-                     <div class="service-slider-area" style="width: 400px; height: 650px; overflow: hidden;">
+                    <div class="service-slider-area">
                       <figure class="service-image">
                         <img src="/assets/imgs/service/concrete/aprons-4.webp"
                           alt="Aprons Installation Service by MAC Paving and Sealcoating – Driveway Apron Installation and Asphalt Companies NJ." />
@@ -324,8 +324,8 @@ import SocialMeta from "../../components/SocialMeta.astro";
     
         <!-- Choose area start -->
         <section class="choose-section bg-color-1 section-space-top section-space-bottom p-relative">
-          <div class="bg-image" data-background="assets/imgs/bg/choose-bg.webp"></div>
-          <div class="shape-image" data-background="assets/imgs/shapes/shape-15.webp"></div>
+          <div class="bg-image" data-background="/assets/imgs/bg/choose-bg.webp"></div>
+          <div class="shape-image" data-background="/assets/imgs/shapes/shape-15.webp"></div>
           <div class="small-container">
             <div class="row g-4 justify-content-center text-center">
               <div class="col-12">
@@ -618,46 +618,46 @@ import SocialMeta from "../../components/SocialMeta.astro";
         <!-- Icon box counter area end -->
       </main>
       <Footer />
-  <Scripts />
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Contact Form
-      const contactForm = document.getElementById("contactForm") as HTMLFormElement;
-      const formMessage = document.getElementById("formMessage") as HTMLElement;
+      <Scripts />
+    <!-- Inicializaciones -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Contact Form
+        const contactForm = document.getElementById("contactForm");
+        const formMessage = document.getElementById("formMessage");
 
-      if (contactForm && formMessage) {
-        contactForm.addEventListener("submit", async (e) => {
-          e.preventDefault();
-          try {
-            const response = await fetch(contactForm.action, {
-              method: "POST",
-              body: new FormData(contactForm),
-              headers: {
-                Accept: "application/json",
-              },
-            });
+        if (contactForm) {
+          contactForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            try {
+              const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: new FormData(contactForm),
+                headers: {
+                  Accept: "application/json",
+                },
+              });
 
-            if (response.ok) {
+              if (response.ok) {
+                formMessage.textContent =
+                  "Thank you for your message! We'll get back to you soon.";
+                formMessage.style.color = "#FFFFFF";
+                formMessage.style.fontWeight = "bold";
+                formMessage.style.fontSize = "1.2em";
+                contactForm.reset();
+              } else {
+                throw new Error("Form submission failed");
+              }
+            } catch (error) {
               formMessage.textContent =
-                "Thank you for your message! We'll get back to you soon.";
-              formMessage.style.color = "#FFFFFF";
-              formMessage.style.fontWeight = "bold";
-              formMessage.style.fontSize = "1.2em";
-              contactForm.reset();
-            } else {
-              throw new Error("Form submission failed");
+                "Sorry, there was an error submitting your message. Please try again.";
+              formMessage.style.color = "yellow";
             }
-          } catch (error) {
-            formMessage.textContent =
-              "Sorry, there was an error submitting your message. Please try again.";
-            formMessage.style.color = "yellow";
-          }
-          formMessage.style.display = "block";
-        });
-      }
-    });
-  </script>
+            formMessage.style.display = "block";
+          });
+        }
+      });
+    </script>
 
-</body>
-
+  </body>
 </html>
