@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Favicon from "../../components/Favicon.astro";
 import Preloader from "../../components/Preloader.astro";
 import CSSbase from "../../components/CSSbase.astro";
@@ -919,10 +920,14 @@ import SocialMeta from "../../components/SocialMeta.astro";
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         // Contact Form
-        const contactForm = document.getElementById("contactForm");
-        const formMessage = document.getElementById("formMessage");
+        const contactForm = document.getElementById(
+          "contactForm"
+        ) as HTMLFormElement | null;
+        const formMessage = document.getElementById(
+          "formMessage"
+        ) as HTMLDivElement | null;
 
-        if (contactForm) {
+        if (contactForm && formMessage) {
           contactForm.addEventListener("submit", async (e) => {
             e.preventDefault();
             try {

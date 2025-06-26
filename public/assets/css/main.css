@@ -86,7 +86,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--tertiary-font);
   color: var(--theme-color-1);
   margin-top: 0px;
@@ -95,7 +96,6 @@ h2 {
   font-weight: 800;
 }
 
-h3,
 h4,
 h5,
 h6 {
@@ -107,16 +107,13 @@ h6 {
   font-weight: 600;
 }
 
-h1 {
-  font-size: 64px;
-}
-
-h2 {
-  font-size: 55px;
+h1,
+h2{
+  font-size: clamp(20px, 6vw, 45px);
 }
 
 h3 {
-  font-size: 36px;
+  font-size: clamp(15px, 5vw, 30px);
 }
 
 h4 {
