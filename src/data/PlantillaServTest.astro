@@ -166,11 +166,11 @@ import Brands from "../../../components/Brands.astro";
                   <h1 class="breadcrumb__title">
                     {{ breadcrumb_title }}
                   </h1>
-                  <div class="breadcrumb__menu fs-2">
+                  <div class="breadcrumb__menu">
                     <nav>
                       <ul>
                         <li>
-                          <span><a href="/">Home</a></span>
+                          <span><a href="/">Home  / </a></span>
                         </li>
                         <li>
                           <span>{{ breadcrumb_path }}</span>
@@ -219,7 +219,7 @@ import Brands from "../../../components/Brands.astro";
                   </div>
                   <div class="row">
                     <div class="col-lg-6">
-                      <h3 class="service-details-title mt-45 mb-25">
+                      <h3 class="service-details-subtitle mt-45 mb-25">
                         {{ block_title_2 }}
                       </h3>
                       <p class="mb-25">
@@ -227,7 +227,7 @@ import Brands from "../../../components/Brands.astro";
                       </p>
                     </div>
                     <div class="col-lg-6">
-                      <h3 class="service-details-title mt-45 mb-25">
+                      <h3 class="service-details-subtitle mt-45 mb-25">
                         {{ block_title_3 }}
                       </h3>
                       <p class="mb-25">
@@ -243,7 +243,7 @@ import Brands from "../../../components/Brands.astro";
                       height={600}
                       loading="lazy" />
                   </figure>
-                  <h3 class="service-details-title mt-45 mb-25">
+                  <h3 class="service-details-subtitle mt-45 mb-25">
                     {{ block_title_4 }}
                   </h3>
                   <p class="mb-25">
@@ -261,7 +261,7 @@ import Brands from "../../../components/Brands.astro";
                       </figure>
                     </div>
                     <div class="col-lg-5">
-                      <ul class="service-details-page-list pt-20 pb-10">
+                      <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
                         {{ list_areas }}
                       </ul>
                     </div>
