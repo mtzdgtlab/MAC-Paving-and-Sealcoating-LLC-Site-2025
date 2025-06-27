@@ -36,6 +36,55 @@ Disallow: /hauling.html
 Disallow: /power-wash.html
 Disallow: /top-soil.html
 
+# Bloquear URLs problemáticas específicas (404s de Google Search Console)
+Disallow: /seed-grass
+Disallow: /seed-grass.html
+Disallow: /gutters
+Disallow: /gutters.html
+Disallow: /pothole-repair
+Disallow: /pothole-repair.html
+Disallow: /asphalt-maintenance
+Disallow: /asphalt-maintenance.html
+Disallow: /retaining-walls
+Disallow: /retaining-walls.html
+Disallow: /masonry
+Disallow: /masonry.html
+Disallow: /gallery
+Disallow: /winter-services
+Disallow: /winter-services.html
+Disallow: /about
+
+# Bloquear URLs con guiones bajos (formato antiguo)
+Disallow: /line_striping
+Disallow: /power_wash
+Disallow: /winter_services
+Disallow: /belgium_blocks
+Disallow: /pavers_installation
+Disallow: /top_soil
+Disallow: /asphalt_maintenance
+
+# Bloquear URLs con caracteres especiales
+Disallow: /K%7BSEOcanonical%7D%7D
+
+# Bloquear URLs duplicadas con www
+Disallow: /services/services
+Disallow: /services/services.html
+
+# Bloquear archivos de imagen específicos que causan 404s
+Disallow: /assets/imgs/service/pavers/pavers-maintenance-3.webp
+Disallow: /assets/imgs/service/pavers/pavers-installation-1.webp
+Disallow: /assets/imgs/service/pavers/pavers-installation-4.webp
+Disallow: /assets/imgs/service/asphalt-paving/extension-4.webp
+Disallow: /assets/imgs/service/pavers/pavers_maintenance_4.webp
+Disallow: /assets/imgs/service/pavers/retaining_walls_3.webp
+Disallow: /assets/imgs/service/pavers/retaining_walls_4.webp
+Disallow: /assets/imgs/service/pavers/retaining_walls_2.webp
+Disallow: /assets/imgs/logo/mac_paving_logo.webp
+Disallow: /mac_paving_logo.webp
+
+# Bloquear subdominios problemáticos
+Disallow: /r2.macpavingandsealcoating.com/
+
 # Bloquear archivos del sistema
 Disallow: /.DS_Store
 Disallow: /.git/

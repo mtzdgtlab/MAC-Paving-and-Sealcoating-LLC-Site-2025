@@ -1,38 +1,9 @@
-# Redirects for trailing slash URLs (highest priority)
-/services/ /services 301
-/contact/ /contact 301
+# Redirect www to non-www (highest priority)
+https://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!
 
-# Service category pages trailing slash redirects
-/services/asphalt-paving/ /services/asphalt-paving 301
-/services/concrete/ /services/concrete 301
-/services/pavers/ /services/pavers 301
-/services/sealer/ /services/sealer 301
-/services/landscaping/ /services/landscaping 301
-
-# Individual service pages trailing slash redirects
-/services/asphalt-paving/installation /services/asphalt-paving/installation 301
-/services/asphalt-paving/resurfacing /services/asphalt-paving/resurfacing 301
-/services/asphalt-paving/replacement /services/asphalt-paving/replacement 301
-/services/asphalt-paving/extension /services/asphalt-paving/extension 301
-
-/services/concrete/walkways /services/concrete/walkways 301
-/services/concrete/sidewalks /services/concrete/sidewalks 301
-/services/concrete/curbs /services/concrete/curbs 301
-/services/concrete/aprons /services/concrete/aprons 301
-
-/services/pavers/installation /services/pavers/installation 301
-/services/pavers/maintenance /services/pavers/maintenance 301
-/services/pavers/belgium-blocks /services/pavers/belgium-blocks 301
-
-/services/sealer/sealcoating /services/sealer/sealcoating 301
-/services/sealer/crack-filling /services/sealer/crack-filling 301
-/services/sealer/line-striping /services/sealer/line-striping 301
-
-/services/landscaping/sod-installation /services/landscaping/sod-installation 301
-/services/landscaping/drainage /services/landscaping/drainage 301
-/services/landscaping/hauling /services/landscaping/hauling 301
-/services/landscaping/power-wash /services/landscaping/power-wash 301
-/services/landscaping/top-soil /services/landscaping/top-soil 301
+# Redirect http to https
+http://macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!
+http://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!
 
 # Old service URLs with .html to new structure
 /installation.html /services/asphalt-paving/installation 301
@@ -55,7 +26,7 @@
 /power-wash.html /services/landscaping/power-wash 301
 /top-soil.html /services/landscaping/top-soil 301
 
-# Old service URLs without .html to new structure (only if they don't conflict)
+# Old service URLs without .html to new structure
 /installation /services/asphalt-paving/installation 301
 /resurfacing /services/asphalt-paving/resurfacing 301
 /replacement /services/asphalt-paving/replacement 301
@@ -83,14 +54,39 @@
 /sealer /services/sealer 301
 /landscaping /services/landscaping 301
 
+# Missing service redirects (404s from Google Search Console)
+/seed-grass /services/landscaping/sod-installation 301
+/seed-grass.html /services/landscaping/sod-installation 301
+/gutters /services/landscaping/drainage 301
+/gutters.html /services/landscaping/drainage 301
+/pothole-repair /services/asphalt-paving/replacement 301
+/pothole-repair.html /services/asphalt-paving/replacement 301
+/asphalt-maintenance /services/asphalt-paving/resurfacing 301
+/asphalt-maintenance.html /services/asphalt-paving/resurfacing 301
+/retaining-walls /services/pavers/belgium-blocks 301
+/retaining-walls.html /services/pavers/belgium-blocks 301
+/masonry /services/pavers/belgium-blocks 301
+/masonry.html /services/pavers/belgium-blocks 301
+/gallery /services 301
+/winter-services /services 301
+/winter-services.html /services 301
+
+# URLs with underscores (old format)
+/line_striping /services/sealer/line-striping 301
+/power_wash /services/landscaping/power-wash 301
+/winter_services /services 301
+/belgium_blocks /services/pavers/belgium-blocks 301
+/pavers_installation /services/pavers/installation 301
+/top_soil /services/landscaping/top-soil 301
+/asphalt_maintenance /services/asphalt-paving/resurfacing 301
+
 # Other old URLs
 /services.html /services 301
 /contact.html /contact 301
 /index.html / 301
 
-# Redirect www to non-www
-https://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!
+# Broken URLs with special characters
+/K%7BSEOcanonical%7D%7D / 301
 
-# Redirect http to https
-http://macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!
-http://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!
+# Catch-all for any remaining .html files (lowest priority)
+/*.html / 301
