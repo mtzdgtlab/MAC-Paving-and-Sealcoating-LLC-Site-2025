@@ -20,11 +20,6 @@ export default defineConfig({
           '/node_modules/', '/.vscode/', '/.git/', '/public/'
         ];
 
-        // Excluir URLs que terminan en / (duplicados)
-        if (page.endsWith('/') && page !== 'https://macpavingandsealcoating.com/') {
-          return false;
-        }
-
         return !excludePatterns.some(pattern => page.includes(pattern));
       },
       // Removemos customPages para evitar duplicados

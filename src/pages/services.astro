@@ -1,4 +1,6 @@
 ---
+// Importar imágenes
+import { Image } from "astro:assets";
 import Favicon from "../components/Favicon.astro";
 import Preloader from "../components/Preloader.astro";
 import CSSbase from "../components/CSSbase.astro";
@@ -8,16 +10,12 @@ import Scripts from "../components/Scripts.astro";
 import SocialMeta from "../components/SocialMeta.astro";
 import LargeForm from "../components/LargeForm.astro";
 
-// Frontmatter de Astro - Variables SEO a definir
-const SEOTitle = "Our Paving Services";
-const SEODescription =
-  "Comprehensive paving services including asphalt, concrete, sealcoating, and pavers across New Jersey.";
-const SEOcanonical = "https://macpavingandsealcoating.com/services";
-const SEOkeywords =
-  "paving services NJ, asphalt paving, concrete services, sealcoating, pavers, New Jersey";
-const SchemaURL = "https://macpavingandsealcoating.com/services";
-const SchemaDescription =
-  "Explore MAC Paving and Sealcoating's comprehensive paving services including asphalt, concrete, sealcoating, and pavers across New Jersey. Contact us for a free estimate.";
+
+import asphaltReplacement from "@/assets/imgs/service/asphalt-paving/replacement-9.webp";
+import sealerService from "@/assets/imgs/service/sealer-service.webp";
+import paverService from "@/assets/imgs/service/paver-service.webp";
+import concreteService from "@/assets/imgs/service/concrete.webp";
+import landscapingService from "@/assets/imgs/service/landscaping-service.webp";
 ---
 
 <html lang="en">
@@ -25,17 +23,17 @@ const SchemaDescription =
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no" />
-    <title>MAC Paving and Sealcoating | {SEOTitle}</title>
+    <title>MAC Paving and Sealcoating | Our Paving Services</title>
 
     <!-- Preconexión para recursos externos (mejora rendimiento) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
-    <meta name="description" content={SEODescription} />
-    <link rel="canonical" href={SEOcanonical} />
+    <meta name="description" content="Comprehensive paving services including asphalt, concrete, sealcoating, and pavers across New Jersey." />
+    <link rel="canonical" href="https://macpavingandsealcoating.com/services" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content={SEOkeywords} />
+    <meta name="keywords" content="paving services NJ, asphalt paving, concrete services, sealcoating, pavers, New Jersey" />
 
     <!-- Schema.org markup for LocalBusiness -->
     <script type="application/ld+json">
@@ -43,9 +41,9 @@ const SchemaDescription =
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "MAC Paving and Sealcoating LLC",
-        "url": "{{schemaURL}}",
+        "url": "https://macpavingandsealcoating.com/services",
         "logo": "https://macpavingandsealcoating.com/mac-paving-logo.png",
-        "description": "{{SchemaDescription}}",
+        "description": "Explore MAC Paving and Sealcoating's comprehensive paving services including asphalt, concrete, sealcoating, and pavers across New Jersey. Contact us for a free estimate.",
         "telephone": "+1-201-755-7836",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -220,8 +218,8 @@ const SchemaDescription =
     <main>
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
         <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/bg/services-2.webp"
+          class="banner-thumb"
+          data-background="/assets/imgs/bg/contact-cover.webp"
         >
         </div>
         <div class="small-container">
@@ -235,7 +233,7 @@ const SchemaDescription =
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li><span>Services</span></li>
                     </ul>
@@ -255,142 +253,136 @@ const SchemaDescription =
             <div class="col-xxl-8 col-xl-8 col-lg-8">
               <div class="row g-4">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
-                  <!-- block -->
-                  <div class="service-slider-area mb-50">
+                  <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving-2.webp"
-                        alt="Asphalt Paving Services by MAC Paving and Sealcoating | NJ "
+                      <Image
+                        src={asphaltReplacement}
+                        alt="Driveway Paving Service Near Me by MAC Paving and Sealcoating | NJ"
+                        width={400}
+                        height={300}
+                        format="webp"
+                        style="width: 100%; height: 100%; object-fit: cover;"
                       />
                     </figure>
                     <div class="content">
-                      <div class="icon-box">
-                        <i class="fas fa-road"></i>
-                      </div>
-                      <h3>
-                        <a href="/services/asphalt-paving">Driveways</a>
-                      </h3>
+                      <div class="icon-box"><i class="fas fa-road"></i></div>
+                      <h3><a href="/services/asphalt-paving">Driveways</a></h3>
                       <p>
-                        Expert asphalt paving services including Driveway
-                        Asphalt paving installation, resurfacing,maintenance,
-                        extension and replacement for residential properties in
-                        New Jersey.
+                        Expert asphalt paving services including Driveway Asphalt paving
+                        installation, resurfacing, maintenance, extension and replacement
+                        for residential properties in New Jersey.
                       </p>
-                      <a href="/services/asphalt-paving" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
-                      >
+                      <a href="/services/asphalt-paving" class="service-btn">
+                        Service Details <i class="icon-arrow-right-double"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-
+            
                 <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
-                  <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/sealer.webp"
-                        alt="Sealcoating Services by MAC Paving and Sealcoating | NJ "
+                      <Image
+                        src={sealerService}
+                        alt="Sealcoating Services by MAC Paving and Sealcoating | NJ"
+                        width={400}
+                        height={300}
+                        format="webp"
+                        style="width: 100%; height: 100%; object-fit: cover;"
                       />
                     </figure>
                     <div class="content">
-                      <div class="icon-box">
-                        <i class="fas fa-fill-drip"></i>
-                      </div>
+                      <div class="icon-box"><i class="fas fa-fill-drip"></i></div>
                       <h3><a href="/services/sealer">Sealer</a></h3>
                       <p>
-                        Expert sealer services in New Jersey including
-                        sealcoating, crack filling, and line striping to
-                        maintain and protect your asphalt surfaces.
+                        Expert sealer services in New Jersey including sealcoating, crack
+                        filling, and line striping to maintain and protect your asphalt
+                        surfaces.
                       </p>
-                      <a href="/services/sealer" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
-                      >
+                      <a href="/services/sealer" class="service-btn">
+                        Service Details <i class="icon-arrow-right-double"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-
+            
                 <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
-                  <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/pavers.webp"
-                        alt="Paver Services by MAC Paving and Sealcoating | NJ "
+                      <Image
+                        src={paverService}
+                        alt="Paver Services by MAC Paving and Sealcoating | NJ"
+                        width={400}
+                        height={300}
+                        format="webp"
+                        style="width: 100%; height: 100%; object-fit: cover;"
                       />
                     </figure>
                     <div class="content">
-                      <div class="icon-box">
-                        <i class="fas fa-layer-group"></i>
-                      </div>
+                      <div class="icon-box"><i class="fas fa-layer-group"></i></div>
                       <h3><a href="/services/pavers">Pavers</a></h3>
                       <p>
-                        Expert paver services in New Jersey, including paver
-                        installation, paver maintenance, and Belgium blocks.
-                        Transform your outdoor spaces with quality paving
-                        solutions.
+                        Expert paver services in New Jersey, including paver installation,
+                        paver maintenance, and Belgium blocks. Transform your outdoor
+                        spaces with quality paving solutions.
                       </p>
-                      <a href="/services/pavers" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
-                      >
+                      <a href="/services/pavers" class="service-btn">
+                        Service Details <i class="icon-arrow-right-double"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-
+            
                 <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
-                  <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/concrete.webp"
-                        alt="Concrete Services by MAC Paving and Sealcoating | NJ "
+                      <Image
+                        src={concreteService}
+                        alt="Concrete Services by MAC Paving and Sealcoating | NJ"
+                        width={400}
+                        height={300}
+                        format="webp"
+                        style="width: 100%; height: 100%; object-fit: cover;"
                       />
                     </figure>
                     <div class="content">
-                      <div class="icon-box">
-                        <i class="fas fa-border-all"></i>
-                      </div>
+                      <div class="icon-box"><i class="fas fa-border-all"></i></div>
                       <h3><a href="/services/concrete">Concrete</a></h3>
                       <p>
-                        Professional concrete services in New Jersey, including
-                        walkways, sidewalks, curbs, and aprons to enhance your
-                        property&#39;s functionality and appearance.
+                        Professional concrete services in New Jersey, including walkways,
+                        sidewalks, curbs, and aprons to enhance your property's
+                        functionality and appearance.
                       </p>
-                      <a href="/services/concrete" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
-                      >
+                      <a href="/services/concrete" class="service-btn">
+                        Service Details <i class="icon-arrow-right-double"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
-
+            
                 <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
-                  <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/landscaping.webp"
-                        alt="Landscaping Services by MAC Paving and Sealcoating | NJ "
+                      <Image
+                        src={landscapingService}
+                        alt="Landscaping Services by MAC Paving and Sealcoating | NJ"
+                        width={400}
+                        height={300}
+                        format="webp"
+                        style="width: 100%; height: 100%; object-fit: cover;"
                       />
                     </figure>
                     <div class="content">
-                      <div class="icon-box">
-                        <i class="fas fa-tree"></i>
-                      </div>
-                      <h3>
-                        <a href="/services/landscaping">Landscaping</a>
-                      </h3>
+                      <div class="icon-box"><i class="fas fa-tree"></i></div>
+                      <h3><a href="/services/landscaping">Landscaping</a></h3>
                       <p>
-                        Expert landscaping services in New Jersey including sod
-                        installation, top soil, seed grass, drainage, power
-                        wash, and hauling to enhance your outdoor spaces.
+                        Expert landscaping services in New Jersey including sod installation,
+                        top soil, seed grass, drainage, power wash, and hauling to enhance
+                        your outdoor spaces.
                       </p>
-                      <a href="/services/landscaping" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
-                      >
+                      <a href="/services/landscaping" class="service-btn">
+                        Service Details <i class="icon-arrow-right-double"></i>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -622,12 +614,12 @@ const SchemaDescription =
               <div class="swiper-slide">
                 <a
                   class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving-2.webp"
+                  href="/assets/imgs/service/asphalt-paving/extension-2.webp"
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
                       <img
-                        src="/assets/imgs/service/asphalt-paving-2.webp"
+                        src="/assets/imgs/service/asphalt-paving/extension-2.webp"
                         alt="Asphalt Paving Services by MAC Paving and Sealcoating | NJ "
                       />
                     </figure>
@@ -638,12 +630,12 @@ const SchemaDescription =
               <div class="swiper-slide">
                 <a
                   class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/resurfacing-1.webp"
+                  href="/assets/imgs/service/asphalt-paving/extension-1.webp"
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
                       <img
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-1.webp"
+                        src="/assets/imgs/service/asphalt-paving/extension-1.webp"
                         alt="Asphalt Paving Services by MAC Paving and Sealcoating | NJ "
                       />
                     </figure>
@@ -670,12 +662,12 @@ const SchemaDescription =
               <div class="swiper-slide">
                 <a
                   class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving.webp"
+                  href="/assets/imgs/service/asphalt-service.webp"
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
                       <img
-                        src="/assets/imgs/service/asphalt-paving.webp"
+                        src="/assets/imgs/service/asphalt-service.webp"
                         alt="Asphalt Paving Services by MAC Paving and Sealcoating | NJ "
                       />
                     </figure>
@@ -684,11 +676,14 @@ const SchemaDescription =
               </div>
 
               <div class="swiper-slide">
-                <a class="popup-image" href="/assets/imgs/service/sealer.webp">
+                <a
+                  class="popup-image"
+                  href="/assets/imgs/service/sealer-service.webp"
+                >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
                       <img
-                        src="/assets/imgs/service/sealer.webp"
+                        src="/assets/imgs/service/sealer-service.webp"
                         alt="Sealcoating Services by MAC Paving and Sealcoating | NJ "
                       />
                     </figure>
@@ -745,11 +740,14 @@ const SchemaDescription =
               </div>
 
               <div class="swiper-slide">
-                <a class="popup-image" href="/assets/imgs/service/pavers.webp">
+                <a
+                  class="popup-image"
+                  href="/assets/imgs/service/paver-service.webp"
+                >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
                       <img
-                        src="/assets/imgs/service/pavers.webp"
+                        src="/assets/imgs/service/paver-service.webp"
                         alt="Paver Services by MAC Paving and Sealcoating | NJ "
                       />
                     </figure>
@@ -790,11 +788,14 @@ const SchemaDescription =
               </div>
 
               <div class="swiper-slide">
-                <a class="popup-image" href="/assets/imgs/service/pavers.webp">
+                <a
+                  class="popup-image"
+                  href="/assets/imgs/service/paver-service.webp"
+                >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
                       <img
-                        src="/assets/imgs/service/pavers.webp"
+                        src="/assets/imgs/service/paver-service.webp"
                         alt="Paver Services by MAC Paving and Sealcoating | NJ "
                       />
                     </figure>
@@ -869,12 +870,12 @@ const SchemaDescription =
               <div class="swiper-slide">
                 <a
                   class="popup-image"
-                  href="/assets/imgs/service/landscaping.webp"
+                  href="/assets/imgs/service/landscaping-service.webp"
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
                       <img
-                        src="/assets/imgs/service/landscaping.webp"
+                        src="/assets/imgs/service/landscaping-service.webp"
                         alt="Landscaping Services by MAC Paving and Sealcoating | NJ "
                       />
                     </figure>
@@ -1001,10 +1002,10 @@ const SchemaDescription =
         // Contact Form
         const contactForm = document.getElementById(
           "contactForm"
-        ) as HTMLFormElement;
+        ) as HTMLFormElement | null;
         const formMessage = document.getElementById(
           "formMessage"
-        ) as HTMLElement;
+        ) as HTMLDivElement | null;
 
         if (contactForm && formMessage) {
           contactForm.addEventListener("submit", async (e) => {
@@ -1035,59 +1036,6 @@ const SchemaDescription =
             }
             formMessage.style.display = "block";
           });
-        }
-      });
-    </script>
-
-    <!-- ✅ Google Tag Manager & Analytics OPTIMIZADO -->
-    <script>
-      declare global {
-        interface Window {
-          dataLayer: any[];
-          gtag: (...args: any[]) => void;
-        }
-      }
-
-      window.addEventListener("load", () => {
-        if ("requestIdleCallback" in window) {
-          requestIdleCallback(loadTrackingScripts);
-        } else {
-          setTimeout(loadTrackingScripts, 2000);
-        }
-
-        function loadTrackingScripts() {
-          // GTM
-          (function (w: any, d: Document, s: string, l: string, i: string) {
-            w[l] = w[l] || [];
-            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-            const f = d.getElementsByTagName(s)[0];
-            const j = d.createElement(s) as HTMLScriptElement;
-            const dl = l != "dataLayer" ? "&l=" + l : "";
-            j.async = true;
-            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-            if (f.parentNode) {
-              f.parentNode.insertBefore(j, f);
-            }
-          })(window, document, "script", "dataLayer", "GTM-5G9N2B6G");
-
-          // gtag
-          const gaScript = document.createElement(
-            "script"
-          ) as HTMLScriptElement;
-          gaScript.src =
-            "https://www.googletagmanager.com/gtag/js?id=G-T8PDJGNJ6B";
-          gaScript.async = true;
-          document.head.appendChild(gaScript);
-
-          gaScript.onload = function () {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(...args: any[]) {
-              window.dataLayer.push(arguments);
-            }
-            window.gtag = gtag;
-            gtag("js", new Date());
-            gtag("config", "G-T8PDJGNJ6B");
-          };
         }
       });
     </script>

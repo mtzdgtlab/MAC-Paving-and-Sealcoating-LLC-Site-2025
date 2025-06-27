@@ -1,5 +1,4 @@
 ---
-// Frontmatter de Astro
 import Favicon from "../components/Favicon.astro";
 import Preloader from "../components/Preloader.astro";
 import CSSbase from "../components/CSSbase.astro";
@@ -9,6 +8,9 @@ import Scripts from "../components/Scripts.astro";
 import SocialMeta from "../components/SocialMeta.astro";
 import About from "../components/About.astro";
 import TestimonialsSlider from "../components/TestimonialsSlider.astro";
+
+import { Image } from "astro:assets";
+import cta1 from "../assets/imgs/resources/cta-1.webp";
 ---
 
 <html lang="en">
@@ -437,7 +439,7 @@ import TestimonialsSlider from "../components/TestimonialsSlider.astro";
                 <div class="service-slider-area align-service-headings">
                   <figure class="service-image">
                     <img
-                      src="/assets/imgs/service/driveway-service.webp"
+                      src="/assets/imgs/service/asphalt-service.webp"
                       alt="Asphalt Paving"
                       loading="lazy"
                       width="370"
@@ -596,12 +598,13 @@ import TestimonialsSlider from "../components/TestimonialsSlider.astro";
         <div class="small-container">
           <div class="row g-0 box-shadow-1 fix">
             <div class="col-xxl-6 col-lg-6 bg-white">
-              <figure class="image w-img">
-                <img
-                  src="assets/imgs/resources/cta-1.webp"
+              <figure class="image">
+                <Image
+                  src={cta1}
                   alt="Asphalt Paving Services NJ"
-                  width="576"
-                  height="194"
+                  width={576}
+                  height={194}
+                  format="webp"
                 />
               </figure>
             </div>
@@ -610,8 +613,7 @@ import TestimonialsSlider from "../components/TestimonialsSlider.astro";
                 <div
                   class="shape-1"
                   data-background="assets/imgs/shapes/shape-12.webp"
-                >
-                </div>
+                ></div>
                 <div class="icon-box">
                   <i class="fas fa-phone-volume"></i>
                 </div>
