@@ -7,6 +7,14 @@ import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
 import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
+
+// Import paver images
+import installation6 from "../../../public/assets/imgs/service/pavers/installation-6.webp";
+import paverMaintenance2 from "../../../public/assets/imgs/service/pavers/paver-maintenance-2.webp";
+import belgiumBlocks2 from "../../../public/assets/imgs/service/pavers/belgium-blocks-2.webp";
+
+// Import pavers background image
+import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
 ---
 
 <html lang="en">
@@ -217,10 +225,16 @@ import SocialMeta from "../../components/SocialMeta.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/bg/pavers-.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={paversBg}
+              alt=""
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -254,9 +268,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/pavers/installation-6.webp"
+                      <Image
+                        src={installation6}
                         alt="Paver Installation Service by MAC Paving and Sealcoating – Custom Driveways and Expert Paving Solutions in NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -287,9 +304,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/pavers/paver-maintenance-2.webp"
+                      <Image
+                        src={paverMaintenance2}
                         alt="Pavers Maintenance Service by MAC Paving and Sealcoating – Reliable Pavement Maintenance and Paver Restoration NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -318,9 +338,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/pavers/belgium-blocks-2.webp"
+                      <Image
+                        src={belgiumBlocks2}
                         alt="Belgium Blocks Installation by MAC Paving and Sealcoating – High-quality Custom Driveways and Paver Services in New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">

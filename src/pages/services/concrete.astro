@@ -13,6 +13,9 @@ import walkwaysImg from "../../../public/assets/imgs/service/concrete/walkways-8
 import sidewalksImg from "../../../public/assets/imgs/service/concrete/sidewalks-4.webp";
 import curbsImg from "../../../public/assets/imgs/service/concrete/curbs.webp";
 import apronsImg from "../../../public/assets/imgs/service/concrete/aprons-4.webp";
+
+// Import concrete background image
+import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
 ---
 
 <html lang="en">
@@ -213,10 +216,16 @@ import apronsImg from "../../../public/assets/imgs/service/concrete/aprons-4.web
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/bg/concrete.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={concreteBg}
+              alt=""
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">

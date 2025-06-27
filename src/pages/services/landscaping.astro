@@ -7,6 +7,16 @@ import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
 import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
+
+// Import landscaping images
+import sodInstallation3 from "../../../public/assets/imgs/service/landscaping/sod-installation-3.webp";
+import topSoil1 from "../../../public/assets/imgs/service/landscaping/top-soil-1.webp";
+import drainage1 from "../../../public/assets/imgs/service/landscaping/drainage-1.webp";
+import powerWash1 from "../../../public/assets/imgs/service/landscaping/power-wash-1.webp";
+import hauling1 from "../../../public/assets/imgs/service/landscaping/hauling-1.webp";
+
+// Import landscaping background image
+import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp";
 ---
 
 <html lang="en">
@@ -206,10 +216,16 @@ import SocialMeta from "../../components/SocialMeta.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/bg/landscaping.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={landscapingBg}
+              alt=""
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -243,9 +259,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/landscaping/sod-installation-3.webp"
+                      <Image
+                        src={sodInstallation3}
                         alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -276,9 +295,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/landscaping/top-soil-1.webp"
+                      <Image
+                        src={topSoil1}
                         alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -306,9 +328,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/landscaping/drainage-1.webp"
+                      <Image
+                        src={drainage1}
                         alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -337,9 +362,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/landscaping/power-wash-1.webp"
+                      <Image
+                        src={powerWash1}
                         alt="Power Washing Service by MAC Paving and Sealcoating – Commercial and Residential Pavement Cleaning NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -369,9 +397,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/landscaping/hauling-1.webp"
+                      <Image
+                        src={hauling1}
                         alt="Hauling Services by MAC Paving and Sealcoating – Reliable Hauling and Asphalt Paving Contractors NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">

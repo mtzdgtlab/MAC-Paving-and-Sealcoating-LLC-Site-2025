@@ -7,6 +7,15 @@ import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
 import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
+
+// Import asphalt paving images
+import installation5 from "../../../public/assets/imgs/service/asphalt-paving/installation-5.webp";
+import resurfacing1 from "../../../public/assets/imgs/service/asphalt-paving/resurfacing-1.webp";
+import replacement4 from "../../../public/assets/imgs/service/asphalt-paving/replacement-4.webp";
+import extension3 from "../../../public/assets/imgs/service/asphalt-paving/extension-3.webp";
+
+// Import asphalt background image
+import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
 ---
 
 <html lang="en">
@@ -215,10 +224,16 @@ import SocialMeta from "../../components/SocialMeta.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/bg/asphalt-.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={asphaltBg}
+              alt=""
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -252,9 +267,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/installation-5.webp"
+                      <Image
+                        src={installation5}
                         alt="Asphalt Paving Installation by MAC Paving and Sealcoating – Expert Residential and Commercial Asphalt Paving in Central and South Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -286,9 +304,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-1.webp"
+                      <Image
+                        src={resurfacing1}
                         alt="Asphalt Resurfacing Service by MAC Paving and Sealcoating – Reliable Driveway Resurfacing and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -320,9 +341,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/replacement-4.webp"
+                      <Image
+                        src={replacement4}
                         alt="Asphalt Replacement Service by MAC Paving and Sealcoating – Professional Driveway Paving and Asphalt Repair across New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -354,9 +378,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/extension-3.webp"
+                      <Image
+                        src={extension3}
                         alt="Asphalt Extension Service by MAC Paving and Sealcoating – Custom Driveways and Asphalt Paving Contractors NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">

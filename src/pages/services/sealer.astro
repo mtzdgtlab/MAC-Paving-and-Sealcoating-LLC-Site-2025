@@ -7,6 +7,14 @@ import Navbar from "../../components/Navbar.astro";
 import Footer from "../../components/Footer.astro";
 import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
+
+// Import sealer images
+import sealcoating2 from "../../../public/assets/imgs/service/sealer/sealcoating-2.webp";
+import crackFilling4 from "../../../public/assets/imgs/service/sealer/crack-filling-4.webp";
+import lineStriping3 from "../../../public/assets/imgs/service/sealer/line-striping-3.webp";
+
+// Import sealer background image
+import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
 ---
 
 <html lang="en">
@@ -216,10 +224,16 @@ import SocialMeta from "../../components/SocialMeta.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/bg/sealer-.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={sealerBg}
+              alt=""
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -253,9 +267,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/sealer/sealcoating-2.webp"
+                      <Image
+                        src={sealcoating2}
                         alt="Sealcoating Service by MAC Paving and Sealcoating – Premier Asphalt Sealcoating Company NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -283,9 +300,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/sealer/crack-filling-4.webp"
+                      <Image
+                        src={crackFilling4}
                         alt="Crack Filling Service by MAC Paving and Sealcoating – Asphalt Repair and Pavement Maintenance in New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
@@ -316,9 +336,12 @@ import SocialMeta from "../../components/SocialMeta.astro";
                   <!-- block -->
                   <div class="service-slider-area align-service-headings">
                     <figure class="service-image">
-                      <img
-                        src="/assets/imgs/service/sealer/line-striping-3.webp"
+                      <Image
+                        src={lineStriping3}
                         alt="Line Striping Service by MAC Paving and Sealcoating – Commercial Asphalt Paving Contractors NJ, specializing in Parking Lot Striping."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                     <div class="content">
