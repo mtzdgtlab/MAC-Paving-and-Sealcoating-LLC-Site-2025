@@ -10,6 +10,10 @@ import Scripts from "../components/Scripts.astro";
 import Largeform from "../components/LargeForm.astro";
 import SocialMeta from "../components/SocialMeta.astro";
 import MapSection from "../components/MapSection.astro";
+import { Image } from "astro:assets";
+
+// Import contact background image
+import contactBg from "../../public/assets/imgs/bg/contact-cover.webp";
 ---
 
 <html lang="en">
@@ -41,10 +45,16 @@ import MapSection from "../components/MapSection.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-        class="banner-thumb"
-          data-background="/assets/imgs/bg/contact-cover.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={contactBg}
+              alt=""
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
