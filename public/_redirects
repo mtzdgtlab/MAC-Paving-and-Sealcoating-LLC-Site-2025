@@ -6,10 +6,10 @@ http://macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 
 http://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:splat 301!
 
 # Old service URLs with .html to new structure
-/installation.html /services/asphalt-paving/installation 301
-/resurfacing.html /services/asphalt-paving/resurfacing 301
-/replacement.html /services/asphalt-paving/replacement 301
-/extension.html /services/asphalt-paving/extension 301
+/installation.html /services/asphalt-paving/installation/ 301
+/resurfacing.html /services/asphalt-paving/resurfacing/ 301
+/replacement.html /services/asphalt-paving/replacement/ 301
+/extension.html /services/asphalt-paving/extension/ 301
 /sealcoating.html /services/sealer/sealcoating 301
 /crack-filling.html /services/sealer/crack-filling 301
 /line-striping.html /services/sealer/line-striping 301
@@ -27,10 +27,10 @@ http://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:sp
 /top-soil.html /services/landscaping/top-soil 301
 
 # Old service URLs without .html to new structure
-/installation /services/asphalt-paving/installation 301
-/resurfacing /services/asphalt-paving/resurfacing 301
-/replacement /services/asphalt-paving/replacement 301
-/extension /services/asphalt-paving/extension 301
+/installation /services/asphalt-paving/installation/ 301
+/resurfacing /services/asphalt-paving/resurfacing/ 301
+/replacement /services/asphalt-paving/replacement/ 301
+/extension /services/asphalt-paving/extension/ 301
 /sealcoating /services/sealer/sealcoating 301
 /crack-filling /services/sealer/crack-filling 301
 /line-striping /services/sealer/line-striping 301
@@ -59,10 +59,10 @@ http://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:sp
 /seed-grass.html /services/landscaping/sod-installation 301
 /gutters /services/landscaping/drainage 301
 /gutters.html /services/landscaping/drainage 301
-/pothole-repair /services/asphalt-paving/replacement 301
-/pothole-repair.html /services/asphalt-paving/replacement 301
-/asphalt-maintenance /services/asphalt-paving/resurfacing 301
-/asphalt-maintenance.html /services/asphalt-paving/resurfacing 301
+/pothole-repair /services/asphalt-paving/replacement/ 301
+/pothole-repair.html /services/asphalt-paving/replacement/ 301
+/asphalt-maintenance /services/asphalt-paving/resurfacing/ 301
+/asphalt-maintenance.html /services/asphalt-paving/resurfacing/ 301
 /retaining-walls /services/pavers/belgium-blocks 301
 /retaining-walls.html /services/pavers/belgium-blocks 301
 /masonry /services/pavers/belgium-blocks 301
@@ -78,7 +78,7 @@ http://www.macpavingandsealcoating.com/* https://macpavingandsealcoating.com/:sp
 /belgium_blocks /services/pavers/belgium-blocks 301
 /pavers_installation /services/pavers/installation 301
 /top_soil /services/landscaping/top-soil 301
-/asphalt_maintenance /services/asphalt-paving/resurfacing 301
+/asphalt_maintenance /services/asphalt-paving/resurfacing/ 301
 
 # Other old URLs
 /services.html /services 301
