@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://macpavingandsealcoating.com',
-  trailingSlash: 'never', // Previene URLs duplicadas con trailing slash
+  trailingSlash: 'always', // Previene URLs duplicadas con trailing slash
   integrations: [
     sitemap({
       changefreq: 'weekly',

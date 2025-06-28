@@ -14,6 +14,22 @@ import sidewalksImg from "../../../public/assets/imgs/service/concrete/sidewalks
 import curbsImg from "../../../public/assets/imgs/service/concrete/curbs.webp";
 import apronsImg from "../../../public/assets/imgs/service/concrete/aprons-4.webp";
 
+// Importar imágenes para optimización 
+import walkways1 from "../../assets/imgs/service/concrete/walkways-1.webp";
+import walkways2 from "../../assets/imgs/service/concrete/walkways-2.webp";
+import walkways3 from "../../assets/imgs/service/concrete/walkways-3.webp";
+import walkways4 from "../../assets/imgs/service/concrete/walkways-4.webp";
+
+import sidewalks2 from "../../assets/imgs/service/concrete/sidewalks-2.webp";
+import sidewalks3 from "../../assets/imgs/service/concrete/sidewalks-3.webp";
+import sidewalks4 from "../../assets/imgs/service/concrete/sidewalks-4.webp";
+
+import curbs1 from "../../assets/imgs/service/concrete/curbs-1.webp";
+import aprons1 from "../../assets/imgs/service/concrete/aprons-1.webp";
+import aprons2 from "../../assets/imgs/service/concrete/aprons-2.webp";
+import aprons3 from "../../assets/imgs/service/concrete/aprons-3.webp";
+import aprons4 from "../../assets/imgs/service/concrete/aprons-4.webp";
+
 // Import concrete background image
 import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
 ---
@@ -249,324 +265,144 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
       </div>
       <!-- Breadcrumb area end -->
 
-      <!-- Service Slider area start -->
-      <section class="service-page-section section-space">
-        <div class="small-containe">
-          <div class="row g-4">
-            <div class="col-xxl-8 col-xl-8 col-lg-8">
-              <div class="row g-4">
-                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
-                  <!-- block -->
-                  <div class="service-slider-area align-service-headings">
-                    <figure class="service-image">
-                      <Image
-                        src={walkwaysImg}
-                        alt="Walkways Installation by MAC Paving and Sealcoating – Concrete Walkway and Asphalt Paving Contractors in Central Jersey."
-                        loading="lazy"
-                        width={400}
-                        height={300}
-                      />
-                    </figure>
-                    <div class="content">
-                      <div class="icon-box">
-                        <i class="fa-solid fa-person-walking"></i>
-                      </div>
-                      <h4>
-                        <a href="/services/concrete/walkways">Walkways</a>
-                      </h4>
-                      <p>
-                        Expert walkway installation services to create safe,
-                        attractive, and durable paths in your outdoor spaces.
-                      </p>
-                      <a href="/services/concrete/walkways" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
-                  <!-- block -->
-                  <div class="service-slider-area align-service-headings">
-                    <figure class="service-image">
-                      <Image
-                        src={sidewalksImg}
-                        alt="Sidewalks Installation Service by MAC Paving and Sealcoating – Residential and Commercial Sidewalk Paving NJ."
-                        loading="lazy"
-                        width={400}
-                        height={300}
-                      />
-                    </figure>
-                    <div class="content">
-                      <div class="icon-box">
-                        <i class="fa-solid fa-shoe-prints"></i>
-                      </div>
-                      <h4>
-                        <a href="/services/concrete/sidewalks">Sidewalks</a>
-                      </h4>
-                      <p>
-                        High-quality sidewalk installation services to ensure
-                        safe and durable pedestrian pathways, enhancing the
-                        accessibility and appearance of your property.
-                      </p>
-                      <a href="/services/concrete/sidewalks" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
-                  <!-- block -->
-                  <div class="service-slider-area align-service-headings">
-                    <figure class="service-image">
-                      <Image
-                        src={curbsImg}
-                        alt="Curbs Installation Service by MAC Paving and Sealcoating – Concrete Curbs and Expert Paving Contractors in NJ."
-                        loading="lazy"
-                        width={400}
-                        height={300}
-                      />
-                    </figure>
-                    <div class="content">
-                      <div class="icon-box">
-                        <i class="fas fa-border-all"></i>
-                      </div>
-                      <h4><a href="/services/concrete/curbs">Curbs</a></h4>
-                      <p>
-                        Professional curb installation services to create a
-                        defined edge for roads and parking lots, improving the
-                        overall appearance and functionality.
-                      </p>
-                      <a href="/services/concrete/curbs" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
-                      >
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-xxl-6 col-xl-6 col-lg-6 mb-15">
-                  <!-- block -->
-                  <div class="service-slider-area align-service-headings">
-                    <figure class="service-image">
-                      <Image
-                        src={apronsImg}
-                        alt="Aprons Installation Service by MAC Paving and Sealcoating – Driveway Apron Installation and Asphalt Companies NJ."
-                        loading="lazy"
-                        width={400}
-                        height={300}
-                      />
-                    </figure>
-                    <div class="content">
-                      <div class="icon-box">
-                        <i class="fa-solid fa-square-full"></i>
-                      </div>
-                      <h4>
-                        <a href="/services/concrete/aprons">Aprons</a>
-                      </h4>
-                      <p>
-                        Durable apron installation services to provide a smooth
-                        transition between your driveway and the road, ensuring
-                        easy access and a neat appearance.
-                      </p>
-                      <a href="/services/concrete/aprons" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-4 col-xl-4 col-lg-4">
-              <div class="contact-page-form-area">
-                <div
-                  class="title-box mb-40 wow fadeInLeft"
-                  data-wow-delay=".5s"
-                >
-                  <span class="section-sub-title">LET'S TALK</span>
-                  <h3
-                    class="section-title mt-10"
-                    aria-label="Let's Get in Touch"
-                  >
-                    Get Your Free Estimate
-                  </h3>
-                </div>
-                <div class="contact-page-form">
-                  <form
-                    action="https://formspree.io/f/mvgpzjbv"
-                    method="POST"
-                    id="contactForm"
-                  >
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <label for="name">Your Name*</label>
-                        <input
-                          type="text"
-                          name="name"
-                          id="name"
-                          placeholder="Your Name*"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-12">
-                        <label for="email">Your Email*</label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="Your Email*"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-12">
-                        <label for="phone">Your Phone*</label>
-                        <input
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          placeholder="Your Phone*"
-                          pattern="[0-9]{10}"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-12">
-                        <label for="service">Required Service*</label>
-                        <input
-                          type="text"
-                          name="service"
-                          id="service"
-                          placeholder="Required Service*"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-12">
-                        <label for="address">Your Address*</label>
-                        <input
-                          type="text"
-                          name="address"
-                          id="address"
-                          placeholder="Your Address*"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-12">
-                        <button type="submit" class="primary-btn-1 btn-hover">
-                          Send Now | <i class="fas fa-arrow-right"></i>
-                        </button>
-                      </div>
-                    </div>
-                    <div id="formMessage" class="mt-3" style="display: none">
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Service Slider area end -->
-
-      <!-- Choose area start -->
-      <section
-        class="choose-section bg-color-1 section-space-top section-space-bottom p-relative"
-      >
-        <div class="bg-image" data-background="/assets/imgs/bg/choose-bg.webp">
-        </div>
-        <div
-          class="shape-image"
-          data-background="/assets/imgs/shapes/shape-15.webp"
-        >
-        </div>
+          
+      <section class="project-slider-section section-space fix">
         <div class="small-container">
-          <div class="row g-4 justify-content-center text-center">
-            <div class="col-12">
-              <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
-                <span class="section-sub-titledos mb-50">WHY CHOOSE US</span>
-                <h3 class="section-title mt-10">What Makes Us Different</h3>
+          <div class="row">
+            <div class="col-xxl-6">
+              <div class="title-box mb-25 wow fadeInLeft" data-wow-delay=".5s">
+                <span class="section-sub-title">RECENT WORKS</span>
+                <h3 class="section-title mt-25 mb-50">Concrete Projects</h3>
               </div>
             </div>
           </div>
-          <div class="row g-4">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-              <!-- block -->
-              <div
-                class="choose-area-icon-box mb-15 wow fadeInRight"
-                data-wow-delay=".5s"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fa fa-road"></i>
-                </div>
-                <div class="content">
-                  <h5>Premium Asphalt Sealcoating</h5>
-                  <p>
-                    We deliver the best asphalt sealcoating services to protect
-                    and enhance the longevity of your pavement.
-                  </p>
-                </div>
+        </div>
+        <div class="container-fluid">
+          <div class="swipe project-active-1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/walkways-1.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={walkways1} alt="Walkways Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
               </div>
-              <hr />
-              <!-- block -->
-              <div
-                class="choose-area-icon-box mb-15 wow fadeInRight"
-                data-wow-delay=".7s"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fa fa-cogs"></i>
-                </div>
-                <div class="content">
-                  <h5><a href="#">Custom Driveway Solutions</a></h5>
-                  <p>
-                    We specialize in designing and installing custom driveways
-                    tailored to your specific needs and preferences.
-                  </p>
-                </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/walkways-2.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={walkways2} alt="Walkways Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
               </div>
-              <hr />
-            </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-              <!-- block -->
-              <div
-                class="choose-area-icon-box mb-15 wow fadeInRight"
-                data-wow-delay=".9s"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fa fa-wrench"></i>
-                </div>
-                <div class="content">
-                  <h5><a href="#">Comprehensive Paving Solutions</a></h5>
-                  <p>
-                    We offer a full range of paving services for commercial and
-                    residential clients, from concrete work to asphalt paving.
-                  </p>
-                </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/walkways-3.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={walkways3} alt="Walkways Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
               </div>
-              <hr />
-              <!-- block -->
-              <div
-                class="choose-area-icon-box mb-15 wow fadeInRight"
-                data-wow-delay="1.1s"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fa fa-tools"></i>
-                </div>
-                <div class="content">
-                  <h5><a href="#">Maintenance Services</a></h5>
-                  <p>
-                    Keep your property in top shape with our maintenance
-                    services, including sealcoating, crack filling, and more.
-                  </p>
-                </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/walkways-4.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={walkways4} alt="Walkways Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
               </div>
-              <hr />
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/sidewalks-2.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={sidewalks2} alt="Sidewalks Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/sidewalks-3.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={sidewalks3} alt="Sidewalks Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/sidewalks-4.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={sidewalks4} alt="Sidewalks Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/curbs-1.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={curbs1} alt="Curbs Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/aprons-1.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={aprons1} alt="Aprons Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/aprons-2.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={aprons2} alt="Aprons Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/aprons-3.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={aprons3} alt="Aprons Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href="/assets/imgs/service/concrete/aprons-4.webp">
+                  <div class="project-slider-two-box p-relative">
+                    <figure class="image w-img">
+                      <Image src={aprons4} alt="Aprons Installation" width={576} height={384} format="webp" />
+                    </figure>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Choose area end -->
 
       <!-- Project slider area start -->
       <section class="project-slider-section section-space fix">

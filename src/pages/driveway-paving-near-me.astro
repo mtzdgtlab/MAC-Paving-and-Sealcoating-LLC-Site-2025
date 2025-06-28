@@ -1,0 +1,188 @@
+---
+import Favicon from "../components/Favicon.astro";
+import Preloader from "../components/Preloader.astro";
+import CSSbase from "../components/CSSbase.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Scripts from "../components/Scripts.astro";
+import SocialMeta from "../components/SocialMeta.astro";
+import MapSection from "../components/MapSection.astro";
+
+// Frontmatter de Astro - Variables SEO
+const SEOTitle = "Service Area Map | MAC Paving and Sealcoating NJ";
+const SEODescription = "Interactive service area map showing MAC Paving and Sealcoating coverage across 9 counties in Northern New Jersey including Passaic, Bergen, Essex, Morris, Middlesex, Union, Somerset, Hudson, and Sussex.";
+const SEOcanonical = "https://macpavingandsealcoating.com/service-area-map";
+const SEOkeywords = "MAC Paving service areas NJ, Northern New Jersey paving contractor, asphalt paving Passaic County, sealcoating Bergen County, concrete services Essex County, paving Morris County, driveway installation Middlesex County, paving Union County, asphalt Somerset County, paving Hudson County, Sussex County contractors, NJ paving coverage map";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <title> {SEOTitle} </title>
+
+    <!-- Preconexión para recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <meta name="description" content={SEODescription} />
+    <link rel="canonical" href={SEOcanonical} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content={SEOkeywords} />
+
+    <!-- Schema.org markup for Service Area -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "MAC Paving and Sealcoating LLC Service Area",
+        "image": "https://macpavingandsealcoating.com/assets/imgs/logo.png",
+        "description": "Professional paving contractor serving Northern New Jersey with asphalt paving, sealcoating, concrete, and landscaping services across 9 counties.",
+        "url": "https://macpavingandsealcoating.com/service-area-map",
+        "telephone": "+1-201-755-7836",
+        "email": "info@macpavingandsealcoating.com",
+        "areaServed": [
+          {
+            "@type": "State",
+            "name": "New Jersey"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Passaic County, New Jersey"
+          },
+          {
+            "@type": "AdministrativeArea", 
+            "name": "Bergen County, New Jersey"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Essex County, New Jersey"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Morris County, New Jersey"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Middlesex County, New Jersey"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Union County, New Jersey"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Somerset County, New Jersey"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Hudson County, New Jersey"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Sussex County, New Jersey"
+          }
+        ],
+        "serviceType": [
+          "Asphalt Paving",
+          "Sealcoating",
+          "Concrete Installation",
+          "Driveway Installation",
+          "Parking Lot Construction",
+          "Landscaping Services"
+        ]
+      }
+    </script>
+
+    <Favicon />
+    <SocialMeta />
+    <CSSbase />
+  </head>
+  <body>
+    <Preloader />
+    <Navbar />
+
+    <main>
+      <!-- Breadcrumb area start -->
+      <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
+        <div
+          class="banner-thumb"
+          data-background="/assets/imgs/bg/contact-cover.webp"
+        >
+        </div>
+        <div class="small-container">
+          <div class="row justify-content-center justify-content-md-start">
+            <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+              <div class="breadcrumb__wrapper p-relative">
+                <h1 class="breadcrumb__title">
+                  Service Area Map
+                </h1>
+                <div class="breadcrumb__menu">
+                  <nav>
+                    <ul>
+                      <li>
+                        <span><a href="/">Home / </a></span>
+                      </li>
+                      <li><span>Service Area Map</span></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Breadcrumb area end -->
+
+      <!-- Service Area Map Section -->
+      <MapSection />
+
+      <!-- Additional Information Section -->
+      <section class="section-space">
+        <div class="small-container">
+          <div class="row g-4">
+            <div class="col-12">
+              <div class="title-box text-center mb-50">
+                <h3 class="section-title">Why Choose MAC Paving for Your Northern NJ Project?</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+              <div class="service-box text-center">
+                <div class="icon-box mb-20">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h4>Local Expertise</h4>
+                <p>Over 15 years serving Northern New Jersey communities. We understand local soil conditions, climate challenges, and municipal requirements across all nine counties.</p>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+              <div class="service-box text-center">
+                <div class="icon-box mb-20">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4>Licensed & Insured</h4>
+                <p>Fully licensed home improvement contractor with comprehensive insurance coverage. All work backed by written warranties and satisfaction guarantees.</p>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+              <div class="service-box text-center">
+                <div class="icon-box mb-20">
+                  <i class="fas fa-calculator"></i>
+                </div>
+                <h4>Free Estimates</h4>
+                <p>Detailed, written estimates provided at no cost. Our experienced estimators visit your property to assess site conditions and provide accurate project pricing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+    <Scripts />
+  </body>
+</html> 
