@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Image imports
+import sealerBg from "@/assets/imgs/service/sealer-service.webp";
+import lineStriping1 from "@/assets/imgs/service/sealer/line-striping-1.webp";
+import lineStriping2 from "@/assets/imgs/service/sealer/line-striping-2.webp";
+import lineStriping3 from "@/assets/imgs/service/sealer/line-striping-3.webp";
+import lineStriping4 from "@/assets/imgs/service/sealer/line-striping-4.webp";
 ---
 
 <html lang="en">
@@ -193,7 +200,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -216,11 +223,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/sealer-service.webp"
-        >
-        </div>
+        <div class="banner-thumb" data-background={sealerBg.src}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -266,7 +269,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/line-striping-1.webp"
+                        src={lineStriping1}
                         alt="Parking Lot Line Striping in NJ | ADA Compliance and Clean Markings - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -277,7 +280,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/line-striping-2.webp"
+                        src={lineStriping2}
                         alt="Parking Lot Line Striping in NJ | ADA Compliance and Clean Markings - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -315,7 +318,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/sealer/line-striping-3.webp"
+                    src={lineStriping3}
                     alt="Parking Lot Line Striping in NJ | ADA Compliance and Clean Markings - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -337,7 +340,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/line-striping-4.webp"
+                        src={lineStriping4}
                         alt="Parking Lot Line Striping in NJ | ADA Compliance and Clean Markings - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}

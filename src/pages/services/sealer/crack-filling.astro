@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Image imports
+import sealerBg from "@/assets/imgs/service/sealer-service.webp";
+import crackFilling1 from "@/assets/imgs/service/sealer/crack-filling-1.webp";
+import crackFilling2 from "@/assets/imgs/service/sealer/crack-filling-2.webp";
+import crackFilling3 from "@/assets/imgs/service/sealer/crack-filling-3.webp";
+import crackFilling4 from "@/assets/imgs/service/sealer/crack-filling-4.webp";
 ---
 
 <html lang="en">
@@ -193,7 +200,7 @@ import Brands from "../../../components/Brands.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -217,11 +224,7 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/sealer-service.webp"
-        >
-        </div>
+        <div class="banner-thumb" data-background={sealerBg.src}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -268,7 +271,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/crack-filling-1.webp"
+                        src={crackFilling1}
                         alt="Crack Filling Services in NJ | Repair Asphalt in Clifton and Nearby - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -279,7 +282,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/crack-filling-2.webp"
+                        src={crackFilling2}
                         alt="Crack Filling Services in NJ | Repair Asphalt in Clifton and Nearby - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -317,7 +320,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/sealer/crack-filling-3.webp"
+                    src={crackFilling3}
                     alt="Crack Filling Services in NJ | Repair Asphalt in Clifton and Nearby - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -338,7 +341,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/crack-filling-4.webp"
+                        src={crackFilling4}
                         alt="Crack Filling Services in NJ | Repair Asphalt in Clifton and Nearby - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}

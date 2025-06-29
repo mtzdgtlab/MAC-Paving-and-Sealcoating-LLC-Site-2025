@@ -1,5 +1,6 @@
 ---
 // Frontmatter de Astro
+import { Image } from "astro:assets";
 import Favicon from "../components/Favicon.astro";
 import Preloader from "../components/Preloader.astro";
 import CSSbase from "../components/CSSbase.astro";
@@ -7,6 +8,9 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import Scripts from "../components/Scripts.astro";
 import SocialMeta from "../components/SocialMeta.astro";
+
+// Import 404 image
+import error404Image from "@/assets/imgs/resources/404.webp";
 ---
 
 <html lang="en">
@@ -184,7 +188,7 @@ import SocialMeta from "../components/SocialMeta.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -210,7 +214,13 @@ import SocialMeta from "../components/SocialMeta.astro";
           <div class="row">
             <div class="col-xxl-12">
               <figure class="w-img">
-                <img src="/assets/imgs/resources/404.webp" alt="404 Error" />
+                <Image
+                  src={error404Image}
+                  alt="404 Error"
+                  width={500}
+                  height={400}
+                  format="webp"
+                />
               </figure>
               <h2 class="mt-150 mb-50">
                 Whoops! This Page got <br />Lost in conversion

@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Image imports
+import sealerBg from "@/assets/imgs/service/sealer-service.webp";
+import sealcoating1 from "@/assets/imgs/service/sealer/sealcoating-1.webp";
+import sealcoating2 from "@/assets/imgs/service/sealer/sealcoating-2.webp";
+import sealcoating3 from "@/assets/imgs/service/sealer/sealcoating-3.webp";
+import sealcoating4 from "@/assets/imgs/service/sealer/sealcoating-4.webp";
 ---
 
 <html lang="en">
@@ -193,7 +200,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -216,11 +223,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/sealer-service.webp"
-        >
-        </div>
+        <div class="banner-thumb" data-background={sealerBg.src}></div>
         <div class="small-container">
           <div class="row">
             <div class="col-xxl-8 col-xl-8 col-lg-8">
@@ -267,7 +270,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/sealcoating-1.webp"
+                        src={sealcoating1}
                         alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -278,7 +281,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/sealcoating-2.webp"
+                        src={sealcoating2}
                         alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -317,7 +320,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/sealer/sealcoating-3.webp"
+                    src={sealcoating3}
                     alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -338,7 +341,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/sealcoating-4.webp"
+                        src={sealcoating4}
                         alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
