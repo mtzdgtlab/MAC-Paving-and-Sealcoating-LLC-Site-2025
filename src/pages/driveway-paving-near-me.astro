@@ -8,17 +8,17 @@ import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import Scripts from "../components/Scripts.astro";
 import SocialMeta from "../components/SocialMeta.astro";
-import JustMap from "../components/JustMap.astro";
 
 // Frontmatter de Astro - Variables SEO
 const SEOTitle = "Service Area Map | MAC Paving and Sealcoating NJ";
-const SEODescription = "Interactive service area map showing MAC Paving and Sealcoating coverage across 9 counties in Northern New Jersey including Passaic, Bergen, Essex, Morris, Middlesex, Union, Somerset, Hudson, and Sussex.";
-const SEOcanonical = "https://macpavingandsealcoating.com/driveway-paving-near-me/";
-const SEOkeywords = "MAC Paving service areas NJ, Northern New Jersey paving contractor, asphalt paving Passaic County, sealcoating Bergen County, concrete services Essex County, paving Morris County, driveway installation Middlesex County, paving Union County, asphalt Somerset County, paving Hudson County, Sussex County contractors, NJ paving coverage map";
+const SEODescription =
+  "Interactive service area map showing MAC Paving and Sealcoating coverage across 9 counties in Northern New Jersey including Passaic, Bergen, Essex, Morris, Middlesex, Union, Somerset, Hudson, and Sussex.";
+const SEOcanonical =
+  "https://macpavingandsealcoating.com/driveway-paving-near-me/";
+const SEOkeywords =
+  "MAC Paving service areas NJ, Northern New Jersey paving contractor, asphalt paving Passaic County, sealcoating Bergen County, concrete services Essex County, paving Morris County, driveway installation Middlesex County, paving Union County, asphalt Somerset County, paving Hudson County, Sussex County contractors, NJ paving coverage map";
 
 import paversBg from "@/assets/imgs/bg/contact-cover.webp";
-import JustMap from "@/components/JustMap.astro";
-
 ---
 
 <html lang="en">
@@ -26,7 +26,7 @@ import JustMap from "@/components/JustMap.astro";
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no" />
-    <title> {SEOTitle} </title>
+    <title>{SEOTitle}</title>
 
     <!-- Preconexión para recursos externos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -237,12 +237,12 @@ import JustMap from "@/components/JustMap.astro";
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
               <div class="breadcrumb__wrapper p-relative">
-                <h1 class="breadcrumb__title"> Service Area Map                </h1>
+                <h1 class="breadcrumb__title">Service Area Map</h1>
                 <div class="breadcrumb__menu">
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li><span>Services / Area Map</span></li>
                     </ul>
@@ -259,58 +259,58 @@ import JustMap from "@/components/JustMap.astro";
         <div class="small-container">
           <section class="row">
             <div class="col-xxl-10 col-xl-10 col-lg-10">
-                <div
-                  class="title-box mb-10 wow fadeInLeft"
-                  data-wow-delay=".5s"
+              <div class="title-box mb-10 wow fadeInLeft" data-wow-delay=".5s">
+                <span class="section-sub-title">Proudly Serving</span>
+                <h2 class="section-title mt-10">
+                  Northern New Jersey Service Areas
+                </h2>
+              </div>
+              <div class="content">
+                <div class="icon-box">
+                  <i class="fas fa-layer-group"></i>
+                </div>
+                <h3>></h3>
+                <p>
+                  Quality asphalt resurfacing services to restore and extend the
+                  life of your asphalt surfaces, providing a cost-effective
+                  solution to maintain your property's aesthetic and structural
+                  integrity.
+                </p>
+                <a
+                  href="/services/asphalt-paving/resurfacing/"
+                  class="service-btn"
+                  >Service Details <i class="icon-arrow-right-double"></i></a
                 >
-                  <span class="section-sub-title">Proudly Serving</span>
-                  <h2 class="section-title mt-10">Northern New Jersey Service Areas</h2>
-                </div>
-                <div class="content">
-                  <div class="icon-box">
-                    <i class="fas fa-layer-group"></i>
-                  </div>
-                  <h3>
-                    >
-                  </h3>
-                  <p>
-                    Quality asphalt resurfacing services to restore and
-                    extend the life of your asphalt surfaces, providing a
-                    cost-effective solution to maintain your property's
-                    aesthetic and structural integrity.
-                  </p>
-                  <a
-                    href="/services/asphalt-paving/resurfacing/"
-                    class="service-btn"
-                    >Service Details <i class="icon-arrow-right-double"
-                    ></i></a
-                  >
-                </div>
-
-
-
               </div>
             </div>
           </section>
+        </div>
 
-
-       <JustMap />
-    
         <div class="content-sections">
           <section class="intro-section">
-            <p>MAC Paving and Sealcoating proudly serves homeowners and businesses across <strong>nine counties in Northern
-                New Jersey</strong>. Our comprehensive coverage area includes <strong>Passaic, Bergen, Essex, Morris,
-                Middlesex, Union, Somerset, Hudson, and Sussex</strong> counties, making us one of the most trusted paving
-              contractors in the region.</p>
+            <p>
+              MAC Paving and Sealcoating proudly serves homeowners and
+              businesses across <strong
+                >nine counties in Northern New Jersey</strong
+              >. Our comprehensive coverage area includes <strong
+                >Passaic, Bergen, Essex, Morris, Middlesex, Union, Somerset,
+                Hudson, and Sussex</strong
+              > counties, making us one of the most trusted paving contractors in
+              the region.
+            </p>
           </section>
-    
+
           <section class="service-coverage">
             <h2>Complete Paving Services Across Northern NJ</h2>
-            <p>With over <strong>15 years of experience</strong>, we've completed thousands of residential and commercial
-              projects throughout our service territory. Our mobile crews are strategically positioned to provide
-              <strong>fast response times</strong> and competitive pricing across all nine counties we serve.
+            <p>
+              With over <strong>15 years of experience</strong>, we've completed
+              thousands of residential and commercial projects throughout our
+              service territory. Our mobile crews are strategically positioned
+              to provide
+              <strong>fast response times</strong> and competitive pricing across
+              all nine counties we serve.
             </p>
-    
+
             <div class="services-grid">
               <div class="service-item">
                 <h3>Asphalt Paving Services</h3>
@@ -322,9 +322,9 @@ import JustMap from "@/components/JustMap.astro";
                   <li>Private road paving</li>
                 </ul>
               </div>
-    
+
               <div class="service-item">
-                <h3>Sealcoating & Maintenance</h3>
+                <h3>Sealcoating and Maintenance</h3>
                 <ul>
                   <li>Professional sealcoating application</li>
                   <li>Crack filling and repair</li>
@@ -333,9 +333,9 @@ import JustMap from "@/components/JustMap.astro";
                   <li>Preventive maintenance plans</li>
                 </ul>
               </div>
-    
+
               <div class="service-item">
-                <h3>Concrete & Hardscaping</h3>
+                <h3>Concrete and Hardscaping</h3>
                 <ul>
                   <li>Concrete sidewalks and walkways</li>
                   <li>Driveway aprons and transitions</li>
@@ -344,9 +344,9 @@ import JustMap from "@/components/JustMap.astro";
                   <li>Concrete curbing systems</li>
                 </ul>
               </div>
-    
+
               <div class="service-item">
-                <h3>Landscaping & Site Work</h3>
+                <h3>Landscaping and Site Work</h3>
                 <ul>
                   <li>Drainage system installation</li>
                   <li>Grading and excavation</li>
@@ -357,147 +357,235 @@ import JustMap from "@/components/JustMap.astro";
               </div>
             </div>
           </section>
-    
+
           <section class="county-details">
             <h2>Detailed County Coverage Areas</h2>
-    
+
             <div class="county-info">
               <h3>Passaic County</h3>
-              <p><strong>Key Cities:</strong> Clifton, Paterson, Wayne, West Milford, Totowa, Pompton Lakes, Ringwood</p>
-              <p>Passaic County represents one of our largest service areas, where we've completed over 2,000 residential
-                driveway projects. Our expertise in this region includes specialized solutions for hilly terrain and
-                drainage challenges common in areas like West Milford and Ringwood.</p>
+              <p>
+                <strong>Key Cities:</strong> Clifton, Paterson, Wayne, West Milford,
+                Totowa, Pompton Lakes, Ringwood
+              </p>
+              <p>
+                Passaic County represents one of our largest service areas,
+                where we've completed over 2,000 residential driveway projects.
+                Our expertise in this region includes specialized solutions for
+                hilly terrain and drainage challenges common in areas like West
+                Milford and Ringwood.
+              </p>
             </div>
-    
+
             <div class="county-info">
               <h3>Bergen County</h3>
-              <p><strong>Key Cities:</strong> Teaneck, Paramus, Fair Lawn, Hackensack, Ridgewood, Mahwah, Fort Lee</p>
-              <p>Bergen County's diverse residential communities trust MAC Paving for premium asphalt and concrete services.
-                From historic neighborhoods in Ridgewood to modern developments in Paramus, we deliver quality workmanship
-                that enhances property values.</p>
+              <p>
+                <strong>Key Cities:</strong> Teaneck, Paramus, Fair Lawn, Hackensack,
+                Ridgewood, Mahwah, Fort Lee
+              </p>
+              <p>
+                Bergen County's diverse residential communities trust MAC Paving
+                for premium asphalt and concrete services. From historic
+                neighborhoods in Ridgewood to modern developments in Paramus, we
+                deliver quality workmanship that enhances property values.
+              </p>
             </div>
-    
+
             <div class="county-info">
               <h3>Essex County</h3>
-              <p><strong>Key Cities:</strong> Montclair, Bloomfield, Nutley, West Orange, Maplewood, Caldwell, Newark</p>
-              <p>Essex County's established neighborhoods require experienced contractors who understand local building
-                codes and architectural styles. Our team specializes in seamless asphalt repairs and elegant concrete
-                installations that complement historic home designs.</p>
+              <p>
+                <strong>Key Cities:</strong> Montclair, Bloomfield, Nutley, West
+                Orange, Maplewood, Caldwell, Newark
+              </p>
+              <p>
+                Essex County's established neighborhoods require experienced
+                contractors who understand local building codes and
+                architectural styles. Our team specializes in seamless asphalt
+                repairs and elegant concrete installations that complement
+                historic home designs.
+              </p>
             </div>
-    
+
             <div class="county-info">
               <h3>Morris County</h3>
-              <p><strong>Key Cities:</strong> Morristown, Parsippany, Randolph, Madison, Chester, Boonton, Denville</p>
-              <p>Morris County's upscale communities demand the highest quality paving services. We're experienced in
-                working with homeowners' associations and meeting strict aesthetic guidelines while delivering durable,
-                long-lasting results.</p>
+              <p>
+                <strong>Key Cities:</strong> Morristown, Parsippany, Randolph, Madison,
+                Chester, Boonton, Denville
+              </p>
+              <p>
+                Morris County's upscale communities demand the highest quality
+                paving services. We're experienced in working with homeowners'
+                associations and meeting strict aesthetic guidelines while
+                delivering durable, long-lasting results.
+              </p>
             </div>
-    
+
             <div class="county-info">
               <h3>Middlesex County</h3>
-              <p><strong>Key Cities:</strong> Edison, Woodbridge, Piscataway, East Brunswick, Old Bridge, Monroe, Cranbury
+              <p>
+                <strong>Key Cities:</strong> Edison, Woodbridge, Piscataway, East
+                Brunswick, Old Bridge, Monroe, Cranbury
               </p>
-              <p>Middlesex County's growing residential developments benefit from our expertise in new construction paving
-                and large-scale residential projects. We work closely with builders and homeowners to create attractive,
-                functional driveways and walkways.</p>
+              <p>
+                Middlesex County's growing residential developments benefit from
+                our expertise in new construction paving and large-scale
+                residential projects. We work closely with builders and
+                homeowners to create attractive, functional driveways and
+                walkways.
+              </p>
             </div>
-    
+
             <div class="county-info">
               <h3>Union County</h3>
-              <p><strong>Key Cities:</strong> Elizabeth, Westfield, Cranford, Plainfield, Summit, Union, Scotch Plains</p>
-              <p>Union County homeowners choose MAC Paving for our attention to detail and commitment to customer
-                satisfaction. We specialize in both traditional asphalt installations and decorative concrete solutions for
-                upscale neighborhoods.</p>
+              <p>
+                <strong>Key Cities:</strong> Elizabeth, Westfield, Cranford, Plainfield,
+                Summit, Union, Scotch Plains
+              </p>
+              <p>
+                Union County homeowners choose MAC Paving for our attention to
+                detail and commitment to customer satisfaction. We specialize in
+                both traditional asphalt installations and decorative concrete
+                solutions for upscale neighborhoods.
+              </p>
             </div>
-    
+
             <div class="county-info">
               <h3>Somerset County</h3>
-              <p><strong>Key Cities:</strong> Franklin, Bridgewater, North Brunswick, South Brunswick, Montgomery,
-                Hillsborough</p>
-              <p>Somerset County's mix of suburban and rural properties requires versatile paving solutions. Our experience
-                ranges from standard residential driveways to long private lanes serving large estates and agricultural
-                properties.</p>
+              <p>
+                <strong>Key Cities:</strong> Franklin, Bridgewater, North Brunswick,
+                South Brunswick, Montgomery, Hillsborough
+              </p>
+              <p>
+                Somerset County's mix of suburban and rural properties requires
+                versatile paving solutions. Our experience ranges from standard
+                residential driveways to long private lanes serving large
+                estates and agricultural properties.
+              </p>
             </div>
-    
+
             <div class="county-info">
               <h3>Hudson County</h3>
-              <p><strong>Key Cities:</strong> Jersey City, Hoboken, Bayonne, Union City, Weehawken, North Bergen</p>
-              <p>Hudson County's urban environment presents unique challenges that our experienced team handles expertly. We
-                specialize in tight-space installations, urban drainage solutions, and coordinating with municipal
-                requirements.</p>
+              <p>
+                <strong>Key Cities:</strong> Jersey City, Hoboken, Bayonne, Union
+                City, Weehawken, North Bergen
+              </p>
+              <p>
+                Hudson County's urban environment presents unique challenges
+                that our experienced team handles expertly. We specialize in
+                tight-space installations, urban drainage solutions, and
+                coordinating with municipal requirements.
+              </p>
             </div>
-    
+
             <div class="county-info">
               <h3>Sussex County</h3>
-              <p><strong>Key Cities:</strong> Newton, Sparta, Hopatcong, Vernon, Franklin, Hamburg, Andover</p>
-              <p>Sussex County's rural and mountainous terrain requires specialized equipment and techniques. Our team is
-                experienced in handling challenging grades, remote locations, and seasonal access considerations for quality
-                paving installations.</p>
+              <p>
+                <strong>Key Cities:</strong> Newton, Sparta, Hopatcong, Vernon, Franklin,
+                Hamburg, Andover
+              </p>
+              <p>
+                Sussex County's rural and mountainous terrain requires
+                specialized equipment and techniques. Our team is experienced in
+                handling challenging grades, remote locations, and seasonal
+                access considerations for quality paving installations.
+              </p>
             </div>
           </section>
-    
+
           <section class="why-choose-section">
             <h2>Why Choose MAC Paving for Your Northern NJ Project?</h2>
-    
+
             <div class="benefits-grid">
               <div class="benefit-item">
                 <h4>Local Expertise</h4>
-                <p>Over 15 years serving Northern New Jersey communities. We understand local soil conditions, climate
-                  challenges, and municipal requirements across all nine counties.</p>
+                <p>
+                  Over 15 years serving Northern New Jersey communities. We
+                  understand local soil conditions, climate challenges, and
+                  municipal requirements across all nine counties.
+                </p>
               </div>
-    
+
               <div class="benefit-item">
-                <h4>Licensed & Insured</h4>
-                <p>Fully licensed home improvement contractor with comprehensive insurance coverage. All work backed by
-                  written warranties and satisfaction guarantees.</p>
+                <h4>Licensed and Insured</h4>
+                <p>
+                  Fully licensed home improvement contractor with comprehensive
+                  insurance coverage. All work backed by written warranties and
+                  satisfaction guarantees.
+                </p>
               </div>
-    
+
               <div class="benefit-item">
                 <h4>Free Estimates</h4>
-                <p>Detailed, written estimates provided at no cost. Our experienced estimators visit your property to assess
-                  site conditions and provide accurate project pricing.</p>
+                <p>
+                  Detailed, written estimates provided at no cost. Our
+                  experienced estimators visit your property to assess site
+                  conditions and provide accurate project pricing.
+                </p>
               </div>
-    
+
               <div class="benefit-item">
                 <h4>Quality Materials</h4>
-                <p>We use only premium-grade asphalt, concrete, and sealcoating materials from trusted suppliers. All
-                  materials meet or exceed industry standards for durability.</p>
+                <p>
+                  We use only premium-grade asphalt, concrete, and sealcoating
+                  materials from trusted suppliers. All materials meet or exceed
+                  industry standards for durability.
+                </p>
               </div>
-    
+
               <div class="benefit-item">
                 <h4>Professional Crews</h4>
-                <p>Experienced, uniformed crews with specialized equipment. Background-checked employees committed to
-                  maintaining clean, safe work environments.</p>
+                <p>
+                  Experienced, uniformed crews with specialized equipment.
+                  Background-checked employees committed to maintaining clean,
+                  safe work environments.
+                </p>
               </div>
-    
+
               <div class="benefit-item">
                 <h4>Flexible Scheduling</h4>
-                <p>We work around your schedule and provide accurate project timelines. Most residential projects completed
-                  within 1-3 days weather permitting.</p>
+                <p>
+                  We work around your schedule and provide accurate project
+                  timelines. Most residential projects completed within 1-3 days
+                  weather permitting.
+                </p>
               </div>
             </div>
           </section>
-    
+
           <section class="contact-section-map">
             <h2>Ready to Get Started?</h2>
-            <p>Contact MAC Paving and Sealcoating today for your <strong>free, no-obligation estimate</strong>. Our friendly
-              team is ready to discuss your paving project and provide expert recommendations for your specific needs.</p>
-    
+            <p>
+              Contact MAC Paving and Sealcoating today for your <strong
+                >free, no-obligation estimate</strong
+              >. Our friendly team is ready to discuss your paving project and
+              provide expert recommendations for your specific needs.
+            </p>
+
             <div class="contact-information">
-              <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
-              <p><strong>Email:</strong> <a
-                  href="mailto:mg@macpavingandsealcoating.com">mg@macpavingandsealcoating.com</a></p>
-              <p><strong>Service Hours:</strong> Monday - Saturday, 7:00 AM - 6:00 PM</p>
-              <p><strong>Emergency Repairs:</strong> Available 24/7 for urgent paving emergencies</p>
+              <p>
+                <strong>Phone:</strong>
+                <a href="tel:+1234567890">(123) 456-7890</a>
+              </p>
+              <p>
+                <strong>Email:</strong>
+                <a href="mailto:mg@macpavingandsealcoating.com"
+                  >mg@macpavingandsealcoating.com</a>
+              </p>
+              <p>
+                <strong>Service Hours:</strong> Monday - Saturday, 7:00 AM - 6:00
+                PM
+              </p>
+              <p>
+                <strong>Emergency Repairs:</strong> Available 24/7 for urgent paving
+                emergencies
+              </p>
             </div>
           </section>
         </div>
-      </div>
-
-      
+      </section>
     </main>
 
     <Footer />
     <Scripts />
   </body>
-</html> 
+</html>
+

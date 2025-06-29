@@ -236,7 +236,7 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li><span>Services / Landscaping </span></li>
                     </ul>
@@ -272,7 +272,9 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                         <i class="fas fa-tree"></i>
                       </div>
                       <h3>
-                        <a href="/services/landscaping/sod-installation/">Sod Installation</a>
+                        <a href="/services/landscaping/sod-installation/"
+                          >Sod Installation</a
+                        >
                       </h3>
                       <p>
                         High-quality sod installation services to create lush,
@@ -373,7 +375,9 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                         <i class="fa-solid fa-shower"></i>
                       </div>
                       <h3>
-                        <a href="/services/landscaping/power-wash/">Power Wash</a>
+                        <a href="/services/landscaping/power-wash/"
+                          >Power Wash</a
+                        >
                       </h3>
                       <p>
                         High-quality power washing services to clean and restore
@@ -432,12 +436,9 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                   data-wow-delay=".5s"
                 >
                   <span class="section-sub-title">LET'S TALK</span>
-                  <h3
-                    class="section-title mt-10"
-                    aria-label="Let's Get in Touch"
-                  >
-                    Get Your Free Estimate
-                  </h3>
+                  <h5 class="form-title mt-10" aria-label="Let's Get in Touch">
+                    Get Your Free Estimate Now!
+                  </h5>
                 </div>
                 <div class="contact-page-form">
                   <form
@@ -613,19 +614,25 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
       <!-- Choose area end -->
 
       <!-- Project slider area start -->
-      <section class="project-slider-section section-space fix">
+      <section
+        aria-label="Projects section"
+        class="project-slider-section section-space fix"
+      >
         <div class="small-container">
           <div class="row">
-            <div class="col-xxl-6">
-              <div class="title-box mb-25 wow fadeInLeft" data-wow-delay=".5s">
-                <span class="section-sub-title">RECENT WORKS</span>
-                <h3 class="section-title mt-25 mb-50">Landscaping Projects</h3>
-              </div>
-            </div>
-            <div class="col-xxl-6">
-              <!-- If we need navigation buttons -->
+            <div
+              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
+            >
               <div
-                class="project_1_navigation__wrapprer position-relative z-1 text-end mt-30"
+                class="title-box mb-50"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
+                <span class="section-sub-title">RECENT WORKS</span>
+                <h3 class="section-title mt-15">Our Recent Projects</h3>
+              </div>
+              <div
+                class="project_1_navigation__wrapprer position-relative z-1 mt-30"
               >
                 <div class="common-slider-navigation">
                   <button
@@ -638,7 +645,7 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                     class="project-1-button-next"
                     aria-label="Next project"
                   >
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>

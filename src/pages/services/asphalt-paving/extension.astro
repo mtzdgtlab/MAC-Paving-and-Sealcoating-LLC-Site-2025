@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Import extension images
+import extension1 from "@/assets/imgs/service/asphalt-paving/extension-1.webp";
+import extension2 from "@/assets/imgs/service/asphalt-paving/extension-2.webp";
+import extension3 from "@/assets/imgs/service/asphalt-paving/extension-3.webp";
+import extension4 from "@/assets/imgs/service/asphalt-paving/extension-4.webp";
+
+// Import background image
+import asphaltBg from "@/assets/imgs/bg/asphalt-cover.webp";
 ---
 
 <html lang="en">
@@ -217,10 +226,16 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/bg/asphalt-cover.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={asphaltBg}
+              alt="Driveway Extensions background - MAC Paving and Sealcoating"
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -268,7 +283,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/extension-1.webp"
+                        src={extension1}
                         alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -279,7 +294,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/extension-2.webp"
+                        src={extension2}
                         alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -318,7 +333,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/asphalt-paving/extension-3.webp"
+                    src={extension3}
                     alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -339,7 +354,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/extension-4.webp"
+                        src={extension4}
                         alt="Driveway Extensions in North Jersey | Expand Your Parking Area - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}

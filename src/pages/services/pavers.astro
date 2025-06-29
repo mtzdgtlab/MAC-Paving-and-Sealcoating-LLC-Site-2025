@@ -9,12 +9,23 @@ import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
 
 // Import paver images
-import installation6 from "../../../public/assets/imgs/service/pavers/installation-6.webp";
-import paverMaintenance2 from "../../../public/assets/imgs/service/pavers/paver-maintenance-2.webp";
-import belgiumBlocks2 from "../../../public/assets/imgs/service/pavers/belgium-blocks-2.webp";
+import installation1 from "@/assets/imgs/service/pavers/installation-1.webp";
+import installation2 from "@/assets/imgs/service/pavers/installation-2.webp";
+import installation3 from "@/assets/imgs/service/pavers/installation-3.webp";
+import installation4 from "@/assets/imgs/service/pavers/installation-4.webp";
+import installation6 from "@/assets/imgs/service/pavers/installation-6.webp";
+
+import paverMaintenance1 from "@/assets/imgs/service/pavers/paver-maintenance-1.webp";
+import paverMaintenance2 from "@/assets/imgs/service/pavers/paver-maintenance-2.webp";
+import paverMaintenance3 from "@/assets/imgs/service/pavers/paver-maintenance-3.webp";
+import paverMaintenance4 from "@/assets/imgs/service/pavers/paver-maintenance-4.webp";
+
+import belgiumBlocks1 from "@/assets/imgs/service/pavers/belgium-blocks-1.webp";
+import belgiumBlocks2 from "@/assets/imgs/service/pavers/belgium-blocks-2.webp";
+import belgiumBlocks3 from "@/assets/imgs/service/pavers/belgium-blocks-3.webp";
 
 // Import pavers background image
-import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
+import paversBg from "@/assets/imgs/bg/pavers-cover.webp";
 ---
 
 <html lang="en">
@@ -245,7 +256,7 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li><span>Services / Pavers</span></li>
                     </ul>
@@ -281,7 +292,9 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                         <i class="fas fa-border-all"></i>
                       </div>
                       <h3>
-                        <a href="/services/pavers/installation/">Paver Installation</a>
+                        <a href="/services/pavers/installation/"
+                          >Paver Installation</a
+                        >
                       </h3>
                       <p>
                         Expert paver installation services to create beautiful,
@@ -315,14 +328,18 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                         <i class="fa-solid fa-square"></i>
                       </div>
                       <h3>
-                        <a href="/services/pavers/maintenance/">Paver Maintenance</a>
+                        <a href="/services/pavers/maintenance/"
+                          >Paver Maintenance</a
+                        >
                       </h3>
                       <p>
                         Comprehensive paver maintenance services to keep your
                         outdoor spaces looking their best and functioning
                         properly.
                       </p>
-                      <a href="/services/pavers/maintenance/" class="service-btn"
+                      <a
+                        href="/services/pavers/maintenance/"
+                        class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
                       >
@@ -347,7 +364,9 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                       </div>
                       <h3>
-                        <a href="/services/pavers/belgium-blocks/">Belgium Blocks</a>
+                        <a href="/services/pavers/belgium-blocks/"
+                          >Belgium Blocks</a
+                        >
                       </h3>
                       <p>
                         Quality Belgium block installation services to add a
@@ -372,12 +391,9 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                   data-wow-delay=".5s"
                 >
                   <span class="section-sub-title">LET'S TALK</span>
-                  <h3
-                    class="section-title mt-10"
-                    aria-label="Let's Get in Touch"
-                  >
-                    Get Your Free Estimate
-                  </h3>
+                  <h5 class="form-title mt-10" aria-label="Let's Get in Touch">
+                    Get Your Free Estimate Now!
+                  </h5>
                 </div>
                 <div class="contact-page-form">
                   <form
@@ -553,19 +569,25 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
       <!-- Choose area end -->
 
       <!-- Project slider area start -->
-      <section class="project-slider-section section-space fix">
+      <section
+        aria-label="Projects section"
+        class="project-slider-section section-space fix"
+      >
         <div class="small-container">
           <div class="row">
-            <div class="col-xxl-6">
-              <div class="title-box mb-25 wow fadeInLeft" data-wow-delay=".5s">
-                <span class="section-sub-title">RECENT WORKS</span>
-                <h3 class="section-title mt-25 mb-50">Pavers Projects</h3>
-              </div>
-            </div>
-            <div class="col-xxl-6">
-              <!-- If we need navigation buttons -->
+            <div
+              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
+            >
               <div
-                class="project_1_navigation__wrapprer position-relative z-1 text-end mt-30"
+                class="title-box mb-50"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
+                <span class="section-sub-title">RECENT WORKS</span>
+                <h3 class="section-title mt-15">Our Recent Projects</h3>
+              </div>
+              <div
+                class="project_1_navigation__wrapprer position-relative z-1 mt-30"
               >
                 <div class="common-slider-navigation">
                   <button
@@ -578,7 +600,7 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                     class="project-1-button-next"
                     aria-label="Next project"
                   >
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -595,8 +617,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/installation-1.webp"
+                      <Image
+                        src={installation1}
                         alt="Paver Installation Service by MAC Paving and Sealcoating – Custom Driveways and Expert Paving Solutions in NJ."
                       />
                     </figure>
@@ -611,8 +633,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/installation-2.webp"
+                      <Image
+                        src={installation2}
                         alt="Paver Installation Service by MAC Paving and Sealcoating – Custom Driveways and Expert Paving Solutions in NJ."
                       />
                     </figure>
@@ -627,8 +649,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/installation-3.webp"
+                      <Image
+                        src={installation3}
                         alt="Paver Installation Service by MAC Paving and Sealcoating – Custom Driveways and Expert Paving Solutions in NJ."
                       />
                     </figure>
@@ -643,8 +665,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/installation-4.webp"
+                      <Image
+                        src={installation4}
                         alt="Paver Installation Service by MAC Paving and Sealcoating – Custom Driveways and Expert Paving Solutions in NJ."
                       />
                     </figure>
@@ -659,8 +681,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/paver-maintenance-1.webp"
+                      <Image
+                        src={paverMaintenance1}
                         alt="Pavers Maintenance Service by MAC Paving and Sealcoating – Reliable Pavement Maintenance and Paver Restoration NJ."
                       />
                     </figure>
@@ -675,8 +697,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/paver-maintenance-2.webp"
+                      <Image
+                        src={paverMaintenance2}
                         alt="Pavers Maintenance Service by MAC Paving and Sealcoating – Reliable Pavement Maintenance and Paver Restoration NJ."
                       />
                     </figure>
@@ -691,8 +713,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/paver-maintenance-3.webp"
+                      <Image
+                        src={paverMaintenance3}
                         alt="Pavers Maintenance Service by MAC Paving and Sealcoating – Reliable Pavement Maintenance and Paver Restoration NJ."
                       />
                     </figure>
@@ -707,8 +729,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/paver-maintenance-4.webp"
+                      <Image
+                        src={paverMaintenance4}
                         alt="Pavers Maintenance Service by MAC Paving and Sealcoating – Reliable Pavement Maintenance and Paver Restoration NJ."
                       />
                     </figure>
@@ -723,8 +745,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/belgium-blocks-1.webp"
+                      <Image
+                        src={belgiumBlocks1}
                         alt="Belgium Blocks Installation by MAC Paving and Sealcoating – High-quality Custom Driveways and Paver Services in New Jersey."
                       />
                     </figure>
@@ -739,8 +761,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/belgium-blocks-2.webp"
+                      <Image
+                        src={belgiumBlocks2}
                         alt="Belgium Blocks Installation by MAC Paving and Sealcoating – High-quality Custom Driveways and Paver Services in New Jersey."
                       />
                     </figure>
@@ -755,8 +777,8 @@ import paversBg from "../../../public/assets/imgs/bg/pavers-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/pavers/belgium-blocks-3.webp"
+                      <Image
+                        src={belgiumBlocks3}
                         alt="Belgium Blocks Installation by MAC Paving and Sealcoating – High-quality Custom Driveways and Paver Services in New Jersey."
                       />
                     </figure>

@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Import aprons images
+import aprons1 from "@/assets/imgs/service/concrete/aprons-1.webp";
+import aprons2 from "@/assets/imgs/service/concrete/aprons-2.webp";
+import aprons3 from "@/assets/imgs/service/concrete/aprons-3.webp";
+import aprons4 from "@/assets/imgs/service/concrete/aprons-4.webp";
+
+// Import background image
+import concreteBg from "@/assets/imgs/service/concrete.webp";
 ---
 
 <html lang="en">
@@ -217,10 +226,16 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/concrete.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={concreteBg}
+              alt="Driveway Aprons background - MAC Paving and Sealcoating"
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -272,8 +287,8 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/aprons-1.webp"
-                        alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Main Image - MAC Paving and Sealcoating"
+                        src={aprons1}
+                        alt="Driveway Aprons in Northern NJ | Smooth and Durable Transitions - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"
@@ -283,8 +298,8 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/aprons-2.webp"
-                        alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Side View - MAC Paving and Sealcoating"
+                        src={aprons2}
+                        alt="Driveway Aprons in Northern NJ | Smooth and Durable Transitions - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"
@@ -318,8 +333,8 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/concrete/aprons-3.webp"
-                    alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Close-Up - MAC Paving and Sealcoating"
+                    src={aprons3}
+                    alt="Driveway Aprons in Northern NJ | Smooth and Durable Transitions - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
                     loading="lazy"
@@ -337,8 +352,8 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/aprons-4.webp"
-                        alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Work in Progress - MAC Paving and Sealcoating"
+                        src={aprons4}
+                        alt="Driveway Aprons in Northern NJ | Smooth and Durable Transitions - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
                         loading="lazy"

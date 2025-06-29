@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Import resurfacing images
+import resurfacing1 from "@/assets/imgs/service/asphalt-paving/resurfacing-1.webp";
+import resurfacing2 from "@/assets/imgs/service/asphalt-paving/resurfacing-2.webp";
+import resurfacing3 from "@/assets/imgs/service/asphalt-paving/resurfacing-3.webp";
+import resurfacing4 from "@/assets/imgs/service/asphalt-paving/resurfacing-4.webp";
+
+// Import background image
+import asphaltServiceBg from "@/assets/imgs/service/asphalt-service.webp";
 ---
 
 <html lang="en">
@@ -217,10 +226,16 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/asphalt-service.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={asphaltServiceBg}
+              alt="Asphalt Resurfacing background - MAC Paving and Sealcoating"
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -269,7 +284,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-1.webp"
+                        src={resurfacing1}
                         alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -280,7 +295,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-2.webp"
+                        src={resurfacing2}
                         alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -319,7 +334,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/asphalt-paving/resurfacing-3.webp"
+                    src={resurfacing3}
                     alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -341,7 +356,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-4.webp"
+                        src={resurfacing4}
                         alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}

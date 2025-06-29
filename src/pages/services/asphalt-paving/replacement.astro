@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Import replacement images
+import replacement1 from "@/assets/imgs/service/asphalt-paving/replacement-1.webp";
+import replacement2 from "@/assets/imgs/service/asphalt-paving/replacement-2.webp";
+import replacement3 from "@/assets/imgs/service/asphalt-paving/replacement-3.webp";
+import replacement4 from "@/assets/imgs/service/asphalt-paving/replacement-4.webp";
+
+// Import background image
+import asphaltServiceBg from "@/assets/imgs/service/asphalt-service.webp";
 ---
 
 <html lang="en">
@@ -216,10 +225,16 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/asphalt-service.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={asphaltServiceBg}
+              alt="Driveway Replacement background - MAC Paving and Sealcoating"
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -268,7 +283,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/replacement-1.webp"
+                        src={replacement1}
                         alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -279,7 +294,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/replacement-2.webp"
+                        src={replacement2}
                         alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -316,7 +331,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/asphalt-paving/replacement-3.webp"
+                    src={replacement3}
                     alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -337,7 +352,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/replacement-4.webp"
+                        src={replacement4}
                         alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}

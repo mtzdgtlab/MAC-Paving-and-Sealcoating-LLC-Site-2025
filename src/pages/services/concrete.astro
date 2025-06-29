@@ -8,30 +8,28 @@ import Footer from "../../components/Footer.astro";
 import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
 
-// Importar imágenes para optimización (desde public)
-import walkwaysImg from "../../../public/assets/imgs/service/concrete/walkways-8.webp";
-import sidewalksImg from "../../../public/assets/imgs/service/concrete/sidewalks-4.webp";
-import curbsImg from "../../../public/assets/imgs/service/concrete/curbs.webp";
-import apronsImg from "../../../public/assets/imgs/service/concrete/aprons-4.webp";
+// Import concrete images
+import walkwaysImg from "@/assets/imgs/service/concrete/walkways-8.webp";
+import sidewalksImg from "@/assets/imgs/service/concrete/sidewalks-4.webp";
+import curbsImg from "@/assets/imgs/service/concrete/curbs.webp";
+import apronsImg from "@/assets/imgs/service/concrete/aprons-4.webp";
 
-// Importar imágenes para optimización 
-import walkways1 from "../../assets/imgs/service/concrete/walkways-1.webp";
-import walkways2 from "../../assets/imgs/service/concrete/walkways-2.webp";
-import walkways3 from "../../assets/imgs/service/concrete/walkways-3.webp";
-import walkways4 from "../../assets/imgs/service/concrete/walkways-4.webp";
-
-import sidewalks2 from "../../assets/imgs/service/concrete/sidewalks-2.webp";
-import sidewalks3 from "../../assets/imgs/service/concrete/sidewalks-3.webp";
-import sidewalks4 from "../../assets/imgs/service/concrete/sidewalks-4.webp";
-
-import curbs1 from "../../assets/imgs/service/concrete/curbs-1.webp";
-import aprons1 from "../../assets/imgs/service/concrete/aprons-1.webp";
-import aprons2 from "../../assets/imgs/service/concrete/aprons-2.webp";
-import aprons3 from "../../assets/imgs/service/concrete/aprons-3.webp";
-import aprons4 from "../../assets/imgs/service/concrete/aprons-4.webp";
+// Import concrete project images
+import walkways1 from "@/assets/imgs/service/concrete/walkways-1.webp";
+import walkways2 from "@/assets/imgs/service/concrete/walkways-2.webp";
+import walkways3 from "@/assets/imgs/service/concrete/walkways-3.webp";
+import walkways4 from "@/assets/imgs/service/concrete/walkways-4.webp";
+import sidewalks2 from "@/assets/imgs/service/concrete/sidewalks-2.webp";
+import sidewalks3 from "@/assets/imgs/service/concrete/sidewalks-3.webp";
+import sidewalks4 from "@/assets/imgs/service/concrete/sidewalks-4.webp";
+import curbs1 from "@/assets/imgs/service/concrete/curbs-1.webp";
+import aprons1 from "@/assets/imgs/service/concrete/aprons-1.webp";
+import aprons2 from "@/assets/imgs/service/concrete/aprons-2.webp";
+import aprons3 from "@/assets/imgs/service/concrete/aprons-3.webp";
+import aprons4 from "@/assets/imgs/service/concrete/aprons-4.webp";
 
 // Import concrete background image
-import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
+import concreteBg from "@/assets/imgs/bg/concrete-cover.webp";
 ---
 
 <html lang="en">
@@ -236,7 +234,7 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
           <div class="banner-background">
             <Image
               src={concreteBg}
-              alt=""
+              alt="Concrete services background - MAC Paving and Sealcoating"
               width={1920}
               height={600}
               format="webp"
@@ -252,7 +250,7 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li><span>Services / Concrete</span></li>
                     </ul>
@@ -265,7 +263,6 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
       </div>
       <!-- Breadcrumb area end -->
 
-          
       <!-- Service Slider area start -->
       <section class="service-page-section section-space">
         <div class="small-containe">
@@ -327,7 +324,9 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                         safe and durable pedestrian pathways, enhancing the
                         accessibility and appearance of your property.
                       </p>
-                      <a href="/services/concrete/sidewalks/" class="service-btn"
+                      <a
+                        href="/services/concrete/sidewalks/"
+                        class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
                       >
@@ -405,12 +404,9 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                   data-wow-delay=".5s"
                 >
                   <span class="section-sub-title">LET'S TALK</span>
-                  <h3
-                    class="section-title mt-10"
-                    aria-label="Let's Get in Touch"
-                  >
-                    Get Your Free Estimate
-                  </h3>
+                  <h5 class="form-title mt-10" aria-label="Let's Get in Touch">
+                    Get Your Free Estimate Now!
+                  </h5>
                 </div>
                 <div class="contact-page-form">
                   <form
@@ -488,19 +484,25 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
       <!-- Service Slider area end -->
 
       <!-- Project slider area start -->
-      <section class="project-slider-section section-space fix">
+      <section
+        aria-label="Projects section"
+        class="project-slider-section section-space fix"
+      >
         <div class="small-container">
           <div class="row">
-            <div class="col-xxl-6">
-              <div class="title-box mb-25 wow fadeInLeft" data-wow-delay=".5s">
-                <span class="section-sub-title">RECENT WORKS</span>
-                <h3 class="section-title mt-25 mb-50">Concrete Projects</h3>
-              </div>
-            </div>
-            <div class="col-xxl-6">
-              <!-- If we need navigation buttons -->
+            <div
+              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
+            >
               <div
-                class="project_1_navigation__wrapprer position-relative z-1 text-end mt-30"
+                class="title-box mb-50"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
+                <span class="section-sub-title">RECENT WORKS</span>
+                <h3 class="section-title mt-15">Our Recent Projects</h3>
+              </div>
+              <div
+                class="project_1_navigation__wrapprer position-relative z-1 mt-30"
               >
                 <div class="common-slider-navigation">
                   <button
@@ -513,7 +515,7 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                     class="project-1-button-next"
                     aria-label="Next project"
                   >
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -530,9 +532,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/walkways-1.webp"
+                      <Image
+                        src={walkways1}
                         alt="Walkways Installation by MAC Paving and Sealcoating – Concrete Walkway and Asphalt Paving Contractors in Central Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -546,9 +551,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/walkways-2.webp"
+                      <Image
+                        src={walkways2}
                         alt="Walkways Installation by MAC Paving and Sealcoating – Concrete Walkway and Asphalt Paving Contractors in Central Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -562,9 +570,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/walkways-3.webp"
+                      <Image
+                        src={walkways3}
                         alt="Walkways Installation by MAC Paving and Sealcoating – Concrete Walkway and Asphalt Paving Contractors in Central Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -578,9 +589,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/walkways-4.webp"
+                      <Image
+                        src={walkways4}
                         alt="Walkways Installation by MAC Paving and Sealcoating – Concrete Walkway and Asphalt Paving Contractors in Central Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -593,9 +607,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/sidewalks-2.webp"
+                      <Image
+                        src={sidewalks2}
                         alt="Sidewalks Installation Service by MAC Paving and Sealcoating – Residential and Commercial Sidewalk Paving NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -609,9 +626,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/sidewalks-3.webp"
+                      <Image
+                        src={sidewalks3}
                         alt="Sidewalks Installation Service by MAC Paving and Sealcoating – Residential and Commercial Sidewalk Paving NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -624,9 +644,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/sidewalks-4.webp"
+                      <Image
+                        src={sidewalks4}
                         alt="Sidewalks Installation Service by MAC Paving and Sealcoating – Residential and Commercial Sidewalk Paving NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -639,9 +662,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/curbs-1.webp"
+                      <Image
+                        src={curbs1}
                         alt="Curbs Installation Service by MAC Paving and Sealcoating – Concrete Curbs and Expert Paving Contractors in NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -654,9 +680,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/aprons-1.webp"
+                      <Image
+                        src={aprons1}
                         alt="Aprons Installation Service by MAC Paving and Sealcoating – Driveway Apron Installation and Asphalt Companies NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -670,9 +699,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/aprons-2.webp"
+                      <Image
+                        src={aprons2}
                         alt="Aprons Installation Service by MAC Paving and Sealcoating – Driveway Apron Installation and Asphalt Companies NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -685,9 +717,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/aprons-3.webp"
+                      <Image
+                        src={aprons3}
                         alt="Aprons Installation Service by MAC Paving and Sealcoating – Driveway Apron Installation and Asphalt Companies NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -700,9 +735,12 @@ import concreteBg from "../../../public/assets/imgs/bg/concrete-cover.webp";
                 >
                   <div class="project-slider-two-box p-relative">
                     <figure class="image w-img">
-                      <img
-                        src="/assets/imgs/service/concrete/aprons-4.webp"
+                      <Image
+                        src={aprons4}
                         alt="Aprons Installation Service by MAC Paving and Sealcoating – Driveway Apron Installation and Asphalt Companies NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>

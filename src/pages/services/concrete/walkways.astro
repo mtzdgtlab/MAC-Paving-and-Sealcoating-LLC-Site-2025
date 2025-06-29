@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Import walkways images
+import walkways1 from "@/assets/imgs/service/concrete/walkways-1.webp";
+import walkways2 from "@/assets/imgs/service/concrete/walkways-2.webp";
+import walkways3 from "@/assets/imgs/service/concrete/walkways-3.webp";
+import walkways4 from "@/assets/imgs/service/concrete/walkways-4.webp";
+
+// Import background image
+import concreteBg from "@/assets/imgs/service/concrete.webp";
 ---
 
 <html lang="en">
@@ -216,10 +225,16 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/concrete.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={concreteBg}
+              alt="Concrete Walkways background - MAC Paving and Sealcoating"
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -265,7 +280,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/walkways-1.webp"
+                        src={walkways1}
                         alt="Concrete Walkways in NJ | Installed by Local Experts - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -276,7 +291,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/walkways-2.webp"
+                        src={walkways2}
                         alt="Concrete Walkways in NJ | Installed by Local Experts - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -312,7 +327,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/concrete/walkways-3.webp"
+                    src={walkways3}
                     alt="Concrete Walkways in NJ | Installed by Local Experts - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -332,7 +347,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/walkways-4.webp"
+                        src={walkways4}
                         alt="Concrete Walkways in NJ | Installed by Local Experts - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}

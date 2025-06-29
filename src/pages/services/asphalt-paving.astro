@@ -9,13 +9,29 @@ import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
 
 // Import asphalt paving images
-import installation5 from "../../../public/assets/imgs/service/asphalt-paving/installation-5.webp";
-import resurfacing1 from "../../../public/assets/imgs/service/asphalt-paving/resurfacing-1.webp";
-import replacement4 from "../../../public/assets/imgs/service/asphalt-paving/replacement-4.webp";
-import extension3 from "../../../public/assets/imgs/service/asphalt-paving/extension-3.webp";
+import installation1 from "@/assets/imgs/service/asphalt-paving/installation-1.webp";
+import installation2 from "@/assets/imgs/service/asphalt-paving/installation-2.webp";
+import installation3 from "@/assets/imgs/service/asphalt-paving/installation-3.webp";
+import installation4 from "@/assets/imgs/service/asphalt-paving/installation-4.webp";
+import installation5 from "@/assets/imgs/service/asphalt-paving/installation-5.webp";
+
+import resurfacing1 from "@/assets/imgs/service/asphalt-paving/resurfacing-1.webp";
+import resurfacing2 from "@/assets/imgs/service/asphalt-paving/resurfacing-2.webp";
+import resurfacing3 from "@/assets/imgs/service/asphalt-paving/resurfacing-3.webp";
+import resurfacing4 from "@/assets/imgs/service/asphalt-paving/resurfacing-4.webp";
+
+import replacement1 from "@/assets/imgs/service/asphalt-paving/replacement-1.webp";
+import replacement2 from "@/assets/imgs/service/asphalt-paving/replacement-2.webp";
+import replacement3 from "@/assets/imgs/service/asphalt-paving/replacement-3.webp";
+import replacement4 from "@/assets/imgs/service/asphalt-paving/replacement-4.webp";
+
+import extension1 from "@/assets/imgs/service/asphalt-paving/extension-1.webp";
+import extension2 from "@/assets/imgs/service/asphalt-paving/extension-2.webp";
+import extension3 from "@/assets/imgs/service/asphalt-paving/extension-3.webp";
+import extension4 from "@/assets/imgs/service/asphalt-paving/extension-4.webp";
 
 // Import asphalt background image
-import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
+import asphaltBg from "@/assets/imgs/bg/asphalt-cover.webp";
 ---
 
 <html lang="en">
@@ -280,7 +296,9 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         <i class="fa-solid fa-road"></i>
                       </div>
                       <h3>
-                        <a href="/services/asphalt-paving/installation/">Installation</a>
+                        <a href="/services/asphalt-paving/installation/"
+                          >Installation</a
+                        >
                       </h3>
                       <p>
                         Professional asphalt paving installation services
@@ -315,7 +333,9 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         <i class="fas fa-layer-group"></i>
                       </div>
                       <h3>
-                        <a href="/services/asphalt-paving/resurfacing/">Resurfacing</a>
+                        <a href="/services/asphalt-paving/resurfacing/"
+                          >Resurfacing</a
+                        >
                       </h3>
                       <p>
                         Quality asphalt resurfacing services to restore and
@@ -350,7 +370,9 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         <i class="fas fa-recycle"></i>
                       </div>
                       <h3>
-                        <a href="/services/asphalt-paving/replacement/">Replacement</a>
+                        <a href="/services/asphalt-paving/replacement/"
+                          >Replacement</a
+                        >
                       </h3>
                       <p>
                         Comprehensive asphalt paving replacement services to
@@ -385,7 +407,9 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         <i class="fas fa-border-all"></i>
                       </div>
                       <h3>
-                        <a href="/services/asphalt-paving/extension/">Extension</a>
+                        <a href="/services/asphalt-paving/extension/"
+                          >Extension</a
+                        >
                       </h3>
                       <p>
                         Efficient asphalt paving extension services to expand
@@ -411,12 +435,9 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                   data-wow-delay=".5s"
                 >
                   <span class="section-sub-title">LET'S TALK</span>
-                  <h3
-                    class="section-title mt-10"
-                    aria-label="Let's Get in Touch"
-                  >
-                    Get Your Free Estimate
-                  </h3>
+                  <h5 class="form-title mt-10" aria-label="Let's Get in Touch">
+                    Get Your Free Estimate Now!
+                  </h5>
                 </div>
                 <div class="contact-page-form">
                   <form
@@ -592,21 +613,25 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
       <!-- Choose area end -->
 
       <!-- Project slider area start -->
-      <section class="project-slider-section section-space fix">
+      <section
+        aria-label="Projects section"
+        class="project-slider-section section-space fix"
+      >
         <div class="small-container">
           <div class="row">
-            <div class="col-xxl-6">
-              <div class="title-box mb-25 wow fadeInLeft" data-wow-delay=".5s">
-                <span class="section-sub-title">RECENT WORKS</span>
-                <h3 class="section-title mt-25 mb-50">
-                  Asphalt Paving Projects
-                </h3>
-              </div>
-            </div>
-            <div class="col-xxl-6">
-              <!-- If we need navigation buttons -->
+            <div
+              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
+            >
               <div
-                class="project_1_navigation__wrapprer position-relative z-1 text-end mt-30"
+                class="title-box mb-50"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
+                <span class="section-sub-title">RECENT WORKS</span>
+                <h3 class="section-title mt-15">Our Recent Projects</h3>
+              </div>
+              <div
+                class="project_1_navigation__wrapprer position-relative z-1 mt-30"
               >
                 <div class="common-slider-navigation">
                   <button
@@ -619,7 +644,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                     class="project-1-button-next"
                     aria-label="Next project"
                   >
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>

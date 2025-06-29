@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Import sidewalks images
+import sidewalks1 from "@/assets/imgs/service/concrete/sidewalks-1.webp";
+import sidewalks2 from "@/assets/imgs/service/concrete/sidewalks-2.webp";
+import sidewalks3 from "@/assets/imgs/service/concrete/sidewalks-3.webp";
+import sidewalks4 from "@/assets/imgs/service/concrete/sidewalks-4.webp";
+
+// Import background image
+import concreteBg from "@/assets/imgs/service/concrete.webp";
 ---
 
 <html lang="en">
@@ -217,10 +226,16 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/concrete.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={concreteBg}
+              alt="Sidewalk Installation and Repair background - MAC Paving and Sealcoating"
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -271,7 +286,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/sidewalks-1.webp"
+                        src={sidewalks1}
                         alt="Sidewalk Installation and Repair in NJ | Clifton, Teaneck, Bloomfield - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -282,7 +297,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/sidewalks-2.webp"
+                        src={sidewalks2}
                         alt="Sidewalk Installation and Repair in NJ | Clifton, Teaneck, Bloomfield - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -317,7 +332,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/concrete/sidewalks-3.webp"
+                    src={sidewalks3}
                     alt="Sidewalk Installation and Repair in NJ | Clifton, Teaneck, Bloomfield - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -336,7 +351,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/sidewalks-4.webp"
+                        src={sidewalks4}
                         alt="Sidewalk Installation and Repair in NJ | Clifton, Teaneck, Bloomfield - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
