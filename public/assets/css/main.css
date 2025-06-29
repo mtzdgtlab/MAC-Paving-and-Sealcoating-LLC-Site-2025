@@ -6016,6 +6016,25 @@ p.banner-text {
 /* PAGE TITLE CSS START
 /*----------------------------------------*/
 
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.banner-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 .banner-thumb {
   position: absolute;
   top: 0;
@@ -6025,6 +6044,21 @@ p.banner-text {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.banner-thumb:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 17, 44, 0.9) 15%,
+    rgba(0, 21, 38, 0.6) 50%,
+    rgba(0, 0, 0, 0) 75%
+  );
 }
 
 .breadcrumb__wrapper .breadcrumb__title {
@@ -6053,6 +6087,7 @@ p.banner-text {
 }
 
 @media only screen and (max-width: 1024px) {
+  .banner-thumb,
   .breadcrumb__thumb_2,
   .breadcrumb__thumb_3 {
     display: none;
@@ -7675,50 +7710,6 @@ h2.banner-title {
 }
 
 
-.banner-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.banner-background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-
-.banner-thumb {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.banner-thumb:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 17, 44, 0.9) 15%,
-    rgba(0, 21, 38, 0.6) 50%,
-    rgba(0, 0, 0, 0) 75%
-  );
-}
 
 .left-area {
   display: flex;

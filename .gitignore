@@ -133,5 +133,4 @@ backups/
 
 # Archivos de configuración personal
 config.local.*
-public/service-area-map.html
 
