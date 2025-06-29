@@ -9,6 +9,13 @@ import Scripts from "../../../components/Scripts.astro";
 import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Image imports
+import landscapingBg from "@/assets/imgs/service/landscaping-service.webp";
+import sodInstallation1 from "@/assets/imgs/service/landscaping/sod-installation-1.webp";
+import sodInstallation2 from "@/assets/imgs/service/landscaping/sod-installation-2.webp";
+import sodInstallation3 from "@/assets/imgs/service/landscaping/sod-installation-3.webp";
+import sodInstallation4 from "@/assets/imgs/service/landscaping/sod-installation-4.webp";
 ---
 
 <html lang="en">
@@ -215,11 +222,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/landscaping-service.webp"
-        >
-        </div>
+        <div class="banner-thumb" data-background={landscapingBg.src}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -269,7 +272,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/landscaping/sod-installation-1.webp"
+                        src={sodInstallation1}
                         alt="Sod Installation in NJ | Fresh Green Lawns in Days - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -280,7 +283,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/landscaping/sod-installation-2.webp"
+                        src={sodInstallation2}
                         alt="Sod Installation in NJ | Fresh Green Lawns in Days - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -315,7 +318,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/landscaping/sod-installation-3.webp"
+                    src={sodInstallation3}
                     alt="Sod Installation in NJ | Fresh Green Lawns in Days - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -334,7 +337,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/landscaping/sod-installation-4.webp"
+                        src={sodInstallation4}
                         alt="Sod Installation in NJ | Fresh Green Lawns in Days - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}

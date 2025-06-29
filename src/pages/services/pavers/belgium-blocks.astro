@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Image imports
+import paverBg from "@/assets/imgs/service/paver-service.webp";
+import belgiumBlocks1 from "@/assets/imgs/service/pavers/belgium-blocks-1.webp";
+import belgiumBlocks2 from "@/assets/imgs/service/pavers/belgium-blocks-2.webp";
+import belgiumBlocks3 from "@/assets/imgs/service/pavers/belgium-blocks-3.webp";
+import belgiumBlocks4 from "@/assets/imgs/service/pavers/belgium-blocks-4.webp";
 ---
 
 <html lang="en">
@@ -219,7 +226,7 @@ import Brands from "../../../components/Brands.astro";
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
         <div
           class="banner-thumb"
-          data-background="/assets/imgs/service/paver-service.webp"
+          data-background={paverBg.src}
         >
         </div>
         <div class="small-container">
@@ -266,7 +273,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/belgium-blocks-1.webp"
+                        src={belgiumBlocks1}
                         alt="Belgium Block Installation in NJ | Decorative Stone Borders - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -277,7 +284,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/belgium-blocks-2.webp"
+                        src={belgiumBlocks2}
                         alt="Belgium Block Installation in NJ | Decorative Stone Borders - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -314,7 +321,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/pavers/belgium-blocks-3.webp"
+                    src={belgiumBlocks3}
                     alt="Belgium Block Installation in NJ | Decorative Stone Borders - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -334,7 +341,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/belgium-blocks-4.webp"
+                        src={belgiumBlocks4}
                         alt="Belgium Block Installation in NJ | Decorative Stone Borders - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}

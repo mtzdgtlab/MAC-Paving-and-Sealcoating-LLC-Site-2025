@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Image imports
+import landscapingBg from "@/assets/imgs/service/landscaping-service.webp";
+import topSoil1 from "@/assets/imgs/service/landscaping/top-soil-1.webp";
+import topSoil2 from "@/assets/imgs/service/landscaping/top-soil-2.webp";
+import topSoil3 from "@/assets/imgs/service/landscaping/top-soil-3.webp";
+import topSoil4 from "@/assets/imgs/service/landscaping/top-soil-4.webp";
 ---
 
 <html lang="en">
@@ -217,11 +224,7 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/landscaping-service.webp"
-        >
-        </div>
+        <div class="banner-thumb" data-background={landscapingBg.src}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -270,7 +273,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/landscaping/top-soil-1.webp"
+                        src={topSoil1}
                         alt="Topsoil Delivery and Lawn Grading in NJ | Ready for Planting - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -281,7 +284,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/landscaping/top-soil-2.webp"
+                        src={topSoil2}
                         alt="Topsoil Delivery and Lawn Grading in NJ | Ready for Planting - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -314,7 +317,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/landscaping/top-soil-3.webp"
+                    src={topSoil3}
                     alt="Topsoil Delivery and Lawn Grading in NJ | Ready for Planting - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -333,7 +336,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/landscaping/top-soil-4.webp"
+                        src={topSoil4}
                         alt="Topsoil Delivery and Lawn Grading in NJ | Ready for Planting - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}

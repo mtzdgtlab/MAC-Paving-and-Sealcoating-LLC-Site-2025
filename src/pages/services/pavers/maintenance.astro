@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Image imports
+import paverBg from "@/assets/imgs/service/paver-service.webp";
+import paverMaintenance1 from "@/assets/imgs/service/pavers/paver-maintenance-1.webp";
+import paverMaintenance2 from "@/assets/imgs/service/pavers/paver-maintenance-2.webp";
+import paverMaintenance3 from "@/assets/imgs/service/pavers/paver-maintenance-3.webp";
+import paverMaintenance4 from "@/assets/imgs/service/pavers/paver-maintenance-4.webp";
 ---
 
 <html lang="en">
@@ -218,7 +225,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
         <div
           class="banner-thumb"
-          data-background="/assets/imgs/service/paver-service.webp"
+          data-background={paverBg.src}
         >
         </div>
         <div class="small-container">
@@ -265,7 +272,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/paver-maintenance-1.webp"
+                        src={paverMaintenance1}
                         alt="Paver Maintenance and Cleaning Services in NJ | Bergen County Area - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -276,7 +283,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/paver-maintenance-2.webp"
+                        src={paverMaintenance2}
                         alt="Paver Maintenance and Cleaning Services in NJ | Bergen County Area - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -313,7 +320,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/pavers/paver-maintenance-3.webp"
+                    src={paverMaintenance3}
                     alt="Paver Maintenance and Cleaning Services in NJ | Bergen County Area - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -333,7 +340,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/paver-maintenance-4.webp"
+                        src={paverMaintenance4}
                         alt="Paver Maintenance and Cleaning Services in NJ | Bergen County Area - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
