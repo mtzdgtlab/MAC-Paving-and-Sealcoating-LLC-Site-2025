@@ -10,6 +10,9 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+import contactBg from "@/assets/imgs/bg/asphalt-cover.webp"
+
 ---
 
 <html lang="en">
@@ -17,7 +20,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no" />
-    <title>Driveway Installation NJ | Free Estimates</title>
+    <title>Driveway Installation Services NJ | Free Estimates</title>
     <!-- Preconexión para recursos externos (mejora rendimiento) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -216,10 +219,16 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          data-background="/assets/imgs/service/asphalt-service.webp"
-        >
+        <div class="banner-thumb">
+          <div class="banner-background">
+            <Image
+              src={contactBg}
+              alt=""
+              width={1920}
+              height={600}
+              format="webp"
+            />
+          </div>
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -261,10 +270,10 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   specialize in high-quality driveway installations for
                   homeowners across North Jersey, using durable materials and
                   precision techniques to ensure long-lasting, attractive
-                  results. Whether you’re building a new driveway or replacing
+                  results. Whether you're building a new driveway or replacing
                   an outdated one, we deliver seamless surfaces that enhance
                   property value, support daily use, and stand up to the
-                  region’s climate.
+                  region's climate.
                 </p>
                 <div class="row">
                   <div class="col-lg-6">
@@ -296,7 +305,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                       Built for Performance, Backed by Local Experience
                     </h3>
                     <p class="mb-25">
-                      Our driveways are designed to handle New Jersey’s
+                      Our driveways are designed to handle New Jersey's
                       seasons—from freezing winters to hot summers. We combine
                       local knowledge with industry best practices to deliver
                       smooth, resilient surfaces that stay strong for years.
@@ -307,7 +316,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   </div>
                   <div class="col-lg-6">
                     <h3 class="service-details-subtitle mt-45 mb-25">
-                      From Prep to Finish—Here’s How We Do It
+                      From Prep to Finish—Here's How We Do It
                     </h3>
                     <p class="mb-25">
                       We begin every installation with detailed ground
@@ -329,15 +338,15 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   />
                 </figure>
                 <h3 class="service-details-subtitle mt-45 mb-25">
-                  Is It Time to Upgrade? Here’s Why It Pays Off
+                  Is It Time to Upgrade? Here's Why It Pays Off
                 </h3>
                 <p class="mb-25">
                   If your driveway is cracked, uneven, or just outdated,
-                  replacing it with asphalt is a smart upgrade. It’s more
+                  replacing it with asphalt is a smart upgrade. It's more
                   affordable than concrete, faster to install, and easier to
                   maintain. Plus, it adds instant curb appeal. Our estimates are
                   free, and our results speak for themselves. Invest in your
-                  home’s value with a new asphalt driveway—call today.
+                  home's value with a new asphalt driveway—call today.
                 </p>
                 <div class="row">
                   <div class="col-lg-7">
