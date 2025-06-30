@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Image imports
+import sealerServiceBg from "@/assets/imgs/banner/sealer-service.webp";
+import sealcoating1 from "@/assets/imgs/service/sealer/sealcoating-1.webp";
+import sealcoating2 from "@/assets/imgs/service/sealer/sealcoating-2.webp";
+import sealcoating3 from "@/assets/imgs/service/sealer/sealcoating-3.webp";
+import sealcoating4 from "@/assets/imgs/service/sealer/sealcoating-4.webp";
 ---
 
 <html lang="en">
@@ -28,7 +35,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/sealer/sealcoating"
+      href="https://macpavingandsealcoating.com/services/sealer/sealcoating/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -193,7 +200,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -216,11 +223,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/sealer.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${sealerServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row">
             <div class="col-xxl-8 col-xl-8 col-lg-8">
@@ -232,7 +235,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Sealer / Sealcoating</span>
@@ -258,16 +261,16 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   Sealcoating is essential protection for your asphalt—acting
                   like sunscreen against UV rays, water damage, oil stains, and
                   surface erosion. At MAC Paving and Sealcoating, we apply
-                  commercial-grade sealcoating that preserves your driveway’s
-                  color, smoothness, and structural integrity. It’s a
+                  commercial-grade sealcoating that preserves your driveway's
+                  color, smoothness, and structural integrity. It's a
                   cost-effective service that saves you from costly repairs and
-                  extends your asphalt’s life significantly.
+                  extends your asphalt's life significantly.
                 </p>
                 <div class="row">
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/sealcoating-1.webp"
+                        src={sealcoating1}
                         alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -278,7 +281,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/sealcoating-2.webp"
+                        src={sealcoating2}
                         alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -290,7 +293,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 <div class="row">
                   <div class="col-lg-6">
                     <h3 class="service-details-subtitle mt-45 mb-25">
-                      More Than Just a Coating—It’s Long-Term Protection
+                      More Than Just a Coating—It's Long-Term Protection
                     </h3>
                     <p class="mb-25">
                       Think of sealcoating as sunscreen for your asphalt. It
@@ -317,7 +320,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/sealer/sealcoating-3.webp"
+                    src={sealcoating3}
                     alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -328,9 +331,9 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   When to Sealcoat—and Why It Pays Off
                 </h3>
                 <p class="mb-25">
-                  If your asphalt looks dry, gray, or has minor cracks, it’s
+                  If your asphalt looks dry, gray, or has minor cracks, it's
                   time for a sealcoat. We recommend resealing every 2–3 years to
-                  keep your driveway in peak condition. It’s far cheaper than
+                  keep your driveway in peak condition. It's far cheaper than
                   resurfacing or replacing, and the visual upgrade is immediate.
                   Get a free quote today and protect your asphalt the smart way.
                 </p>
@@ -338,7 +341,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/sealcoating-4.webp"
+                        src={sealcoating4}
                         alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
@@ -347,8 +350,12 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Oradell</li>
                       <li>Haledon</li>
                       <li>Ridgewood</li>

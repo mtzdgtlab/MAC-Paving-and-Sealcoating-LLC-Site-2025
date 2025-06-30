@@ -9,12 +9,23 @@ import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
 
 // Import sealer images
-import sealcoating2 from "../../../public/assets/imgs/service/sealer/sealcoating-2.webp";
-import crackFilling4 from "../../../public/assets/imgs/service/sealer/crack-filling-4.webp";
-import lineStriping3 from "../../../public/assets/imgs/service/sealer/line-striping-3.webp";
+import sealcoating1 from "@/assets/imgs/service/sealer/sealcoating-1.webp";
+import sealcoating2 from "@/assets/imgs/service/sealer/sealcoating-2.webp";
+import sealcoating3 from "@/assets/imgs/service/sealer/sealcoating-3.webp";
+import sealcoating4 from "@/assets/imgs/service/sealer/sealcoating-4.webp";
+
+import crackFilling1 from "@/assets/imgs/service/sealer/crack-filling-1.webp";
+import crackFilling2 from "@/assets/imgs/service/sealer/crack-filling-2.webp";
+import crackFilling3 from "@/assets/imgs/service/sealer/crack-filling-3.webp";
+import crackFilling4 from "@/assets/imgs/service/sealer/crack-filling-4.webp";
+
+import lineStriping1 from "@/assets/imgs/service/sealer/line-striping-1.webp";
+import lineStriping2 from "@/assets/imgs/service/sealer/line-striping-2.webp";
+import lineStriping3 from "@/assets/imgs/service/sealer/line-striping-3.webp";
+import lineStriping4 from "@/assets/imgs/service/sealer/line-striping-4.webp";
 
 // Import sealer background image
-import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
+import sealerBg from "@/assets/imgs/bg/sealer-cover.webp";
 ---
 
 <html lang="en">
@@ -22,7 +33,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no" />
-    <title> Sealer Services Near | Protect Your Driveway </title>
+    <title>Sealer Services Near | Protect Your Driveway</title>
     <!-- Preconexión para recursos externos (mejora rendimiento) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +44,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/sealer"
+      href="https://macpavingandsealcoating.com/services/sealer/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -199,7 +210,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -224,17 +235,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div class="banner-thumb">
-          <div class="banner-background">
-            <Image
-              src={sealerBg}
-              alt=""
-              width={1920}
-              height={600}
-              format="webp"
-            />
-          </div>
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${sealerBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -244,7 +245,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li><span>Services / Sealer </span></li>
                     </ul>
@@ -280,7 +281,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                         <i class="fas fa-fill-drip"></i>
                       </div>
                       <h3>
-                        <a href="/services/sealer/sealcoating">Sealcoating</a>
+                        <a href="/services/sealer/sealcoating/">Sealcoating</a>
                       </h3>
                       <p>
                         High-quality seal coating services to protect and
@@ -288,7 +289,9 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                         and maintaining their appearance against weather damage
                         and wear.
                       </p>
-                      <a href="/services/sealer/sealcoating" class="service-btn"
+                      <a
+                        href="/services/sealer/sealcoating/"
+                        class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
                       >
@@ -313,7 +316,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                         <i class="fa-solid fa-brush"></i>
                       </div>
                       <h3>
-                        <a href="/services/sealer/crack-filling"
+                        <a href="/services/sealer/crack-filling/"
                           >Crack Filling</a
                         >
                       </h3>
@@ -323,7 +326,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                         integrity and longevity of your asphalt surfaces.
                       </p>
                       <a
-                        href="/services/sealer/crack-filling"
+                        href="/services/sealer/crack-filling/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -349,7 +352,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                         <i class="fa-solid fa-ruler-horizontal"></i>
                       </div>
                       <h3>
-                        <a href="/services/sealer/line-striping"
+                        <a href="/services/sealer/line-striping/"
                           >Line Striping</a
                         >
                       </h3>
@@ -359,7 +362,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                         asphalt surfaces, enhancing safety and organization.
                       </p>
                       <a
-                        href="/services/sealer/line-striping"
+                        href="/services/sealer/line-striping/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -376,12 +379,9 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                   data-wow-delay=".5s"
                 >
                   <span class="section-sub-title">LET'S TALK</span>
-                  <h3
-                    class="section-title mt-10"
-                    aria-label="Let's Get in Touch"
-                  >
-                    Get Your Free Estimate
-                  </h3>
+                  <h5 class="form-title mt-10" aria-label="Let's Get in Touch">
+                    Get Your Free Estimate Now!
+                  </h5>
                 </div>
                 <div class="contact-page-form">
                   <form
@@ -462,8 +462,6 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
       <section
         class="choose-section bg-color-1 section-space-top section-space-bottom p-relative"
       >
-        <div class="bg-image" data-background="/assets/imgs/bg/choose-bg.webp">
-        </div>
         <div
           class="shape-image"
           data-background="/assets/imgs/shapes/shape-15.webp"
@@ -557,19 +555,25 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
       <!-- Choose area end -->
 
       <!-- Project slider area start -->
-      <section class="project-slider-section section-space fix">
+      <section
+        aria-label="Projects section"
+        class="project-slider-section section-space fix"
+      >
         <div class="small-container">
           <div class="row">
-            <div class="col-xxl-6">
-              <div class="title-box mb-25 wow fadeInLeft" data-wow-delay=".5s">
-                <span class="section-sub-title">RECENT WORKS</span>
-                <h3 class="section-title mt-25 mb-50">Sealer Projects</h3>
-              </div>
-            </div>
-            <div class="col-xxl-6">
-              <!-- If we need navigation buttons -->
+            <div
+              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
+            >
               <div
-                class="project_1_navigation__wrapprer position-relative z-1 text-end mt-30"
+                class="title-box mb-50"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
+                <span class="section-sub-title">RECENT WORKS</span>
+                <h3 class="section-title mt-15">Our Recent Projects</h3>
+              </div>
+              <div
+                class="project_1_navigation__wrapprer position-relative z-1 mt-30"
               >
                 <div class="common-slider-navigation">
                   <button
@@ -582,7 +586,7 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                     class="project-1-button-next"
                     aria-label="Next project"
                   >
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -599,8 +603,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/sealcoating-1.webp"
+                      <Image
+                        src={sealcoating1}
                         alt="Sealcoating Service by MAC Paving and Sealcoating – Premier Asphalt Sealcoating Company NJ."
                       />
                     </figure>
@@ -615,8 +619,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/sealcoating-2.webp"
+                      <Image
+                        src={sealcoating2}
                         alt="Sealcoating Service by MAC Paving and Sealcoating – Premier Asphalt Sealcoating Company NJ."
                       />
                     </figure>
@@ -631,8 +635,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/sealcoating-3.webp"
+                      <Image
+                        src={sealcoating3}
                         alt="Sealcoating Service by MAC Paving and Sealcoating – Premier Asphalt Sealcoating Company NJ."
                       />
                     </figure>
@@ -647,8 +651,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/sealcoating-4.webp"
+                      <Image
+                        src={sealcoating4}
                         alt="Sealcoating Service by MAC Paving and Sealcoating – Premier Asphalt Sealcoating Company NJ."
                       />
                     </figure>
@@ -663,8 +667,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/crack-filling-1.webp"
+                      <Image
+                        src={crackFilling1}
                         alt="Crack Filling Service by MAC Paving and Sealcoating – Asphalt Repair and Pavement Maintenance in New Jersey."
                       />
                     </figure>
@@ -679,8 +683,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/crack-filling-2.webp"
+                      <Image
+                        src={crackFilling2}
                         alt="Crack Filling Service by MAC Paving and Sealcoating – Asphalt Repair and Pavement Maintenance in New Jersey."
                       />
                     </figure>
@@ -695,8 +699,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/crack-filling-3.webp"
+                      <Image
+                        src={crackFilling3}
                         alt="Crack Filling Service by MAC Paving and Sealcoating – Asphalt Repair and Pavement Maintenance in New Jersey."
                       />
                     </figure>
@@ -711,8 +715,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/crack-filling-4.webp"
+                      <Image
+                        src={crackFilling4}
                         alt="Crack Filling Service by MAC Paving and Sealcoating – Asphalt Repair and Pavement Maintenance in New Jersey."
                       />
                     </figure>
@@ -727,8 +731,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/line-striping-1.webp"
+                      <Image
+                        src={lineStriping1}
                         alt="Line Striping Service by MAC Paving and Sealcoating – Commercial Asphalt Paving Contractors NJ, specializing in Parking Lot Striping."
                       />
                     </figure>
@@ -743,8 +747,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/line-striping-2.webp"
+                      <Image
+                        src={lineStriping2}
                         alt="Line Striping Service by MAC Paving and Sealcoating – Commercial Asphalt Paving Contractors NJ, specializing in Parking Lot Striping."
                       />
                     </figure>
@@ -759,8 +763,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/line-striping-3.webp"
+                      <Image
+                        src={lineStriping3}
                         alt="Line Striping Service by MAC Paving and Sealcoating – Commercial Asphalt Paving Contractors NJ, specializing in Parking Lot Striping."
                       />
                     </figure>
@@ -775,8 +779,8 @@ import sealerBg from "../../../public/assets/imgs/bg/sealer-cover.webp";
                 >
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/sealer/line-striping-4.webp"
+                      <Image
+                        src={lineStriping4}
                         alt="Line Striping Service by MAC Paving and Sealcoating – Commercial Asphalt Paving Contractors NJ, specializing in Parking Lot Striping."
                       />
                     </figure>

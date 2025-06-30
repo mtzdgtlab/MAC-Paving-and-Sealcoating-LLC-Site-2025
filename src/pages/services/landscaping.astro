@@ -9,14 +9,26 @@ import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
 
 // Import landscaping images
-import sodInstallation3 from "../../../public/assets/imgs/service/landscaping/sod-installation-3.webp";
-import topSoil1 from "../../../public/assets/imgs/service/landscaping/top-soil-1.webp";
-import drainage1 from "../../../public/assets/imgs/service/landscaping/drainage-1.webp";
-import powerWash1 from "../../../public/assets/imgs/service/landscaping/power-wash-1.webp";
-import hauling1 from "../../../public/assets/imgs/service/landscaping/hauling-1.webp";
+import sodInstallation1 from "@/assets/imgs/service/landscaping/sod-installation-1.webp";
+import sodInstallation2 from "@/assets/imgs/service/landscaping/sod-installation-2.webp";
+import sodInstallation3 from "@/assets/imgs/service/landscaping/sod-installation-3.webp";
+import sodInstallation4 from "@/assets/imgs/service/landscaping/sod-installation-4.webp";
+
+import topSoil1 from "@/assets/imgs/service/landscaping/top-soil-1.webp";
+import topSoil2 from "@/assets/imgs/service/landscaping/top-soil-2.webp";
+import topSoil3 from "@/assets/imgs/service/landscaping/top-soil-3.webp";
+import topSoil4 from "@/assets/imgs/service/landscaping/top-soil-4.webp";
+
+import drainage1 from "@/assets/imgs/service/landscaping/drainage-1.webp";
+import drainage2 from "@/assets/imgs/service/landscaping/drainage-2.webp";
+import drainage3 from "@/assets/imgs/service/landscaping/drainage-3.webp";
+import drainage4 from "@/assets/imgs/service/landscaping/drainage-4.webp";
+
+import powerWash1 from "@/assets/imgs/service/landscaping/power-wash-1.webp";
+import hauling1 from "@/assets/imgs/service/landscaping/hauling-1.webp";
 
 // Import landscaping background image
-import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp";
+import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
 ---
 
 <html lang="en">
@@ -35,7 +47,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/landscaping"
+      href="https://macpavingandsealcoating.com/services/landscaping/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -192,7 +204,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
             "name": "Book a Free Estimate",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://macpavingandsealcoating.com/contact",
+              "urlTemplate": "https://macpavingandsealcoating.com/contact/",
               "inLanguage": "en",
               "actionPlatform": [
                 "http://schema.org/DesktopWebPlatform",
@@ -216,17 +228,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div class="banner-thumb">
-          <div class="banner-background">
-            <Image
-              src={landscapingBg}
-              alt=""
-              width={1920}
-              height={600}
-              format="webp"
-            />
-          </div>
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${landscapingBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -236,7 +238,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li><span>Services / Landscaping </span></li>
                     </ul>
@@ -272,7 +274,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                         <i class="fas fa-tree"></i>
                       </div>
                       <h3>
-                        <a href="/services/landscaping/sod-installation"
+                        <a href="/services/landscaping/sod-installation/"
                           >Sod Installation</a
                         >
                       </h3>
@@ -282,7 +284,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                         beauty of your outdoor spaces.
                       </p>
                       <a
-                        href="/services/landscaping/sod-installation"
+                        href="/services/landscaping/sod-installation/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -308,14 +310,14 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                         <i class="fa-solid fa-mountain"></i>
                       </div>
                       <h3>
-                        <a href="/services/landscaping/top-soil">Top Soil</a>
+                        <a href="/services/landscaping/top-soil/">Top Soil</a>
                       </h3>
                       <p>
                         High-quality topsoil delivery and spreading services to
                         enrich your garden and landscaping projects.
                       </p>
                       <a
-                        href="/services/landscaping/top-soil"
+                        href="/services/landscaping/top-soil/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -341,7 +343,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                         <i class="fa-solid fa-water"></i>
                       </div>
                       <h3>
-                        <a href="/services/landscaping/drainage">Drainage</a>
+                        <a href="/services/landscaping/drainage/">Drainage</a>
                       </h3>
                       <p>
                         Professional drainage solutions to manage water runoff
@@ -349,7 +351,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                         stability of your property.
                       </p>
                       <a
-                        href="/services/landscaping/drainage"
+                        href="/services/landscaping/drainage/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -375,7 +377,8 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                         <i class="fa-solid fa-shower"></i>
                       </div>
                       <h3>
-                        <a href="/services/landscaping/power-wash">Power Wash</a
+                        <a href="/services/landscaping/power-wash/"
+                          >Power Wash</a
                         >
                       </h3>
                       <p>
@@ -384,7 +387,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                         grime, and stains.
                       </p>
                       <a
-                        href="/services/landscaping/power-wash"
+                        href="/services/landscaping/power-wash/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -410,7 +413,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                         <i class="fa-solid fa-truck"></i>
                       </div>
                       <h3>
-                        <a href="/services/landscaping/hauling">Hauling</a>
+                        <a href="/services/landscaping/hauling/">Hauling</a>
                       </h3>
                       <p>
                         Efficient hauling services to remove debris and unwanted
@@ -418,7 +421,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                         environment.
                       </p>
                       <a
-                        href="/services/landscaping/hauling"
+                        href="/services/landscaping/hauling/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -435,12 +438,9 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                   data-wow-delay=".5s"
                 >
                   <span class="section-sub-title">LET'S TALK</span>
-                  <h3
-                    class="section-title mt-10"
-                    aria-label="Let's Get in Touch"
-                  >
-                    Get Your Free Estimate
-                  </h3>
+                  <h5 class="form-title mt-10" aria-label="Let's Get in Touch">
+                    Get Your Free Estimate Now!
+                  </h5>
                 </div>
                 <div class="contact-page-form">
                   <form
@@ -616,19 +616,25 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
       <!-- Choose area end -->
 
       <!-- Project slider area start -->
-      <section class="project-slider-section section-space fix">
+      <section
+        aria-label="Projects section"
+        class="project-slider-section section-space fix"
+      >
         <div class="small-container">
           <div class="row">
-            <div class="col-xxl-6">
-              <div class="title-box mb-25 wow fadeInLeft" data-wow-delay=".5s">
-                <span class="section-sub-title">RECENT WORKS</span>
-                <h3 class="section-title mt-25 mb-50">Landscaping Projects</h3>
-              </div>
-            </div>
-            <div class="col-xxl-6">
-              <!-- If we need navigation buttons -->
+            <div
+              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
+            >
               <div
-                class="project_1_navigation__wrapprer position-relative z-1 text-end mt-30"
+                class="title-box mb-50"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
+                <span class="section-sub-title">RECENT WORKS</span>
+                <h3 class="section-title mt-15">Our Recent Projects</h3>
+              </div>
+              <div
+                class="project_1_navigation__wrapprer position-relative z-1 mt-30"
               >
                 <div class="common-slider-navigation">
                   <button
@@ -641,7 +647,7 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
                     class="project-1-button-next"
                     aria-label="Next project"
                   >
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -652,15 +658,15 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
           <div class="swipe project-active-1">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/sod-installation-1.webp"
-                >
+                <a class="popup-image" href={sodInstallation1.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/sod-installation-1.webp"
+                      <Image
+                        src={sodInstallation1}
                         alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -668,15 +674,15 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/sod-installation-2.webp"
-                >
+                <a class="popup-image" href={sodInstallation2.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/sod-installation-2.webp"
+                      <Image
+                        src={sodInstallation2}
                         alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -684,15 +690,15 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/sod-installation-3.webp"
-                >
+                <a class="popup-image" href={sodInstallation3.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/sod-installation-3.webp"
+                      <Image
+                        src={sodInstallation3}
                         alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -700,15 +706,15 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/sod-installation-4.webp"
-                >
+                <a class="popup-image" href={sodInstallation4.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/sod-installation-4.webp"
+                      <Image
+                        src={sodInstallation4}
                         alt="Sod Installation Service by MAC Paving and Sealcoating – Landscaping and Custom Driveway Solutions in New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -716,15 +722,15 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/top-soil-1.webp"
-                >
+                <a class="popup-image" href={topSoil1.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/top-soil-1.webp"
+                      <Image
+                        src={topSoil1}
                         alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -732,15 +738,15 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/top-soil-2.webp"
-                >
+                <a class="popup-image" href={topSoil2.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/top-soil-2.webp"
+                      <Image
+                        src={topSoil2}
                         alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -748,90 +754,90 @@ import landscapingBg from "../../../public/assets/imgs/bg/landscaping-cover.webp
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/top-soil-3.webp"
-                >
+                <a class="popup-image" href={topSoil3.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/top-soil-3.webp"
+                      <Image
+                        src={topSoil3}
                         alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/top-soil-4.webp"
-                >
+                <a class="popup-image" href={topSoil4.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/top-soil-4.webp"
+                      <Image
+                        src={topSoil4}
                         alt="Top Soil Service by MAC Paving and Sealcoating – Residential Landscaping and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/drainage-1.webp"
-                >
+                <a class="popup-image" href={drainage1.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/drainage-1.webp"
+                      <Image
+                        src={drainage1}
                         alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/drainage-2.webp"
-                >
+                <a class="popup-image" href={drainage2.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/drainage-2.webp"
+                      <Image
+                        src={drainage2}
                         alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/drainage-3.webp"
-                >
+                <a class="popup-image" href={drainage3.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/drainage-3.webp"
+                      <Image
+                        src={drainage3}
                         alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/landscaping/drainage-4.webp"
-                >
+                <a class="popup-image" href={drainage4.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/landscaping/drainage-4.webp"
+                      <Image
+                        src={drainage4}
                         alt="Drainage Solutions by MAC Paving and Sealcoating – Expert Drainage Systems Installation and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>

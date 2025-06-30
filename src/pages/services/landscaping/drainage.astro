@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Image imports
+import landscapingServiceBg from "@/assets/imgs/banner/landscaping-service.webp";
+import drainage1 from "@/assets/imgs/service/landscaping/drainage-1.webp";
+import drainage2 from "@/assets/imgs/service/landscaping/drainage-2.webp";
+import drainage3 from "@/assets/imgs/service/landscaping/drainage-3.webp";
+import drainage4 from "@/assets/imgs/service/landscaping/drainage-4.webp";
 ---
 
 <html lang="en">
@@ -28,7 +35,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/landscaping/drainage"
+      href="https://macpavingandsealcoating.com/services/landscaping/drainage/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -193,7 +200,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -216,23 +223,19 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/landscaping.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${landscapingServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
               <div class="breadcrumb__wrapper p-relative">
                 <h1 class="breadcrumb__title">
-                  Drainage System Installation in North Jersey
+                  Drainage Installation Service | NJ
                 </h1>
                 <div class="breadcrumb__menu">
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Landscaping / Drainage</span>
@@ -256,12 +259,12 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </h2>
                 <p class="mb-25">
                   Standing water is more than a nuisance—it can cause foundation
-                  cracks, kill plants, and damage your pavement. That’s why MAC
+                  cracks, kill plants, and damage your pavement. That's why MAC
                   Paving and Sealcoating offers custom drainage solutions for
                   residential properties across North Jersey. We evaluate your
                   terrain and design systems that redirect water safely and
                   efficiently—using swales, French drains, trench drains, and
-                  more. Whether you’re dealing with erosion, soggy lawn areas,
+                  more. Whether you're dealing with erosion, soggy lawn areas,
                   or runoff issues near structures, our drainage installations
                   protect your investment and keep your yard healthy and usable
                   year-round.
@@ -270,7 +273,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/landscaping/drainage-1.webp"
+                        src={drainage1}
                         alt="Drainage Systems in NJ | Protect Your Property from Water Damage - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -281,7 +284,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/landscaping/drainage-2.webp"
+                        src={drainage2}
                         alt="Drainage Systems in NJ | Protect Your Property from Water Damage - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -314,7 +317,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/landscaping/drainage-3.webp"
+                    src={drainage3}
                     alt="Drainage Systems in NJ | Protect Your Property from Water Damage - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -333,7 +336,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/landscaping/drainage-4.webp"
+                        src={drainage4}
                         alt="Drainage Systems in NJ | Protect Your Property from Water Damage - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
@@ -342,8 +345,12 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Montville</li>
                       <li>Parsippany</li>
                       <li>East Hanover</li>

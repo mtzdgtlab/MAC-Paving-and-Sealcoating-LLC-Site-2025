@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Image imports
+import paverServiceBg from "@/assets/imgs/banner/paver-service.webp";
+import paverMaintenance1 from "@/assets/imgs/service/pavers/paver-maintenance-1.webp";
+import paverMaintenance2 from "@/assets/imgs/service/pavers/paver-maintenance-2.webp";
+import paverMaintenance3 from "@/assets/imgs/service/pavers/paver-maintenance-3.webp";
+import paverMaintenance4 from "@/assets/imgs/service/pavers/paver-maintenance-4.webp";
 ---
 
 <html lang="en">
@@ -28,7 +35,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/pavers/maintenance"
+      href="https://macpavingandsealcoating.com/services/pavers/maintenance/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -193,7 +200,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -216,11 +223,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/pavers.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${paverServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -232,7 +235,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Masonry / Paver Maintenance</span>
@@ -265,7 +268,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/paver-maintenance-1.webp"
+                        src={paverMaintenance1}
                         alt="Paver Maintenance and Cleaning Services in NJ | Bergen County Area - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -276,7 +279,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/paver-maintenance-2.webp"
+                        src={paverMaintenance2}
                         alt="Paver Maintenance and Cleaning Services in NJ | Bergen County Area - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -313,7 +316,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/pavers/paver-maintenance-3.webp"
+                    src={paverMaintenance3}
                     alt="Paver Maintenance and Cleaning Services in NJ | Bergen County Area - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -325,7 +328,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </h3>
                 <p class="mb-25">
                   If your pavers are looking dull, feel uneven underfoot, or
-                  have gaps and weeds, it’s time to act. Routine maintenance not
+                  have gaps and weeds, it's time to act. Routine maintenance not
                   only improves appearance—it extends the life of your surface
                   and prevents costly repairs. Request your free estimate today.
                 </p>
@@ -333,7 +336,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/paver-maintenance-4.webp"
+                        src={paverMaintenance4}
                         alt="Paver Maintenance and Cleaning Services in NJ | Bergen County Area - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
@@ -342,8 +345,12 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Wayne</li>
                       <li>Clifton</li>
                       <li>Woodland Park</li>

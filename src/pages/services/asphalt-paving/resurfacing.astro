@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Import resurfacing images
+import resurfacing1 from "@/assets/imgs/service/asphalt-paving/resurfacing-1.webp";
+import resurfacing2 from "@/assets/imgs/service/asphalt-paving/resurfacing-2.webp";
+import resurfacing3 from "@/assets/imgs/service/asphalt-paving/resurfacing-3.webp";
+import resurfacing4 from "@/assets/imgs/service/asphalt-paving/resurfacing-4.webp";
+
+// Import background image
+import asphaltServiceBg from "@/assets/imgs/banner/asphalt-service.webp";
 ---
 
 <html lang="en">
@@ -28,7 +37,7 @@ import Brands from "../../../components/Brands.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/asphalt-paving/resurfacing"
+      href="https://macpavingandsealcoating.com/services/asphalt-paving/resurfacing/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -40,7 +49,7 @@ import Brands from "../../../components/Brands.astro";
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Asphalt Resurfacing Services NJ | Restore Your Driveway",
-        "url": "https://macpavingandsealcoating.com/services/asphalt-paving/resurfacing",
+        "url": "https://macpavingandsealcoating.com/services/asphalt-paving/resurfacing/",
         "logo": "https://macpavingandsealcoating.com/logo.png",
         "description": "Restore old asphalt with expert resurfacing that improves safety, looks, and durability. Great for residential driveways. Get a free estimate today.",
         "telephone": "+1-201-755-7836",
@@ -193,7 +202,7 @@ import Brands from "../../../components/Brands.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -217,11 +226,7 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/asphalt.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${asphaltServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -233,7 +238,7 @@ import Brands from "../../../components/Brands.astro";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Asphalt Paving / Resurfacing</span>
@@ -259,17 +264,17 @@ import Brands from "../../../components/Brands.astro";
                   Resurfacing is the smart choice when your asphalt driveway
                   needs a refresh but not a full replacement. MAC Paving and
                   Sealcoating offers expert asphalt resurfacing that restores
-                  your driveway’s appearance and function—without the cost and
+                  your driveway's appearance and function—without the cost and
                   disruption of starting from scratch. We level uneven spots,
                   cover cracks, and apply a clean, durable top layer that renews
-                  the surface and extends its lifespan. It’s fast, effective,
+                  the surface and extends its lifespan. It's fast, effective,
                   and ideal for North Jersey homes showing signs of wear.
                 </p>
                 <div class="row">
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-1.webp"
+                        src={resurfacing1}
                         alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -280,7 +285,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-2.webp"
+                        src={resurfacing2}
                         alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -297,7 +302,7 @@ import Brands from "../../../components/Brands.astro";
                     <p class="mb-25">
                       Our resurfacing method gives you the look and feel of a
                       new driveway—without the price tag of full replacement.
-                      It’s ideal for driveways with surface wear but strong
+                      It's ideal for driveways with surface wear but strong
                       foundations. We use top-grade asphalt blends built to
                       withstand the freeze-thaw cycles of New Jersey, helping
                       homeowners avoid costly repairs down the road.
@@ -319,7 +324,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/asphalt-paving/resurfacing-3.webp"
+                    src={resurfacing3}
                     alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -327,11 +332,11 @@ import Brands from "../../../components/Brands.astro";
                   />
                 </figure>
                 <h3 class="service-details-subtitle mt-45 mb-25">
-                  When It’s the Right Call—And Why It Saves You Money
+                  When It's the Right Call—And Why It Saves You Money
                 </h3>
                 <p class="mb-25">
                   Resurfacing is ideal when your driveway has visible wear but
-                  no deep structural damage. It’s quicker, cleaner, and far more
+                  no deep structural damage. It's quicker, cleaner, and far more
                   affordable than full replacement. You get improved curb
                   appeal, smoother driveability, and added years of use. Contact
                   MAC today for a free evaluation and find out if resurfacing is
@@ -341,7 +346,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-4.webp"
+                        src={resurfacing4}
                         alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
@@ -350,8 +355,12 @@ import Brands from "../../../components/Brands.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>West Orange</li>
                       <li>Newark</li>
                       <li>Jersey City</li>

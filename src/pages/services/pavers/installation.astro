@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Image imports
+import paverServiceBg from "@/assets/imgs/banner/paver-service.webp";
+import installation1 from "@/assets/imgs/service/pavers/installation-1.webp";
+import installation2 from "@/assets/imgs/service/pavers/installation-2.webp";
+import installation3 from "@/assets/imgs/service/pavers/installation-3.webp";
+import installation4 from "@/assets/imgs/service/pavers/installation-4.webp";
 ---
 
 <html lang="en">
@@ -28,7 +35,7 @@ import Brands from "../../../components/Brands.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/pavers/installation"
+      href="https://macpavingandsealcoating.com/services/pavers/installation/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -193,7 +200,7 @@ import Brands from "../../../components/Brands.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -217,11 +224,7 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/pavers.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${paverServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -233,7 +236,7 @@ import Brands from "../../../components/Brands.astro";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Masonry / Pavers Installation</span>
@@ -267,7 +270,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/installation-1.webp"
+                        src={installation1}
                         alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -278,7 +281,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/installation-4.webp"
+                        src={installation4}
                         alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -315,7 +318,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/pavers/installation-3.webp"
+                    src={installation3}
                     alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -326,9 +329,9 @@ import Brands from "../../../components/Brands.astro";
                   Perfect for Homeowners Seeking Style and Low Maintenance
                 </h3>
                 <p class="mb-25">
-                  Whether you’re replacing an old surface or starting from
+                  Whether you're replacing an old surface or starting from
                   scratch, pavers are a smart investment for any residential
-                  upgrade. They’re low-maintenance, easily repairable, and
+                  upgrade. They're low-maintenance, easily repairable, and
                   available in a wide range of colors and patterns. Reach out
                   today for a free consultation.
                 </p>
@@ -336,7 +339,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/installation-2.webp"
+                        src={installation2}
                         alt="Paver Installation Contractors in NJ | Montclair, Wayne, Lodi - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
@@ -345,8 +348,12 @@ import Brands from "../../../components/Brands.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Montclair</li>
                       <li>Verona</li>
                       <li>Glen Ridge</li>

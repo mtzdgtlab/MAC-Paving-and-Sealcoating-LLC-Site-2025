@@ -133,3 +133,11 @@ backups/
 
 # Archivos de configuración personal
 config.local.*
+
+# Ignorar carpeta de recursos (corregido)
+public/assets/resosurces/
+
+# Archivos individuales ignorados
+public/assets/resosurces/MAC Paving SEO - Jun -2025.xlsx
+public/Copia de map.html
+public/assets/resosurces/generate_all_services.py
