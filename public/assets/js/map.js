@@ -1,9 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Buscar todos los contenedores de mapa en la página
+  const mapContainers = document.querySelectorAll('.embedded-map, #map, #footer-map');
+
+  mapContainers.forEach((container) => {
+    if (container.id) {
+      initializeMap(container.id);
+    }
+  });
+});
+
+function initializeMap(mapId) {
+  const container = document.getElementById(mapId);
+  if (!container) return;
+
   // Detectar si está en iframe
   if (window.self !== window.top) {
     document.querySelector('.info-panel')?.classList.add('hidden');
-    document.querySelector('#map').style.height = '100vh';
-    document.querySelector('#map').style.borderTop = 'none';
+    container.style.height = '100vh';
+    container.style.borderTop = 'none';
   }
 
   // --- INICIO DE DATOS GEOJSON PARA LOS CONDADOS DE NUEVA JERSEY ---
@@ -27,13 +41,18 @@ document.addEventListener('DOMContentLoaded', function () {
   const highlightedCounties = ["Passaic", "Bergen", "Essex", "Morris", "Middlesex", "Hudson", "Union", "Somerset", "Sussex"];
 
   // Inicializar el mapa y centrarlo en Nueva Jersey
-  const map = L.map('map', {
+  const map = L.map(mapId, {
     zoomControl: true,
     scrollWheelZoom: false,
     doubleClickZoom: false,
     touchZoom: false,
     dragging: true
   }).setView([40.4, -74.5], 8);
+
+  // Asegurar que el contenedor del mapa tenga z-index bajo
+  if (container) {
+    container.style.zIndex = '1';
+  }
 
   // Añadir una capa de teselas (mapa base) de OpenStreetMap
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -65,8 +84,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Función para añadir interacciones a cada capa de condado
   function onEachFeature(feature, layer) {
-    // Añadir un popup que muestra el nombre del condado al hacer clic
-    layer.bindPopup("Condado de " + feature.properties.name);
+    const countyName = feature.properties.name;
+    const isHighlighted = highlightedCounties.includes(countyName);
+
+    // Crear contenido del popup con mejor formato
+    const popupContent = `
+      <div style="text-align: center; padding: 5px;">
+        <strong style="font-size: 18px; color: #007bff;">
+          Condado de ${countyName}
+        </strong>
+        <br>
+        <span style="font-size: 14px; color: ${isHighlighted ? '#28a745' : '#6c757d'};">
+          ${isHighlighted ? '✓ Área de Servicio' : 'Fuera del área de servicio'}
+        </span>
+      </div>
+    `;
+
+    // Añadir popup con contenido mejorado
+    layer.bindPopup(popupContent, {
+      maxWidth: 250,
+      className: 'custom-popup'
+    });
 
     // Resaltar al pasar el ratón
     layer.on({
@@ -97,14 +135,25 @@ document.addEventListener('DOMContentLoaded', function () {
   setTimeout(() => {
     map.invalidateSize();
   }, 300);
+
+  // Detectar si el mapa está en el footer (contenedor pequeño)
+  const isInFooter = container && container.closest('.footer-map');
+
   // Crear un grupo solo con los condados resaltados
   const highlightedGroup = L.geoJson(njCountiesData, {
     filter: feature => highlightedCounties.includes(feature.properties.name)
   });
 
   // Ajustar el mapa para que enfoque esos condados
-  map.fitBounds(highlightedGroup.getBounds(), {
-    padding: [20, 20],  // espacio alrededor
-    maxZoom: 10         // evita que se acerque demasiado
-  });
-});
+  const fitBoundsOptions = {
+    padding: isInFooter ? [5, 5] : [20, 20],  // menos padding en footer
+    maxZoom: isInFooter ? 8 : 10              // zoom menor en footer
+  };
+
+  map.fitBounds(highlightedGroup.getBounds(), fitBoundsOptions);
+
+  // Asegurar que el mapa se redibuje correctamente después de un tiempo
+  setTimeout(() => {
+    map.invalidateSize();
+  }, 1000);
+}
