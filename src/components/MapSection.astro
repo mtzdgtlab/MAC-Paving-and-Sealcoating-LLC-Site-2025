@@ -1,32 +1,57 @@
+---
+import Map from "../components/Map.astro";
+---
+
 <section
   aria-label="Service Areas Full Map"
-  class="project-section section-space fix">
+  class="project-section section-space fix"
+>
   <div class="small-container">
     <div
       class="small-container"
-      style="max-width: 900px; margin: 0 auto; text-align: center;">
+      style="max-width: 900px; margin: 0 auto; text-align: center;"
+    >
       <span class="section-sub-title">Driveway Paving Experts</span>
       <h2 class="section-title mt-35 mb-35">Service Areas</h2>
       <p style="margin-bottom: 30px;">
         We proudly serve homeowners in
-        <strong>Passaic, Bergen, Essex, Morris, Middlesex, Union, Somerset,
-        Hudson, and Sussex</strong>
+        <strong
+          >Passaic, Bergen, Essex, Morris, Middlesex, Union, Somerset, Hudson,
+          and Sussex</strong
+        >
         counties across Northern New Jersey.
       </p>
     </div>
     <!-- Full-width map iframe -->
-    <div style="width: 100%; height: 620px; overflow: hidden;">
-      <iframe
-        src="/service-area-map.html"
-        width="100%"
-        height="100%"
-        style="border: 0; display: block;"
-        frameborder="0"
-        loading="lazy"
-        title="MAC Paving Service Area Map"
-        aria-label="Interactive map showing MAC Paving and Sealcoating service areas in New Jersey"
-        allowfullscreen>
-      </iframe>
+    <div
+      class="map-container"
+      style="width: 100%; height: 620px; overflow: hidden; position: relative; z-index: 1;"
+    >
+      <Map />
     </div>
   </div>
 </section>
+
+<style>
+  /* Asegurar que el mapa y todos sus elementos tengan z-index bajo */
+  .map-container {
+    position: relative;
+    z-index: 1 !important;
+  }
+
+  .map-container * {
+    z-index: 1 !important;
+  }
+
+  /* Específico para Leaflet */
+  .map-container .leaflet-container,
+  .map-container .leaflet-map-pane,
+  .map-container .leaflet-control-container {
+    z-index: 1 !important;
+  }
+
+  /* Asegurar que los controles del mapa no interfieran */
+  .map-container .leaflet-control {
+    z-index: 10 !important; /* Solo para controles del mapa */
+  }
+</style>

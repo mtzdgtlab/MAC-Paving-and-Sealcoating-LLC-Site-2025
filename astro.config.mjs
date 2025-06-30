@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://macpavingandsealcoating.com',
-  trailingSlash: 'never', // Previene URLs duplicadas con trailing slash
+  trailingSlash: 'always', // Previene URLs duplicadas con trailing slash
   integrations: [
     sitemap({
       changefreq: 'weekly',
@@ -19,11 +19,6 @@ export default defineConfig({
           '.DS_Store', 'K{', '.webp', '.png', '.jpg', '.jpeg', '.svg',
           '/node_modules/', '/.vscode/', '/.git/', '/public/'
         ];
-
-        // Excluir URLs que terminan en / (duplicados)
-        if (page.endsWith('/') && page !== 'https://macpavingandsealcoating.com/') {
-          return false;
-        }
 
         return !excludePatterns.some(pattern => page.includes(pattern));
       },

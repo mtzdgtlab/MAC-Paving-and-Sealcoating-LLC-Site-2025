@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Import aprons images
+import aprons1 from "@/assets/imgs/service/concrete/aprons-1.webp";
+import aprons2 from "@/assets/imgs/service/concrete/aprons-2.webp";
+import aprons3 from "@/assets/imgs/service/concrete/aprons-3.webp";
+import aprons4 from "@/assets/imgs/service/concrete/aprons-4.webp";
+
+// Import background image
+import concreteServiceBg from "@/assets/imgs/banner/concrete-service.webp";
 ---
 
 <html lang="en">
@@ -28,7 +37,7 @@ import Brands from "../../../components/Brands.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/concrete/aprons"
+      href="https://macpavingandsealcoating.com/services/concrete/aprons/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -193,7 +202,7 @@ import Brands from "../../../components/Brands.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -217,23 +226,19 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/concrete.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${concreteServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
               <div class="breadcrumb__wrapper p-relative">
                 <h1 class="breadcrumb__title">
-                  Driveway Aprons in North Jersey
+                  Driveway Aprons Services in North Jersey
                 </h1>
                 <div class="breadcrumb__menu">
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Concrete / Aprons</span>
@@ -266,14 +271,14 @@ import Brands from "../../../components/Brands.astro";
                   visually consistent, and built to handle the stress of
                   repeated vehicle traffic. Whether part of a new driveway or a
                   standalone upgrade, our aprons add safety and polish to your
-                  property’s entrance.
+                  property's entrance.
                 </p>
                 <div class="row">
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/aprons-1.webp"
-                        alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Main Image - MAC Paving and Sealcoating"
+                        src={aprons1}
+                        alt="Driveway Aprons in Northern NJ | Smooth and Durable Transitions - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"
@@ -283,8 +288,8 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/aprons-2.webp"
-                        alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Side View - MAC Paving and Sealcoating"
+                        src={aprons2}
+                        alt="Driveway Aprons in Northern NJ | Smooth and Durable Transitions - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"
@@ -318,18 +323,18 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/concrete/aprons-3.webp"
-                    alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Close-Up - MAC Paving and Sealcoating"
+                    src={aprons3}
+                    alt="Driveway Aprons in Northern NJ | Smooth and Durable Transitions - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
                     loading="lazy"
                   />
                 </figure>
                 <h3 class="service-details-subtitle mt-45 mb-25">
-                  Know When It’s Time to Replace or Upgrade
+                  Know When It's Time to Replace or Upgrade
                 </h3>
                 <p class="mb-25">
-                  If your apron is crumbling or misaligned, it’s time to act. A
+                  If your apron is crumbling or misaligned, it's time to act. A
                   new apron improves access, drainage, and property value.
                   Contact MAC Paving today for a free evaluation.
                 </p>
@@ -337,8 +342,8 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/aprons-4.webp"
-                        alt="Driveway Aprons in Northern NJ | Smooth & Durable Transitions - Work in Progress - MAC Paving and Sealcoating"
+                        src={aprons4}
+                        alt="Driveway Aprons in Northern NJ | Smooth and Durable Transitions - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
                         loading="lazy"
@@ -346,8 +351,12 @@ import Brands from "../../../components/Brands.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Clifton</li>
                       <li>Little Falls</li>
                       <li>Woodland Park</li>

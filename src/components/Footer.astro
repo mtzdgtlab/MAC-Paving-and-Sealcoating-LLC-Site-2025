@@ -2,11 +2,12 @@
 // Footer component
 import { Image } from "astro:assets";
 import logo from "../assets/imgs/logo.png";
+import Map from "./Map.astro";
 ---
 
 <footer>
   <div class="footer-main bg-color-1">
-    <div class="footer-top section-space-medium">
+    <div class="footer-top section-space-xsmall">
       <div class="small-container">
         <div class="row g-4">
           <!-- Column 1: Logo + About -->
@@ -32,7 +33,7 @@ import logo from "../assets/imgs/logo.png";
                 driveway installations, and more. Every project we complete is
                 built to last and designed to satisfy our customers.
               </p>
-              <ul class="footer-socials mb-60">
+              <ul class="footer-socials mb-20">
                 <li>
                   <a
                     href="https://www.facebook.com/profile.php?id=61563583505866"
@@ -63,12 +64,12 @@ import logo from "../assets/imgs/logo.png";
               <h4 class="mb-30 footer-title">Quick Links</h4>
               <ul class="service-list">
                 <li><a href="/">Home</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/services/asphalt-paving">Asphalt Paving</a></li>
-                <li><a href="/services/sealer">Sealer</a></li>
-                <li><a href="/services/pavers">Pavers</a></li>
-                <li><a href="/services/concrete">Concrete</a></li>
-                <li><a href="/services/landscaping">Landscaping</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/services/asphalt-paving/">Asphalt Paving</a></li>
+                <li><a href="/services/sealer/">Sealer</a></li>
+                <li><a href="/services/pavers/">Pavers</a></li>
+                <li><a href="/services/concrete/">Concrete</a></li>
+                <li><a href="/services/landscaping/">Landscaping</a></li>
               </ul>
             </div>
           </div>
@@ -79,22 +80,22 @@ import logo from "../assets/imgs/logo.png";
               <h4 class="mb-30 footer-title">Our Services</h4>
               <ul class="service-list">
                 <li>
-                  <a href="/services/asphalt-paving/installation"
+                  <a href="/services/asphalt-paving/installation/"
                     >Installation</a
                   >
                 </li>
                 <li>
-                  <a href="/services/asphalt-paving/extension">Extension</a>
+                  <a href="/services/asphalt-paving/extension/">Extension</a>
                 </li>
-                <li><a href="/services/sealer/sealcoating">Sealcoating</a></li>
+                <li><a href="/services/sealer/sealcoating/">Sealcoating</a></li>
                 <li>
-                  <a href="/services/sealer/crack-filling">Crack Filling</a>
+                  <a href="/services/sealer/crack-filling/">Crack Filling</a>
                 </li>
                 <li><a href="/services/concrete/sidewalks">Sidewalks</a></li>
                 <li>
                   <a href="/services/pavers/belgium-blocks">Belgium Blocks</a>
                 </li>
-                <li><a href="/services/concrete/walkways">Walkways</a></li>
+                <li><a href="/services/concrete/walkways/">Walkways</a></li>
               </ul>
             </div>
           </div>
@@ -111,31 +112,19 @@ import logo from "../assets/imgs/logo.png";
                 Service Area Map
               </h4>
 
-              <!-- Texto para SEO y accesibilidad -->
               <p class="visually-hidden" itemprop="description">
                 MAC Paving and Sealcoating proudly serves homeowners in Passaic,
                 Bergen, Essex, Morris, Middlesex, Union, Somerset, Hudson, and
                 Sussex counties, New Jersey.
               </p>
 
-              <!-- Mapa integrado con metadata y etiquetas SEO -->
               <div
                 class="footer-map"
                 style="width: 100%; height: 280px; border: 1px solid #ccc; border-radius: 8px; overflow: hidden;"
               >
-                <iframe
-                  src="/service-area-map.html"
-                  width="100%"
-                  height="100%"
-                  style="border:0;"
-                  loading="lazy"
-                  title="Service Area Map for Northern New Jersey Counties"
-                  aria-label="Interactive map showing service coverage in Passaic, Bergen, Essex, Morris, Middlesex, Union, Somerset, Hudson, and Sussex counties, New Jersey."
-                >
-                </iframe>
+                <Map id="footer-map" />
               </div>
 
-              <!-- Microdatos adicionales -->
               <meta itemprop="addressRegion" content="New Jersey" />
               <meta
                 itemprop="name"
@@ -148,25 +137,22 @@ import logo from "../assets/imgs/logo.png";
     </div>
 
     <div class="small-container">
-      <div
-        class="footer-bottom pt-30 pb-30 d-flex justify-content-between align-items-center flex-wrap"
-      >
-        <div class="left-area">
-          <span>
-            Copyright &copy; <span id="current-year"></span>, All rights
-            reserved.
-          </span>
-        </div>
-        <div class="right-area">
+      <div class="footer-bottom pt-30 pb-30 row text-center">
+        <div class="col-12 col-md-6 mb-2">
           <span style="letter-spacing: 0.5px;">
             Designed by
             <a
-              href="https://www.mdgtlab.com"
-              target="_blank"
+              href="tel:+522201758149"
               style="color: hotpink; font-weight: bold; margin-left: 5px;"
             >
               Isra Martinez
             </a>
+          </span>
+        </div>
+        <div class="col-12 col-md-6">
+          <span style="letter-spacing: 0.5px;">
+            Copyright &copy;
+            <span id="current-year"></span>, All rights reserved.
           </span>
         </div>
       </div>

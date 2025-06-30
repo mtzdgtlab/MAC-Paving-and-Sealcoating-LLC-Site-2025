@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Image imports
+import sealerServiceBg from "@/assets/imgs/banner/sealer-service.webp";
+import crackFilling1 from "@/assets/imgs/service/sealer/crack-filling-1.webp";
+import crackFilling2 from "@/assets/imgs/service/sealer/crack-filling-2.webp";
+import crackFilling3 from "@/assets/imgs/service/sealer/crack-filling-3.webp";
+import crackFilling4 from "@/assets/imgs/service/sealer/crack-filling-4.webp";
 ---
 
 <html lang="en">
@@ -28,7 +35,7 @@ import Brands from "../../../components/Brands.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/sealer/crack-filling"
+      href="https://macpavingandsealcoating.com/services/sealer/crack-filling/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -193,7 +200,7 @@ import Brands from "../../../components/Brands.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -217,11 +224,7 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/sealer.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${sealerServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -233,7 +236,7 @@ import Brands from "../../../components/Brands.astro";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Sealer / Crack Filling</span>
@@ -268,8 +271,8 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/crack-filling-1.webp"
-                        alt="Crack Filling Services in NJ | Repair Asphalt in Clifton & Nearby - Main Image - MAC Paving and Sealcoating"
+                        src={crackFilling1}
+                        alt="Crack Filling Services in NJ | Repair Asphalt in Clifton and Nearby - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"
@@ -279,8 +282,8 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/crack-filling-2.webp"
-                        alt="Crack Filling Services in NJ | Repair Asphalt in Clifton & Nearby - Side View - MAC Paving and Sealcoating"
+                        src={crackFilling2}
+                        alt="Crack Filling Services in NJ | Repair Asphalt in Clifton and Nearby - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"
@@ -297,7 +300,7 @@ import Brands from "../../../components/Brands.astro";
                       Left untreated, small cracks let water seep in, causing
                       asphalt to break down from the inside. Our expert team
                       uses high-quality rubberized crack filler that flexes with
-                      temperature changes and prevents further damage. It’s a
+                      temperature changes and prevents further damage. It's a
                       smart, affordable fix that helps you avoid expensive
                       repairs later.
                     </p>
@@ -317,8 +320,8 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/sealer/crack-filling-3.webp"
-                    alt="Crack Filling Services in NJ | Repair Asphalt in Clifton & Nearby - Close-Up - MAC Paving and Sealcoating"
+                    src={crackFilling3}
+                    alt="Crack Filling Services in NJ | Repair Asphalt in Clifton and Nearby - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
                     loading="lazy"
@@ -328,9 +331,9 @@ import Brands from "../../../components/Brands.astro";
                   When Should You Seal Cracks?
                 </h3>
                 <p class="mb-25">
-                  If you see visible cracking, don’t wait—early repair is key.
+                  If you see visible cracking, don't wait—early repair is key.
                   Crack filling is ideal for driveways that are structurally
-                  sound but starting to show wear. It’s a low-cost service with
+                  sound but starting to show wear. It's a low-cost service with
                   big benefits. Get in touch with MAC Paving today for a free
                   quote and expert evaluation.
                 </p>
@@ -338,8 +341,8 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/sealer/crack-filling-4.webp"
-                        alt="Crack Filling Services in NJ | Repair Asphalt in Clifton & Nearby - Work in Progress - MAC Paving and Sealcoating"
+                        src={crackFilling4}
+                        alt="Crack Filling Services in NJ | Repair Asphalt in Clifton and Nearby - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
                         loading="lazy"
@@ -347,8 +350,12 @@ import Brands from "../../../components/Brands.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Lodi</li>
                       <li>East Orange</li>
                       <li>East Hanover</li>

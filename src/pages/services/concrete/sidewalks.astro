@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Import sidewalks images
+import sidewalks1 from "@/assets/imgs/service/concrete/sidewalks-1.webp";
+import sidewalks2 from "@/assets/imgs/service/concrete/sidewalks-2.webp";
+import sidewalks3 from "@/assets/imgs/service/concrete/sidewalks-3.webp";
+import sidewalks4 from "@/assets/imgs/service/concrete/sidewalks-4.webp";
+
+// Import background image
+import concreteServiceBg from "@/assets/imgs/banner/concrete-service.webp";
 ---
 
 <html lang="en">
@@ -28,7 +37,7 @@ import Brands from "../../../components/Brands.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/concrete/sidewalks"
+      href="https://macpavingandsealcoating.com/services/concrete/sidewalks/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -193,7 +202,7 @@ import Brands from "../../../components/Brands.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -217,23 +226,19 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/concrete.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${concreteServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
               <div class="breadcrumb__wrapper p-relative">
                 <h1 class="breadcrumb__title">
-                  Sidewalk Installation and Repair in North Jersey
+                  Sidewalk Installation in North Jersey
                 </h1>
                 <div class="breadcrumb__menu">
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Concrete / Sidewalks</span>
@@ -271,7 +276,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/sidewalks-1.webp"
+                        src={sidewalks1}
                         alt="Sidewalk Installation and Repair in NJ | Clifton, Teaneck, Bloomfield - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -282,7 +287,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/sidewalks-2.webp"
+                        src={sidewalks2}
                         alt="Sidewalk Installation and Repair in NJ | Clifton, Teaneck, Bloomfield - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -317,7 +322,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/concrete/sidewalks-3.webp"
+                    src={sidewalks3}
                     alt="Sidewalk Installation and Repair in NJ | Clifton, Teaneck, Bloomfield - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -325,7 +330,7 @@ import Brands from "../../../components/Brands.astro";
                   />
                 </figure>
                 <h3 class="service-details-subtitle mt-45 mb-25">
-                  Know When It’s Time—and Why It Pays to Act Early
+                  Know When It's Time—and Why It Pays to Act Early
                 </h3>
                 <p class="mb-25">
                   Cracked or uneven sidewalks are safety issues. Whether
@@ -336,7 +341,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/sidewalks-4.webp"
+                        src={sidewalks4}
                         alt="Sidewalk Installation and Repair in NJ | Clifton, Teaneck, Bloomfield - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
@@ -345,8 +350,12 @@ import Brands from "../../../components/Brands.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Newark</li>
                       <li>Orange</li>
                       <li>South Orange</li>

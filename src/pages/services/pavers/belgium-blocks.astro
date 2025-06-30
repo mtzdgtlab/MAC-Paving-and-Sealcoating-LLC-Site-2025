@@ -10,6 +10,13 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import TestimonialsSlider from "../../../components/TestimonialsSlider.astro";
 import Brands from "../../../components/Brands.astro";
+
+// Image imports
+import paverServiceBg from "@/assets/imgs/banner/paver-service.webp";
+import belgiumBlocks1 from "@/assets/imgs/service/pavers/belgium-blocks-1.webp";
+import belgiumBlocks2 from "@/assets/imgs/service/pavers/belgium-blocks-2.webp";
+import belgiumBlocks3 from "@/assets/imgs/service/pavers/belgium-blocks-3.webp";
+import belgiumBlocks4 from "@/assets/imgs/service/pavers/belgium-blocks-4.webp";
 ---
 
 <html lang="en">
@@ -28,7 +35,7 @@ import Brands from "../../../components/Brands.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/pavers/belgium-blocks"
+      href="https://macpavingandsealcoating.com/services/pavers/belgium-blocks/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -193,7 +200,7 @@ import Brands from "../../../components/Brands.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -217,23 +224,19 @@ import Brands from "../../../components/Brands.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/pavers.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${paverServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
               <div class="breadcrumb__wrapper p-relative">
                 <h1 class="breadcrumb__title">
-                  Belgium Block Installation in North Jersey
+                  Belgium Block Installation | NJ
                 </h1>
                 <div class="breadcrumb__menu">
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Masonry / Belgium blocks</span>
@@ -266,7 +269,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/belgium-blocks-1.webp"
+                        src={belgiumBlocks1}
                         alt="Belgium Block Installation in NJ | Decorative Stone Borders - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -277,7 +280,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/belgium-blocks-2.webp"
+                        src={belgiumBlocks2}
                         alt="Belgium Block Installation in NJ | Decorative Stone Borders - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -292,7 +295,7 @@ import Brands from "../../../components/Brands.astro";
                       Built to Withstand the Elements—and Turn Heads
                     </h3>
                     <p class="mb-25">
-                      Belgium blocks are not only decorative, they’re
+                      Belgium blocks are not only decorative, they're
                       exceptionally strong. Unlike concrete borders, they resist
                       cracking, frost, and salt damage. Our expert installers
                       align and secure each block for maximum stability and
@@ -314,7 +317,7 @@ import Brands from "../../../components/Brands.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/pavers/belgium-blocks-3.webp"
+                    src={belgiumBlocks3}
                     alt="Belgium Block Installation in NJ | Decorative Stone Borders - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -334,7 +337,7 @@ import Brands from "../../../components/Brands.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/pavers/belgium-blocks-4.webp"
+                        src={belgiumBlocks4}
                         alt="Belgium Block Installation in NJ | Decorative Stone Borders - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
@@ -343,8 +346,12 @@ import Brands from "../../../components/Brands.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Rutherford</li>
                       <li>Fort Lee</li>
                       <li>Englewood</li>

@@ -10,10 +10,9 @@ import Scripts from "../components/Scripts.astro";
 import Largeform from "../components/LargeForm.astro";
 import SocialMeta from "../components/SocialMeta.astro";
 import MapSection from "../components/MapSection.astro";
-import { Image } from "astro:assets";
 
 // Import contact background image
-import contactBg from "../../public/assets/imgs/bg/contact-cover.webp";
+import contactBg from "@/assets/imgs/bg/contact-cover.webp";
 ---
 
 <html lang="en">
@@ -45,16 +44,10 @@ import contactBg from "../../public/assets/imgs/bg/contact-cover.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div class="banner-thumb">
-          <div class="banner-background">
-            <Image
-              src={contactBg}
-              alt=""
-              width={1920}
-              height={600}
-              format="webp"
-            />
-          </div>
+        <div
+          class="banner-thumb"
+          style={`background-image: url('${contactBg.src}');`}
+        >
         </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
@@ -65,7 +58,7 @@ import contactBg from "../../public/assets/imgs/bg/contact-cover.webp";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li><span>Contact</span></li>
                     </ul>
@@ -157,18 +150,18 @@ import contactBg from "../../public/assets/imgs/bg/contact-cover.webp";
       </section>
 
       <WhyChooseUs />
-      <MapSection />
 
-      <TestimonialsSlider />
       <Largeform
         title="Get Your Free Estimate"
         description="Contact us today for a free estimate on your asphalt paving project. Our team is ready to assist you with all your paving needs."
         buttonText="Request a Quote"
         formAction="/submit-form"
       />
-    </main>
+      <TestimonialsSlider />
+      <MapSection />
 
-    <Footer />
-    <Scripts />
+      <Footer />
+      <Scripts />
+    </main>
   </body>
 </html>

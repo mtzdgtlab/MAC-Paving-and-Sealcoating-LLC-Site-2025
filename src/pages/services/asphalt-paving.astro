@@ -9,13 +9,30 @@ import Scripts from "../../components/Scripts.astro";
 import SocialMeta from "../../components/SocialMeta.astro";
 
 // Import asphalt paving images
-import installation5 from "../../../public/assets/imgs/service/asphalt-paving/installation-5.webp";
-import resurfacing1 from "../../../public/assets/imgs/service/asphalt-paving/resurfacing-1.webp";
-import replacement4 from "../../../public/assets/imgs/service/asphalt-paving/replacement-4.webp";
-import extension3 from "../../../public/assets/imgs/service/asphalt-paving/extension-3.webp";
+import installation1 from "@/assets/imgs/service/asphalt-paving/installation-1.webp";
+import installation2 from "@/assets/imgs/service/asphalt-paving/installation-2.webp";
+import installation3 from "@/assets/imgs/service/asphalt-paving/installation-3.webp";
+import installation4 from "@/assets/imgs/service/asphalt-paving/installation-4.webp";
+import installation5 from "@/assets/imgs/service/asphalt-paving/installation-5.webp";
+
+import resurfacing1 from "@/assets/imgs/service/asphalt-paving/resurfacing-1.webp";
+import resurfacing2 from "@/assets/imgs/service/asphalt-paving/resurfacing-2.webp";
+import resurfacing3 from "@/assets/imgs/service/asphalt-paving/resurfacing-3.webp";
+import resurfacing4 from "@/assets/imgs/service/asphalt-paving/resurfacing-4.webp";
+
+import replacement1 from "@/assets/imgs/service/asphalt-paving/replacement-1.webp";
+import replacement2 from "@/assets/imgs/service/asphalt-paving/replacement-2.webp";
+import replacement3 from "@/assets/imgs/service/asphalt-paving/replacement-3.webp";
+import replacement4 from "@/assets/imgs/service/asphalt-paving/replacement-4.webp";
+
+import extension1 from "@/assets/imgs/service/asphalt-paving/extension-1.webp";
+import extension2 from "@/assets/imgs/service/asphalt-paving/extension-2.webp";
+import extension3 from "@/assets/imgs/service/asphalt-paving/extension-3.webp";
+import extension4 from "@/assets/imgs/service/asphalt-paving/extension-4.webp";
 
 // Import asphalt background image
-import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
+import asphaltBg from "@/assets/imgs/bg/asphalt-cover.webp";
+import shape15 from "@/assets/imgs/shapes/shape-15.webp";
 ---
 
 <html lang="en">
@@ -23,7 +40,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no" />
-    <title> Driveway Paving NJ | MAC Paving and Sealcoating </title>
+    <title>Driveway Paving NJ | MAC Paving and Sealcoating</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
@@ -33,7 +50,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/asphalt-paving"
+      href="https://macpavingandsealcoating.com/services/asphalt-paving/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -199,7 +216,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -224,17 +241,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div class="banner-thumb">
-          <div class="banner-background">
-            <Image
-              src={asphaltBg}
-              alt=""
-              width={1920}
-              height={600}
-              format="webp"
-            />
-          </div>
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${asphaltBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -244,7 +251,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li><span>Services / Asphalt Paving </span></li>
                     </ul>
@@ -280,7 +287,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         <i class="fa-solid fa-road"></i>
                       </div>
                       <h3>
-                        <a href="/services/asphalt-paving/installation"
+                        <a href="/services/asphalt-paving/installation/"
                           >Installation</a
                         >
                       </h3>
@@ -291,7 +298,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         and appearance.
                       </p>
                       <a
-                        href="/services/asphalt-paving/installation"
+                        href="/services/asphalt-paving/installation/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -317,7 +324,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         <i class="fas fa-layer-group"></i>
                       </div>
                       <h3>
-                        <a href="/services/asphalt-paving/resurfacing"
+                        <a href="/services/asphalt-paving/resurfacing/"
                           >Resurfacing</a
                         >
                       </h3>
@@ -328,7 +335,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         aesthetic and structural integrity.
                       </p>
                       <a
-                        href="/services/asphalt-paving/resurfacing"
+                        href="/services/asphalt-paving/resurfacing/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -354,7 +361,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         <i class="fas fa-recycle"></i>
                       </div>
                       <h3>
-                        <a href="/services/asphalt-paving/replacement"
+                        <a href="/services/asphalt-paving/replacement/"
                           >Replacement</a
                         >
                       </h3>
@@ -365,7 +372,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         appealing result.
                       </p>
                       <a
-                        href="/services/asphalt-paving/replacement"
+                        href="/services/asphalt-paving/replacement/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -391,7 +398,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         <i class="fas fa-border-all"></i>
                       </div>
                       <h3>
-                        <a href="/services/asphalt-paving/extension"
+                        <a href="/services/asphalt-paving/extension/"
                           >Extension</a
                         >
                       </h3>
@@ -402,7 +409,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                         with current surfaces.
                       </p>
                       <a
-                        href="/services/asphalt-paving/extension"
+                        href="/services/asphalt-paving/extension/"
                         class="service-btn"
                         >Service Details <i class="icon-arrow-right-double"
                         ></i></a
@@ -419,12 +426,9 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                   data-wow-delay=".5s"
                 >
                   <span class="section-sub-title">LET'S TALK</span>
-                  <h3
-                    class="section-title mt-10"
-                    aria-label="Let's Get in Touch"
-                  >
-                    Get Your Free Estimate
-                  </h3>
+                  <h5 class="form-title mt-10" aria-label="Let's Get in Touch">
+                    Get Your Free Estimate Now!
+                  </h5>
                 </div>
                 <div class="contact-page-form">
                   <form
@@ -505,13 +509,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
       <section
         class="choose-section bg-color-1 section-space-top section-space-bottom p-relative"
       >
-        <div class="bg-image" data-background="/assets/imgs/bg/choose-bg.webp">
-        </div>
-        <div
-          class="shape-image"
-          data-background="/assets/imgs/shapes/shape-15.webp"
-        >
-        </div>
+        <div class="shape-image" data-background={shape15.src}></div>
         <div class="small-container">
           <div class="row g-4 justify-content-center text-center">
             <div class="col-12">
@@ -600,21 +598,25 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
       <!-- Choose area end -->
 
       <!-- Project slider area start -->
-      <section class="project-slider-section section-space fix">
+      <section
+        aria-label="Projects section"
+        class="project-slider-section section-space fix"
+      >
         <div class="small-container">
           <div class="row">
-            <div class="col-xxl-6">
-              <div class="title-box mb-25 wow fadeInLeft" data-wow-delay=".5s">
-                <span class="section-sub-title">RECENT WORKS</span>
-                <h3 class="section-title mt-25 mb-50">
-                  Asphalt Paving Projects
-                </h3>
-              </div>
-            </div>
-            <div class="col-xxl-6">
-              <!-- If we need navigation buttons -->
+            <div
+              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
+            >
               <div
-                class="project_1_navigation__wrapprer position-relative z-1 text-end mt-30"
+                class="title-box mb-50"
+                data-aos="fade-left"
+                data-aos-delay="700"
+              >
+                <span class="section-sub-title">RECENT WORKS</span>
+                <h3 class="section-title mt-15">Our Recent Projects</h3>
+              </div>
+              <div
+                class="project_1_navigation__wrapprer position-relative z-1 mt-30"
               >
                 <div class="common-slider-navigation">
                   <button
@@ -627,7 +629,7 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
                     class="project-1-button-next"
                     aria-label="Next project"
                   >
-                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </button>
                 </div>
               </div>
@@ -638,15 +640,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
           <div class="swipe project-active-1">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/installation-1.webp"
-                >
+                <a class="popup-image" href={installation1.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/installation-1.webp"
+                      <Image
+                        src={installation1}
                         alt="Asphalt Paving Installation by MAC Paving and Sealcoating – Expert Residential and Commercial Asphalt Paving in Central and South Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -654,15 +656,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/installation-2.webp"
-                >
+                <a class="popup-image" href={installation2.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/installation-2.webp"
+                      <Image
+                        src={installation2}
                         alt="Asphalt Paving Installation by MAC Paving and Sealcoating – Expert Residential and Commercial Asphalt Paving in Central and South Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -670,15 +672,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/installation-3.webp"
-                >
+                <a class="popup-image" href={installation3.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/installation-3.webp"
+                      <Image
+                        src={installation3}
                         alt="Asphalt Paving Installation by MAC Paving and Sealcoating – Expert Residential and Commercial Asphalt Paving in Central and South Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -686,15 +688,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/installation-4.webp"
-                >
+                <a class="popup-image" href={installation4.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/installation-4.webp"
+                      <Image
+                        src={installation4}
                         alt="Asphalt Paving Installation by MAC Paving and Sealcoating – Expert Residential and Commercial Asphalt Paving in Central and South Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -702,15 +704,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/resurfacing-1.webp"
-                >
+                <a class="popup-image" href={resurfacing1.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-1.webp"
+                      <Image
+                        src={resurfacing1}
                         alt="Asphalt Resurfacing Service by MAC Paving and Sealcoating – Reliable Driveway Resurfacing and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -718,15 +720,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/resurfacing-2.webp"
-                >
+                <a class="popup-image" href={resurfacing2.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-2.webp"
+                      <Image
+                        src={resurfacing2}
                         alt="Asphalt Resurfacing Service by MAC Paving and Sealcoating – Reliable Driveway Resurfacing and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -734,15 +736,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/resurfacing-3.webp"
-                >
+                <a class="popup-image" href={resurfacing3.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-3.webp"
+                      <Image
+                        src={resurfacing3}
                         alt="Asphalt Resurfacing Service by MAC Paving and Sealcoating – Reliable Driveway Resurfacing and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -750,15 +752,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/resurfacing-4.webp"
-                >
+                <a class="popup-image" href={resurfacing4.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/resurfacing-4.webp"
+                      <Image
+                        src={resurfacing4}
                         alt="Asphalt Resurfacing Service by MAC Paving and Sealcoating – Reliable Driveway Resurfacing and Pavement Maintenance NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -766,15 +768,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/replacement-1.webp"
-                >
+                <a class="popup-image" href={replacement1.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/replacement-1.webp"
+                      <Image
+                        src={replacement1}
                         alt="Asphalt Replacement Service by MAC Paving and Sealcoating – Professional Driveway Paving and Asphalt Repair across New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -782,15 +784,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/replacement-2.webp"
-                >
+                <a class="popup-image" href={replacement2.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/replacement-2.webp"
+                      <Image
+                        src={replacement2}
                         alt="Asphalt Replacement Service by MAC Paving and Sealcoating – Professional Driveway Paving and Asphalt Repair across New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -798,30 +800,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/replacement-3.webp"
-                >
+                <a class="popup-image" href={replacement3.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/replacement-3.webp"
+                      <Image
+                        src={replacement3}
                         alt="Asphalt Replacement Service by MAC Paving and Sealcoating – Professional Driveway Paving and Asphalt Repair across New Jersey."
-                      />
-                    </figure>
-                  </div>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/extension-1.webp"
-                >
-                  <div class="project-slider-area p-relative">
-                    <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/extension-1.webp"
-                        alt="Asphalt Extension Service by MAC Paving and Sealcoating – Custom Driveways and Asphalt Paving Contractors NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -829,15 +816,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/extension-2.webp"
-                >
+                <a class="popup-image" href={replacement4.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/extension-2.webp"
-                        alt="Asphalt Extension Service by MAC Paving and Sealcoating – Custom Driveways and Asphalt Paving Contractors NJ."
+                      <Image
+                        src={replacement4}
+                        alt="Asphalt Replacement Service by MAC Paving and Sealcoating – Professional Driveway Paving and Asphalt Repair across New Jersey."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -845,15 +832,15 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/extension-3.webp"
-                >
+                <a class="popup-image" href={extension1.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/extension-3.webp"
+                      <Image
+                        src={extension1}
                         alt="Asphalt Extension Service by MAC Paving and Sealcoating – Custom Driveways and Asphalt Paving Contractors NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>
@@ -861,15 +848,47 @@ import asphaltBg from "../../../public/assets/imgs/bg/asphalt-cover.webp";
               </div>
 
               <div class="swiper-slide">
-                <a
-                  class="popup-image"
-                  href="/assets/imgs/service/asphalt-paving/extension-4.webp"
-                >
+                <a class="popup-image" href={extension2.src}>
                   <div class="project-slider-area p-relative">
                     <figure class="image m-imge shine-img">
-                      <img
-                        src="/assets/imgs/service/asphalt-paving/extension-4.webp"
+                      <Image
+                        src={extension2}
                         alt="Asphalt Extension Service by MAC Paving and Sealcoating – Custom Driveways and Asphalt Paving Contractors NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href={extension3.src}>
+                  <div class="project-slider-area p-relative">
+                    <figure class="image m-imge shine-img">
+                      <Image
+                        src={extension3}
+                        alt="Asphalt Extension Service by MAC Paving and Sealcoating – Custom Driveways and Asphalt Paving Contractors NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
+                      />
+                    </figure>
+                  </div>
+                </a>
+              </div>
+
+              <div class="swiper-slide">
+                <a class="popup-image" href={extension4.src}>
+                  <div class="project-slider-area p-relative">
+                    <figure class="image m-imge shine-img">
+                      <Image
+                        src={extension4}
+                        alt="Asphalt Extension Service by MAC Paving and Sealcoating – Custom Driveways and Asphalt Paving Contractors NJ."
+                        width={400}
+                        height={300}
+                        format="webp"
                       />
                     </figure>
                   </div>

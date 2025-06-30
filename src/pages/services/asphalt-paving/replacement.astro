@@ -10,6 +10,16 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Import replacement images
+import replacement1 from "@/assets/imgs/service/asphalt-paving/replacement-1.webp";
+import replacement2 from "@/assets/imgs/service/asphalt-paving/replacement-2.webp";
+import replacement3 from "@/assets/imgs/service/asphalt-paving/replacement-3.webp";
+import replacement4 from "@/assets/imgs/service/asphalt-paving/replacement-4.webp";
+
+// Import background image
+import asphaltServiceBg from "@/assets/imgs/banner/asphalt-service.webp";
+
 ---
 
 <html lang="en">
@@ -28,7 +38,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/asphalt-paving/replacement"
+      href="https://macpavingandsealcoating.com/services/asphalt-paving/replacement/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -40,7 +50,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Driveway Replacement Contractors NJ | Asphalt Experts",
-        "url": "https://macpavingandsealcoating.com/services/asphalt-paving/replacement",
+        "url": "https://macpavingandsealcoating.com/services/asphalt-paving/replacement/",
         "logo": "https://macpavingandsealcoating.com/logo.png",
         "description": "Full asphalt replacement using premium materials to rebuild damaged driveways in New Jersey. Get a free estimate today.",
         "telephone": "+1-201-755-7836",
@@ -193,7 +203,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -216,11 +226,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/asphalt.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${asphaltServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -232,7 +238,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Asphalt Paving / Replacement</span>
@@ -268,7 +274,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/replacement-1.webp"
+                        src={replacement1}
                         alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -279,7 +285,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/replacement-2.webp"
+                        src={replacement2}
                         alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -297,8 +303,8 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                       Replacing your driveway is a big investment—our job is to
                       make sure it pays off. With decades of experience and a
                       focus on quality, we deliver long-lasting asphalt that
-                      holds up to New Jersey’s harsh winters and hot summers.
-                      We’re fast, reliable, and treat every home like our own.
+                      holds up to New Jersey's harsh winters and hot summers.
+                      We're fast, reliable, and treat every home like our own.
                     </p>
                   </div>
                   <div class="col-lg-6">
@@ -316,7 +322,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/asphalt-paving/replacement-3.webp"
+                    src={replacement3}
                     alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -324,20 +330,20 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   />
                 </figure>
                 <h3 class="service-details-subtitle mt-45 mb-25">
-                  Know When It’s Time—And Get More for Your Money
+                  Know When It's Time—And Get More for Your Money
                 </h3>
                 <p class="mb-25">
                   If your driveway has deep cracks, drainage issues, or major
-                  surface failure, resurfacing won’t cut it—it’s time for a full
+                  surface failure, resurfacing won't cut it—it's time for a full
                   replacement. Asphalt is still more cost-effective than
                   concrete and gives you a faster turnaround. Call now to get a
-                  free estimate and a driveway you’ll love for years.
+                  free estimate and a driveway you'll love for years.
                 </p>
                 <div class="row">
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/asphalt-paving/replacement-4.webp"
+                        src={replacement4}
                         alt="Driveway Replacement Contractors in NJ | Asphalt Experts Near You - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
@@ -346,8 +352,12 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Wayne</li>
                       <li>Bloomingdale</li>
                       <li>Cedar Grove</li>

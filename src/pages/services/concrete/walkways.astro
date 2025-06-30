@@ -10,6 +10,15 @@ import MainServices from "../../../components/MainServices.astro";
 import SocialMeta from "../../../components/SocialMeta.astro";
 import MapSection from "../../../components/MapSection.astro";
 import WhyChooseUs from "../../../components/WhyChooseUs.astro";
+
+// Import walkways images
+import walkways1 from "@/assets/imgs/service/concrete/walkways-1.webp";
+import walkways2 from "@/assets/imgs/service/concrete/walkways-2.webp";
+import walkways3 from "@/assets/imgs/service/concrete/walkways-3.webp";
+import walkways4 from "@/assets/imgs/service/concrete/walkways-4.webp";
+
+// Import background image
+import concreteServiceBg from "@/assets/imgs/banner/concrete-service.webp";
 ---
 
 <html lang="en">
@@ -28,7 +37,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     />
     <link
       rel="canonical"
-      href="https://macpavingandsealcoating.com/services/concrete/walkways"
+      href="https://macpavingandsealcoating.com/services/concrete/walkways/"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -193,7 +202,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
               },
               {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://macpavingandsealcoating.com/contact",
+                "urlTemplate": "https://macpavingandsealcoating.com/contact/",
                 "inLanguage": "en",
                 "actionPlatform": [
                   "http://schema.org/DesktopWebPlatform",
@@ -216,11 +225,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="breadcrumb__thumb"
-          data-background="/assets/imgs/service/concrete.webp"
-        >
-        </div>
+        <div class="banner-thumb" style={`background-image: url('${concreteServiceBg.src}');`}></div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -232,7 +237,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <nav>
                     <ul>
                       <li>
-                        <span><a href="/">Home  / </a></span>
+                        <span><a href="/">Home / </a></span>
                       </li>
                       <li>
                         <span>Services / Concrete / Walkways</span>
@@ -258,14 +263,14 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   Concrete walkways shape how people move through your property
                   while adding structure and beauty. At MAC Paving and
                   Sealcoating, we design and install walkways that match your
-                  home’s style and layout—ensuring durability, slip-resistance,
+                  home's style and layout—ensuring durability, slip-resistance,
                   and seamless flow through outdoor spaces.
                 </p>
                 <div class="row">
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/walkways-1.webp"
+                        src={walkways1}
                         alt="Concrete Walkways in NJ | Installed by Local Experts - Main Image - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -276,7 +281,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-6">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/walkways-2.webp"
+                        src={walkways2}
                         alt="Concrete Walkways in NJ | Installed by Local Experts - Side View - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
@@ -292,7 +297,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                     </h3>
                     <p class="mb-25">
                       Our concrete walkways are reinforced to withstand New
-                      Jersey’s changing seasons and daily wear. We use
+                      Jersey's changing seasons and daily wear. We use
                       high-strength concrete, proper joint spacing, and
                       professional finishing techniques to ensure durability,
                       accessibility, and long-term value.
@@ -312,7 +317,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                 </div>
                 <figure class="w-img">
                   <Image
-                    src="/assets/imgs/service/concrete/walkways-3.webp"
+                    src={walkways3}
                     alt="Concrete Walkways in NJ | Installed by Local Experts - Close-Up - MAC Paving and Sealcoating"
                     width={1200}
                     height={600}
@@ -332,7 +337,7 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                   <div class="col-lg-7">
                     <figure class="w-img">
                       <Image
-                        src="/assets/imgs/service/concrete/walkways-4.webp"
+                        src={walkways4}
                         alt="Concrete Walkways in NJ | Installed by Local Experts - Work in Progress - MAC Paving and Sealcoating"
                         width={800}
                         height={500}
@@ -341,8 +346,12 @@ import WhyChooseUs from "../../../components/WhyChooseUs.astro";
                     </figure>
                   </div>
                   <div class="col-lg-5 center-xs-list">
-  <h3 class="section-sub-subtitle  pt-20 pb-10">Proudly Serving</h3>
-  <ul class="service-details-page-list pt-20 pb-10 split-xs-columns">
+                    <h3 class="section-sub-subtitle pt-20 pb-10">
+                      Proudly Serving
+                    </h3>
+                    <ul
+                      class="service-details-page-list pt-20 pb-10 split-xs-columns"
+                    >
                       <li>Lodi</li>
                       <li>Elmwood Park</li>
                       <li>Hackensack</li>
