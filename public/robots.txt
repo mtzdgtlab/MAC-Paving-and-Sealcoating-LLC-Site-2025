@@ -16,6 +16,7 @@ Disallow: *.css.map
 
 # Bloquear URLs obsoletas con .html (importante para evitar 404s)
 Disallow: /*.html
+Disallow: /map.html
 Disallow: /installation.html
 Disallow: /resurfacing.html
 Disallow: /replacement.html

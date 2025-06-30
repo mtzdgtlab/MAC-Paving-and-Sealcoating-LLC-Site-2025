@@ -1,0 +1,55 @@
+---
+// Componente de mapa embebido para usar dentro de otras páginas
+interface Props {
+  id?: string;
+}
+
+const { id = "map" } = Astro.props;
+---
+
+<!-- Contenedor del mapa con z-index controlado -->
+<div id={id} class="embedded-map"></div>
+
+<!-- Leaflet CSS (solo si no está ya incluido en la página principal) -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+
+<!-- CSS específico para fix de z-index -->
+<link rel="stylesheet" href="/assets/css/map-fix.css" />
+
+<!-- Estilos específicos para el mapa embebido -->
+<style>
+  .embedded-map {
+    height: 100%;
+    width: 100%;
+    min-height: 200px; /* Altura mínima para el footer */
+    border-top: 2px solid #007bff;
+    position: relative;
+    z-index: 1; /* Mantener por debajo del menú */
+  }
+
+  /* Cuando el mapa está en el footer, ajustar estilos */
+  .footer-map .embedded-map {
+    border-top: none; /* Remover borde en footer */
+    border-radius: 8px; /* Usar el border-radius del contenedor */
+  }
+
+  @media print {
+    .embedded-map {
+      height: 400px;
+    }
+  }
+</style>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+
+<!-- Script externo para el mapa -->
+<script src="/assets/js/map.js" defer></script>
