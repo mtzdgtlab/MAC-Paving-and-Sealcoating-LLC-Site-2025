@@ -1,16 +1,16 @@
-;(function ($) {
+; (function ($) {
   'use strict'
 
   /*======================================
-	Preloader activation
-	========================================*/
+  Preloader activation
+  ========================================*/
   $(window).on('load', function () {
     $('#preloader').delay(500).fadeOut(500)
   })
 
   /*======================================
-	button hover
-	========================================*/
+  button hover
+  ========================================*/
   $('.btn-hover')
     .on('mouseenter', function (e) {
       var parentOffset = $(this).offset(),
@@ -40,8 +40,8 @@
     })
 
   /*======================================
-	Mobile Menu Js
-	========================================*/
+  Mobile Menu Js
+  ========================================*/
   $('#mobile-menu').meanmenu({
     meanMenuContainer: '.mobile-menu',
     meanScreenWidth: '991',
@@ -55,8 +55,8 @@
   })
 
   /*======================================
-	Sidebar Toggle
-	========================================*/
+  Sidebar Toggle
+  ========================================*/
   $('.offcanvas__close,.offcanvas__overlay').on('click', function () {
     $('.offcanvas__info').removeClass('info-open')
     $('.offcanvas__overlay').removeClass('overlay-open')
@@ -67,8 +67,8 @@
   })
 
   /*======================================
-	Body overlay Js
-	========================================*/
+  Body overlay Js
+  ========================================*/
   $('.body-overlay').on('click', function () {
     $('.offcanvas__area').removeClass('offcanvas-opened')
     $('.df-search-area').removeClass('opened')
@@ -76,8 +76,8 @@
   })
 
   /*======================================
-	Search Header Js
-	========================================*/
+  Search Header Js
+  ========================================*/
   $('.search-toggle-open').on('click', function () {
     $('.df-search-area').addClass('opened')
     $('.body-overlay').addClass('opened')
@@ -88,8 +88,8 @@
   })
 
   /*======================================
-	Sticky Header Js
-	========================================*/
+  Sticky Header Js
+  ========================================*/
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > 250) {
@@ -100,8 +100,8 @@
   })
 
   /*======================================
-	Data Css js
-	========================================*/
+  Data Css js
+  ========================================*/
   $('[data-background').each(function () {
     $(this).css(
       'background-image',
@@ -118,8 +118,8 @@
   })
 
   /*======================================
-	MagnificPopup image view
-	========================================*/
+  MagnificPopup image view
+  ========================================*/
 
   $('.popup-image').magnificPopup({
     type: 'image',
@@ -162,23 +162,23 @@
   })
 
   /*======================================
-	MagnificPopup video view
-	========================================*/
+  MagnificPopup video view
+  ========================================*/
   $('.popup-video').magnificPopup({
     type: 'iframe',
   })
 
   /*======================================
-	Counter Js
-	========================================*/
+  Counter Js
+  ========================================*/
   $('.counter').counterUp({
     delay: 10,
     time: 1000,
   })
 
   /*======================================
-	Aos Js
-	========================================*/
+  Aos Js
+  ========================================*/
 
   AOS.init({
     duration: 600,
@@ -196,8 +196,8 @@
   }
 
   /*======================================
-	Back To Top Js
-	========================================*/
+  Back To Top Js
+  ========================================*/
   var progressPath = document.querySelector('.backtotop-wrap path')
   var pathLength = progressPath.getTotalLength()
   progressPath.style.transition = progressPath.style.WebkitTransition = 'none'
@@ -231,8 +231,8 @@
 
 
   /*======================================
-	For header header Js
-	========================================*/
+  For header header Js
+  ========================================*/
   if ($('#header-currency-toggle').length > 0) {
     window.addEventListener('click', function (e) {
       if (
@@ -246,8 +246,8 @@
   }
 
   /*======================================
-	For header setting Js
-	========================================*/
+  For header setting Js
+  ========================================*/
   if ($('#header-setting-toggle').length > 0) {
     window.addEventListener('click', function (e) {
       if (document.getElementById('header-setting-toggle').contains(e.target)) {
@@ -259,8 +259,8 @@
   }
 
   /*======================================
-	For before-after Js
-	========================================*/
+  For before-after Js
+  ========================================*/
   if ($('.beforeAfter').length > 0) {
     $('.beforeAfter').beforeAfter({
       movable: true,
@@ -281,9 +281,9 @@
   }
 
   /*======================================
-	Testimonial slider Js Gramen Home One
-	========================================*/
-new Swiper('.testimonial-active-1', {
+  Testimonial slider Js Gramen Home One
+  ========================================*/
+  new Swiper('.testimonial-active-1', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -434,9 +434,9 @@ new Swiper('.testimonial-active-1', {
   })
 
   /*======================================
-	Review slider Js
-	========================================*/
-new Swiper('.review-active', {
+  Review slider Js
+  ========================================*/
+  new Swiper('.review-active', {
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
@@ -470,7 +470,7 @@ new Swiper('.review-active', {
     },
   })
 
-new Swiper('.review-active', {
+  new Swiper('.review-active', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -486,7 +486,7 @@ new Swiper('.review-active', {
     },
   })
 
-new Swiper('.review-active-two', {
+  new Swiper('.review-active-two', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
@@ -520,8 +520,8 @@ new Swiper('.review-active-two', {
   })
 
   /*======================================
-	product slider Js
-	========================================*/
+  product slider Js
+  ========================================*/
   var product = new Swiper('.product-active', {
     slidesPerView: 4,
     spaceBetween: 15,
@@ -594,8 +594,8 @@ new Swiper('.review-active-two', {
   })
 
   /*======================================
-	brand slider Js Gramen Home One
-	========================================*/
+  brand slider Js Gramen Home One
+  ========================================*/
   var brand = new Swiper('.brand-active', {
     slidesPerView: 5,
     spaceBetween: 99,
@@ -628,8 +628,8 @@ new Swiper('.review-active-two', {
   })
 
   /*======================================
-	service slider Js Gramen Home One
-	========================================*/
+  service slider Js Gramen Home One
+  ========================================*/
   var service = new Swiper('.service-active-2', {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -665,8 +665,8 @@ new Swiper('.review-active-two', {
   })
 
   /*======================================
-	Project slider Js Gramen Home One
-	========================================*/
+  Project slider Js Gramen Home One
+  ========================================*/
 
   var project = new Swiper('.project-active-1', {
     slidesPerView: 4,
@@ -703,8 +703,8 @@ new Swiper('.review-active-two', {
   })
 
   /*======================================
-	Service slider One Js Gramen Home One
-	========================================*/
+  Service slider One Js Gramen Home One
+  ========================================*/
   var team = new Swiper('.service-active-1', {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -722,7 +722,7 @@ new Swiper('.review-active-two', {
         slidesPerView: 3,
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       992: {
         slidesPerView: 2,
@@ -741,8 +741,8 @@ new Swiper('.review-active-two', {
   })
 
   /*======================================
-	slider Js
-	========================================*/
+  slider Js
+  ========================================*/
   if (jQuery('.slider-active').length > 0) {
     let sliderActive1 = '.slider-active'
     let sliderInit1 = new Swiper(sliderActive1, {
@@ -866,8 +866,8 @@ new Swiper('.review-active-two', {
   }
 
   /*======================================
-	Postbox slider Js
-	========================================*/
+  Postbox slider Js
+  ========================================*/
   var postboxSlider = new Swiper('.postbox__slider', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -900,8 +900,8 @@ new Swiper('.review-active-two', {
   })
 
   /*======================================
-	whyChoose slider Js
-	========================================*/
+  whyChoose slider Js
+  ========================================*/
   var whyChoose = new Swiper('.why-choose-active', {
     slidesPerView: 1,
     spaceBetween: 0,
@@ -933,20 +933,20 @@ new Swiper('.review-active-two', {
   })
 
   /*======================================
-	 SECTION ACTIVE
-	========================================*/
+   SECTION ACTIVE
+  ========================================*/
   $(document).on('mouseover', '.icon-box-area', function () {
     $('.icon-box-area').removeClass('active')
     $(this).addClass('active')
   })
   /*======================================
-	 FLOT BUTTON ACTIVE
-	========================================*/
+   FLOT BUTTON ACTIVE
+  ========================================*/
   $(window).on('scroll', function () {
     var scrollTop = $(this).scrollTop()
     var footerOffset = $('footer').offset().top
     var windowBottom = scrollTop + $(window).height()
-  
+
     if (scrollTop > 80 && windowBottom + 20 < footerOffset) {
       $('.floating-quote-btn').addClass('show')
     } else {
@@ -954,10 +954,10 @@ new Swiper('.review-active-two', {
     }
   })
 
-  
+
   /*======================================
-	Countdown slider Js
-	========================================*/
+  Countdown slider Js
+  ========================================*/
   if ($('.countdown-wrapper').length > 0) {
     // Function to update the countdown timer
     function updateCountdown() {
