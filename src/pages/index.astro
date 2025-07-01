@@ -1,16 +1,17 @@
 ---
-import Favicon from "../components/Favicon.astro";
-import Preloader from "../components/Preloader.astro";
-import CSSbase from "../components/CSSbase.astro";
-import Navbar from "../components/Navbar.astro";
-import Footer from "../components/Footer.astro";
-import Scripts from "../components/Scripts.astro";
-import SocialMeta from "../components/SocialMeta.astro";
-import About from "../components/About.astro";
-import TestimonialsSlider from "../components/TestimonialsSlider.astro";
+import Favicon from "@/components/Favicon.astro";
+import Preloader from "@/components/Preloader.astro";
+import CSSbase from "@/components/CSSbase.astro";
+import Navbar from "@/components/Navbar.astro";
+import Footer from "@/components/Footer.astro";
+import Scripts from "@/components/Scripts.astro";
+import SocialMeta from "@/components/SocialMeta.astro";
+import About from "@/components/About.astro";
+import TestimonialsSlider from "@/components/TestimonialsSlider.astro";
 
 import { Image } from "astro:assets";
-import cta1 from "../assets/imgs/resources/cta-1.webp";
+import cta1 from "@/assets/imgs/resources/cta-1.webp";
+import ServiceSlider from "@/components/ServiceSlider.astro";
 ---
 
 <html lang="en">
@@ -262,14 +263,14 @@ import cta1 from "../assets/imgs/resources/cta-1.webp";
               <div class="swiper-slide">
                 <div
                   class="banner-area p-relative z-3"
-                  data-aos="fade-in"
-                  data-aos-delay="0"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
                 >
                   <div class="large-container">
                     <span class="p-relative banner-sub-title"
                       >TRUSTED EXPERTS</span
                     >
-                    <h1 class="banner-title">Asphalt Contractor NJ</h1>
+                    <h1 class="banner-title ml-30">Asphalt Contractor NJ</h1>
                     <p class="banner-text">
                       We specialize in delivering high-quality asphalt solutions
                       for both residential and commercial projects, ensuring
@@ -331,7 +332,7 @@ import cta1 from "../assets/imgs/resources/cta-1.webp";
                 <div
                   class="banner-area p-relative z-3"
                   data-aos="fade-up"
-                  data-aos-delay="600"
+                  data-aos-delay="300"
                 >
                   <div class="large-container">
                     <span class="p-relative banner-sub-title"
@@ -372,216 +373,7 @@ import cta1 from "../assets/imgs/resources/cta-1.webp";
       <!-- Banner area end -->
 
       <About />
-
-      <!-- Service Slider area start -->
-      <section
-        aria-label="Services section"
-        class="service-slider-section section-space bg-color-1"
-      >
-        <div
-          class="shape-10"
-          data-background="/assets/imgs/shapes/shape-10.webp"
-        >
-        </div>
-        <div class="shape-9" data-background="/assets/imgs/shapes/shape-9.webp">
-        </div>
-        <div class="small-container">
-          <div class="row align-items-center justify-content-between">
-            <div
-              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
-            >
-              <div
-                class="title-box mb-50"
-                data-aos="fade-left"
-                data-aos-delay="500"
-              >
-                <span class="section-sub-titledos"
-                  >Paving and Asphalt Contractor Near You</span
-                >
-                <h3 class="section-title mt-35">
-                  <a
-                    href="/paving-services-near-me"
-                    style="color: inherit; text-decoration: none;"
-                    >Our Services</a
-                  >
-                </h3>
-              </div>
-              <div
-                class="service_1_navigation__wrapprer position-relative z-1 mt-30"
-              >
-                <div class="common-slider-navigation">
-                  <button
-                    class="service-1-button-prev"
-                    aria-label="Previous service"
-                  >
-                    <i class="fas fa-arrow-left"></i>
-                  </button>
-                  <button
-                    class="service-1-button-next"
-                    aria-label="Next service"
-                  >
-                    <i class="fas fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper service-active-1">
-            <div class="swiper-wrapper">
-              <!-- Asphalt Paving -->
-              <div class="swiper-slide">
-                <div class="service-slider-area align-service-headings">
-                  <figure class="service-image">
-                    <img
-                      src="/assets/imgs/service/asphalt-service.webp"
-                      alt="Asphalt Paving"
-                      loading="lazy"
-                      width="370"
-                      height="247"
-                    />
-                  </figure>
-                  <div class="content">
-                    <div class="icon-box">
-                      <i class="fas fa-road"></i>
-                    </div>
-                    <h4>
-                      <a href="/services/asphalt-paving/">Asphalt Paving</a>
-                    </h4>
-                    <p>
-                      From residential driveways to commercial parking lots, our
-                      expert asphalt paving services ensure a smooth, durable,
-                      and professional finish that enhances both function and
-                      curb appeal.
-                    </p>
-                    <a href="/services/asphalt-paving/" class="service-btn"
-                      >Read More <i class="fas fa-chevron-right"></i></a
-                    >
-                  </div>
-                </div>
-              </div>
-              <!-- Sealer -->
-              <div class="swiper-slide">
-                <div class="service-slider-area align-service-headings">
-                  <figure class="service-image">
-                    <img
-                      src="/assets/imgs/service/sealer-service.webp"
-                      alt="Sealcoating"
-                      loading="lazy"
-                      width="370"
-                      height="247"
-                    />
-                  </figure>
-                  <div class="content">
-                    <div class="icon-box">
-                      <i class="fas fa-fill-drip"></i>
-                    </div>
-                    <h4><a href="/services/sealer/">Sealer</a></h4>
-                    <p>
-                      Our premium sealcoating, crack filling, and line striping
-                      services extend the life of your pavement. These
-                      treatments shield your surfaces from weather, wear, and
-                      heavy traffic while maintaining a sleek, protected finish.
-                    </p>
-                    <a href="/services/sealer/" class="service-btn"
-                      >Read More <i class="fas fa-angles-right"></i></a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- Pavers -->
-              <div class="swiper-slide">
-                <div class="service-slider-area align-service-headings">
-                  <figure class="service-image">
-                    <img
-                      src="/assets/imgs/service/paver-service.webp"
-                      alt="Pavers"
-                      loading="lazy"
-                      width="370"
-                      height="247"
-                    />
-                  </figure>
-                  <div class="content">
-                    <div class="icon-box">
-                      <i class="fas fa-th-large"></i>
-                    </div>
-                    <h4><a href="/services/pavers/">Pavers</a></h4>
-                    <p>
-                      We create elegant, long-lasting paver installations
-                      customized for driveways, patios, and walkways. Each
-                      project is crafted with precision and premium materials to
-                      elevate your outdoor aesthetics.
-                    </p>
-                    <a href="/services/pavers/" class="service-btn"
-                      >Read More <i class="fas fa-angles-right"></i></a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- Concrete -->
-              <div class="swiper-slide">
-                <div class="service-slider-area align-service-headings">
-                  <figure class="service-image">
-                    <img
-                      src="/assets/imgs/service/concrete-service.webp"
-                      alt="Concrete"
-                      loading="lazy"
-                      width="370"
-                      height="247"
-                    />
-                  </figure>
-                  <div class="content">
-                    <div class="icon-box">
-                      <i class="fas fa-hard-hat"></i>
-                    </div>
-                    <h4><a href="/services/concrete/">Concrete</a></h4>
-                    <p>
-                      Expertly poured and finished concrete work, including
-                      sidewalks, curbs, aprons, and walkways—designed for
-                      strength, safety, and timeless appeal.
-                    </p>
-                    <a href="/services/concrete/" class="service-btn"
-                      >Read More <i class="fas fa-angles-right"></i></a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- Landscaping -->
-              <div class="swiper-slide">
-                <div class="service-slider-area align-service-headings">
-                  <figure class="service-image">
-                    <img
-                      src="/assets/imgs/service/landscaping-service.webp"
-                      alt="Landscaping"
-                      loading="lazy"
-                      width="370"
-                      height="247"
-                    />
-                  </figure>
-                  <div class="content">
-                    <div class="icon-box">
-                      <i class="fas fa-tree"></i>
-                    </div>
-                    <h4><a href="/services/landscaping/">Landscaping</a></h4>
-                    <p>
-                      We provide comprehensive landscaping solutions that
-                      transform your outdoor environment. Our services include
-                      lush sod installation, nutrient-rich topsoil application,
-                      efficient drainage systems, and thorough power washing.
-                    </p>
-                    <a href="/services/landscaping/" class="service-btn"
-                      >Read More <i class="fas fa-angles-right"></i></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Service Slider area end -->
+      <ServiceSlider />
 
       <!-- Cta-1 area start -->
       <section
@@ -604,16 +396,11 @@ import cta1 from "../assets/imgs/resources/cta-1.webp";
             </div>
             <div class="col-xxl-6 col-lg-6">
               <div class="content p-relative">
-                <div
-                  class="shape-1"
-                  data-background="assets/imgs/shapes/shape-12.webp"
-                >
-                </div>
                 <div class="icon-box">
                   <i class="fas fa-phone-volume"></i>
                 </div>
-                <h2 class="mb-5">Need Any Paving Solution?</h2>
-                <h3><a href="tel:+12017557836">(201) 755-7836</a></h3>
+                <h4 class="mb-15">Need Any Paving Solution?</h4>
+                <h5><a href="tel:+12017557836">(201) 755-7836</a></h5>
               </div>
             </div>
           </div>

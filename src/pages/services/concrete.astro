@@ -1,14 +1,15 @@
 ---
 import { Image } from "astro:assets";
-import Favicon from "../../components/Favicon.astro";
-import Preloader from "../../components/Preloader.astro";
-import CSSbase from "../../components/CSSbase.astro";
-import Navbar from "../../components/Navbar.astro";
-import Footer from "../../components/Footer.astro";
-import Scripts from "../../components/Scripts.astro";
-import SocialMeta from "../../components/SocialMeta.astro";
-import About from "../../components/About.astro";
-import TestimonialsSlider from "../../components/TestimonialsSlider.astro";
+import Favicon from "@/components/Favicon.astro";
+
+import Preloader from "@/components/Preloader.astro";
+import CSSbase from "@/components/CSSbase.astro";
+import Navbar from "@/components/Navbar.astro";
+import Footer from "@/components/Footer.astro";
+import Scripts from "@/components/Scripts.astro";
+import SocialMeta from "@/components/SocialMeta.astro";
+import About from "@/components/About.astro";
+import TestimonialsSlider from "@/components/TestimonialsSlider.astro";
 
 // Import concrete images
 import walkwaysImg from "@/assets/imgs/service/concrete/walkways-8.webp";
@@ -232,7 +233,11 @@ import concreteBg from "@/assets/imgs/bg/concrete-cover.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div class="banner-thumb" style={`background-image: url('${concreteBg.src}');`}></div>
+        <div
+          class="banner-thumb"
+          style={`background-image: url('${concreteBg.src}');`}
+        >
+        </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -285,8 +290,7 @@ import concreteBg from "@/assets/imgs/bg/concrete-cover.webp";
                         attractive, and durable paths in your outdoor spaces.
                       </p>
                       <a href="/services/concrete/walkways/" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
+                        >Service Details <i class="fas fa-chevron-right"></i></a
                       >
                     </div>
                   </div>
@@ -319,8 +323,7 @@ import concreteBg from "@/assets/imgs/bg/concrete-cover.webp";
                       <a
                         href="/services/concrete/sidewalks/"
                         class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
+                        >Service Details <i class="fas fa-chevron-right"></i></a
                       >
                     </div>
                   </div>
@@ -349,8 +352,7 @@ import concreteBg from "@/assets/imgs/bg/concrete-cover.webp";
                         overall appearance and functionality.
                       </p>
                       <a href="/services/concrete/curbs/" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
+                        >Service Details <i class="fas fa-chevron-right"></i></a
                       >
                     </div>
                   </div>
@@ -381,8 +383,7 @@ import concreteBg from "@/assets/imgs/bg/concrete-cover.webp";
                         easy access and a neat appearance.
                       </p>
                       <a href="/services/concrete/aprons/" class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
+                        >Service Details <i class="fas fa-chevron-right"></i></a
                       >
                     </div>
                   </div>
@@ -753,7 +754,7 @@ import concreteBg from "@/assets/imgs/bg/concrete-cover.webp";
             <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
               <div class="icon-box-counter-area">
                 <div class="icon-box">
-                  <i class="icon-home-1"></i>
+                  <i class="fas fa-home"></i>
                 </div>
                 <div class="content">
                   <h3><span class="counter">1.2</span>K+</h3>
