@@ -1,12 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import Favicon from "../../components/Favicon.astro";
-import Preloader from "../../components/Preloader.astro";
-import CSSbase from "../../components/CSSbase.astro";
-import Navbar from "../../components/Navbar.astro";
-import Footer from "../../components/Footer.astro";
-import Scripts from "../../components/Scripts.astro";
-import SocialMeta from "../../components/SocialMeta.astro";
+import Favicon from "@/components/Favicon.astro";
+
+import Preloader from "@/components/Preloader.astro";
+import CSSbase from "@/components/CSSbase.astro";
+import Navbar from "@/components/Navbar.astro";
+import Footer from "@/components/Footer.astro";
+import Scripts from "@/components/Scripts.astro";
+import SocialMeta from "@/components/SocialMeta.astro";
+import Quality from "@/components/Quality.astro";
 
 // Import landscaping images
 import sodInstallation1 from "@/assets/imgs/service/landscaping/sod-installation-1.webp";
@@ -228,7 +230,11 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div class="banner-thumb" style={`background-image: url('${landscapingBg.src}');`}></div>
+        <div
+          class="banner-thumb"
+          style={`background-image: url('${landscapingBg.src}');`}
+        >
+        </div>
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -286,8 +292,7 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                       <a
                         href="/services/landscaping/sod-installation/"
                         class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
+                        >Service Details <i class="fas fa-chevron-right"></i></a
                       >
                     </div>
                   </div>
@@ -319,8 +324,7 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                       <a
                         href="/services/landscaping/top-soil/"
                         class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
+                        >Service Details <i class="fas fa-chevron-right"></i></a
                       >
                     </div>
                   </div>
@@ -353,8 +357,7 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                       <a
                         href="/services/landscaping/drainage/"
                         class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
+                        >Service Details <i class="fas fa-chevron-right"></i></a
                       >
                     </div>
                   </div>
@@ -389,8 +392,7 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                       <a
                         href="/services/landscaping/power-wash/"
                         class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
+                        >Service Details <i class="fas fa-chevron-right"></i></a
                       >
                     </div>
                   </div>
@@ -423,8 +425,7 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
                       <a
                         href="/services/landscaping/hauling/"
                         class="service-btn"
-                        >Service Details <i class="icon-arrow-right-double"
-                        ></i></a
+                        >Service Details <i class="fas fa-chevron-right"></i></a
                       >
                     </div>
                   </div>
@@ -517,103 +518,7 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
       </section>
       <!-- Service Slider area end -->
 
-      <!-- Choose area start -->
-      <section
-        class="choose-section bg-color-1 section-space-top section-space-bottom p-relative"
-      >
-        <div class="bg-image" data-background="/assets/imgs/bg/choose-bg.webp">
-        </div>
-        <div
-          class="shape-image"
-          data-background="/assets/imgs/shapes/shape-15.webp"
-        >
-        </div>
-        <div class="small-container">
-          <div class="row g-4 justify-content-center text-center">
-            <div class="col-12">
-              <div class="title-box mb-50 wow fadeInLeft" data-wow-delay=".5s">
-                <span class="section-sub-titledos mb-50">WHY CHOOSE US</span>
-                <h3 class="section-title mt-10">What Makes Us Different</h3>
-              </div>
-            </div>
-          </div>
-          <div class="row g-4">
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-              <!-- block -->
-              <div
-                class="choose-area-icon-box mb-15 wow fadeInRight"
-                data-wow-delay=".5s"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fa fa-road"></i>
-                </div>
-                <div class="content">
-                  <h5>Premium Asphalt Sealcoating</h5>
-                  <p>
-                    We deliver the best asphalt sealcoating services to protect
-                    and enhance the longevity of your pavement.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <!-- block -->
-              <div
-                class="choose-area-icon-box mb-15 wow fadeInRight"
-                data-wow-delay=".7s"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fa fa-cogs"></i>
-                </div>
-                <div class="content">
-                  <h5><a href="#">Custom Driveway Solutions</a></h5>
-                  <p>
-                    We specialize in designing and installing custom driveways
-                    tailored to your specific needs and preferences.
-                  </p>
-                </div>
-              </div>
-              <hr />
-            </div>
-            <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-              <!-- block -->
-              <div
-                class="choose-area-icon-box mb-15 wow fadeInRight"
-                data-wow-delay=".9s"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fa fa-wrench"></i>
-                </div>
-                <div class="content">
-                  <h5><a href="#">Comprehensive Paving Solutions</a></h5>
-                  <p>
-                    We offer a full range of paving services for commercial and
-                    residential clients, from concrete work to asphalt paving.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <!-- block -->
-              <div
-                class="choose-area-icon-box mb-15 wow fadeInRight"
-                data-wow-delay="1.1s"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fa fa-tools"></i>
-                </div>
-                <div class="content">
-                  <h5><a href="#">Maintenance Services</a></h5>
-                  <p>
-                    Keep your property in top shape with our maintenance
-                    services, including sealcoating, crack filling, and more.
-                  </p>
-                </div>
-              </div>
-              <hr />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Choose area end -->
+      <Quality />
 
       <!-- Project slider area start -->
       <section

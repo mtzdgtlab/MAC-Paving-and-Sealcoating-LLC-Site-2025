@@ -35,6 +35,11 @@ export default defineConfig({
       watch: {
         usePolling: true
       }
+    },
+    resolve: {
+      alias: {
+        "@": new URL("./src", import.meta.url).pathname
+      }
     }
   }
 });

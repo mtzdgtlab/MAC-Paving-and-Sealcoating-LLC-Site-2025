@@ -89,14 +89,14 @@ function initializeMap(mapId) {
 
     // Crear contenido del popup con mejor formato
     const popupContent = `
-      <div style="text-align: center; padding: 5px;">
-        <strong style="font-size: 18px; color: #007bff;">
-          Condado de ${countyName}
+      <div style="text-align: center; padding: 1px;">
+        <strong style="font-size: 14px; color: #1a3164;">
+    ${countyName} County
         </strong>
         <br>
-        <span style="font-size: 14px; color: ${isHighlighted ? '#28a745' : '#6c757d'};">
-          ${isHighlighted ? '✓ Área de Servicio' : 'Fuera del área de servicio'}
-        </span>
+        <span style="font-size: 12px; color: ${isHighlighted ? '#1c5ea0' : '#6c757d'};">
+  ${isHighlighted ? '✓ Service Area' : 'Outside Service Area'}
+</span>
       </div>
     `;
 
