@@ -75,17 +75,6 @@
     $('.body-overlay').removeClass('opened')
   })
 
-  /*======================================
-  Search Header Js
-  ========================================*/
-  $('.search-toggle-open').on('click', function () {
-    $('.df-search-area').addClass('opened')
-    $('.body-overlay').addClass('opened')
-  })
-  $('.tp-search-close-btn').on('click', function () {
-    $('.df-search-area').removeClass('opened')
-    $('.body-overlay').removeClass('opened')
-  })
 
   /*======================================
   Sticky Header Js
@@ -378,7 +367,7 @@
         slidesPerView: 4,
       },
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       992: {
         slidesPerView: 2,
@@ -395,43 +384,6 @@
     },
   })
 
-  var team = new Swiper('.team-active-3', {
-    slidesPerView: 3,
-    spaceBetween: 24,
-    loop: true,
-    roundLengths: true,
-    autoplay: {
-      delay: 3000,
-    },
-    pagination: {
-      el: '.bd-swiper-dot',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.team-3-button-next',
-      prevEl: '.team-3-button-prev',
-    },
-    breakpoints: {
-      1400: {
-        slidesPerView: 3,
-      },
-      1200: {
-        slidesPerView: 3,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  })
 
   /*======================================
   Review slider Js
@@ -520,84 +472,10 @@
   })
 
   /*======================================
-  product slider Js
-  ========================================*/
-  var product = new Swiper('.product-active', {
-    slidesPerView: 4,
-    spaceBetween: 15,
-    loop: true,
-    roundLengths: true,
-    autoplay: {
-      delay: 3000,
-    },
-    pagination: {
-      el: '.bd-swiper-dot',
-      clickable: true,
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 4,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      576: {
-        slidesPerView: 2,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  })
-
-  var productTwo = new Swiper('.discount-active', {
-    slidesPerView: 5,
-    spaceBetween: 15,
-    loop: true,
-    roundLengths: true,
-    observer: true,
-    observeParents: true,
-    autoplay: {
-      delay: 3000,
-    },
-    pagination: {
-      el: '.bd-swiper-dot',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.discount-slider-button-prev',
-      prevEl: '.discount-slider-button-next',
-    },
-    breakpoints: {
-      1400: {
-        slidesPerView: 5,
-      },
-      1200: {
-        slidesPerView: 4,
-      },
-      992: {
-        slidesPerView: 4,
-      },
-      768: {
-        slidesPerView: 3,
-      },
-      576: {
-        slidesPerView: 2,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  })
-
-  /*======================================
   brand slider Js Gramen Home One
   ========================================*/
   var brand = new Swiper('.brand-active', {
-    slidesPerView: 5,
+    slidesPerView: 4,
     spaceBetween: 99,
     loop: true,
     roundLengths: true,
@@ -606,16 +484,16 @@
     },
     breakpoints: {
       1400: {
-        slidesPerView: 5,
+        slidesPerView: 4,
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       992: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       576: {
         slidesPerView: 2,
@@ -627,53 +505,17 @@
     speed: 1000,
   })
 
-  /*======================================
-  service slider Js Gramen Home One
-  ========================================*/
-  var service = new Swiper('.service-active-2', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
-    pagination: {
-      el: '.bd-swiper-dot',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.service-active-2-button-next',
-      prevEl: '.service-active-2-button-prev',
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 4,
-      },
-      992: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  })
 
   /*======================================
   Project slider Js Gramen Home One
   ========================================*/
 
   var project = new Swiper('.project-active-1', {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
     },
     navigation: {
       nextEl: '.project-1-button-next',
@@ -706,12 +548,12 @@
   Service slider One Js Gramen Home One
   ========================================*/
   var team = new Swiper('.service-active-1', {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
     roundLengths: true,
     autoplay: {
-      delay: 3000,
+      delay: 2000,
     },
     navigation: {
       nextEl: '.service-1-button-next',
@@ -719,7 +561,7 @@
     },
     breakpoints: {
       1400: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1200: {
         slidesPerView: 2,
@@ -866,40 +708,6 @@
   }
 
   /*======================================
-  Postbox slider Js
-  ========================================*/
-  var postboxSlider = new Swiper('.postbox__slider', {
-    slidesPerView: 1,
-    spaceBetween: 0,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.postbox-slider-button-next',
-      prevEl: '.postbox-slider-button-prev',
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 1,
-      },
-      992: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 1,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  })
-
-  /*======================================
   whyChoose slider Js
   ========================================*/
   var whyChoose = new Swiper('.why-choose-active', {
@@ -915,13 +723,13 @@
     },
     breakpoints: {
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       992: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
       },
       576: {
         slidesPerView: 1,

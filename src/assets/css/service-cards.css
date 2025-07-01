@@ -1,0 +1,239 @@
+/*----------------------------------------*/
+/*  SERVICE CARDS CSS
+/*----------------------------------------*/
+
+/* Estructura principal de la tarjeta */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* 1. Sección de Imagen */
+.service-image-section {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+}
+
+.service-image-section a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.service-image-section .service-image {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.service-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image-section img {
+  transform: scale(1.2);
+}
+
+/* 2. Sección de Icono */
+.service-icon-section {
+  padding: 20px 0 15px;
+  text-align: center;
+  background: white;
+  position: relative;
+}
+
+.service-icon-section .icon-box {
+  width: 100%;
+  left: 0;
+}
+
+
+.service-icon-section .icon-box {
+  border: 1px dashed var(--theme-color);
+  width: 105px;
+  height: 105px;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 0;
+  display: flex;
+  position: absolute;
+  right: -450px;
+  top: -45px;
+  font-size: 65px;
+  color: var(--theme-color);
+  background: #fff;
+  box-shadow: none;
+  justify-content: center;  
+  align-items: center;  
+  transition: all 0.3s ease;
+}
+
+.service-icon-section .icon-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  background: var(--theme-color);
+  transition: all 500ms ease;
+}
+
+.service-card:hover .service-icon-section .icon-box {
+  transform: none;
+  background: #2174b8;
+  color: white;
+}
+
+/* 3. Sección de Título */
+.service-title-section {
+  padding: 20px 25px 15px;
+  text-align: left;
+  background: white;
+}
+
+.service-title-section .service-title {
+  margin: 0 0 12px;
+  font-family: var(--tertiary-font);
+  font-size: clamp(20px, 4vw, 40px);
+  line-height: 1.7;
+  font-weight: 800;
+  position: relative;
+}
+
+.service-title-section .service-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--theme-color) 0%, var(--theme-color-1) 100%);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-title-section .service-title::after {
+  width: 80%;
+}
+
+.service-title-section .service-title a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.service-title-section .service-title a:hover {
+  color: var(--theme-color);
+}
+
+/* 4. Sección de Descripción */
+.service-description-section {
+  padding: 0 25px 20px;
+  flex-grow: 1;
+  background: white;
+  display: flex;
+  align-items: flex-start;
+}
+
+.service-description-section .service-description {
+  line-height: 1.9;
+  color: #121c3a;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 30px;
+  margin: 0;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* 5. Sección de Botón */
+.service-button-section {
+  padding: 20px 25px 25px;
+  text-align: center;
+  background: #f8f9fa;
+  margin-top: auto;
+  border-top: 1px solid #e9ecef;
+}
+
+.service-button-section .service-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 25px;
+  background: var(--theme-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.service-button-section .service-btn:hover {
+  background: var(--theme-color-1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-button-section .service-btn i {
+  transition: transform 0.3s ease;
+}
+
+.service-button-section .service-btn:hover i {
+  transform: translateX(3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card {
+    margin: 0 10px;
+  }
+  
+  .service-title-section .service-title {
+    font-size: 18px;
+  }
+  
+  .service-description-section .service-description {
+    font-size: 13px;
+  }
+  
+  .service-icon-section .icon-box {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+}
+
+/* Altura uniforme para las tarjetas en el slider */
+.swiper-slide {
+  height: auto;
+}
+
+.service-active-1 .swiper-slide {
+  display: flex;
+}
+
+.service-active-1 .service-card {
+  width: 100%;
+  min-height: 500px;
+}

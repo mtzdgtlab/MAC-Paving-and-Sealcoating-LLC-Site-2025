@@ -8,6 +8,10 @@ import concreteService from "@/assets/imgs/service/concrete/concrete-service.web
 import landscapingService from "@/assets/imgs/service/landscaping/landscaping-service.webp";
 ---
 
+<style>
+  @import "/src/assets/css/service-cards.css";
+</style>
+
 <!-- Service Slider area start -->
 <section
   aria-label="Services section"
@@ -51,35 +55,51 @@ import landscapingService from "@/assets/imgs/service/landscaping/landscaping-se
       <div class="swiper-wrapper">
         <!-- Driveway Paving -->
         <div class="swiper-slide">
-          <div class="service-slider-area align-service-headings">
-            <figure class="service-image">
-              <Image
-                src={asphaltReplacement}
-                alt="Asphalt Paving"
-                width={370}
-                height={247}
-                format="webp"
-              />
-            </figure>
-            <div class="content">
+          <div class="service-card">
+            <!-- 1. Sección de Imagen -->
+            <div class="service-image-section">
+              <a href="/services/asphalt-paving/">
+                <figure class="service-image">
+                  <Image
+                    src={asphaltReplacement}
+                    alt="Asphalt Paving"
+                    width={370}
+                    height={278}
+                    format="webp"
+                  />
+                </figure>
+              </a>
+            </div>
+
+            <!-- 2. Sección de Icono -->
+            <div class="service-icon-section">
               <div class="icon-box">
                 <i class="fas fa-road"></i>
               </div>
-              <br />
+            </div>
+
+            <!-- 3. Sección de Título -->
+            <div class="service-title-section">
               <h3 class="service-title">
                 <a href="/services/asphalt-paving/">Driveway Paving</a>
               </h3>
-              <br />
-              <p>
+            </div>
+
+            <!-- 4. Sección de Descripción -->
+            <div class="service-description-section">
+              <p class="service-description">
                 We specialize in expert residential asphalt paving designed to
                 create long-lasting, weather-resistant driveways. Our services
                 enhance curb appeal and functionality through precise grading,
                 high-quality materials, and a smooth, durable finish tailored to
                 your property.
               </p>
-              <br />
+            </div>
+
+            <!-- 5. Sección de Botón -->
+            <div class="service-button-section">
               <a href="/services/asphalt-paving/" class="service-btn">
-                Read More <i class="fas fa-chevron-right"></i>
+                Read More <i class="fas fa-angles-right"></i>
               </a>
             </div>
           </div>
@@ -87,33 +107,48 @@ import landscapingService from "@/assets/imgs/service/landscaping/landscaping-se
 
         <!-- Sealer -->
         <div class="swiper-slide">
-          <div class="service-slider-area align-service-headings">
-            <figure class="service-image">
-              <Image
-                src={sealerService}
-                alt="Sealcoating"
-                width={370}
-                height={247}
-                format="webp"
-              />
-            </figure>
-            <div class="content">
+          <div class="service-card">
+            <!-- 1. Sección de Imagen -->
+            <div class="service-image-section">
+              <a href="/services/sealer/">
+                <figure class="service-image">
+                  <Image
+                    src={sealerService}
+                    alt="Sealcoating"
+                    width={370}
+                    height={278}
+                    format="webp"
+                  />
+                </figure>
+              </a>
+            </div>
+
+            <!-- 2. Sección de Icono -->
+            <div class="service-icon-section">
               <div class="icon-box">
                 <i class="fas fa-fill-drip"></i>
               </div>
-              <br />
+            </div>
+
+            <!-- 3. Sección de Título -->
+            <div class="service-title-section">
               <h3 class="service-title">
                 <a href="/services/sealer/">Sealer</a>
               </h3>
-              <br />
-              <p>
+            </div>
+
+            <!-- 4. Sección de Descripción -->
+            <div class="service-description-section">
+              <p class="service-description">
                 Our premium sealcoating, crack filling, and line striping
                 services extend the life of your pavement. These treatments
                 shield your surfaces from weather, wear, and heavy traffic while
                 maintaining a sleek, protected finish.
               </p>
-              <br />
-              <br />
+            </div>
+
+            <!-- 5. Sección de Botón -->
+            <div class="service-button-section">
               <a href="/services/sealer/" class="service-btn">
                 Read More <i class="fas fa-angles-right"></i>
               </a>
@@ -123,33 +158,48 @@ import landscapingService from "@/assets/imgs/service/landscaping/landscaping-se
 
         <!-- Pavers -->
         <div class="swiper-slide">
-          <div class="service-slider-area align-service-headings">
-            <figure class="service-image">
-              <Image
-                src={paverService}
-                alt="Pavers"
-                width={370}
-                height={247}
-                format="webp"
-              />
-            </figure>
-            <div class="content">
+          <div class="service-card">
+            <!-- 1. Sección de Imagen -->
+            <div class="service-image-section">
+              <a href="/services/pavers/">
+                <figure class="service-image">
+                  <Image
+                    src={paverService}
+                    alt="Pavers"
+                    width={370}
+                    height={278}
+                    format="webp"
+                  />
+                </figure>
+              </a>
+            </div>
+
+            <!-- 2. Sección de Icono -->
+            <div class="service-icon-section">
               <div class="icon-box">
                 <i class="fas fa-th-large"></i>
               </div>
-              <br />
+            </div>
+
+            <!-- 3. Sección de Título -->
+            <div class="service-title-section">
               <h3 class="service-title">
                 <a href="/services/pavers/">Pavers</a>
               </h3>
-              <br />
-              <p>
+            </div>
+
+            <!-- 4. Sección de Descripción -->
+            <div class="service-description-section">
+              <p class="service-description">
                 We create elegant, long-lasting paver installations customized
                 for driveways, patios, and walkways. Each project is crafted
                 with precision and premium materials to elevate your outdoor
                 aesthetics.
               </p>
-              <br />
-              <br />
+            </div>
+
+            <!-- 5. Sección de Botón -->
+            <div class="service-button-section">
               <a href="/services/pavers/" class="service-btn">
                 Read More <i class="fas fa-angles-right"></i>
               </a>
@@ -159,32 +209,48 @@ import landscapingService from "@/assets/imgs/service/landscaping/landscaping-se
 
         <!-- Concrete -->
         <div class="swiper-slide">
-          <div class="service-slider-area align-service-headings">
-            <figure class="service-image">
-              <Image
-                src={concreteService}
-                alt="Concrete"
-                width={370}
-                height={247}
-                format="webp"
-              />
-            </figure>
-            <div class="content">
+          <div class="service-card">
+            <!-- 1. Sección de Imagen -->
+            <div class="service-image-section">
+              <a href="/services/concrete/">
+                <figure class="service-image">
+                  <Image
+                    src={concreteService}
+                    alt="Concrete"
+                    width={370}
+                    height={278}
+                    format="webp"
+                  />
+                </figure>
+              </a>
+            </div>
+
+            <!-- 2. Sección de Icono -->
+            <div class="service-icon-section">
               <div class="icon-box">
                 <i class="fas fa-hard-hat"></i>
               </div>
-              <br />
+            </div>
+
+            <!-- 3. Sección de Título -->
+            <div class="service-title-section">
               <h3 class="service-title">
                 <a href="/services/concrete/">Concrete</a>
               </h3>
-              <br />
-              <p>
+            </div>
+
+            <!-- 4. Sección de Descripción -->
+            <div class="service-description-section">
+              <p class="service-description">
                 We deliver expertly poured and finished concrete work for
                 sidewalks, curbs, aprons, driveways, and walkways. Our team
                 ensures strength, safety, and a polished appearance that
                 complements any residential or commercial space.
               </p>
-              <br />
+            </div>
+
+            <!-- 5. Sección de Botón -->
+            <div class="service-button-section">
               <a href="/services/concrete/" class="service-btn">
                 Read More <i class="fas fa-angles-right"></i>
               </a>
@@ -194,32 +260,48 @@ import landscapingService from "@/assets/imgs/service/landscaping/landscaping-se
 
         <!-- Landscaping -->
         <div class="swiper-slide">
-          <div class="service-slider-area align-service-headings">
-            <figure class="service-image">
-              <Image
-                src={landscapingService}
-                alt="Landscaping"
-                width={370}
-                height={247}
-                format="webp"
-              />
-            </figure>
-            <div class="content">
+          <div class="service-card">
+            <!-- 1. Sección de Imagen -->
+            <div class="service-image-section">
+              <a href="/services/landscaping/">
+                <figure class="service-image">
+                  <Image
+                    src={landscapingService}
+                    alt="Landscaping"
+                    width={370}
+                    height={278}
+                    format="webp"
+                  />
+                </figure>
+              </a>
+            </div>
+
+            <!-- 2. Sección de Icono -->
+            <div class="service-icon-section">
               <div class="icon-box">
                 <i class="fas fa-tree"></i>
               </div>
-              <br />
+            </div>
+
+            <!-- 3. Sección de Título -->
+            <div class="service-title-section">
               <h3 class="service-title">
                 <a href="/services/landscaping/">Landscaping</a>
               </h3>
-              <br />
-              <p>
+            </div>
+
+            <!-- 4. Sección de Descripción -->
+            <div class="service-description-section">
+              <p class="service-description">
                 We provide comprehensive landscaping solutions that transform
                 your outdoor environment. Our services include lush sod
                 installation, nutrient-rich topsoil application, efficient
                 drainage systems, and thorough power washing.
               </p>
-              <br />
+            </div>
+
+            <!-- 5. Sección de Botón -->
+            <div class="service-button-section">
               <a href="/services/landscaping/" class="service-btn">
                 Read More <i class="fas fa-angles-right"></i>
               </a>

@@ -3180,7 +3180,6 @@ h2.banner-title  {
 /*----------------------------------------*/
 /*  SERVICE SLIDER CSS START
 /*----------------------------------------*/
-
 .service-slider-section h3.section-title {
   color: #fff;
 }
@@ -3236,6 +3235,7 @@ h2.banner-title  {
   right: 30px;
   top: -45px;
   background: #fff;
+  margin-bottom: 20px;
 }
 
 .service-slider-area .icon-box:before {
@@ -3345,6 +3345,14 @@ h2.banner-title  {
   .service_1_navigation__wrapprer button {
     display: none;
   }
+}
+
+.service-slider-area .service-title {
+  margin-bottom: 20px;
+}
+
+.service-slider-area p {
+  margin-bottom: 20px;
 }
 /*----------------------------------------*/
 /*  CTA 1 CSS START
