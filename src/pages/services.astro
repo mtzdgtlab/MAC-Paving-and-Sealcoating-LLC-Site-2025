@@ -9,7 +9,6 @@ import Navbar from "@/components/Navbar.astro";
 import Footer from "@/components/Footer.astro";
 import Scripts from "@/components/Scripts.astro";
 import SocialMeta from "@/components/SocialMeta.astro";
-import LargeForm from "@/components/LargeForm.astro";
 import TestimonialsSlider from "@/components/TestimonialsSlider.astro";
 import BreadcrumService from "@/components/BreadcrumService.astro";
 
@@ -26,7 +25,8 @@ import contactBg from "@/assets/imgs/bg/contact-cover.webp";
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="format-detection" content="telephone=no" />
-    <title>MAC Paving and Sealcoating | Our Paving Services</title>
+    <title>Paving Services in NJ | MAC Paving and Sealcoating</title>
+    <meta name="robots" content="index, follow" />
 
     <!-- Preconexión para recursos externos (mejora rendimiento) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,6 +45,12 @@ import contactBg from "@/assets/imgs/bg/contact-cover.webp";
     <meta
       name="keywords"
       content="paving services NJ, asphalt paving, concrete services, sealcoating, pavers, New Jersey"
+    />
+
+    <SocialMeta
+      title="Paving Services in NJ | MAC Paving and Sealcoating"
+      description="Comprehensive paving services including asphalt, concrete, sealcoating, and pavers across New Jersey."
+      url="https://macpavingandsealcoating.com/services/"
     />
 
     <!-- Schema.org markup for LocalBusiness -->
@@ -220,7 +226,11 @@ import contactBg from "@/assets/imgs/bg/contact-cover.webp";
     </script>
 
     <Favicon />
-    <SocialMeta />
+    <SocialMeta
+      title="Paving Services in NJ | MAC Paving and Sealcoating"
+      description="Comprehensive paving services including asphalt, concrete, sealcoating, and pavers across New Jersey."
+      url="https://macpavingandsealcoating.com/services/"
+    />
     <CSSbase />
   </head>
   <body>
@@ -581,7 +591,7 @@ import contactBg from "@/assets/imgs/bg/contact-cover.webp";
         </div>
       </section>
       <!-- Choose area end -->
-      <LargeForm />
+      <TestimonialsSlider />
       <!-- Project slider area start -->
       <section class="project-slider-section section-space fix">
         <div class="small-container">
