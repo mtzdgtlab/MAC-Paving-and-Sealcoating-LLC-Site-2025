@@ -1,72 +1,99 @@
 ---
-// Component: Why Choose Us
+import { Image } from "astro:assets";
 ---
+
+<!-- Choose area start -->
 <section
   aria-label="Testimonials section"
-  class="choose-section bg-color-1 section-space-top p-relative">
+  class="choose-section bg-color-1 section-space-top p-relative"
+>
   <div class="small-container">
     <div class="row g-4">
-      <!-- Text and Icons -->
-      <div class="col-xxl-6 col-xl-6 col-lg-6 p-relative section-space-medium-bottom">
+      <div
+        class="col-xxl-6 col-xl-6 col-lg-6 p-relative section-space-medium-bottom"
+      >
         <div class="title-box mb-50" data-aos="fade-left" data-aos-delay="200">
           <span class="section-sub-titledos">WHY CHOOSE US</span>
           <h3 class="section-title mt-35">What Makes Us Different</h3>
         </div>
 
+        <hr />
+
         <!-- Quality -->
-        <div class="choose-area-icon-box mb-15" data-aos="fade-right" data-aos-delay="300">
+        <div
+          class="choose-area-icon-box mb-15"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <div class="icon-box p-relative">
             <i class="fas fa-shield-alt"></i>
           </div>
           <div class="content">
             <h5>Top-Quality Materials</h5>
             <p>
-              We select materials engineered for longevity and performance, ensuring your surfaces remain durable and attractive for years to come.
+              We select materials engineered for longevity and performance,
+              ensuring your surfaces remain durable and attractive for years to
+              come.
             </p>
           </div>
         </div>
         <hr />
-
+        <hr />
         <!-- Customer Service -->
-        <div class="choose-area-icon-box mb-15" data-aos="fade-right" data-aos-delay="400">
+        <div
+          class="choose-area-icon-box mb-15"
+          data-aos="fade-right"
+          data-aos-delay="400"
+        >
           <div class="icon-box p-relative">
             <i class="fas fa-handshake"></i>
           </div>
           <div class="content">
             <h5>Unmatched Customer Service</h5>
             <p>
-              We keep you informed at every stage from estimate to completion, ensuring your complete satisfaction with our work.
+              We keep you informed at every stage from estimate to completion,
+              ensuring your complete satisfaction with our work.
             </p>
           </div>
         </div>
         <hr />
-
+        <hr />
         <!-- Full Service -->
-        <div class="choose-area-icon-box mb-15" data-aos="fade-right" data-aos-delay="500">
+        <div
+          class="choose-area-icon-box mb-15"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
           <div class="icon-box p-relative">
             <i class="fas fa-layer-group"></i>
           </div>
           <div class="content">
             <h5>Comprehensive Services</h5>
             <p>
-              Whether you need paving, sealing, landscaping or concrete work, we are your one-stop shop for transforming outdoor spaces.
+              Whether you need paving, sealing, landscaping or concrete work, we
+              are your one-stop shop for transforming outdoor spaces.
             </p>
           </div>
         </div>
       </div>
 
-      <!-- Image -->
-      <div class="col-xxl-6 col-xl-6 col-lg-6" data-aos="fade-left" data-aos-delay="200">
+      <div
+        class="col-xxl-6 col-xl-6 col-lg-6"
+        data-aos="fade-left"
+        data-aos-delay="200"
+      >
         <figure class="image m-img">
-          <img
+          <Image
             src="/assets/imgs/resources/choose-1.webp"
             alt="Why Choose MAC"
-            loading="lazy"
-            width="464"
-            height="533"
+            width={464}
+            height={533}
+            quality={80}
+            format="webp"
           />
         </figure>
       </div>
     </div>
   </div>
 </section>
+<!-- Choose area end -->
