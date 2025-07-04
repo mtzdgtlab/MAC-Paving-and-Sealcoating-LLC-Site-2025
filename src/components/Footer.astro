@@ -1,8 +1,8 @@
 ---
 // Footer component
 import { Image } from "astro:assets";
-import logo from "../assets/imgs/logo.png";
-import Map from "./Map.astro";
+import logo from "@/assets/imgs/logo.png";
+import MapComponent from "./MapComponent.astro";
 ---
 
 <footer>
@@ -124,7 +124,7 @@ import Map from "./Map.astro";
                 class="footer-map"
                 style="width: 100%; height: 280px; border: 1px solid #ccc; border-radius: 8px; overflow: hidden;"
               >
-                <Map id="footer-map" />
+                <MapComponent id="footer-map" />
               </div>
 
               <meta itemprop="addressRegion" content="New Jersey" />

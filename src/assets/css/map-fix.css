@@ -107,7 +107,7 @@
 
 /* Asegurar que cuando el header es sticky, mantenga prioridad */
 .sticky {
-  z-index: 111 !important;
+  z-index: 111;
 }
 
 /* Estilos globales para mejorar la legibilidad de todos los elementos de Leaflet */
