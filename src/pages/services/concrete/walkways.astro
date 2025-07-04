@@ -11,6 +11,7 @@ import MainServices from "@/components/MainServices.astro";
 import SocialMeta from "@/components/SocialMeta.astro";
 import MapSection from "@/components/MapSection.astro";
 import WhyChooseUs from "@/components/WhyChooseUs.astro";
+import BreadcrumService from "@/components/BreadcrumService.astro";
 
 // Import walkways images
 import walkways1 from "@/assets/imgs/service/concrete/walkways-1.webp";
@@ -226,11 +227,7 @@ import concreteServiceBg from "@/assets/imgs/banner/concrete-service.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          style={`background-image: url('${concreteServiceBg.src}');`}
-        >
-        </div>
+        <BreadcrumService image={concreteServiceBg} />
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -276,7 +273,7 @@ import concreteServiceBg from "@/assets/imgs/banner/concrete-service.webp";
                     <figure class="w-img">
                       <Image
                         src={walkways1}
-                        alt="Concrete Walkways in NJ | Installed by Local Experts - Main Image - MAC Paving and Sealcoating"
+                        alt="Concrete Walkways in NJ | Installed by Local Experts"
                         width={600}
                         height={400}
                         loading="lazy"

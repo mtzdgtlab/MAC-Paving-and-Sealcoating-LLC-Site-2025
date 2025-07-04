@@ -1,0 +1,12 @@
+---
+import type { ImageMetadata } from "astro";
+
+interface Props {
+  image: ImageMetadata; // Para aceptar un objeto de imagen importado
+}
+
+const { image } = Astro.props as Props;
+---
+
+<div class="banner-thumb" style={`background-image: url('${image.src}');`}>
+</div>

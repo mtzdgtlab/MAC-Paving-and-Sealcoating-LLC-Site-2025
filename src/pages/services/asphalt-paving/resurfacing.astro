@@ -10,7 +10,8 @@ import Scripts from "@/components/Scripts.astro";
 import MainServices from "@/components/MainServices.astro";
 import SocialMeta from "@/components/SocialMeta.astro";
 import TestimonialsSlider from "@/components/TestimonialsSlider.astro";
-import Brands from "../../../components/Brands.astro";
+import Brands from "@/components/Brands.astro";
+import BreadcrumService from "@/components/BreadcrumService.astro";
 
 // Import resurfacing images
 import resurfacing1 from "@/assets/imgs/service/asphalt-paving/resurfacing-1.webp";
@@ -227,11 +228,7 @@ import asphaltServiceBg from "@/assets/imgs/banner/asphalt-service.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          style={`background-image: url('${asphaltServiceBg.src}');`}
-        >
-        </div>
+        <BreadcrumService image={asphaltServiceBg} />
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -280,7 +277,7 @@ import asphaltServiceBg from "@/assets/imgs/banner/asphalt-service.webp";
                     <figure class="w-img">
                       <Image
                         src={resurfacing1}
-                        alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Main Image - MAC Paving and Sealcoating"
+                        alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"
@@ -291,7 +288,7 @@ import asphaltServiceBg from "@/assets/imgs/banner/asphalt-service.webp";
                     <figure class="w-img">
                       <Image
                         src={resurfacing2}
-                        alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - Side View - MAC Paving and Sealcoating"
+                        alt="Asphalt Resurfacing Services in NJ | Restore Your Driveway Today - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"

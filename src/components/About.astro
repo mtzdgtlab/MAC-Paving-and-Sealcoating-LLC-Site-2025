@@ -56,8 +56,13 @@ import about2 from "../assets/imgs/about/about-2.webp";
               />
               <div class="play-btn">
                 <div class="video_player_btn">
-                  <a href="https://bit.ly/4ju0v1x" class="popup-video"
-                    ><i class="fas fa-play"></i></a
+                  <a
+                    href="https://bit.ly/4ju0v1x"
+                    class="popup-video"
+                    aria-label="Play video about MAC Paving services"
+                    ><i class="fas fa-play" aria-hidden="true"></i><span
+                      class="sr-only">Play video</span
+                    ></a
                   >
                 </div>
               </div>
@@ -115,12 +120,14 @@ import about2 from "../assets/imgs/about/about-2.webp";
             <div class="header-link">
               <a
                 class="primary-btn-1 btn-hover"
-                href="#"
+                href="https://calendly.com/macpavingandsealcoating/30min?hide_event_type_details=1"
                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/macpavingandsealcoating/30min?hide_event_type_details=1'}); return false;"
                 role="button"
                 aria-label="Schedule an appointment with MAC Paving"
               >
-                Get Your Free Quote Now! <i class="fas fa-arrow-right"></i>
+                Get Your Free Quote Now! <i
+                  class="fas fa-arrow-right"
+                  aria-hidden="true"></i>
               </a>
             </div>
           </div>

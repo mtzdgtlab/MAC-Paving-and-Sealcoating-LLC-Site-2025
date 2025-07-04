@@ -10,7 +10,8 @@ import Scripts from "@/components/Scripts.astro";
 import MainServices from "@/components/MainServices.astro";
 import SocialMeta from "@/components/SocialMeta.astro";
 import TestimonialsSlider from "@/components/TestimonialsSlider.astro";
-import Brands from "../../../components/Brands.astro";
+import Brands from "@/components/Brands.astro";
+import BreadcrumService from "@/components/BreadcrumService.astro";
 
 // Image imports
 import landscapingServiceBg from "@/assets/imgs/banner/landscaping-service.webp";
@@ -225,11 +226,7 @@ import powerWash4 from "@/assets/imgs/service/landscaping/power-wash-4.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          style={`background-image: url('${landscapingServiceBg.src}');`}
-        >
-        </div>
+        <BreadcrumService image={landscapingServiceBg} />
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
@@ -280,7 +277,7 @@ import powerWash4 from "@/assets/imgs/service/landscaping/power-wash-4.webp";
                     <figure class="w-img">
                       <Image
                         src={powerWash1}
-                        alt="Power Washing in NJ | Clean Driveways, Pavers and Sidewalks - Main Image - MAC Paving and Sealcoating"
+                        alt="Power Washing in NJ | Clean Driveways, Pavers and Sidewalks - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"
@@ -291,7 +288,7 @@ import powerWash4 from "@/assets/imgs/service/landscaping/power-wash-4.webp";
                     <figure class="w-img">
                       <Image
                         src={powerWash2}
-                        alt="Power Washing in NJ | Clean Driveways, Pavers and Sidewalks - Side View - MAC Paving and Sealcoating"
+                        alt="Power Washing in NJ | Clean Driveways, Pavers and Sidewalks - MAC Paving and Sealcoating"
                         width={600}
                         height={400}
                         loading="lazy"

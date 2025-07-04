@@ -11,6 +11,7 @@ import MainServices from "@/components/MainServices.astro";
 import SocialMeta from "@/components/SocialMeta.astro";
 import MapSection from "@/components/MapSection.astro";
 import WhyChooseUs from "@/components/WhyChooseUs.astro";
+import BreadcrumService from "@/components/BreadcrumService.astro";
 
 // Image imports
 import sealerServiceBg from "@/assets/imgs/banner/sealer-service.webp";
@@ -224,11 +225,7 @@ import sealcoating4 from "@/assets/imgs/service/sealer/sealcoating-4.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          style={`background-image: url('${sealerServiceBg.src}');`}
-        >
-        </div>
+        <BreadcrumService image={sealerServiceBg} />
         <div class="small-container">
           <div class="row">
             <div class="col-xxl-8 col-xl-8 col-lg-8">
@@ -276,7 +273,7 @@ import sealcoating4 from "@/assets/imgs/service/sealer/sealcoating-4.webp";
                     <figure class="w-img">
                       <Image
                         src={sealcoating1}
-                        alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt - Main Image - MAC Paving and Sealcoating"
+                        alt="Sealcoating Company in NJ | Extend the Life of Your Asphalt"
                         width={600}
                         height={400}
                         loading="lazy"

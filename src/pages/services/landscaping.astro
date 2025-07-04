@@ -9,6 +9,7 @@ import Footer from "@/components/Footer.astro";
 import Scripts from "@/components/Scripts.astro";
 import SocialMeta from "@/components/SocialMeta.astro";
 import Quality from "@/components/Quality.astro";
+import BreadcrumService from "@/components/BreadcrumService.astro";
 
 // Import landscaping images
 import sodInstallation1 from "@/assets/imgs/service/landscaping/sod-installation-1.webp";
@@ -230,11 +231,7 @@ import landscapingBg from "@/assets/imgs/bg/landscaping-cover.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          style={`background-image: url('${landscapingBg.src}');`}
-        >
-        </div>
+        <BreadcrumService image={landscapingBg} />
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">

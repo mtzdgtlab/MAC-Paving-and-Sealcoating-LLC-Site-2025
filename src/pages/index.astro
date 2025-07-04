@@ -12,6 +12,8 @@ import TestimonialsSlider from "@/components/TestimonialsSlider.astro";
 import { Image } from "astro:assets";
 import cta1 from "@/assets/imgs/resources/cta-1.webp";
 import ServiceSlider from "@/components/ServiceSlider.astro";
+import ProjectSlider from "@/components/ProjectSlider.astro";
+import ChooseArea from "@/components/ChooseArea.astro";
 ---
 
 <html lang="en">
@@ -53,6 +55,10 @@ import ServiceSlider from "@/components/ServiceSlider.astro";
           "telephone": "+1-201-755-7836",
           "contactType": "Customer Service"
         },
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61563583505866",
+          "https://www.instagram.com/macpavingandsealcoating/"
+        ],
         "areaServed": [
           { "@type": "Place", "name": "Clifton, NJ" },
           { "@type": "Place", "name": "Wayne, NJ" },
@@ -286,6 +292,7 @@ import ServiceSlider from "@/components/ServiceSlider.astro";
                       <a
                         href="https://bit.ly/4ju0v1x"
                         class="play-btn popup-video"
+                        aria-label="Watch video about our asphalt contracting services"
                       >
                         <div class="icon-1">
                           <i class="fas fa-play"></i>
@@ -318,6 +325,7 @@ import ServiceSlider from "@/components/ServiceSlider.astro";
                       <a
                         href="https://bit.ly/4ju0v1x"
                         class="play-btn popup-video"
+                        aria-label="Watch video about our paving solutions"
                       >
                         <div class="icon-1">
                           <i class="fas fa-play"></i>
@@ -353,6 +361,7 @@ import ServiceSlider from "@/components/ServiceSlider.astro";
                       <a
                         href="https://bit.ly/4ju0v1x"
                         class="play-btn popup-video"
+                        aria-label="Watch video about our sealcoating services"
                       >
                         <div class="icon-1">
                           <i class="fas fa-play"></i>
@@ -408,251 +417,8 @@ import ServiceSlider from "@/components/ServiceSlider.astro";
       </section>
       <!-- Cta-1 area end -->
 
-      <!-- Project slider area start -->
-      <section
-        aria-label="Projects section"
-        class="project-slider-section section-space fix"
-      >
-        <div class="small-container">
-          <div class="row">
-            <div
-              class="col-xxl-12 d-flex justify-content-between align-items-center flex-wrap"
-            >
-              <div
-                class="title-box mb-50"
-                data-aos="fade-left"
-                data-aos-delay="700"
-              >
-                <span class="section-sub-title">RECENT WORKS</span>
-                <h3 class="section-title mt-15">Our Recent Projects</h3>
-              </div>
-              <div
-                class="project_1_navigation__wrapprer position-relative z-1 mt-30"
-              >
-                <div class="common-slider-navigation">
-                  <button
-                    class="project-1-button-prev"
-                    aria-label="Previous project"
-                  >
-                    <i class="fas fa-arrow-left"></i>
-                  </button>
-                  <button
-                    class="project-1-button-next"
-                    aria-label="Next project"
-                  >
-                    <i class="fas fa-arrow-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper project-active-1">
-          <div class="swiper-wrapper">
-            <!-- block -->
-            <div class="swiper-slide">
-              <div class="project-slider-area p-relative">
-                <figure class="image m-imge shine-img">
-                  <img
-                    src="/assets/imgs/project/project-1.webp"
-                    alt="Asphalt Paving by MAC Paving and Sealcoating"
-                    loading="lazy"
-                    width="570"
-                    height="439"
-                  />
-                </figure>
-              </div>
-            </div>
-            <!-- block -->
-            <div class="swiper-slide">
-              <div class="project-slider-area p-relative">
-                <figure class="image m-imge shine-img">
-                  <img
-                    src="/assets/imgs/project/project-2.webp"
-                    alt="Asphalt Paving Installation by MAC Paving and Sealcoating"
-                    loading="lazy"
-                    width="570"
-                    height="439"
-                  />
-                </figure>
-              </div>
-            </div>
-            <!-- block -->
-            <div class="swiper-slide">
-              <div class="project-slider-area p-relative">
-                <figure class="image m-imge shine-img">
-                  <img
-                    src="/assets/imgs/project/project-3.webp"
-                    alt="Asphalt Paving by MAC Paving and Sealcoating"
-                    loading="lazy"
-                    width="570"
-                    height="439"
-                  />
-                </figure>
-                <div class="content-area"></div>
-              </div>
-            </div>
-            <!-- block -->
-            <div class="swiper-slide">
-              <div class="project-slider-area p-relative">
-                <figure class="image m-imge shine-img">
-                  <img
-                    src="/assets/imgs/project/project-4.webp"
-                    alt="Asphalt Paving by MAC Paving and Sealcoating"
-                    loading="lazy"
-                    width="570"
-                    height="439"
-                  />
-                </figure>
-              </div>
-            </div>
-            <!-- block -->
-            <div class="swiper-slide">
-              <div class="project-slider-area p-relative">
-                <figure class="image m-imge shine-img">
-                  <img
-                    src="/assets/imgs/project/project-5.webp"
-                    alt="Asphalt Paving by MAC Paving and Sealcoating"
-                    loading="lazy"
-                    width="570"
-                    height="439"
-                  />
-                </figure>
-              </div>
-            </div>
-            <!-- block -->
-            <div class="swiper-slide">
-              <div class="project-slider-area p-relative">
-                <figure class="image m-imge shine-img">
-                  <img
-                    src="/assets/imgs/project/project-6.webp"
-                    alt="Asphalt Paving by MAC Paving and Sealcoating"
-                    loading="lazy"
-                    width="570"
-                    height="439"
-                  />
-                </figure>
-              </div>
-            </div>
-            <!-- block -->
-            <div class="swiper-slide">
-              <div class="project-slider-area p-relative">
-                <figure class="image m-imge shine-img">
-                  <img
-                    src="/assets/imgs/project/project-7.webp"
-                    alt="Asphalt Paving by MAC Paving and Sealcoating"
-                    loading="lazy"
-                    width="570"
-                    height="439"
-                  />
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Project area end -->
-
-      <!-- Choose area start -->
-      <section
-        aria-label="Testimonials section"
-        class="choose-section bg-color-1 section-space-top p-relative"
-      >
-        <div class="small-container">
-          <div class="row g-4">
-            <div
-              class="col-xxl-6 col-xl-6 col-lg-6 p-relative section-space-medium-bottom"
-            >
-              <div
-                class="title-box mb-50"
-                data-aos="fade-left"
-                data-aos-delay="200"
-              >
-                <span class="section-sub-titledos">WHY CHOOSE US</span>
-                <h3 class="section-title mt-35">What Makes Us Different</h3>
-              </div>
-
-              <hr />
-
-              <!-- Quality -->
-              <div
-                class="choose-area-icon-box mb-15"
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fas fa-shield-alt"></i>
-                </div>
-                <div class="content">
-                  <h5>Top-Quality Materials</h5>
-                  <p>
-                    We select materials engineered for longevity and
-                    performance, ensuring your surfaces remain durable and
-                    attractive for years to come.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <hr />
-              <!-- Customer Service -->
-              <div
-                class="choose-area-icon-box mb-15"
-                data-aos="fade-right"
-                data-aos-delay="400"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fas fa-handshake"></i>
-                </div>
-                <div class="content">
-                  <h5>Unmatched Customer Service</h5>
-                  <p>
-                    We keep you informed at every stage from estimate to
-                    completion, ensuring your complete satisfaction with our
-                    work.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <hr />
-              <!-- Full Service -->
-              <div
-                class="choose-area-icon-box mb-15"
-                data-aos="fade-right"
-                data-aos-delay="300"
-              >
-                <div class="icon-box p-relative">
-                  <i class="fas fa-layer-group"></i>
-                </div>
-                <div class="content">
-                  <h5>Comprehensive Services</h5>
-                  <p>
-                    Whether you need paving, sealing, landscaping or concrete
-                    work, we are your one-stop shop for transforming outdoor
-                    spaces.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="col-xxl-6 col-xl-6 col-lg-6"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
-              <figure class="image m-img">
-                <img
-                  src="/assets/imgs/resources/choose-1.webp"
-                  alt="Why Choose MAC"
-                  loading="lazy"
-                  width="464"
-                  height="533"
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Choose area end -->
+      <ProjectSlider />
+      <ChooseArea />
 
       <section class="contact-page-section section-space">
         <div class="small-container">

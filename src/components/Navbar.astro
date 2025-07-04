@@ -19,13 +19,13 @@ import logo from "../assets/imgs/logo.png";
               <Image
                 src={logo}
                 alt="MAC Paving and Sealcoating"
-                loading="lazy"
+                loading="eager"
               />
             </a>
           </div>
           <div class="offcanvas__close">
             <button aria-label="Close menu">
-              <i class="fas fa-times"></i>
+              <i class="fas fa-times" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -38,22 +38,31 @@ import logo from "../assets/imgs/logo.png";
         </div>
         <div class="mobile-menu fix mb-40"></div>
         <div class="offcanvas__contact mt-30 mb-20">
-          <h4>Contact Info</h4>
-          <ul>
+          <h4 id="contact-info-heading" aria-label="Contact Information">
+            Contact Info
+          </h4>
+          <ul aria-labelledby="contact-info-heading">
             <li class="d-flex align-items-center">
               <div class="offcanvas__contact-icon mr-15">
-                <i class="fas fa-phone"></i>
+                <i class="fas fa-phone" aria-hidden="true"></i>
               </div>
               <div class="offcanvas__contact-text">
-                <a href="tel:+12017557836">(201) 755-7836</a>
+                <a
+                  href="tel:+12017557836"
+                  aria-label="Call MAC Paving at (201) 755-7836"
+                  >(201) 755-7836</a
+                >
               </div>
             </li>
             <li class="d-flex align-items-center">
               <div class="offcanvas__contact-icon mr-15">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope" aria-hidden="true"></i>
               </div>
               <div class="offcanvas__contact-text">
-                <a href="mailto:mg@macpavingandsealcoating.com">
+                <a
+                  href="mailto:mg@macpavingandsealcoating.com"
+                  aria-label="Email MAC Paving at mg@macpavingandsealcoating.com"
+                >
                   <span>mg@macpavingandsealcoating.com</span>
                 </a>
               </div>
@@ -66,16 +75,18 @@ import logo from "../assets/imgs/logo.png";
               <a
                 href="https://www.facebook.com/profile.php?id=61563583505866"
                 target="_blank"
+                aria-label="MAC Paving Facebook"
               >
-                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
               </a>
             </li>
             <li>
               <a
                 href="https://www.instagram.com/macpavingandsealcoating/"
                 target="_blank"
+                aria-label="MAC Paving Instagram"
               >
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
@@ -94,7 +105,10 @@ import logo from "../assets/imgs/logo.png";
     <div class="header-top">
       <div class="header-top-contact-info">
         <span class="email p-relative">
-          <a href="mailto:mg@macpavingandsealcoating.com">
+          <a
+            href="mailto:mg@macpavingandsealcoating.com"
+            aria-label="Email MAC Paving at mg@macpavingandsealcoating.com"
+          >
             mg@macpavingandsealcoating.com
           </a>
         </span>
@@ -106,7 +120,7 @@ import logo from "../assets/imgs/logo.png";
             target="_blank"
             aria-label="MAC Paving Facebook"
           >
-            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
           </a>
         </span>
         <span>
@@ -115,7 +129,7 @@ import logo from "../assets/imgs/logo.png";
             target="_blank"
             aria-label="MAC Paving Instagram"
           >
-            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
           </a>
         </span>
       </div>
@@ -135,7 +149,7 @@ import logo from "../assets/imgs/logo.png";
                 <Image
                   src={logo}
                   alt="MAC Paving and Sealcoating"
-                  loading="lazy"
+                  loading="eager"
                 />
               </a>
             </div>
@@ -151,157 +165,212 @@ import logo from "../assets/imgs/logo.png";
                 >
                   <ul role="menubar">
                     <li role="none">
-                      <a role="menuitem" href="/" aria-current="page"> Home </a>
+                      <a
+                        role="menuitem"
+                        href="/"
+                        aria-current="page"
+                        aria-label="Home page"
+                      >
+                        Home
+                      </a>
                     </li>
                     <li class="has-dropdown" role="none">
-                      <a role="menuitem" href="/services/asphalt-paving/"
-                        >Asphalt Paving</a
+                      <a
+                        role="menuitem"
+                        href="/services/asphalt-paving/"
+                        aria-haspopup="true"
+                        aria-expanded="false">Asphalt Paving</a
                       >
                       <ul class="submenu" role="menu">
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/asphalt-paving/installation/"
+                            aria-label="Asphalt Installation Services"
                             >Installation</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/asphalt-paving/resurfacing/"
+                            aria-label="Asphalt Resurfacing Services"
                             >Resurfacing</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/asphalt-paving/replacement/"
+                            aria-label="Asphalt Replacement Services"
                             >Replacement</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/asphalt-paving/extension/"
-                            >Extension</a
+                            aria-label="Asphalt Extension Services">Extension</a
                           >
                         </li>
                       </ul>
                     </li>
                     <li class="has-dropdown" role="none">
-                      <a role="menuitem" href="/services/sealer/">Sealer</a>
+                      <a
+                        role="menuitem"
+                        href="/services/sealer/"
+                        aria-haspopup="true"
+                        aria-expanded="false">Sealer</a
+                      >
                       <ul class="submenu" role="menu">
-                        <li>
-                          <a role="menuitem" href="/services/sealer/sealcoating/"
-                            >Sealcoating</a
+                        <li role="none">
+                          <a
+                            role="menuitem"
+                            href="/services/sealer/sealcoating/"
+                            aria-label="Sealcoating Services">Sealcoating</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/sealer/crack-filling/"
-                            >Crack Filling</a
+                            aria-label="Crack Filling Services">Crack Filling</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/sealer/line-striping/"
-                            >Line Striping</a
+                            aria-label="Line Striping Services">Line Striping</a
                           >
                         </li>
                       </ul>
                     </li>
                     <li class="has-dropdown" role="none">
-                      <a role="menuitem" href="/services/pavers/">Pavers</a>
+                      <a
+                        role="menuitem"
+                        href="/services/pavers/"
+                        aria-haspopup="true"
+                        aria-expanded="false">Pavers</a
+                      >
                       <ul class="submenu" role="menu">
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/pavers/installation/"
+                            aria-label="Paver Installation Services"
                             >Paver Installation</a
                           >
                         </li>
-                        <li>
-                          <a role="menuitem" href="/services/pavers/maintenance/"
+                        <li role="none">
+                          <a
+                            role="menuitem"
+                            href="/services/pavers/maintenance/"
+                            aria-label="Paver Maintenance Services"
                             >Paver Maintenance</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/pavers/belgium-blocks/"
+                            aria-label="Belgium Blocks Services"
                             >Belgium Blocks</a
                           >
                         </li>
                       </ul>
                     </li>
                     <li class="has-dropdown" role="none">
-                      <a role="menuitem" href="/services/concrete/">Concrete</a>
+                      <a
+                        role="menuitem"
+                        href="/services/concrete/"
+                        aria-haspopup="true"
+                        aria-expanded="false">Concrete</a
+                      >
                       <ul class="submenu" role="menu">
-                        <li>
-                          <a role="menuitem" href="/services/concrete/walkways/"
-                            >Walkways</a
+                        <li role="none">
+                          <a
+                            role="menuitem"
+                            href="/services/concrete/walkways/"
+                            aria-label="Concrete Walkways Services">Walkways</a
                           >
                         </li>
-                        <li>
-                          <a role="menuitem" href="/services/concrete/sidewalks/"
+                        <li role="none">
+                          <a
+                            role="menuitem"
+                            href="/services/concrete/sidewalks/"
+                            aria-label="Concrete Sidewalks Services"
                             >Sidewalks</a
                           >
                         </li>
-                        <li>
-                          <a role="menuitem" href="/services/concrete/curbs/"
-                            >Curbs</a
+                        <li role="none">
+                          <a
+                            role="menuitem"
+                            href="/services/concrete/curbs/"
+                            aria-label="Concrete Curbs Services">Curbs</a
                           >
                         </li>
-                        <li>
-                          <a role="menuitem" href="/services/concrete/aprons/"
-                            >Aprons</a
+                        <li role="none">
+                          <a
+                            role="menuitem"
+                            href="/services/concrete/aprons/"
+                            aria-label="Concrete Aprons Services">Aprons</a
                           >
                         </li>
                       </ul>
                     </li>
                     <li class="has-dropdown" role="none">
-                      <a role="menuitem" href="/services/landscaping/"
-                        >Landscaping</a
+                      <a
+                        role="menuitem"
+                        href="/services/landscaping/"
+                        aria-haspopup="true"
+                        aria-expanded="false">Landscaping</a
                       >
                       <ul class="submenu" role="menu">
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/landscaping/sod-installation/"
+                            aria-label="Sod Installation Services"
                             >Sod Installation</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
-                            href="/services/landscaping/top-soil/">Top Soil</a
+                            href="/services/landscaping/top-soil/"
+                            aria-label="Top Soil Services">Top Soil</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
-                            href="/services/landscaping/drainage/">Drainage</a
+                            href="/services/landscaping/drainage/"
+                            aria-label="Drainage Services">Drainage</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
                             href="/services/landscaping/power-wash/"
-                            >Power Wash</a
+                            aria-label="Power Wash Services">Power Wash</a
                           >
                         </li>
-                        <li>
+                        <li role="none">
                           <a
                             role="menuitem"
-                            href="/services/landscaping/hauling/">Hauling</a
+                            href="/services/landscaping/hauling/"
+                            aria-label="Hauling Services">Hauling</a
                           >
                         </li>
                       </ul>
                     </li>
                     <li role="none">
-                      <a role="menuitem" href="/contact/">Contact</a>
+                      <a
+                        role="menuitem"
+                        href="/contact/"
+                        aria-label="Contact Page">Contact</a
+                      >
                     </li>
                   </ul>
                 </nav>
@@ -311,22 +380,23 @@ import logo from "../assets/imgs/logo.png";
             <!-- Calendly link widget begin -->
             <div class="header-action d-none d-xl-inline-flex gap-5">
               <div class="header-link">
-                <a
+                <button
                   class="primary-btn-1 btn-hover"
-                  href="#"
-                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/macpavingandsealcoating/30min?hide_event_type_details=1'}); return false;"
-                  role="button"
+                  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/macpavingandsealcoating/30min?hide_event_type_details=1'});"
+                  type="button"
                   aria-label="Schedule an appointment with MAC Paving"
                 >
-                  Get a Free Quote! <i class="fas fa-arrow-right"></i>
-                </a>
+                  Get a Free Quote! <i
+                    class="fas fa-arrow-right"
+                    aria-hidden="true"></i>
+                </button>
               </div>
             </div>
             <!-- Calendly link widget end -->
             <div class="header__hamburger d-xl-none my-auto">
               <div class="sidebar__toggle">
                 <button class="bar-icon" aria-label="Toggle mobile menu">
-                  <i class="fas fa-bars"></i>
+                  <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
               </div>
             </div>

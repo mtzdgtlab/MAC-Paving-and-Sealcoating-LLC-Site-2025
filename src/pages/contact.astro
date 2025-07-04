@@ -11,6 +11,7 @@ import Scripts from "@/components/Scripts.astro";
 import LargeForm from "@/components/LargeForm.astro";
 import SocialMeta from "@/components/SocialMeta.astro";
 import MapSection from "@/components/MapSection.astro";
+import BreadcrumService from "@/components/BreadcrumService.astro";
 
 // Import contact background image
 import contactBg from "@/assets/imgs/bg/contact-cover.webp";
@@ -45,11 +46,7 @@ import contactBg from "@/assets/imgs/bg/contact-cover.webp";
     <main>
       <!-- Breadcrumb area start -->
       <div class="breadcrumb__area theme-bg-1 p-relative pt-160 pb-160">
-        <div
-          class="banner-thumb"
-          style={`background-image: url('${contactBg.src}');`}
-        >
-        </div>
+        <BreadcrumService image={contactBg} />
         <div class="small-container">
           <div class="row justify-content-center justify-content-md-start">
             <div class="col-9 col-sm-9 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
