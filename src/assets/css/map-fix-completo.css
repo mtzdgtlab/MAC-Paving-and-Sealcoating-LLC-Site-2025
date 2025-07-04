@@ -70,7 +70,7 @@
 
 /* Estilos específicos para nuestros popups personalizados */
 .custom-popup .leaflet-popup-content {
-  font-family: 'Inter', 'Roboto', 'Montserrat', sans-serif !important;
+  font-family: 'Roboto', 'Montserrat', sans-serif !important;
   font-size: 16px !important;
   text-align: center !important;
 }
@@ -112,7 +112,7 @@
 
 /* Estilos globales para mejorar la legibilidad de todos los elementos de Leaflet */
 .leaflet-container {
-  font-family: 'Inter', 'Roboto', 'Montserrat', sans-serif !important;
+  font-family: 'Roboto', 'Montserrat', sans-serif !important;
   font-size: 14px !important;
 }
 
