@@ -9,13 +9,7 @@
 /* Todos los elementos dentro del mapa deben tener z-index bajo */
 .map-container *,
 .map-container .leaflet-container,
-.map-container .leaflet-map-pane,
-.map-container .leaflet-tile-pane,
-.map-container .leaflet-overlay-pane,
-.map-container .leaflet-shadow-pane,
-.map-container .leaflet-marker-pane,
-.map-container .leaflet-tooltip-pane,
-.map-container .leaflet-popup-pane {
+.map-container .leaflet-map-pane {
   z-index: 1 !important;
 }
 
@@ -26,68 +20,12 @@
 }
 
 /* Asegurar que los popups y tooltips no interfieran con el menú */
-.map-container .leaflet-popup,
-.map-container .leaflet-tooltip {
-  z-index: 50 !important;
-}
 
 /* Estilos específicos para popups de Leaflet */
-.leaflet-popup-content {
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  color: #333 !important;
-  line-height: 1.4 !important;
-  margin: 8px 12px !important;
-  min-width: 120px !important;
-}
-
-.leaflet-popup-content-wrapper {
-  background: white !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-  border: 2px solid #007bff !important;
-}
-
-.leaflet-popup-tip {
-  background: white !important;
-  border: 2px solid #007bff !important;
-  border-top: none !important;
-  border-right: none !important;
-}
 
 /* Estilos para el botón de cerrar */
-.leaflet-popup-close-button {
-  font-size: 18px !important;
-  font-weight: bold !important;
-  color: #666 !important;
-  padding: 4px 8px !important;
-}
-
-.leaflet-popup-close-button:hover {
-  color: #007bff !important;
-  background: transparent !important;
-}
 
 /* Estilos específicos para nuestros popups personalizados */
-.custom-popup .leaflet-popup-content {
-  font-family: 'Inter', 'Roboto', 'Montserrat', sans-serif !important;
-  font-size: 16px !important;
-  text-align: center !important;
-}
-
-.custom-popup .leaflet-popup-content-wrapper {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%) !important;
-  border: 2px solid #007bff !important;
-  border-radius: 12px !important;
-  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.2) !important;
-}
-
-.custom-popup .leaflet-popup-tip {
-  background: #ffffff !important;
-  border: 2px solid #007bff !important;
-  border-top: none !important;
-  border-right: none !important;
-}
 
 /* Para el componente embebido específicamente */
 .embedded-map {
@@ -114,15 +52,4 @@
 .leaflet-container {
   font-family: 'Inter', 'Roboto', 'Montserrat', sans-serif !important;
   font-size: 14px !important;
-}
-
-.leaflet-control-zoom a {
-  font-size: 18px !important;
-  line-height: 30px !important;
-  color: #333 !important;
-}
-
-.leaflet-control-attribution {
-  font-size: 11px !important;
-  background-color: rgba(255, 255, 255, 0.8) !important;
 }

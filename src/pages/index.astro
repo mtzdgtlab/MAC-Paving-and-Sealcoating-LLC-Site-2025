@@ -14,6 +14,7 @@ import ServiceSlider from "@/components/ServiceSlider.astro";
 import SocialMeta from "@/components/SocialMeta.astro";
 import TestimonialsSlider from "@/components/TestimonialsSlider.astro";
 import Brands from "@/components/Brands.astro";
+import LargeForm from "@/components/LargeForm.astro";
 ---
 
 <html lang="en">
@@ -388,7 +389,7 @@ import Brands from "@/components/Brands.astro";
       <section
         class="cta-1-section bg-color-1 p-relative"
         data-aos="fade-down"
-        data-aos-delay="500"
+        data-aos-delay="200"
       >
         <div class="small-container">
           <div class="row g-0 box-shadow-1 fix">
@@ -420,98 +421,7 @@ import Brands from "@/components/Brands.astro";
       <ProjectSlider />
       <ChooseArea />
 
-      <section class="contact-page-section section-space">
-        <div class="small-container">
-          <div class="row">
-            <div class="col-xxl-12 col-xl-12 col-lg-12">
-              <div class="contact-page-form-area">
-                <div
-                  class="title-box mb-40 wow fadeInLeft"
-                  data-wow-delay=".5s"
-                >
-                  <span class="section-sub-title">LET'S TALK</span>
-                  <h3 class="section-title mt-10">Let's Get in Touch</h3>
-                </div>
-                <div class="contact-page-form">
-                  <form
-                    action="https://formspree.io/f/mvgpzjbv"
-                    method="POST"
-                    id="contactForm"
-                  >
-                    <div class="row">
-                      <div class="col-lg-6">
-                        <label for="name">Your Name*</label>
-                        <input
-                          type="text"
-                          name="name"
-                          id="name"
-                          placeholder="Your Name*"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-6">
-                        <label for="email">Your Email*</label>
-                        <input
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="Your Email*"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-6">
-                        <label for="phone">Your Phone*</label>
-                        <input
-                          type="tel"
-                          name="phone"
-                          id="phone"
-                          placeholder="Your Phone*"
-                          pattern="[0-9]{10}"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-6">
-                        <label for="service">Required Service*</label>
-                        <input
-                          type="text"
-                          name="service"
-                          id="service"
-                          placeholder="Required Service*"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-6">
-                        <label for="address">Your Address*</label>
-                        <input
-                          type="text"
-                          name="address"
-                          id="address"
-                          placeholder="Your Address*"
-                          required
-                        />
-                      </div>
-                      <div class="col-lg-6">
-                        <label for="message">Your Message</label>
-                        <textarea
-                          name="message"
-                          id="message"
-                          placeholder="Write Message"></textarea>
-                      </div>
-                      <div class="col-lg-12">
-                        <button type="submit" class="primary-btn-1 btn-hover">
-                          Send Now | <i class="fas fa-arrow-right"></i>
-                        </button>
-                      </div>
-                    </div>
-                    <div id="formMessage" class="mt-3" style="display: none">
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <LargeForm />
 
       <TestimonialsSlider />
       <Brands />

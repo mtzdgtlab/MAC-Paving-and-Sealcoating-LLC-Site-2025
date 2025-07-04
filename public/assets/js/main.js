@@ -306,8 +306,6 @@
     },
   })
 
-  // Gramen Home two
-
   var team = new Swiper('.testimonial-active-2', {
     slidesPerView: 2,
     spaceBetween: 20,
@@ -346,43 +344,6 @@
     },
   })
 
-  var team = new Swiper('.testimonial-active-3', {
-    slidesPerView: 4,
-    spaceBetween: 24,
-    loop: true,
-    roundLengths: true,
-    autoplay: {
-      delay: 3000,
-    },
-    pagination: {
-      el: '.bd-swiper-dot',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.testimonial-button-next',
-      prevEl: '.testimonial-button-prev',
-    },
-    breakpoints: {
-      1400: {
-        slidesPerView: 4,
-      },
-      1200: {
-        slidesPerView: 2,
-      },
-      992: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 1,
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  })
 
 
   /*======================================
