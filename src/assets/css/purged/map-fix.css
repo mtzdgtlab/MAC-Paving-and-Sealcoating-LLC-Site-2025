@@ -1,0 +1,55 @@
+/* Estilos específicos para resolver el problema de z-index del mapa con el menú */
+
+/* Asegurar que el contenedor del mapa tenga z-index bajo */
+.map-container {
+  position: relative;
+  z-index: 1 !important;
+}
+
+/* Todos los elementos dentro del mapa deben tener z-index bajo */
+.map-container *,
+.map-container .leaflet-container,
+.map-container .leaflet-map-pane {
+  z-index: 1 !important;
+}
+
+/* Los controles del mapa pueden tener un z-index ligeramente mayor pero aún bajo */
+.map-container .leaflet-control-container,
+.map-container .leaflet-control {
+  z-index: 10 !important;
+}
+
+/* Asegurar que los popups y tooltips no interfieran con el menú */
+
+/* Estilos específicos para popups de Leaflet */
+
+/* Estilos para el botón de cerrar */
+
+/* Estilos específicos para nuestros popups personalizados */
+
+/* Para el componente embebido específicamente */
+.embedded-map {
+  height: 100%;
+  width: 100%;
+  border-top: 2px solid #007bff;
+  position: relative;
+  z-index: 1 !important;
+}
+
+/* Media query para impresión */
+@media print {
+  .embedded-map {
+    height: 400px;
+  }
+}
+
+/* Asegurar que cuando el header es sticky, mantenga prioridad */
+.sticky {
+  z-index: 111;
+}
+
+/* Estilos globales para mejorar la legibilidad de todos los elementos de Leaflet */
+.leaflet-container {
+  font-family: 'Inter', 'Roboto', 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+}
