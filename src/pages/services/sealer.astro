@@ -1,33 +1,28 @@
 ---
 import { Image } from "astro:assets";
-import Favicon from "@/components/Favicon.astro";
-
-import Preloader from "@/components/Preloader.astro";
-import CSSbase from "@/components/CSSbase.astro";
-import Navbar from "@/components/Navbar.astro";
-import Footer from "@/components/Footer.astro";
-import Scripts from "@/components/Scripts.astro";
-import SocialMeta from "@/components/SocialMeta.astro";
-import BreadcrumService from "@/components/BreadcrumService.astro";
-
+// Import sealer background image
+import sealerBg from "@/assets/imgs/bg/sealer-cover.webp";
+import crackFilling1 from "@/assets/imgs/service/sealer/crack-filling-1.webp";
+import crackFilling2 from "@/assets/imgs/service/sealer/crack-filling-2.webp";
+import crackFilling3 from "@/assets/imgs/service/sealer/crack-filling-3.webp";
+import crackFilling4 from "@/assets/imgs/service/sealer/crack-filling-4.webp";
+import lineStriping1 from "@/assets/imgs/service/sealer/line-striping-1.webp";
+import lineStriping2 from "@/assets/imgs/service/sealer/line-striping-2.webp";
+import lineStriping3 from "@/assets/imgs/service/sealer/line-striping-3.webp";
+import lineStriping4 from "@/assets/imgs/service/sealer/line-striping-4.webp";
 // Import sealer images
 import sealcoating1 from "@/assets/imgs/service/sealer/sealcoating-1.webp";
 import sealcoating2 from "@/assets/imgs/service/sealer/sealcoating-2.webp";
 import sealcoating3 from "@/assets/imgs/service/sealer/sealcoating-3.webp";
 import sealcoating4 from "@/assets/imgs/service/sealer/sealcoating-4.webp";
-
-import crackFilling1 from "@/assets/imgs/service/sealer/crack-filling-1.webp";
-import crackFilling2 from "@/assets/imgs/service/sealer/crack-filling-2.webp";
-import crackFilling3 from "@/assets/imgs/service/sealer/crack-filling-3.webp";
-import crackFilling4 from "@/assets/imgs/service/sealer/crack-filling-4.webp";
-
-import lineStriping1 from "@/assets/imgs/service/sealer/line-striping-1.webp";
-import lineStriping2 from "@/assets/imgs/service/sealer/line-striping-2.webp";
-import lineStriping3 from "@/assets/imgs/service/sealer/line-striping-3.webp";
-import lineStriping4 from "@/assets/imgs/service/sealer/line-striping-4.webp";
-
-// Import sealer background image
-import sealerBg from "@/assets/imgs/bg/sealer-cover.webp";
+import BreadcrumService from "@/components/BreadcrumService.astro";
+import CSSbase from "@/components/CSSbase.astro";
+import Favicon from "@/components/Favicon.astro";
+import Footer from "@/components/Footer.astro";
+import Navbar from "@/components/Navbar.astro";
+import Preloader from "@/components/Preloader.astro";
+import Scripts from "@/components/Scripts.astro";
+import SocialMeta from "@/components/SocialMeta.astro";
 ---
 
 <html lang="en">
